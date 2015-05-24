@@ -1,0 +1,12 @@
+@media only screen and (max-width : 768px) {	
+	/* Styles */
+	.page {
+		display: block;
+	}
+	.layout.maps {
+		bottom: 0;
+		position: absolute;
+		width: 100%;
+		height: 200px;
+	}
+}
