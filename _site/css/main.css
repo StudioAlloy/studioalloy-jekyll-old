@@ -78,6 +78,10 @@ h2 {
   filter: alpha(opacity=60);
 }
 
+.info {
+  margin-bottom: 40px;
+}
+
 .info a {
   text-decoration: none;
   color: #fff;
