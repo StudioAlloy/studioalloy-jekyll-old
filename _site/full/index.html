@@ -18,13 +18,13 @@
   
   
   <title>Verhalen vertellen met pixels op het beeldscherm &middot; Alloy</title>
-  <link rel="canonical" href="/">
+  <link rel="canonical" href="/full/">
   
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   
   
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="/">
+  <meta property="og:url" content="/full/">
   <meta property="og:title" content="Verhalen vertellen met pixels op het beeldscherm">
   <meta property="og:site_name" content="Alloy">
   <meta property="og:description" content="">
@@ -69,125 +69,16 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-   	<div class="page" id="index">
-	<div class="layout info">
-		<section class="logo">
-			<h1>Alloy</h1>
-			<span>STUDIO</span>
-		</section>
-		<section class="extra">
-			<article>
-				<h2>Team</h2>
-				<ul>
-					<li><a href="//2preform.nl">Daniel Lim</a></li>
-					<li><a href="//atmedia.nl">David Hager</a></li>
-					<li><a href="//atticweb.nl">Jaap Redeker</a></li>
-					<li><a href="//mvaneijgen.nl">M van Eijgen</a></li>
-					<li><a href="//daasdesign.nl">Ruben Daas</a></li>
-					<li><a href="//wilsuncheung.com">Wilsun Cheung</a></li>
-					<li>Wouter Hager</li>
-				</ul>
-			</article>
-		</section>
+   	<div id="fullpage">
+	<div class="section active" id="section0"><h1>fullPage.js</h1></div>
+	<div class="section" id="section1">
+	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
 	</div>
-	<div class="layout maps">
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
-			function initialize() {
-				var mapCanvas = document.getElementById('map_canvas');
-				var mapOptions = {
-					center: new google.maps.LatLng(52.376277,4.634333),
-					zoom: 15,
-					mapTypeId: google.maps.MapTypeId.ROADMAP,
-					panControl: false,
-					zoomControl: false,
-					mapTypeControl: false,
-					scaleControl: false,
-					streetViewControl: false,
-					overviewMapControl: false,
-					styles: [
-  {
-    "featureType": "transit.station",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "poi",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "landscape",
-    "stylers": [
-      { "color": "#eeeeee" }
-    ]
-  },{
-    "featureType": "water",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "landscape.natural",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "poi",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  },{
-    "featureType": "road.highway",
-    "elementType": "labels",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "elementType": "labels.icon"  }
-]
-				}
-
-				var map = new google.maps.Map(mapCanvas, mapOptions)
-
-				var contentString = '<div id="content">'+
-				'<div id="bodyContent">'+
-				'<a href="mailto=contact@studioalloy.nl">contact@studioalloy.nl</a><br>'+
-				'<a href="tel=+31610114179">06 10 11 41 79</a><br>'+
-				'<br>'+
-				'Gasthuisvest 47<br>'+
-				'2011 EV Haarlem'+
-				'<br>'+
-				'</div>'+
-				'</div>';
-
-				var infowindow = new google.maps.InfoWindow({
-					content: contentString
-				});
-
-				var myLatlng = new google.maps.LatLng(52.376277,4.634333);
-
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map,
-					title: 'Contact'
-				});
-				infowindow.open(map,marker);
-				google.maps.event.addListener(marker, 'click', function() {
-					infowindow.open(map,marker);
-				});
-
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-		<div id="map_canvas"></div>
-	</div>
-</div>
+	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
 </div>
 
     

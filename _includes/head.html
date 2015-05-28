@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head prefix="og: http://ogp.me/ns#">
+<head prefix="og: http://ogp.me/ns#">
 
   <!-- Standard Meta -->
   <meta charset="utf-8" />
@@ -14,9 +14,9 @@
   
   <!-- Site Properities -->
   {% if page.title == "Home" %}
-    {% capture title_tag %}{{ site.tagline }}{% endcapture %}
+  {% capture title_tag %}{{ site.tagline }}{% endcapture %}
   {% else %}
-    {% capture title_tag %}{{ page.title }}{% endcapture %}
+  {% capture title_tag %}{{ page.title }}{% endcapture %}
   {% endif %}
   
   <title>{{ title_tag }} &middot; {{ site.title }}</title>
@@ -57,3 +57,16 @@
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!-- Fullpage js -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fullPage.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+      });
+    });
+  </script>
