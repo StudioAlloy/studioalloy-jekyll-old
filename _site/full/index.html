@@ -61,9 +61,26 @@
   <script type="text/javascript">
     $(document).ready(function() {
       $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        'verticalCentered': false,
-        css3: true
+        css3: true,
+        
+        'afterLoad': function(anchorLink, index){
+          if(index == 2){
+            $('#iphone3, #iphone2, #iphone4').addClass('active');
+          }
+        },
+
+        'onLeave': function(index, nextIndex, direction){
+          if (index == 3 && direction == 'down'){
+            $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+          }
+          else if(index == 3 && direction == 'up'){
+            $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+          }
+
+          $('#staticImg').toggleClass('active', (index == 2 && direction == 'down' ) || (index == 4 && direction == 'up'));
+          $('#staticImg').toggleClass('moveDown', nextIndex == 4);
+          $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+        }
       });
     });
   </script>
@@ -72,18 +89,40 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-   	<div id="fullpage">
-	<div class="section active" id="section0">
-		<img src="/images/alloy-logo.svg">
+   	<div id="header">Header</div>
+
+<div id="fullpage">
+	<div class="section active" id="home">
+		<img src="/img/alloy-logo.svg">
+		<h1>Verhalen vertellen met pixels op het beeldscherm</h1>
 	</div>
-	<div class="section" id="section1">
+	<div class="section" id="about">
+		<div class="wrap">
+			<div class="imgsContainer">
+				<img src="/img/iphone2.png" alt="iphone" id="iphone2" />
+				<img src="/img/iphone3.png" alt="iphone" id="iphone3" />
+				<img src="/img/iphone4.png" alt="iphone" id="iphone4" />
+			</div>
+
+			<div class="box">
+				<h2>A powerful plugin</h2>
+				 <strong>fullPage.js</strong>  callbacks allow you to create amazing dynamic sites with a bit of imagination. This example tries to reproduce the Apple iPhone-5c website animations as an example of what fullPage.js is capable of.
+			</div>
+		</div>
+	</div>
+	<div class="section" id="projects">
 	    <div class="slide "><h1>Simple Demo</h1></div>
 	    <div class="slide active"><h1>Only text</h1></div>
 	    <div class="slide"><h1>And text</h1></div>
 	    <div class="slide"><h1>And more text</h1></div>
 	</div>
-	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+	<div class="section" id="team">
+	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+	</div>
+	<div class="section" id="contact"><h1>No wraps, no extra markup</h1></div>
 </div>
 
     
