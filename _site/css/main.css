@@ -69,13 +69,13 @@ img {
 
 /* Section 1
 * --------------------------------------- */
-#about img {
+#projects img {
   position: absolute;
   left: 40px;
   top: 100px;
 }
 
-#about .box {
+#projects .box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,7 +88,7 @@ img {
   line-height: 1.6em;
 }
 
-#about .imgsContainer {
+#projects .imgsContainer {
   display: block;
   position: absolute;
   z-index: 1;
@@ -100,13 +100,13 @@ img {
   height: 696px;
 }
 
-#about img {
+#projects img {
   height: 100%;
 }
 
 /*screen resolutions between 620px and 800px*/
 @media all and (min-width: 620px) and (max-width: 800px) {
-  #about .imgsContainer {
+  #projects .imgsContainer {
     margin-top: -278px;
     margin-left: -685px;
     width: 647px;
@@ -115,7 +115,7 @@ img {
 }
 /*screen resolutions lower than 620px*/
 @media all and (max-width: 620px) {
-  #section1 .imgsContainer {
+  #projects .imgsContainer {
     margin-top: -208px;
     margin-left: -516px;
     width: 534px;

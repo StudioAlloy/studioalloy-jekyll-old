@@ -3,6 +3,32 @@ layout: default
 title: Verhalen vertellen met pixels op het beeldscherm
 description: 
 ---
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        css3: true,
+        
+        'afterLoad': function(anchorLink, index){
+          if(index == 3){
+            $('#iphone3, #iphone2, #iphone4').addClass('active');
+          }
+        },
+
+        'onLeave': function(index, nextIndex, direction){
+          if (index == 3 && direction == 'down'){
+            $('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
+          }
+          else if(index == 3 && direction == 'up'){
+            $('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
+          }
+
+          $('#staticImg').toggleClass('active', (index == 3 && direction == 'down' ) || (index == 4 && direction == 'up'));
+          $('#staticImg').toggleClass('moveDown', nextIndex == 4);
+          $('#staticImg').toggleClass('moveUp', index == 4 && direction == 'up');
+        }
+      });
+    });
+  </script>
 <div id="header">Header</div>
 
 <div id="fullpage">
@@ -10,6 +36,7 @@ description:
 		<img src="{{ site.baseurl }}/img/alloy-logo.svg">
 		<h1>Verhalen vertellen met pixels op het beeldscherm</h1>
 	</div>
+
 	<div class="section" id="about">
 		<div class="wrap">
 			<div class="imgsContainer">
@@ -19,17 +46,32 @@ description:
 			</div>
 
 			<div class="box">
-				<h2>A powerful plugin</h2>
-				 <strong>fullPage.js</strong>  callbacks allow you to create amazing dynamic sites with a bit of imagination. This example tries to reproduce the Apple iPhone-5c website animations as an example of what fullPage.js is capable of.
+				<h2>Studio Alloy</h2>
+				 <strong>Haarlems collectief</strong> 
 			</div>
 		</div>
 	</div>
+
 	<div class="section" id="projects">
-	    <div class="slide "><h1>Simple Demo</h1></div>
-	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide active">
+	    	<div class="wrap">
+			<div class="imgsContainer">
+				<img src="{{ site.baseurl }}/img/iphone2.png" alt="iphone" id="iphone2" />
+				<img src="{{ site.baseurl }}/img/iphone3.png" alt="iphone" id="iphone3" />
+				<img src="{{ site.baseurl }}/img/iphone4.png" alt="iphone" id="iphone4" />
+			</div>
+
+			<div class="box">
+				<h2>Studio Alloy</h2>
+				 <strong>Haarlems collectief</strong> 
+			</div>
+		</div>
+	    </div>
+	    <div class="slide"><h1>Only text</h1></div>
 	    <div class="slide"><h1>And text</h1></div>
 	    <div class="slide"><h1>And more text</h1></div>
 	</div>
+
 	<div class="section" id="team">
 	    <div class="slide "><h1>Simple Demo</h1></div>
 	    <div class="slide active"><h1>Only text</h1></div>
