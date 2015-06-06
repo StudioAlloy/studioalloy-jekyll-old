@@ -1,14 +1,23 @@
 #header {
 	position:fixed;
-	height: 50px;
 	display:block;
 	width: 100%;
-	background: #333;
+	background: $alt-color;
 	z-index:9;
-	text-align:center;
-	color: #f2f2f2;
-	padding: 20px 0 0 0;
+	color: $darkgray;
+	padding: 20px 30px;
 }
-#header{
+#header {
 	top:0px;
+}
+#header .logo {
+	max-width: 100px;
+}
+#header ul.menu {
+	float: right;
+	margin: 0;
+}
+#header ul.menu li {
+	display: inline;
+	margin-right: 10px;
 }

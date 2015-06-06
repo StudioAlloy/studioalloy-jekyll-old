@@ -9,16 +9,19 @@
 		font-size: 2em;
 		margin: 0 0 18px 0;
 	}
+	a {
+		color: $darkgray;
+		text-decoration: none;
+	}
 	/* Common styles
 	* --------------------------------------- */
 	img{
-	    -webkit-transition: all 0.7s ease-out;
+		-webkit-transition: all 0.7s ease-out;
 		-moz-transition: all 0.7s ease-out;
 		-o-transition: all 0.7s ease-out;
 		transition: all 0.7s ease-out;
 	}
 	.section{
-		text-align:center;
 		overflow:hidden;
 	}
 	.wrap{
@@ -34,87 +37,6 @@
 		font-size: 1.2em;
 		line-height: 1.6em;
 	}
-	/* Section 1
-	* --------------------------------------- */
-	#projects img{
-		position:absolute;
-		left: 40px;
-		top: 100px;
-	}
-
-	#projects .box{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		margin-top: -192px;
-		margin-left: 89px;
-		width: 395px;
-		z-index: 1;
-		color: #808080;
-		font-size: 1.2em;
-		line-height: 1.6em;
-	}
-	#projects .imgsContainer{
-		display: block;
-		position: absolute;
-		z-index: 1;
-		top: 42%;
-		left: 58%;
-		margin-top: -325px;
-		margin-left: -747px;
-		width: 800px;
-		height: 696px;
-	}
-	#projects img{
-		height: 100%;
-	}
-	/*screen resolutions between 620px and 800px*/
-	@media all and (min-width: 620px) and (max-width: 800px){
-		#projects .imgsContainer{
-			margin-top: -278px;
-			margin-left: -685px;
-			width: 647px;
-			height: 563px;
-		}
-	}
-
-	/*screen resolutions lower than 620px*/
-	@media all and (max-width: 620px){
-		#projects .imgsContainer{
-			margin-top: -208px;
-			margin-left: -516px;
-			width: 534px;
-			height: 464px;
-		}
-	}
-	#iphone2{
-		z-index: 10;
-	}
-	#iphone2.active{
-		-webkit-transform: translate3d(-134px, 0px, 0px);
-		-moz-transform: translate3d(-134px, 0px, 0px);
-		-ms-transform:translate3d(-134px, 0px, 0px);
-		transform: translate3d(-134px, 0px, 0px);
-	}
-
-	#iphone3{
-		z-index: 12;
-	}
-	#iphone3.active{
-		-webkit-transform: translate3d(213px, 0px, 0px);
-		-moz-transform: translate3d(213px, 0px, 0px);
-		-ms-transform:translate3d(213px, 0px, 0px);
-		transform: translate3d(213px, 0px, 0px);
-	}
-
-	#iphone4{
-		z-index: 11;
-		left: 140px;
-	}
-
-	#iphone4.active{
-		-webkit-transform: translate3d(548px, 0px, 0px);
-		-moz-transform: translate3d(548px, 0px, 0px);
-		-ms-transform:translate3d(548px, 0px, 0px);
-		transform: translate3d(548px, 0px, 0px);
+	.fp-tableCell {
+		padding: 50px;
 	}
