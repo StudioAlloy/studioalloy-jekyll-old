@@ -1,23 +1,43 @@
 #header {
-	position:fixed;
-	display:block;
-	width: 100%;
+	display:block;	
 	background: $alt-color;
-	z-index:9;
+	z-index:99999;
 	color: $darkgray;
-	padding: 20px 30px;
-}
-#header {
-	top:0px;
+	min-width: 150px;
+	box-shadow: 2px 2px 5px rgba($darkgray, 0.1);
 }
 #header .logo {
 	max-width: 100px;
 }
 #header ul.menu {
-	float: right;
 	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 #header ul.menu li {
-	display: inline;
-	margin-right: 10px;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width : 768px) {	
+	/* Styles */
+	#header ul.menu {
+		float: right;
+	}
+	#header ul.menu li {
+		display: inline;
+		margin-right: 10px;
+	}
+}
+@media only screen and (min-width : 768px) {	
+	/* Styles */
+	#header .container {
+		position: fixed;
+		padding: 20px;
+	}
+	#header ul.menu li {
+		margin: 10px 0;
+	}
+	#header .logo {
+		margin-bottom: 20px;
+	}
 }

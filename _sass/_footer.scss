@@ -1,0 +1,11 @@
+section:last-child {
+	margin-bottom: 150px;
+}
+.footer {
+	min-height: 150px;
+	position: fixed;
+	bottom: 0;
+	background: $sub2-color;
+	width: 100%;
+	z-index: 9;
+}

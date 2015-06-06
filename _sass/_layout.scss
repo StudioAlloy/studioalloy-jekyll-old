@@ -1,0 +1,30 @@
+.main {
+	display: flex;
+}
+.wrapper {
+	z-index: 999;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+section:first-child {
+	height: 80vh;
+	background: url('/img/background.jpg');
+	background-size: cover;
+	color: $alt-color;
+}
+section {
+	display: flex;
+	background-color: $sub-color;
+	height: 100vh;
+	padding: 50px;
+}
+section:nth-child(2n) {
+	background-color: $alt-color;
+}
+@media only screen and (max-width : 768px) {	
+	/* Styles */
+	.main {
+		flex-direction: column;
+	}
+}
