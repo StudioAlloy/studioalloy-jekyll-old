@@ -1,20 +1,28 @@
 <div class="footer">
-	<div class="col">
-		<h4>Het team</h4>
-		<ul>
-			<li><a href="">Wilsun Cheung</a></li>
-			<li><a href="">Ruben Daas</a></li>
-			<li><a href="">Mitchel van Eijgen</a></li>
-			<li><a href="">David Hager</a></li>
-			<li><a href="">Wouter Hager</a></li>
-			<li><a href="">Daniel Lim</a></li>			
-			<li><a href="">Jaap Redeker</a></li>
-		</ul>
-	</div>
-	<div class="col">
-
-	</div>
-	<div class="col">
-
+	<div class="wrapper">
+		<div class="col">
+			<h4>Werk ruimte</h4>
+			<p>{{ site.workspacedec }}</p>
+		</div>
+		<div class="col">
+			<h4>Het team</h4>
+			<ul>
+				<li><a href="">Wilsun Cheung</a></li>
+				<li><a href="">Ruben Daas</a></li>
+				<li><a href="">Mitchel van Eijgen</a></li>
+				<li><a href="">David Hager</a></li>
+				<li><a href="">Wouter Hager</a></li>
+				<li><a href="">Daniel Lim</a></li>			
+				<li><a href="">Jaap Redeker</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+				<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+				<li><address>{{ site.address }}</address></li>
+			</ul>
+		</div>
 	</div>
 </div>

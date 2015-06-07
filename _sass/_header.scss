@@ -5,30 +5,34 @@
 	color: $darkgray;
 	min-width: 150px;
 	box-shadow: 2px 2px 5px rgba($darkgray, 0.1);
+	padding: 10px;
+	text-align: center;
 }
 #header .logo {
-	max-width: 100px;
-}
-#header ul.menu {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	max-width: 50px;
 }
 #header ul.menu li {
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width : 768px) {	
+@media only screen and (max-width : 800px) {	
 	/* Styles */
-	#header ul.menu {
-		float: right;
+	#header .container {
+		display: flex;
+		align-items: center;
+	}
+	#header .logo {
+		margin-right: 40px;
+	}
+	ul.menu {
+		display: inline;
 	}
 	#header ul.menu li {
 		display: inline;
 		margin-right: 10px;
 	}
 }
-@media only screen and (min-width : 768px) {	
+@media only screen and (min-width : 800px) {	
 	/* Styles */
 	#header .container {
 		position: fixed;

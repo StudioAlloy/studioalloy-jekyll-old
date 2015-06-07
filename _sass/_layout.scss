@@ -6,23 +6,55 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-}
-section:first-child {
-	height: 80vh;
-	background: url('/img/background.jpg');
-	background-size: cover;
-	color: $alt-color;
+	width: 100%;
 }
 section {
 	display: flex;
-	background-color: $sub-color;
+	background-color: $lightgray;
 	height: 100vh;
 	padding: 50px;
 }
 section:nth-child(2n) {
 	background-color: $alt-color;
 }
-@media only screen and (max-width : 768px) {	
+section#contact {
+  padding: 0;
+  background-color: $alt-color;
+}
+/*INDEX*/
+body.index section:first-child {
+	height: 80vh;
+	background: url('/img/background.jpg');
+	background-size: cover;
+	color: $alt-color;
+}
+/*END INDEX*/
+/*Contact*/
+section#contact-page .content {
+  text-align: center;
+  width: 100%;
+}
+/*END Contact*/
+/*Google maps*/
+section#contact div#map_canvas {
+  clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0% 100%, 0% 15%);
+}
+.maps {
+  background: #344;
+  color: #344;
+  height: 100%;
+}
+.maps a {
+  text-decoration: none;
+  color: #344;  
+}
+#map_canvas {
+  width: 100%;
+  height: 100%;
+}
+/*END Google maps*/
+
+@media only screen and (max-width : 800px) {	
 	/* Styles */
 	.main {
 		flex-direction: column;
