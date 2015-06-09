@@ -22,6 +22,12 @@ github_username:  studioalloy
 
 default_image: image.jpg
 
+# Collections
+collections:
+  work:
+    output: true
+    permalink: /work/:path/
+
 # Pre-processing
 
 markdown: kramdown

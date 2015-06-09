@@ -1,0 +1,23 @@
+---
+layout: default
+title: Contact
+description: 
+---
+
+<section id="work-page" class="no-vh">
+	<div class="content">
+
+	{% for post in site.work date %}
+		<article>
+			<!--<a href="{{ post.url }}">-->
+			<div class="bg-img" style="background: url({{ site.baseurl }}/img/background.jpg)"></div>
+			<div class="meta">
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.excerpt }}</p>
+			</div>
+			<!--</a>-->
+		</article>
+		{% endfor %}
+		
+	</div>
+</section>

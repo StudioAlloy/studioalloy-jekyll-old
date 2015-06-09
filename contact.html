@@ -1,28 +1,29 @@
 ---
 layout: default
-title: Contact | Alloy
+title: Contact
 description: 
 ---
 <section id="contact-page">
 	<div class="content">
-			<h1>Contact us</h1>
-			<h2>Let's get in touch</h2>
-		</header>
+		<h1>Contact us</h1>
+		<h2>Let's get in touch</h2>
 
-			<figure class="follow clearfix">
-				<ul>
-					<li class="facebook"><a href="http://facebook.com/studioalloy" target="_blank" data-ga="Social: Facebook">Facebook</a></li>
-					<li class="twitter"><a href="http://twitter.com/studioalloy" target="_blank" data-ga="Social: Twitter">Twitter</a></li>
-					<li class="linkedin"><a href="http://linkedin.com/company/studioalloy" target="_blank" data-ga="Social: LinkedIn">LinkedIn</a></li>
-					<li class="dribbble last"><a href="http://dribbble.com/mvaneijgen" target="_blank" data-ga="Social: Dribbble">Dribbble</a></li>
-				</ul>
-			</figure>
-
+		<figure class="follow clearfix">
 			<ul>
-				<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-				<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
-				<li><address>{{ site.address }}</address></li>
+				<li class="facebook"><a href="http://facebook.com/studioalloy" target="_blank" data-ga="Social: Facebook">Facebook</a></li>
+				<li class="twitter"><a href="http://twitter.com/studioalloy" target="_blank" data-ga="Social: Twitter">Twitter</a></li>
+				<li class="linkedin"><a href="http://linkedin.com/company/studioalloy" target="_blank" data-ga="Social: LinkedIn">LinkedIn</a></li>
+				<li class="dribbble last"><a href="http://dribbble.com/mvaneijgen" target="_blank" data-ga="Social: Dribbble">Dribbble</a></li>
 			</ul>
-		</article>
-	</section>
+		</figure>
+
+		<ul>
+			<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+			<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+			<li><address>{{ site.address }}</address></li>
+		</ul>
+	</div>
+</section>
+<section id="contact">
+	{% include maps.html %}
 </section>

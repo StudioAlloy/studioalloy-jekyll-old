@@ -17,7 +17,7 @@
   
   
   
-  <title>Contact | Alloy &middot; Alloy</title>
+  <title>Contact &middot; Alloy</title>
   <link rel="canonical" href="/contact/">
   
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
@@ -25,7 +25,7 @@
   
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="/contact/">
-  <meta property="og:title" content="Contact | Alloy">
+  <meta property="og:title" content="Contact">
   <meta property="og:site_name" content="Alloy">
   <meta property="og:description" content="">
   <meta property="og:image" content="image.jpg">
@@ -50,7 +50,7 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 </head>
-<body class="default  ">
+<body class="default contact ">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -60,7 +60,7 @@
 		<a href=""><img class="logo" src="/img/alloy-logo.svg"></a>
 		<ul class="menu">
 			<li class="menu-item"><a href="#about">About</a></li>
-			<li class="menu-item"><a href="#cases">Cases</a></li>
+			<li class="menu-item"><a href="#work">Work</a></li>
 			<li class="menu-item"><a href="#team">Team</a></li>
 			<li class="menu-item"><a href="/blog">Blog</a></li>
 			<li class="menu-item"><a href="#contact">Contact</a></li>
@@ -70,26 +70,244 @@
           <div class="wrapper">
             <section id="contact-page">
 	<div class="content">
-			<h1>Contact us</h1>
-			<h2>Let's get in touch</h2>
-		</header>
+		<h1>Contact us</h1>
+		<h2>Let's get in touch</h2>
 
-			<figure class="follow clearfix">
-				<ul>
-					<li class="facebook"><a href="http://facebook.com/studioalloy" target="_blank" data-ga="Social: Facebook">Facebook</a></li>
-					<li class="twitter"><a href="http://twitter.com/studioalloy" target="_blank" data-ga="Social: Twitter">Twitter</a></li>
-					<li class="linkedin"><a href="http://linkedin.com/company/studioalloy" target="_blank" data-ga="Social: LinkedIn">LinkedIn</a></li>
-					<li class="dribbble last"><a href="http://dribbble.com/mvaneijgen" target="_blank" data-ga="Social: Dribbble">Dribbble</a></li>
-				</ul>
-			</figure>
-
+		<figure class="follow clearfix">
 			<ul>
-				<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
-				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
-				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
+				<li class="facebook"><a href="http://facebook.com/studioalloy" target="_blank" data-ga="Social: Facebook">Facebook</a></li>
+				<li class="twitter"><a href="http://twitter.com/studioalloy" target="_blank" data-ga="Social: Twitter">Twitter</a></li>
+				<li class="linkedin"><a href="http://linkedin.com/company/studioalloy" target="_blank" data-ga="Social: LinkedIn">LinkedIn</a></li>
+				<li class="dribbble last"><a href="http://dribbble.com/mvaneijgen" target="_blank" data-ga="Social: Dribbble">Dribbble</a></li>
 			</ul>
-		</article>
-	</section>
+		</figure>
+
+		<ul>
+			<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
+			<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
+			<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
+		</ul>
+	</div>
+</section>
+<section id="contact">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('map_canvas');
+			var mapOptions = {
+				center: new google.maps.LatLng(52.376277,4.634333),
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				panControl: false,
+				zoomControl: false,
+				mapTypeControl: false,
+				scaleControl: false,
+				streetViewControl: false,
+				overviewMapControl: false,
+				scrollwheel: false,
+				navigationControl: false,
+				mapTypeControl: false,
+				scaleControl: false,
+				draggable: true,
+				styles: [
+    {
+        "featureType": "all",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#ee6644"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "gamma": "0.99"
+            },
+            {
+                "saturation": "0"
+            },
+            {
+                "color": "#ffffff"
+            },
+            {
+                "weight": "2.86"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.text.stroke",
+        "stylers": [
+            {
+                "saturation": -31
+            },
+            {
+                "lightness": -33
+            },
+            {
+                "weight": "3.34"
+            },
+            {
+                "gamma": 0.8
+            },
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "all",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 30
+            },
+            {
+                "saturation": 30
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "saturation": 20
+            }
+        ]
+    },
+    {
+        "featureType": "poi.park",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 20
+            },
+            {
+                "saturation": -20
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 10
+            },
+            {
+                "saturation": -30
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "gamma": "10.00"
+            },
+            {
+                "weight": "2.15"
+            },
+            {
+                "lightness": "100"
+            },
+            {
+                "color": "#ee6644"
+            },
+            {
+                "saturation": "87"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "saturation": 25
+            },
+            {
+                "lightness": 25
+            }
+        ]
+    },
+    {
+        "featureType": "road.local",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "lightness": -20
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "gamma": "4.17"
+            }
+        ]
+    }
+]
+				}
+
+				var map = new google.maps.Map(mapCanvas, mapOptions)
+
+				var contentString = '<div id="content">'+
+				'<div id="bodyContent">'+
+				'<a href="mailto=contact@studioalloy.nl">contact@studioalloy.nl</a><br>'+
+				'<a href="tel=+31610114179">06 10 11 41 79</a><br>'+
+				'<br>'+
+				'Gasthuisvest 47<br>'+
+				'2011 EV Haarlem'+
+				'<br>'+
+				'</div>'+
+				'</div>';
+
+				var infowindow = new google.maps.InfoWindow({
+					content: contentString
+				});
+
+				var myLatlng = new google.maps.LatLng(52.376277,4.634333);
+
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: 'Contact'
+				});
+				infowindow.open(map,marker);
+				google.maps.event.addListener(marker, 'click', function() {
+					infowindow.open(map,marker);
+				});
+
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<div id="map_canvas"></div>
 </section>
           </div>
         </div>
