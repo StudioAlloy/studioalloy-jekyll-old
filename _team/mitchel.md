@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "Peek & Seek"
+title:  "Mitchel van Eijgen"
 date:   2014-01-30 16:22:48
 categories: peekandseek
 excerpt: HTML 5 cross platfrom game

@@ -7,13 +7,9 @@
 		<div class="col">
 			<h4>Het team</h4>
 			<ul>
-				<li><a href="">Wilsun Cheung</a></li>
-				<li><a href="">Ruben Daas</a></li>
-				<li><a href="">Mitchel van Eijgen</a></li>
-				<li><a href="">David Hager</a></li>
-				<li><a href="">Wouter Hager</a></li>
-				<li><a href="">Daniel Lim</a></li>			
-				<li><a href="">Jaap Redeker</a></li>
+				{% for post in site.team date %}
+				<li><a href="">{{ post.title }}</a></li>
+				{% endfor %}
 			</ul>
 		</div>
 		<div class="col">

@@ -27,7 +27,10 @@ collections:
   work:
     output: true
     permalink: /work/:path/
-
+  team:
+    output: true
+    permalink: /team/:path/
+    
 # Pre-processing
 
 markdown: kramdown
