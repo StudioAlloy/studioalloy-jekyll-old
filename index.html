@@ -4,36 +4,42 @@ title: Home
 description: 
 categories: index
 ---
-<section id="home">
+<section class="home">
 	<div class="content">
 		<h1>Studio Alloy</h1>
 		<p>{{ site.tagline }}</p> 
 	</div>
 </section>
 
-<section id="about">
+<section class="about">
 	<div class="content">
 		<img src="{{ site.baseurl }}/img/alloy-logo.svg">
 		<h1>Verhalen vertellen met pixels op het beeldscherm</h1>
 	</div>
 </section>
 
-<section id="work">
-	<div class="content flex">
-			<img src="{{ site.baseurl }}/img/iphone3.png">
+{% for post in site.work %}
+{% if post.starred == "yes" %}
+<section class="work {{ post.categories }}" style="background: {{ post.color }}">
+	<div class="content">
 		<div class="text-container">
-			<h2>Fabstagram</h2>
-			<strong>Web application</strong> login met je Instagram account en drag ’n’ drop de foto’s op bijvoorbeeld een telefoon case. Je kunt er zoveel ontwerpen als je wil en uiteindelijk kiezen welke je wil bestellen. 
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.excerpt }}</p>
 		</div>
+		<img class="main-image" src="{{ site.baseurl }}/img/work/{{ post.categories }}.png">
+		<img class="logo" src="{{ site.baseurl }}/img/work/{{ post.categories }}-logo.png">
+		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
 	</div>
 </section>
+{% endif %}
+{% endfor %}
 
-<section id="team">
+<section class="team">
 	<div class="content">
 		<h1>Meet the team.</h1>
 	</div>
 </section>
 
-<section id="contact">
+<section class="contact">
 	{% include maps.html %}
 </section>
