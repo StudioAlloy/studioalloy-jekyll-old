@@ -1,56 +1,38 @@
 /*INDEX*/
 body.index section:first-child {
-	height: 80vh;
 	background-color: $base-color;
 	color: $alt-color;
 }
 /*END INDEX*/
-/*Product*/
-section.work-page .content {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+/*About*/
+.about {
+  display: flex;
+  align-items: center;
+	justify-content: center;
 }
-section.work-page article {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	padding: 20px;
-}
-section.work-page article img {
-	height: 200px;
-}
-section.work-page article .meta {
-	background-color: $alt-color;
-	padding: 20px;
-}
-/*END Product*/
+/*END About*/
 /*Work*/
-.work {
+.wrapper .work {
 	position: relative;
 	overflow: hidden;
 }
-.work .content {
+.wrapper .work .content {
 	color: $alt-color;
 }
 img.main-image {
-  width: 90%;
+  height: 100%;
   right: 0;
   bottom: 0;
   position: absolute;
 }
-.work.fabstagram img.main-image {
-  height: 100%;
-  width: auto;
-}
-.work .platfrom-icon {
+.wrapper .work .platfrom-icon {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	width: 142px;
 	padding: 20px;
 }
-.work .logo {
+.wrapper .work .logo {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -81,7 +63,7 @@ section.contact {
 }
 .maps a {
 	text-decoration: none;
-	color: #344;  
+	color: #344;
 }
 #map_canvas {
 	width: 100%;

@@ -1,16 +1,16 @@
 ---
 layout: default
 title: Work
-description: 
+description:
 ---
 
-<section id="work-page" class="no-vh">
+<section class="work-page no-vh">
 	<div class="content">
 
 	{% for post in site.work date %}
 		<article>
 			<!--<a href="{{ post.url }}">-->
-			<div class="bg-img" style="background: url({{ site.baseurl }}/img/work/{{ post.categories }}.jpg)"></div>
+			<img src="{{ site.baseurl }}/img/work/{{ post.categories }}.jpg">
 			<div class="meta">
 				<h2>{{ post.title }}</h2>
 				<p>{{ post.excerpt }}</p>
@@ -18,6 +18,6 @@ description:
 			<!--</a>-->
 		</article>
 		{% endfor %}
-		
+
 	</div>
 </section>

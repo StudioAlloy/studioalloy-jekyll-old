@@ -8,7 +8,7 @@
 	flex-direction: column;
 	width: 100%;
 }
-section {
+body.home section {
 	display: flex;
 	background-color: $lightgray;
 	height: 100vh;
@@ -24,7 +24,7 @@ section:nth-child(2n) {
 	display: flex;
 	flex-direction: row;
 }
-@media only screen and (max-width : 800px) {	
+@media only screen and (max-width : 800px) {
 	/* Styles */
 	.main {
 		flex-direction: column;

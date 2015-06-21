@@ -1,3 +1,4 @@
+/* import */
 /*******************************
        Global Resets
 *******************************/
@@ -17,7 +18,7 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -54,7 +55,7 @@ ul {
   width: 100%;
 }
 
-section {
+body.home section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -148,69 +149,43 @@ section:nth-child(2n) {
 }
 /*INDEX*/
 body.index section:first-child {
-  height: 80vh;
   background-color: #E64;
   color: #fff;
 }
 
 /*END INDEX*/
-/*Product*/
-section.work-page .content {
+/*About*/
+.about {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-section.work-page article {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 50%;
-  padding: 20px;
-}
-
-section.work-page article img {
-  height: 200px;
-}
-
-section.work-page article .meta {
-  background-color: #fff;
-  padding: 20px;
-}
-
-/*END Product*/
+/*END About*/
 /*Work*/
-.work {
+.wrapper .work {
   position: relative;
   overflow: hidden;
 }
 
-.work .content {
+.wrapper .work .content {
   color: #fff;
 }
 
 img.main-image {
-  width: 90%;
+  height: 100%;
   right: 0;
   bottom: 0;
   position: absolute;
 }
 
-.work.fabstagram img.main-image {
-  height: 100%;
-  width: auto;
-}
-
-.work .platfrom-icon {
+.wrapper .work .platfrom-icon {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -218,7 +193,7 @@ img.main-image {
   padding: 20px;
 }
 
-.work .logo {
+.wrapper .work .logo {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -270,6 +245,48 @@ section.contact {
 }
 
 /*END Google maps*/
+/*Product*/
+section.work-page {
+  background: #eee;
+}
+
+section.work-page .content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+section.work-page article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding: 20px;
+}
+
+section.work-page article img {
+  height: 200px;
+}
+
+section.work-page article .meta {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/*END Product*/
+body.work article .bg-img {
+  height: 250px;
+}
+
 /*Contact*/
 section.contact-page .content {
   text-align: center;

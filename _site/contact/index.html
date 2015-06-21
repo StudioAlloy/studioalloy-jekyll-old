@@ -18,21 +18,21 @@
   
   
   <title>Contact &middot; Alloy</title>
-  <link rel="canonical" href="//studioalloy.github.io//contact/">
+  <link rel="canonical" href="/contact/">
   
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   
   
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="//studioalloy.github.io//contact/">
+  <meta property="og:url" content="/contact/">
   <meta property="og:title" content="Contact">
   <meta property="og:site_name" content="Alloy">
   <meta property="og:description" content="">
-  <meta property="og:image" content="//studioalloy.github.io/image.jpg">
+  <meta property="og:image" content="image.jpg">
   <meta property="og:image:width" content="640">
   <meta property="og:image:height" content="300">
   
-  <meta name="twitter:card" content="//studioalloy.github.io/image.jpg">
+  <meta name="twitter:card" content="image.jpg">
   <meta name="twitter:site" content="@{ site.twitter_username }}">
   <meta name="twitter:creator" content="@studioalloy">
   
@@ -67,6 +67,7 @@
 		</ul>
 	</div>
 </div>
+
           <div class="wrapper">
             <section id="contact-page">
 	<div class="content">
@@ -96,7 +97,7 @@
 			var mapCanvas = document.getElementById('map_canvas');
 			var mapOptions = {
 				center: new google.maps.LatLng(52.376277,4.634333),
-				zoom: 15,
+				zoom: 14,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				panControl: false,
 				zoomControl: false,
@@ -119,96 +120,54 @@
             }
         ]
     },
-    {
+		{
         "featureType": "all",
         "elementType": "labels.text.fill",
         "stylers": [
             {
-                "gamma": "0.99"
-            },
-            {
                 "saturation": "0"
-            },
-            {
-                "color": "#ffffff"
-            },
-            {
-                "weight": "2.86"
             }
         ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
         "stylers": [
             {
-                "saturation": -31
-            },
-            {
-                "lightness": -33
-            },
-            {
-                "weight": "3.34"
-            },
-            {
-                "gamma": 0.8
-            },
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
+                "color": "#444444"
             }
         ]
     },
     {
         "featureType": "landscape",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "lightness": 30
-            },
-            {
-                "saturation": 30
+                "color": "#f2f2f2"
             }
         ]
     },
     {
         "featureType": "poi",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "saturation": 20
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": 20
+                "visibility": "off"
             },
             {
-                "saturation": -20
+                "saturation": "0"
             }
         ]
     },
     {
         "featureType": "road",
-        "elementType": "geometry",
+        "elementType": "all",
         "stylers": [
             {
-                "lightness": 10
+                "saturation": -100
             },
             {
-                "saturation": -30
+                "lightness": 45
             }
         ]
     },
@@ -217,37 +176,43 @@
         "elementType": "geometry.fill",
         "stylers": [
             {
-                "gamma": "10.00"
+                "color": "#ffffff"
             },
             {
-                "weight": "2.15"
-            },
-            {
-                "lightness": "100"
-            },
-            {
-                "color": "#ee6644"
-            },
-            {
-                "saturation": "87"
+                "saturation": "0"
             }
         ]
     },
     {
-        "featureType": "road",
-        "elementType": "geometry.stroke",
+        "featureType": "road.highway",
+        "elementType": "all",
         "stylers": [
             {
-                "saturation": 25
-            },
-            {
-                "lightness": 25
+                "visibility": "simplified"
             }
         ]
     },
     {
-        "featureType": "road.local",
+        "featureType": "road.highway",
         "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
         "stylers": [
             {
                 "visibility": "off"
@@ -259,16 +224,13 @@
         "elementType": "all",
         "stylers": [
             {
-                "lightness": -20
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry.fill",
-        "stylers": [
+                "color": "#92bbbb"
+            },
             {
-                "gamma": "4.17"
+                "visibility": "on"
+            },
+            {
+                "saturation": "0"
             }
         ]
     }
@@ -308,6 +270,7 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
 		<div id="map_canvas"></div>
+
 </section>
           </div>
         </div>
