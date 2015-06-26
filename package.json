@@ -15,3 +15,10 @@
     "load-grunt-tasks": "^1.0.0"
   }
 }
+ns.
+
+
+#### Before
+
+```js
+grunt.loadN

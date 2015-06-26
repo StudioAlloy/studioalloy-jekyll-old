@@ -1,3 +1,24 @@
 <div class="footer">
-<p>by <a href="http://mvaneijgen.nl">M van Eijgen</a>
+	<div class="wrapper">
+		<div class="col">
+			<h4>Werk ruimte</h4>
+			<p>{{ site.workspacedec }}</p>
+		</div>
+		<div class="col">
+			<h4>Het team</h4>
+			<ul>
+				{% for post in site.team date %}
+				<li><a href="">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+				<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+				<li><address>{{ site.address }}</address></li>
+			</ul>
+		</div>
+	</div>
 </div>

@@ -1,0 +1,32 @@
+.main {
+	display: flex;
+}
+.wrapper {
+	z-index: 999;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+body.home section {
+	display: flex;
+	background-color: $lightgray;
+	height: 100vh;
+	padding: 50px;
+}
+section.no-vh {
+	height: auto;
+}
+section:nth-child(2n) {
+	background-color: $alt-color;
+}
+.content.flex {
+	display: flex;
+	flex-direction: row;
+}
+@media only screen and (max-width : 800px) {
+	/* Styles */
+	.main {
+		flex-direction: column;
+	}
+}

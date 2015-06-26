@@ -7,12 +7,14 @@ $lightgray: #eee;
 $midgray: #ddd;
 $gray: #aaa;
 $darkgray: #444;
-
-@import 
+/* import */
+@import
   "resets",
-  "assets",
+  "layout",
   "bits",
   "header",
   "menu",
+  "sections",
+  "page",
   "footer",
   "queries";

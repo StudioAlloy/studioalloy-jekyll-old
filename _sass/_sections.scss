@@ -1,0 +1,93 @@
+/*About*/
+.about {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: $sub-color;
+}
+.about .logo {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+.about .logo p {
+  font-size: 70px;
+  font-weight: 700;
+  display: inline;
+  margin-right: 14px;
+  margin-top: -46px;
+}
+.about h1 {
+  max-width: 520px;
+  margin-top: 50px;
+	font-size: 15px;
+}
+/*END About*/
+/*Work*/
+.wrapper .work {
+	position: relative;
+	overflow: hidden;
+}
+.wrapper .work .content {
+	color: $alt-color;
+}
+.wrapper .work .text-container {
+  z-index: 9;
+  position: relative;
+}
+img.main-image {
+  height: 100%;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.wrapper .work .platfrom-icon {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 142px;
+	padding: 20px;
+}
+.wrapper .work .logo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
+}
+/*END Work*/
+section.team {
+	background: url('/img/background.jpg');
+	background-size: cover;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team h1 {
+  color: #fff;
+}
+/*Google maps*/
+body.home section#contact {
+  height: 70vh;
+}
+body.home section.contact {
+	padding: 0;
+	background-color: $alt-color;
+}
+.maps {
+	background: #344;
+	color: #344;
+	height: 100%;
+}
+.maps a {
+	text-decoration: none;
+	color: #344;
+}
+#map_canvas {
+	width: 100%;
+	height: 100%;
+}
+
+/*END Google maps*/

@@ -1,0 +1,8 @@
+---
+layout: project
+title:  "Wouter Hager"
+date:   2013-07-30 16:22:48
+categories: streetview
+excerpt: Recreations of Dutch Golden Age paintings with Streetview
+
+---

@@ -13,8 +13,15 @@ module.exports = function(grunt) {
           style: "expanded"
         },
         files: {
-          "css/main.css": "_sass/main.scss"
+          "css/main-unprefixed.css": "_sass/main.scss"
         }
+      }
+    },
+
+    autoprefixer: {
+      global: {
+        src: "css/main-unprefixed.css",
+        dest: "css/main.css"
       }
     },
 
@@ -32,7 +39,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       site: {
-        files: ["index.html", "writing.html", "about.html", "_layouts/*.html", "_posts/*.md", "_projects/*.md", "_includes/*.html"],
+        files: ["index.html", "blog.html", "team.html", "work.html", "_layouts/*.html", "_posts/*.md", "_work/*.md", "_includes/*.html"],
         tasks: ["shell:jekyllBuild"]
       },
       js: {
@@ -41,7 +48,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ["_sass/*.scss"],
-        tasks: ["sass", "shell:jekyllBuild"]
+        tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       }
 
     }
@@ -51,6 +58,6 @@ module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
 
   grunt.registerTask("serve", ["shell:jekyllServe"]);
-  grunt.registerTask("default", ["sass", "shell:jekyllBuild", "watch"]);
+  grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
 
 };

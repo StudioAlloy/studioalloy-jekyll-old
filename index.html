@@ -1,125 +1,48 @@
 ---
-layout: old
-title: Verhalen vertellen met pixels op het beeldscherm
-description: 
+layout: default
+title: Home
+description:
+categories: index
 ---
-<div class="page" id="index">
-	<div class="layout info">
-		<section class="logo">
-			<h1>Alloy</h1>
-			<span>STUDIO</span>
-		</section>
-		<section class="extra">
-			<article>
-				<h2>Team</h2>
-				<ul>
-					<li><a href="//2preform.nl">Daniel Lim</a></li>
-					<li><a href="//atmedia.nl">David Hager</a></li>
-					<li><a href="//atticweb.nl">Jaap Redeker</a></li>
-					<li><a href="//mvaneijgen.nl">M van Eijgen</a></li>
-					<li><a href="//daasdesign.nl">Ruben Daas</a></li>
-					<li><a href="//wilsuncheung.com">Wilsun Cheung</a></li>
-					<li>Wouter Hager</li>
-				</ul>
-			</article>
-		</section>
-	</div>
-	<div class="layout maps">
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
-			function initialize() {
-				var mapCanvas = document.getElementById('map_canvas');
-				var mapOptions = {
-					center: new google.maps.LatLng(52.376277,4.634333),
-					zoom: 15,
-					mapTypeId: google.maps.MapTypeId.ROADMAP,
-					panControl: false,
-					zoomControl: false,
-					mapTypeControl: false,
-					scaleControl: false,
-					streetViewControl: false,
-					overviewMapControl: false,
-					styles: [
-  {
-    "featureType": "transit.station",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "poi",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "featureType": "landscape",
-    "stylers": [
-      { "color": "#eeeeee" }
-    ]
-  },{
-    "featureType": "water",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "landscape.natural",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "poi",
-    "stylers": [
-      { "color": "#aacccc" }
-    ]
-  },{
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      { "color": "#ffffff" }
-    ]
-  },{
-    "featureType": "road.highway",
-    "elementType": "labels",
-    "stylers": [
-      { "visibility": "off" }
-    ]
-  },{
-    "elementType": "labels.icon"  }
-]
-				}
-
-				var map = new google.maps.Map(mapCanvas, mapOptions)
-
-				var contentString = '<div id="content">'+
-				'<div id="bodyContent">'+
-				'<a href="mailto=contact@studioalloy.nl">contact@studioalloy.nl</a><br>'+
-				'<a href="tel=+31610114179">06 10 11 41 79</a><br>'+
-				'<br>'+
-				'Gasthuisvest 47<br>'+
-				'2011 EV Haarlem'+
-				'<br>'+
-				'</div>'+
-				'</div>';
-
-				var infowindow = new google.maps.InfoWindow({
-					content: contentString
-				});
-
-				var myLatlng = new google.maps.LatLng(52.376277,4.634333);
-
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map,
-					title: 'Contact'
-				});
-				infowindow.open(map,marker);
-				google.maps.event.addListener(marker, 'click', function() {
-					infowindow.open(map,marker);
-				});
-
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-		<div id="map_canvas"></div>
-	</div>
+<!-- <section class="home">
+<div class="content">
+<h1>Studio Alloy</h1>
+<p>{{ site.tagline }}</p>
 </div>
-</div>
+</section> -->
+
+<section class="about">
+	<div class="content">
+		<div class="logo">
+			<p>Alloy</p>
+			<img src="{{ site.baseurl }}/img/alloy-logo.svg">
+		</div>
+		<h1>{{ site.tagline }}</h1>
+	</div>
+</section>
+
+{% for post in site.work %}
+{% if post.starred == "yes" %}
+<section class="work {{ post.categories }}" style="background: {{ post.color }}">
+	<div class="content">
+		<div class="text-container">
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.excerpt }}</p>
+		</div>
+		<img class="main-image" src="{{ site.baseurl }}/img/work/{{ post.categories }}.png">
+		<img class="logo" src="{{ site.baseurl }}/img/work/{{ post.categories }}-logo.png">
+		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
+	</div>
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="team">
+	<div class="content">
+		<h1>Meet the team.</h1>
+	</div>
+</section>
+
+<section id="contact" class="contact">
+	{% include maps.html %}
+</section>

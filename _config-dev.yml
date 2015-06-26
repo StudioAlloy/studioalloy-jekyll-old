@@ -2,11 +2,16 @@
 
 title: Alloy
 tagline: Verhalen vertellen met pixels op het beeldscherm
-email: contact@studioalloy.com
 copyright: M van Eijgen
 keywords: 
 
 description: 
+
+# Company info
+email: contact@studioalloy.com
+phone: +31 6 10 11 41 79
+address: Gasthuistvest 47 <br /> 2011EV Haarlem
+workspacedec: Ben jij een creatieve ondernemer en opzoek naar een mooie werk ruimte in Haarlem, wij hebben nog een paar bureaus over en wij maken graag een afsrpaak met je om te kijken op welk gebied wij elkaar kunnen versterken.
 
 # the base hostname & protocol for your site
 url: ""
@@ -17,6 +22,15 @@ github_username:  studioalloy
 
 default_image: image.jpg
 
+# Collections
+collections:
+  work:
+    output: true
+    permalink: /work/:path/
+  team:
+    output: true
+    permalink: /team/:path/
+    
 # Pre-processing
 
 markdown: kramdown
