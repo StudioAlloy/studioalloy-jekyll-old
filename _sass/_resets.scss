@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+	text-transform: uppercase;
 }
 h1 {
   font-size: 2em;
@@ -29,4 +30,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+p {
+  margin: 0;
 }

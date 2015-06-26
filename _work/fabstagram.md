@@ -4,7 +4,8 @@ title: "Fabstagram"
 date: 2014-06-30 16:22:48
 categories: fabstagram
 excerpt: Web application
-color: "#f2f2f2"
+color: "#e6e5e3"
 platfrom: "large"
 starred: "yes"
+url: //fabstagram.nl
 ---

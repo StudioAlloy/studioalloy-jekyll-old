@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -35,6 +36,10 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 .main {
@@ -129,18 +134,33 @@ section:nth-child(2n) {
     margin-bottom: 20px;
   }
 }
-/*INDEX*/
-body.index section:first-child {
-  background-color: #E64;
-  color: #fff;
-}
-
-/*END INDEX*/
 /*About*/
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  color: #344;
+}
+
+.about .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .logo p {
+  font-size: 70px;
+  font-weight: 700;
+  display: inline;
+  margin-right: 14px;
+  margin-top: -46px;
+}
+
+.about h1 {
+  max-width: 520px;
+  margin-top: 50px;
+  font-size: 15px;
 }
 
 /*END About*/
@@ -152,6 +172,11 @@ body.index section:first-child {
 
 .wrapper .work .content {
   color: #fff;
+}
+
+.wrapper .work .text-container {
+  z-index: 9;
+  position: relative;
 }
 
 img.main-image {
@@ -193,7 +218,11 @@ section.team {
 }
 
 /*Google maps*/
-section.contact {
+body.home section#contact {
+  height: 70vh;
+}
+
+body.home section.contact {
   padding: 0;
   background-color: #fff;
 }
@@ -229,6 +258,7 @@ section.work-page .content {
 section.work-page article {
   display: flex;
   flex-direction: column;
+  max-width: 500px;
   width: 50%;
   padding: 20px;
 }
@@ -259,7 +289,7 @@ section.contact-page .content {
 
 /*END Contact*/
 .footer {
-  background: #E64;
+  background: #344;
   width: 100%;
   z-index: 9;
   font-size: .8em;

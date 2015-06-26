@@ -6,7 +6,5 @@ categories: corpus
 excerpt: Interactive multi-touch table
 color: "#000"
 platfrom: "all"
-starred: "yes"
+starred: "no"
 ---
-
-

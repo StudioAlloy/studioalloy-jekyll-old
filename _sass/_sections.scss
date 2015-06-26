@@ -1,14 +1,27 @@
-/*INDEX*/
-body.index section:first-child {
-	background-color: $base-color;
-	color: $alt-color;
-}
-/*END INDEX*/
 /*About*/
 .about {
   display: flex;
   align-items: center;
 	justify-content: center;
+	text-align: center;
+	color: $sub-color;
+}
+.about .logo {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+}
+.about .logo p {
+  font-size: 70px;
+  font-weight: 700;
+  display: inline;
+  margin-right: 14px;
+  margin-top: -46px;
+}
+.about h1 {
+  max-width: 520px;
+  margin-top: 50px;
+	font-size: 15px;
 }
 /*END About*/
 /*Work*/
@@ -18,6 +31,10 @@ body.index section:first-child {
 }
 .wrapper .work .content {
 	color: $alt-color;
+}
+.wrapper .work .text-container {
+  z-index: 9;
+  position: relative;
 }
 img.main-image {
   height: 100%;
@@ -52,7 +69,10 @@ section.team {
   color: #fff;
 }
 /*Google maps*/
-section.contact {
+body.home section#contact {
+  height: 70vh;
+}
+body.home section.contact {
 	padding: 0;
 	background-color: $alt-color;
 }
