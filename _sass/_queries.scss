@@ -1,0 +1,30 @@
+@media only screen and (max-width : 800px) {
+  /* Styles */
+  .main {
+    flex-direction: column;
+  }
+  body.home section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #eee;
+    height: 100vh;
+    padding: 20px;
+  }
+  .wrapper .work .logo {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .about .logo p {
+    font-size: 50px;
+  }
+  .about .logo img {
+    width: 50%;
+  }
+  .footer {
+    padding: 20px;
+  }
+}
