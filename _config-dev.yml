@@ -3,7 +3,7 @@
 title: Alloy
 tagline: Verhalen vertellen met pixels op het beeldscherm
 copyright: M van Eijgen
-keywords: 
+keywords:
 
 description: 
 
@@ -30,7 +30,7 @@ collections:
   team:
     output: true
     permalink: /team/:path/
-    
+
 # Pre-processing
 
 markdown: kramdown

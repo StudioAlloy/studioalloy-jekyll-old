@@ -18,13 +18,16 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   margin: 0;
-  text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
+  line-height: 1.4em;
 }
 
 a {
@@ -128,13 +131,57 @@ section:nth-child(2n) {
     margin-bottom: 20px;
   }
 }
+body {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
+}
+
+/*home*/
+body.home section.home {
+  padding: 0;
+  color: #fff;
+  background: #f28c73;
+  position: relative;
+  overflow: hidden;
+}
+
+body.home section.home .svg-animation svg {
+  position: absolute;
+}
+
+body.home section.home .title-bg {
+  background-color: rgba(238, 102, 68, 0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 10% 15%;
+}
+
+body.home section.home h1 {
+  position: relative;
+}
+
+body.home section.home h1 a {
+  color: #fff;
+  font-weight: 700;
+}
+
 /*About*/
-.about {
+body.home .about {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  color: #344;
+  color: #fff;
+  background: #E64;
+}
+
+.about article {
+  max-width: 550px;
+}
+
+.about article p {
+  margin-bottom: 20px;
 }
 
 .about .logo {
