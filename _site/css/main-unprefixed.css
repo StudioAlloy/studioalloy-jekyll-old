@@ -1,419 +1,58 @@
-/* import */
-/*******************************
-       Global Resets
-*******************************/
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 2.5em;
-  line-height: 1.4em;
-}
-
-a {
-  color: #444;
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-p {
-  margin: 0;
-}
-
-.main {
-  display: flex;
-}
-
-.wrapper {
-  z-index: 999;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-body.home section {
-  display: flex;
-  background-color: #eee;
-  height: 100vh;
-  padding: 50px;
-}
-
-section.no-vh {
-  height: auto;
-}
-
-section:nth-child(2n) {
-  background-color: #fff;
-}
-
-.content.flex {
-  display: flex;
-  flex-direction: row;
-}
-
-#header {
-  display: block;
-  background: #fff;
-  z-index: 99999;
-  color: #444;
-  min-width: 150px;
-  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.1);
-  padding: 10px;
-  text-align: center;
-}
-
-#header .logo {
-  max-width: 50px;
-}
-
-#header ul.menu li {
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 800px) {
-  /* Styles */
-  #header .container {
-    display: flex;
-    align-items: center;
-  }
-
-  #header .logo {
-    margin-right: 40px;
-  }
-
-  ul.menu {
-    display: inline;
-  }
-
-  #header ul.menu li {
-    display: inline;
-    margin-right: 10px;
-  }
-}
-@media only screen and (min-width: 800px) {
-  /* Styles */
-  #header .container {
-    position: fixed;
-    padding: 20px;
-  }
-
-  #header ul.menu li {
-    margin: 10px 0;
-  }
-
-  #header .logo {
-    margin-bottom: 20px;
-  }
-}
-body {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-behavior: smooth;
-}
-
-/*home*/
-body.home section.home {
-  padding: 0;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-body.home section.home .svg-animation svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-body.home section.home .title-bg {
-  max-width: 750px;
-}
-
-body.home section.home h1 {
-  position: relative;
-}
-
-body.home section.home h1 a {
-  color: #fff;
-  font-weight: 700;
-}
-
-/*About*/
-body.home .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background: #E64;
-}
-
-.about article {
-  max-width: 550px;
-}
-
-.about article p {
-  margin-bottom: 20px;
-}
-
-.about .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .logo p {
-  font-size: 70px;
-  font-weight: 700;
-  display: inline;
-  margin-right: 14px;
-  margin-top: -46px;
-}
-
-.about h1 {
-  max-width: 520px;
-  margin-top: 50px;
-  font-size: 15px;
-}
-
-/*END About*/
-/*Work*/
-.wrapper .work {
-  position: relative;
-  overflow: hidden;
-}
-
-.wrapper .work .content {
-  color: #fff;
-}
-
-.wrapper .work .text-container {
-  background-color: #fff;
-  color: #344;
-  padding: 10px 20px;
-  z-index: 9;
-  position: relative;
-}
-
-img.main-image {
-  height: 100%;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-}
-
-.wrapper .work .platfrom-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 142px;
-  padding: 20px;
-}
-
-.wrapper .work .logo {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-}
-
-/*END Work*/
-section.team {
-  background: url("/img/background.jpg");
-  background-size: cover;
-}
-
-.team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.team h1 {
-  color: #fff;
-}
-
-/*Google maps*/
-body.home section#contact {
-  height: 70vh;
-}
-
-body.home section.contact {
-  padding: 0;
-  background-color: #fff;
-}
-
-.maps {
-  background: #344;
-  color: #344;
-  height: 100%;
-}
-
-.maps a {
-  text-decoration: none;
-  color: #344;
-}
-
-#map_canvas {
-  width: 100%;
-  height: 100%;
-}
-
-/*END Google maps*/
-/*Product*/
-section.work-page {
-  background: #eee;
-}
-
-section.work-page .content {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-section.work-page article {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  width: 50%;
-  padding: 20px;
-}
-
-section.work-page article img {
-  height: 200px;
-}
-
-section.work-page article .meta {
-  background-color: #fff;
-  padding: 20px;
-}
-
-/*END Product*/
-body.work article .bg-img {
-  height: 250px;
-}
-
-/*Contact*/
-section.contact-page .content {
-  text-align: center;
-  width: 100%;
-}
-
-#contact-page ul {
-  -webkit-column-count: 2;
-}
-
-/*END Contact*/
-.footer {
-  background: #344;
-  width: 100%;
-  z-index: 9;
-  font-size: .8em;
-  line-height: 1.6em;
-  padding: 40px 100px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer .col:first-child {
-  flex: 2;
-}
-
-.footer .col {
-  flex: 1;
-  margin-right: 50px;
-  margin-bottom: 40px;
-}
-
-.footer .col,
-.footer .col a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer p {
-  margin: 0;
-}
-
-@media only screen and (min-width: 800px) {
-  /* Styles */
-  section:last-child {
-    margin-bottom: 300px;
-  }
-
-  .footer {
-    min-height: 300px;
-    position: fixed;
-    bottom: 0;
-  }
-
-  .footer .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  /* Styles */
-  .main {
-    flex-direction: column;
-  }
-
-  body.home section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #eee;
-    height: 100vh;
-    padding: 20px;
-  }
-
-  .wrapper .work .logo {
-    position: absolute;
-    top: 45%;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .about .logo p {
-    font-size: 50px;
-  }
-
-  .about .logo img {
-    width: 50%;
-  }
-
-  .footer {
-    padding: 20px;
-  }
-}
-
-/*# sourceMappingURL=main-unprefixed.css.map */
+/*
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 63 of _sass/_bits.scss
+        from line 14 of _sass/main.scss
+
+58:         opacity:.8;
+59:         text-align:left;
+60:       }
+61:     }
+62:   }
+63: }
+
+Backtrace:
+_sass/_bits.scss:63
+_sass/main.scss:14
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1165:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:1101:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/scss/parser.rb:43:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:393:in `_to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:299:in `to_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:407:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"  }\": expected selector or at-rule, was \"}\"\A         on line 63 of _sass/_bits.scss\A         from line 14 of _sass/main.scss\A \A 58:         opacity:.8;\A 59:         text-align:left;\A 60:       }\A 61:     }\A 62:   }\A 63: }"; }

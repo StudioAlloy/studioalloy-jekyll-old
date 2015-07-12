@@ -1,0 +1,63 @@
+/* Advanced Checkbox Hack */
+
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  display:none;
+  cursor: pointer;
+  user-select:none;
+}
+nav[role="custom-dropdown"] {
+    width: 100%;
+  }
+/* small screens */
+@media screen and (max-width: 44em) {
+  .menu-item a {
+    display: block;
+    text-align: right;
+  }
+  nav[role="custom-dropdown"] {
+      width: 100%;
+    }
+    ul {
+      display:none;
+      height:100%;
+    }
+
+    label {
+      position:relative;
+      display:block;
+      width:100%;
+      min-height:2.25em;
+      padding:.45em;
+      font-size:1.1em;
+      margin:0;
+    }
+
+    label:after {
+      position: absolute;
+      right: .25em;
+      top: 0;
+      content:"\2261";
+      font-size:1.8em;
+    }
+
+    input[type=checkbox]:checked ~ label:after {
+      color:#222;
+    }
+
+    input[type=checkbox]:checked ~ ul {
+      display:block;
+
+      > li {
+        width:100%;
+        opacity:.8;
+        text-align:left;
+      }
+    }
+  }
+}

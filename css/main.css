@@ -89,6 +89,64 @@ section:nth-child(2n) {
           flex-direction: row;
 }
 
+/* Advanced Checkbox Hack */
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+label {
+  display: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+  .menu-item a {
+    display: block;
+    text-align: right;
+  }
+
+  nav[role="custom-dropdown"] {
+    width: 100%;
+  }
+  nav[role="custom-dropdown"] ul {
+    display: none;
+    height: 100%;
+  }
+  nav[role="custom-dropdown"] label {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 2.25em;
+    padding: .45em;
+    font-size: 1.1em;
+    margin: 0;
+  }
+  nav[role="custom-dropdown"] label:after {
+    position: absolute;
+    right: .25em;
+    top: 0;
+    content: "\2261";
+    font-size: 1.8em;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+    color: #222;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+    display: block;
+  }
+  nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+    width: 100%;
+    opacity: .8;
+    text-align: left;
+  }
+}
 #header {
   display: block;
   background: #fff;
@@ -476,6 +534,19 @@ section.contact-page .content {
   }
 
   .footer {
+    padding: 20px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  body.home section.home .title-bg {
     padding: 20px;
   }
 }
