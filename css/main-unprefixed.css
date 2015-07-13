@@ -77,6 +77,34 @@ section:nth-child(2n) {
   flex-direction: row;
 }
 
+.animated:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.animated:nth-child(2) {
+  animation-delay: 0.9s;
+}
+
+.animated:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.animated:nth-child(4) {
+  animation-delay: 2s;
+}
+
+.animated:nth-child(5) {
+  animation-delay: 2.6s;
+}
+
+.animated:nth-child(6) {
+  animation-delay: 3.2s;
+}
+
+.animated:nth-child(7) {
+  animation-delay: 3.6s;
+}
+
 /* Advanced Checkbox Hack */
 input[type=checkbox] {
   position: absolute;

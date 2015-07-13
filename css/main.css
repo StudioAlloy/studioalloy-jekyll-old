@@ -89,6 +89,41 @@ section:nth-child(2n) {
           flex-direction: row;
 }
 
+.animated:nth-child(1) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.animated:nth-child(2) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+
+.animated:nth-child(3) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+
+.animated:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+.animated:nth-child(5) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+
+.animated:nth-child(6) {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.animated:nth-child(7) {
+  -webkit-animation-delay: 3.6s;
+          animation-delay: 3.6s;
+}
+
 /* Advanced Checkbox Hack */
 input[type=checkbox] {
   position: absolute;
