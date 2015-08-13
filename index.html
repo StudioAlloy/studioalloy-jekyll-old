@@ -35,7 +35,7 @@ categories: index
 	</div>
 </section> -->
 
-{% for post in site.work %}
+<!-- {% for post in site.work %}
 {% if post.starred == "yes" %}
 <section class="work {{ post.categories }}" style="background: {{ post.color }}">
 	<div class="content">
@@ -49,7 +49,41 @@ categories: index
 	</div>
 </section>
 {% endif %}
+{% endfor %} -->
+
+<section class="cases">
+{% for post in site.work %}
+{% if post.featured == "true" %}
+<div class="case" style="background: url({{ site.baseurl }}/img/work/{{ post.categories }}.jpg);">
+	<div class="content">
+		<div class="text-container">
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.excerpt }}</p>
+		</div>
+		<img class="logo" src="{{ site.baseurl }}/img/work/{{ post.categories }}-logo.png">
+		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
+	</div>
+</div>
+{% endif %}
 {% endfor %}
+</section>
+
+<!-- <section class="products">
+{% for post in site.product %}
+{% if post.featured == "true" %}
+<div class="product">
+	<div class="content">
+		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
+		<div class="text-container">
+			<h2>{{ post.title }}</h2>
+			<p>{{ post.content }}</p>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endfor %}
+</section> -->
+
 
 <section class="team" id="team">
 	<div class="content">

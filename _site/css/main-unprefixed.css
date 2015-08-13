@@ -61,7 +61,6 @@ body.home section {
   display: flex;
   background-color: #eee;
   height: 100vh;
-  padding: 50px;
 }
 
 section.no-vh {
@@ -266,8 +265,7 @@ body.home .about {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  background: #E64;
+  background: #fff;
 }
 
 .about article {
@@ -298,48 +296,63 @@ body.home .about {
   font-size: 15px;
 }
 
-/*END About*/
-/*Work*/
-.wrapper .work {
+/*cases*/
+body.home section.cases {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body.home section.cases .case {
+  width: 50%;
   position: relative;
-  overflow: hidden;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.wrapper .work .content {
-  color: #fff;
-}
-
-.wrapper .work .text-container {
+body.home section.cases .case .text-container {
   background-color: #fff;
-  color: #344;
-  padding: 10px 20px;
-  z-index: 9;
-  position: relative;
-}
-
-img.main-image {
-  height: 100%;
-  right: 0;
-  bottom: 0;
   position: absolute;
+  padding: 10px 20px 10px 40px;
+  margin-top: 20px;
 }
 
-.wrapper .work .platfrom-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 142px;
-  padding: 20px;
-}
-
-.wrapper .work .logo {
+.wrapper .case .logo {
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 20px;
+  max-width: 35%;
 }
 
-/*END Work*/
+.wrapper .case .platfrom-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 25%;
+  padding: 20px;
+}
+
+/*END cases*/
+/*product*/
+body.home section.products .product {
+  background: #fff;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.home section.products .product .content {
+  max-width: 85%;
+}
+
+body.home section.products .product:nth-child(2) {
+  background: #d9d9d9;
+}
+
+/*END product*/
 section.team {
   background: url("/img/background.jpg");
   background-size: cover;

@@ -27,6 +27,8 @@ collections:
   work:
     output: true
     permalink: /work/:path/
+  product:
+    output: false
   team:
     output: true
     permalink: /team/:path/

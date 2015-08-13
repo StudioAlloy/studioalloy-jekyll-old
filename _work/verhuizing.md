@@ -6,6 +6,6 @@ categories: verhuizing
 excerpt: Interactive lespakketen
 color: "#bb7"
 platfrom: "large"
-starred: "yes"
+featured: "true"
 url: //degrotevolksverhuizing.nl
 ---

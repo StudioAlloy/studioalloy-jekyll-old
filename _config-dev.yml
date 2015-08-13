@@ -5,7 +5,7 @@ tagline: Verhalen vertellen met pixels op het beeldscherm
 copyright: M van Eijgen
 keywords:
 
-description: 
+description:
 
 # Company info
 email: contact@studioalloy.com
@@ -27,6 +27,8 @@ collections:
   work:
     output: true
     permalink: /work/:path/
+  product:
+    output: false
   team:
     output: true
     permalink: /team/:path/

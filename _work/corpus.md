@@ -5,6 +5,6 @@ date: 2014-06-30 16:22:48
 categories: corpus
 excerpt: Interactive multi-touch table
 color: "#000"
-platfrom: "all"
-starred: "no"
+featured: "true"
+platfrom: "large"
 ---

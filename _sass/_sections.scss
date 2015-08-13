@@ -1,5 +1,5 @@
 body{
-  scroll-snap-type:mandatory;
+  scroll-snap-type: mandatory;
   scroll-snap-points-y:repeat(100vh);
   scroll-behavior:smooth;
 }
@@ -21,7 +21,7 @@ body.home section.home .svg-animation svg {
   height: 100%;
 }
 body.home section.home .title-bg {
-max-width: 750px;
+  max-width: 750px;
 }
 body.home section.home h1 {
   position: relative;
@@ -35,8 +35,7 @@ body.home .about {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $alt-color;
-  background: $base-color;
+  background: $alt-color;
 }
 .about article {
   max-width: 550px;
@@ -61,42 +60,91 @@ body.home .about {
   margin-top: 50px;
   font-size: 15px;
 }
-/*END About*/
-/*Work*/
-.wrapper .work {
+// /*END About*/
+// /*Work*/
+// .wrapper .work {
+//   position: relative;
+//   overflow: hidden;
+// }
+// .wrapper .work .content {
+//   color: $alt-color;
+// }
+// .wrapper .work .text-container {
+//   background-color: #fff;
+//   color: $sub-color;
+//   padding: 10px 20px;
+//   z-index: 9;
+//   position: relative;
+// }
+// img.main-image {
+//   height: 100%;
+//   right: 0;
+//   bottom: 0;
+//   position: absolute;
+// }
+// .wrapper .work .platfrom-icon {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   width: 142px;
+//   padding: 20px;
+// }
+// .wrapper .work .logo {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   padding: 20px;
+// }
+// /*END Work*/
+/*cases*/
+body.home section.cases {
+  display: flex;
+  flex-wrap: wrap;
+}
+body.home section.cases .case {
+  width: 50%;
   position: relative;
-  overflow: hidden;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
-.wrapper .work .content {
-  color: $alt-color;
+body.home section.cases .case .text-container {
+    background-color: #fff;
+    position: absolute;
+    padding: 10px 20px 10px 40px;
+    margin-top: 20px;
 }
-.wrapper .work .text-container {
-  background-color: #fff;
-  color: $sub-color;
-  padding: 10px 20px;
-  z-index: 9;
-  position: relative;
-}
-img.main-image {
-  height: 100%;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-}
-.wrapper .work .platfrom-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 142px;
-  padding: 20px;
-}
-.wrapper .work .logo {
+.wrapper .case .logo {
   position: absolute;
   left: 0;
   bottom: 0;
   padding: 20px;
+  max-width: 35%;
 }
-/*END Work*/
+.wrapper .case .platfrom-icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 25%;
+  padding: 20px;
+}
+/*END cases*/
+/*product*/
+body.home section.products .product {
+  background: $alt-color;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.home section.products .product .content{
+max-width: 85%
+}
+body.home section.products .product:nth-child(2) {
+  background: darken( $alt-color, 15% );
+}
+/*END product*/
 section.team {
   background: url("/img/background.jpg");
   background-size: cover;

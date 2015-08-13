@@ -6,7 +6,7 @@ categories: hokjestest
 excerpt: Design and development
 color: "#e43"
 url: //hokjestest.nl
-starred: "yes"
+featured: "true"
 layout: project
 platfrom: "all"
 ---

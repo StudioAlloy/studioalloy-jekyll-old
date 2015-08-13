@@ -6,6 +6,6 @@ categories: fabstagram
 excerpt: Web application
 color: "#e6e5e3"
 platfrom: "large"
-starred: "yes"
+featured: "true"
 url: //fabstagram.nl
 ---
