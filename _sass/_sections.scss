@@ -60,42 +60,7 @@ body.home .about {
   margin-top: 50px;
   font-size: 15px;
 }
-// /*END About*/
-// /*Work*/
-// .wrapper .work {
-//   position: relative;
-//   overflow: hidden;
-// }
-// .wrapper .work .content {
-//   color: $alt-color;
-// }
-// .wrapper .work .text-container {
-//   background-color: #fff;
-//   color: $sub-color;
-//   padding: 10px 20px;
-//   z-index: 9;
-//   position: relative;
-// }
-// img.main-image {
-//   height: 100%;
-//   right: 0;
-//   bottom: 0;
-//   position: absolute;
-// }
-// .wrapper .work .platfrom-icon {
-//   position: absolute;
-//   right: 0;
-//   bottom: 0;
-//   width: 142px;
-//   padding: 20px;
-// }
-// .wrapper .work .logo {
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   padding: 20px;
-// }
-// /*END Work*/
+/*END About*/
 /*cases*/
 body.home section.cases {
   display: flex;
@@ -180,3 +145,73 @@ body.home section.contact {
 }
 
 /*END Google maps*/
+
+/*Product*/
+section.work-page {
+	background: $lightgray;
+}
+section.work-page .content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+section.work-page article {
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	width: 48%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	position: relative;
+	height: 50vh;
+}
+section.work-page article .meta {
+	background-color: $alt-color;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+}
+/*Single Case*/
+body.single-project section {
+    height: 100vh;
+}
+body.single-project .wrapper {
+    background-color: $alt-color;
+}
+body.single-project section.case-text,
+body.single-project section.case-header {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+		display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.single-project .text-container {
+    min-width: 400px;
+    width: 70%;
+		margin-top: -60vh;
+		background-color: $alt-color;
+		padding: 4%;
+}
+body.single-project h1 {
+	color: $alt-color;
+}
+body.single-project .text-container p {
+    margin-bottom: 4%;
+}
+/*END Single Case*/
+/*END Product*/
+body.work article .bg-img {
+	height: 250px;
+}
+/*Contact*/
+section.contact-page .content {
+	text-align: center;
+	width: 100%;
+}
+#contact-page ul {
+	-webkit-column-count: 2;
+}
+/*END Contact*/

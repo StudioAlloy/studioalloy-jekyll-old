@@ -11,18 +11,18 @@
 
   <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
   <meta name=viewport content="width=device-width, initial-scale=1">
-  
+
   <!-- Site Properities -->
   
   
   
-  
+
   <title>Work &middot; Alloy</title>
   <link rel="canonical" href="/work/">
-  
+
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   
-  
+
   <meta property="og:locale" content="en_US">
   <meta property="og:url" content="/work/">
   <meta property="og:title" content="Work">
@@ -31,24 +31,35 @@
   <meta property="og:image" content="image.jpg">
   <meta property="og:image:width" content="640">
   <meta property="og:image:height" content="300">
-  
+
   <meta name="twitter:card" content="image.jpg">
   <meta name="twitter:site" content="@{ site.twitter_username }}">
   <meta name="twitter:creator" content="@studioalloy">
-  
+
   
   <meta property="og:type" content="website" />
   
-  
+
   <meta name="description" content="">
   <meta name="keywords" content="">
-  
+
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
   <link rel="icon" href="/favicon.png" type="image/x-icon">
-  
+
   <!-- Common Styles -->
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.scrollify.min.js"></script>
+
+  <script>
+  $(function() {
+    $.scrollify({
+      section : "section"
+    });
+  });
+  </script> -->
+
 </head>
 <body class="default work ">
     <!--[if lt IE 7]>
@@ -56,20 +67,19 @@
         <![endif]-->
         <div class="main">
           <div id="header">
-<div class="container">
+	<div class="container">
 		<a href="/"><img class="logo" src="/img/alloy-logo.svg"></a>
-		<nav role="custom-dropdown">
-		    <input type="checkbox" id="button">
-		    <label for="button" onclick></label>
-
-		<ul class="menu">
-			<li class="menu-item"><a href="#about">About</a></li>
-			<li class="menu-item"><a href="work">Work</a></li>
-			<li class="menu-item"><a href="#team">Team</a></li>
-			<!-- <li class="menu-item"><a href="/blog">Blog</a></li> -->
-			<li class="menu-item"><a href="#contact">Contact</a></li>
-		</ul>
-</nav>
+		<input type="checkbox" id="toggle" />
+		<div class="mobile-menu">
+			<label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
+			<ul class="menu">
+				<li class="menu-item"><a href="/#about">About</a></li>
+				<li class="menu-item"><a href="/work">Work</a></li>
+				<li class="menu-item"><a href="/#team">Team</a></li>
+				<li class="menu-item"><a href="/blog">Blog</a></li>
+				<li class="menu-item"><a href="/#contact">Contact</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
@@ -78,124 +88,112 @@
 	<div class="content">
 
 	
-		<article>
-			<!--<a href="/work/corpus/">-->
-			<img src="/img/work/corpus.jpg">
+		<article style="background: url(/img/work/corpus.jpg)">
+			<a href="/work/corpus/">
 			<div class="meta">
 				<h2>Corpus touch table</h2>
 				<p>Interactive multi-touch table</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/fabstagram/">-->
-			<img src="/img/work/fabstagram.jpg">
+		<article style="background: url(/img/work/fabstagram.jpg)">
+			<a href="/work/fabstagram/">
 			<div class="meta">
 				<h2>Fabstagram</h2>
 				<p>Web application</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/getlost/">-->
-			<img src="/img/work/getlost.jpg">
+		<article style="background: url(/img/work/getlost.jpg)">
+			<a href="/work/getlost/">
 			<div class="meta">
 				<h2>Get Lost Theater</h2>
 				<p>Design and development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/heldergroen/">-->
-			<img src="/img/work/heldergroen.jpg">
+		<article style="background: url(/img/work/heldergroen.jpg)">
+			<a href="/work/heldergroen/">
 			<div class="meta">
 				<h2>Heldergroen</h2>
 				<p>Web design & development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/hokjestest/">-->
-			<img src="/img/work/hokjestest.jpg">
+		<article style="background: url(/img/work/hokjestest.jpg)">
+			<a href="/work/hokjestest/">
 			<div class="meta">
 				<h2>Hokjes test</h2>
 				<p>Design and development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/inholland/">-->
-			<img src="/img/work/inholland.jpg">
+		<article style="background: url(/img/work/inholland.jpg)">
+			<a href="/work/inholland/">
 			<div class="meta">
 				<h2>Inholland Magazine</h2>
 				<p>A digtial responsive magazine</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/noeser/">-->
-			<img src="/img/work/noeser.jpg">
+		<article style="background: url(/img/work/noeser.jpg)">
+			<a href="/work/noeser/">
 			<div class="meta">
 				<h2>Noeser webshop</h2>
 				<p>Design and development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/peekandseek/">-->
-			<img src="/img/work/peekandseek.jpg">
+		<article style="background: url(/img/work/peekandseek.jpg)">
+			<a href="/work/peekandseek/">
 			<div class="meta">
 				<h2>Peek & Seek</h2>
 				<p>HTML 5 cross platfrom game</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/pexion/">-->
-			<img src="/img/work/pexion.jpg">
+		<article style="background: url(/img/work/pexion.jpg)">
+			<a href="/work/pexion/">
 			<div class="meta">
 				<h2>Pexion presentation</h2>
 				<p>Interactive presentation for iPad</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/verhuizing/">-->
-			<img src="/img/work/verhuizing.jpg">
+		<article style="background: url(/img/work/verhuizing.jpg)">
+			<a href="/work/verhuizing/">
 			<div class="meta">
 				<h2>De grote volksverhuizing</h2>
 				<p>Interactive lespakketen</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/vriend/">-->
-			<img src="/img/work/vriend.jpg">
+		<article style="background: url(/img/work/vriend.jpg)">
+			<a href="/work/vriend/">
 			<div class="meta">
 				<h2>Hokjes test</h2>
 				<p>Design and development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
-		<article>
-			<!--<a href="/work/yoga/">-->
-			<img src="/img/work/yoga.jpg">
+		<article style="background: url(/img/work/yoga.jpg)">
+			<a href="/work/yoga/">
 			<div class="meta">
 				<h2>Yoga festival Haarlem</h2>
 				<p>Design and development</p>
 			</div>
-			<!--</a>-->
+			</a>
 		</article>
 		
 
@@ -206,10 +204,10 @@
         </div>
         <div class="footer">
 	<div class="wrapper">
-		<div class="col">
+		<!-- <div class="col">
 			<h4>Werk ruimte</h4>
 			<p>Ben jij een creatieve ondernemer en opzoek naar een mooie werk ruimte in Haarlem, wij hebben nog een paar bureaus over en wij maken graag een afsrpaak met je om te kijken op welk gebied wij elkaar kunnen versterken.</p>
-		</div>
+		</div> -->
 		<div class="col">
 			<h4>Het team</h4>
 			<ul>
@@ -237,6 +235,9 @@
 				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
 				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
 			</ul>
+		</div>
+		<div class="col">
+			<img src="/img/alloy-logo-bw.svg">
 		</div>
 	</div>
 </div>

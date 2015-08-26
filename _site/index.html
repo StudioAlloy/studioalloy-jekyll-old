@@ -11,44 +11,55 @@
 
   <!-- Refer HTML5BP and https://developers.google.com/speed/docs/insights/ConfigureViewport -->
   <meta name=viewport content="width=device-width, initial-scale=1">
-  
+
   <!-- Site Properities -->
   
   
   
-  
+
   <title>Verhalen vertellen met pixels op het beeldscherm &middot; Alloy</title>
-  <link rel="canonical" href="/">
-  
+  <link rel="canonical" href="/index.html">
+
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   
-  
+
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="/">
+  <meta property="og:url" content="/index.html">
   <meta property="og:title" content="Verhalen vertellen met pixels op het beeldscherm">
   <meta property="og:site_name" content="Alloy">
   <meta property="og:description" content="">
   <meta property="og:image" content="image.jpg">
   <meta property="og:image:width" content="640">
   <meta property="og:image:height" content="300">
-  
+
   <meta name="twitter:card" content="image.jpg">
   <meta name="twitter:site" content="@{ site.twitter_username }}">
   <meta name="twitter:creator" content="@studioalloy">
-  
+
   
   <meta property="og:type" content="website" />
   
-  
+
   <meta name="description" content="">
   <meta name="keywords" content="">
-  
+
   <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
   <link rel="icon" href="/favicon.png" type="image/x-icon">
-  
+
   <!-- Common Styles -->
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.scrollify.min.js"></script>
+
+  <script>
+  $(function() {
+    $.scrollify({
+      section : "section"
+    });
+  });
+  </script> -->
+
 </head>
 <body class="default home index">
     <!--[if lt IE 7]>
@@ -56,25 +67,24 @@
         <![endif]-->
         <div class="main">
           <div id="header">
-<div class="container">
+	<div class="container">
 		<a href="/"><img class="logo" src="/img/alloy-logo.svg"></a>
-		<nav role="custom-dropdown">
-		    <input type="checkbox" id="button">
-		    <label for="button" onclick></label>
-
-		<ul class="menu">
-			<li class="menu-item"><a href="#about">About</a></li>
-			<li class="menu-item"><a href="work">Work</a></li>
-			<li class="menu-item"><a href="#team">Team</a></li>
-			<!-- <li class="menu-item"><a href="/blog">Blog</a></li> -->
-			<li class="menu-item"><a href="#contact">Contact</a></li>
-		</ul>
-</nav>
+		<input type="checkbox" id="toggle" />
+		<div class="mobile-menu">
+			<label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
+			<ul class="menu">
+				<li class="menu-item"><a href="/#about">About</a></li>
+				<li class="menu-item"><a href="/work">Work</a></li>
+				<li class="menu-item"><a href="/#team">Team</a></li>
+				<li class="menu-item"><a href="/blog">Blog</a></li>
+				<li class="menu-item"><a href="/#contact">Contact</a></li>
+			</ul>
+		</div>
 	</div>
 </div>
 
           <div class="wrapper">
-            <section class="home" id="home">
+            <section class="home" data-section-name="home">
 	<div class="content">
 		<div class="svg-animation">
 				
@@ -87,6 +97,9 @@ body {
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
 }
 @-webkit-keyframes fadeIn {
   0% {
@@ -184,6 +197,34 @@ body {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
 }
+svg .animated:nth-child(1) {
+  -webkit-animation-delay:0.3s;
+          animation-delay:0.3s;
+}
+svg .animated:nth-child(2) {
+  -webkit-animation-delay:0.9s;
+          animation-delay:0.9s;
+}
+svg .animated:nth-child(3) {
+  -webkit-animation-delay:1.4s;
+          animation-delay:1.4s;
+}
+svg .animated:nth-child(4) {
+  -webkit-animation-delay:2s;
+          animation-delay:2s;
+}
+svg .animated:nth-child(5) {
+  -webkit-animation-delay:2.6s;
+          animation-delay:2.6s;
+}
+svg .animated:nth-child(6) {
+  -webkit-animation-delay:3.2s;
+          animation-delay:3.2s;
+}
+svg .animated:nth-child(7) {
+  animation-delay:3.6s;
+  -webkit-animation-delay:3.6s;
+}
 </style>
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" class="alloy-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -228,7 +269,7 @@ body {
 	</div>
 </section>
 
-<section class="about" id="about">
+<section class="about" data-section-name="about">
 	<div class="content">
 		<article>
 			<p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p>
@@ -274,7 +315,7 @@ body {
 
  -->
 
-<section class="cases">
+<section class="cases" data-section-name="cases">
 
 
 <div class="case" style="background: url(/img/work/corpus.jpg);">
@@ -288,8 +329,6 @@ body {
 	</div>
 </div>
 
-
-
 <div class="case" style="background: url(/img/work/fabstagram.jpg);">
 	<div class="content">
 		<div class="text-container">
@@ -300,12 +339,6 @@ body {
 		<img class="platfrom-icon" src="/img/large.svg">
 	</div>
 </div>
-
-
-
-
-
-
 
 <div class="case" style="background: url(/img/work/hokjestest.jpg);">
 	<div class="content">
@@ -318,16 +351,6 @@ body {
 	</div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
 <div class="case" style="background: url(/img/work/verhuizing.jpg);">
 	<div class="content">
 		<div class="text-container">
@@ -338,11 +361,6 @@ body {
 		<img class="platfrom-icon" src="/img/large.svg">
 	</div>
 </div>
-
-
-
-
-
 
 </section>
 
@@ -390,13 +408,13 @@ body {
 </section> -->
 
 
-<section class="team" id="team">
+<section class="team" data-section-name="team">
 	<div class="content">
 		<h1>Meet the team.</h1>
 	</div>
 </section>
 
-<section id="contact" class="contact">
+<section class="contact" data-section-name="contact">
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script>
 		function initialize() {
@@ -583,10 +601,10 @@ body {
         </div>
         <div class="footer">
 	<div class="wrapper">
-		<div class="col">
+		<!-- <div class="col">
 			<h4>Werk ruimte</h4>
 			<p>Ben jij een creatieve ondernemer en opzoek naar een mooie werk ruimte in Haarlem, wij hebben nog een paar bureaus over en wij maken graag een afsrpaak met je om te kijken op welk gebied wij elkaar kunnen versterken.</p>
-		</div>
+		</div> -->
 		<div class="col">
 			<h4>Het team</h4>
 			<ul>
@@ -614,6 +632,9 @@ body {
 				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
 				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
 			</ul>
+		</div>
+		<div class="col">
+			<img src="/img/alloy-logo-bw.svg">
 		</div>
 	</div>
 </div>

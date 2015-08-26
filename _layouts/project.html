@@ -1,17 +1,27 @@
-  {% include head.html %}
+{% include head.html %}
 </head>
-<body class="{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="main">
-          {% include menu.html %}
-          <div class="wrapper">
-            {{ content }}
-          </div>
+<body class="single-{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="main">
+    {% include menu.html %}
+    <div class="wrapper">
+      <section class="case-header" style="background: url({{site.baseurl}}/img/work/{{ page.categories }}.jpg);">
+        <h1>{{page.title}}</h1>
+      </section>
+      <section class="case-text">
+        <div class="text-container">
+          {{ content }}
         </div>
-        {% include footer.html %}
-        {% include embed-google-analytics.html %}
-      </body>
+      </section>
+      <section class="case-header" style="background: url({{site.baseurl}}/img/work/{{ page.categories }}.jpg);">
+        <h1>{{page.title}}</h1>
+      </section>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include embed-google-analytics.html %}
+</body>
 
-      </html>
+</html>

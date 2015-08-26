@@ -9,7 +9,6 @@
     display: flex;
     background-color: #eee;
     height: 100vh;
-    padding: 20px;
   }
   .wrapper .work .logo {
     position: absolute;
@@ -24,17 +23,19 @@
   .about .logo img {
     width: 50%;
   }
-  .footer {
-    padding: 20px;
-  }
   body {
-  font-size: 12px;
+    font-size: 12px;
   }
   h1 {
-  font-size: 1.4em;
-  line-height: 1.4em;
-}
-body.home section.home .title-bg {
-  padding: 20px;
-}
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  .footer,
+  section.about article,
+  body.home section.home .title-bg {
+    padding: 20px;
+  }
+  body.home section.cases .case {
+    width: 100%;
+  }
 }
