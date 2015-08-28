@@ -24,14 +24,14 @@ default_image: image.jpg
 
 # Collections
 collections:
-  work:
-    output: false
-    permalink: /work/:path/
+  case:
+    output: true
+    permalink: /case/:title/
   product:
     output: false
   team:
-    output: false
-    permalink: /team/:path/
+    output: true
+    permalink: /team/:title/
 
 # Pre-processing
 

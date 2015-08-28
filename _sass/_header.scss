@@ -1,5 +1,5 @@
 #header {
-	display:block;	
+	display:block;
 	background: $alt-color;
 	z-index:99999;
 	color: $darkgray;
@@ -15,11 +15,12 @@
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width : 800px) {	
+@media only screen and (max-width : 800px) {
 	/* Styles */
 	#header .container {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 	}
 	#header .logo {
 		margin-right: 40px;
@@ -32,7 +33,7 @@
 		margin-right: 10px;
 	}
 }
-@media only screen and (min-width : 800px) {	
+@media only screen and (min-width : 800px) {
 	/* Styles */
 	#header .container {
 		position: fixed;

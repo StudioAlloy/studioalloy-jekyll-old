@@ -180,10 +180,10 @@ body.single-project section {
 body.single-project .wrapper {
     background-color: $alt-color;
 }
-body.single-project section.case-text,
-body.single-project section.case-header {
+body.single-project section {
     background-repeat: no-repeat !important;
     background-size: cover !important;
+  	background-position: center center !important;
 		display: flex;
     align-items: center;
     justify-content: center;

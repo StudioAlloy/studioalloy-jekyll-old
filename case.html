@@ -1,0 +1,23 @@
+---
+layout: default
+title: Case
+description:
+permalink: case/
+---
+
+<section class="work-page no-vh">
+	<div class="content">
+
+	{% for post in site.case date %}
+		<article style="background: url({{ site.baseurl }}/img/case/{{ post.categories }}.jpg)">
+			<a href="{{ post.url }}">
+			<div class="meta">
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.excerpt }}</p>
+			</div>
+			</a>
+		</article>
+		{% endfor %}
+
+	</div>
+</section>

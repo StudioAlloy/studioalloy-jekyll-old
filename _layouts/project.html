@@ -7,7 +7,7 @@
   <div class="main">
     {% include menu.html %}
     <div class="wrapper">
-      <section class="case-header" style="background: url({{site.baseurl}}/img/work/{{ page.categories }}.jpg);">
+      <section class="case-header" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}.jpg);">
         <h1>{{page.title}}</h1>
       </section>
       <section class="case-text">
@@ -15,9 +15,10 @@
           {{ content }}
         </div>
       </section>
-      <section class="case-header" style="background: url({{site.baseurl}}/img/work/{{ page.categories }}.jpg);">
-        <h1>{{page.title}}</h1>
-      </section>
+      {% for i in (1..{{page.image}}) %}
+        <section class="case-image" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}-{{ i }}.jpg);"></section>
+      {% endfor %}
+
     </div>
   </div>
   {% include footer.html %}
