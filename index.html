@@ -52,16 +52,16 @@ categories: index
 {% endfor %} -->
 
 <section class="cases" data-section-name="cases">
-{% assign featured_works = (site.work | where:"featured","true") %}
-{% for work in featured_works limit:4 %}
-<div class="case" style="background: url({{ site.baseurl }}/img/work/{{ work.categories }}.jpg);">
+{% assign featured_case = (site.case | where:"featured","true") %}
+{% for case in featured_case limit:4 %}
+<div class="case" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
 	<div class="content">
 		<div class="text-container">
-			<h2>{{ work.title }}</h2>
-			<p>{{ work.excerpt }}</p>
+			<h2>{{ case.title }}</h2>
+			<p>{{ case.excerpt }}</p>
 		</div>
-		<img class="logo" src="{{ site.baseurl }}/img/work/{{ work.categories }}-logo.png">
-		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ work.platfrom }}.svg">
+		<img class="logo" src="{{ site.baseurl }}/img/case/{{ case.categories }}-logo.png">
+		<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ case.platfrom }}.svg">
 	</div>
 </div>
 {% endfor %}
