@@ -14,6 +14,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+  color: #666;
 }
 
 h1, h2, h3, h4, h5 {
@@ -21,8 +22,16 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
   font-weight: 400;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+h3, h4, h5 {
+  font-weight: 700;
 }
 
 h1 {
@@ -31,7 +40,7 @@ h1 {
 }
 
 a {
-  color: #444;
+  color: #666;
   text-decoration: none;
 }
 
@@ -43,6 +52,16 @@ ul {
 
 p {
   margin: 0;
+}
+
+body {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
+}
+
+section {
+  background: #eee;
 }
 
 .main {
@@ -63,7 +82,7 @@ p {
   width: 100%;
 }
 
-body.home section {
+section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -75,8 +94,16 @@ section.no-vh {
   height: auto;
 }
 
-section:nth-child(2n) {
-  background-color: #fff;
+.content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
 }
 
 .content.flex {
@@ -88,13 +115,65 @@ section:nth-child(2n) {
           flex-direction: row;
 }
 
+.text-container {
+  min-width: 400px;
+  width: 70%;
+  background-color: #fff;
+  padding: 4% 10%;
+}
+
+.text-container p {
+  margin-bottom: 4%;
+}
+
+.post .meta {
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.post {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.featured-image {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+
+article {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 48%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 50vh;
+}
+
+::-moz-selection {
+  background-color: #8dd;
+  color: #fff;
+}
+
+::selection {
+  background-color: #8dd;
+  color: #fff;
+}
+
 #header {
   display: block;
   background: #fff;
   z-index: 99999;
-  color: #444;
+  color: #666;
   min-width: 150px;
-  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.1);
+  box-shadow: 2px 2px 5px rgba(102, 102, 102, 0.1);
   padding: 10px;
   text-align: center;
 }
@@ -236,12 +315,6 @@ section:nth-child(2n) {
     float: none;
   }
 }
-body {
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-behavior: smooth;
-}
-
 /*home*/
 body.home section.home {
   padding: 0;
@@ -291,7 +364,6 @@ body.home .about {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #fff;
 }
 
 .about article {
@@ -342,16 +414,30 @@ body.home section.cases {
 body.home section.cases .case {
   width: 50%;
   position: relative;
-  background-size: cover !important;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
-body.home section.cases .case .text-container {
-  background-color: #fff;
+.case:hover .hover.meta {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hover.meta {
+  display: none;
   position: absolute;
-  padding: 10px 20px 10px 40px;
-  margin-top: 20px;
+  background-color: rgba(136, 221, 221, 0.7);
+  width: 100%;
+  height: 100%;
+  color: #fff;
 }
 
 .wrapper .case .logo {
@@ -447,44 +533,41 @@ body.home section.contact {
 
 /*END Google maps*/
 /*Product*/
-section.work-page {
-  background: #eee;
+section.work-page article .meta p {
+  color: #aaa;
 }
 
+section.blog-page .content,
 section.work-page .content {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  padding: 0 50px 50px 50px;
 }
 
-section.work-page article {
-  background-size: cover !important;
-  background-position: center center !important;
-  background-repeat: no-repeat;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 48%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  position: relative;
-  height: 50vh;
+section.blog-page .meta span {
+  color: #E64;
 }
 
-section.work-page article .meta {
-  background-color: #fff;
-  padding: 20px;
+article.experiment .meta span {
+  color: #8dd;
+}
+
+article.experiment .meta h4 {
+  color: #fff;
+}
+
+section.blog-page .meta h4 {
+  font-weight: 400;
+}
+
+article.experiment .meta {
+  background-color: #344;
+  color: #fff;
+}
+
+img.author {
   position: absolute;
-  top: 0;
+  top: -30px;
+  width: 44px;
+  border: 3px solid #fff;
 }
 
 /*Single Case*/
@@ -509,28 +592,34 @@ body.single-project section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body.single-project .text-container {
-  min-width: 400px;
-  width: 70%;
   margin-top: -60vh;
-  background-color: #fff;
-  padding: 4%;
 }
 
-body.single-project h1 {
+body.single-project h1,
+body.single-project h2 {
   color: #fff;
-}
-
-body.single-project .text-container p {
-  margin-bottom: 4%;
 }
 
 /*END Single Case*/
 /*END Product*/
 body.work article .bg-img {
   height: 250px;
+}
+
+.blog-page article:nth-child(12n+12),
+.blog-page article:nth-child(3n+2) {
+  width: 28%;
+}
+
+.blog-page article:nth-child(7n+7),
+.blog-page article:nth-child(5n+1) {
+  width: 68%;
 }
 
 /*Contact*/
@@ -580,6 +669,10 @@ section.contact-page .content {
 
 .footer p {
   margin: 0;
+}
+
+.footer .col img {
+  float: right;
 }
 
 @media only screen and (min-width: 800px) {

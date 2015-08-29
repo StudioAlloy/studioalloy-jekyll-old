@@ -1,18 +1,20 @@
 ---
 layout: default
-title: Work
+title: Blog
 description:
 permalink: blog/
 ---
 
-<section class="work-page no-vh">
+<section class="blog-page no-vh">
 	<div class="content">
 
-	{% for post in site.posts date %}
-		<article style="background: url({{ site.baseurl }}/img/work/{{ post.categories }}.jpg)">
+		{% for post in site.posts date %}
+		<article class="post {{post.categories}}">
 			<!--<a href="{{ post.url }}">-->
+			<div class="featured-image" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)"></div>
 			<div class="meta">
-				<a href="{{post.url}}"<h2>{{ post.title }}</h2></a>
+				<img class="author" src="{{site.baseurl}}/img/team/{{post.author | slugify }}.jpg">
+				<h4><span>{{post.categories}}: </span>{{ post.title }}</h4>
 			</div>
 			<!--</a>-->
 		</article>

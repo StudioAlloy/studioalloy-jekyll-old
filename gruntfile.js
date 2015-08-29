@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 
     shell: {
       jekyllServe: {
-        command: "jekyll serve --baseurl="
+        command: "jekyll serve --config _config-dev.yml"
       },
       jekyllBuild: {
         command: "jekyll build --config _config-dev.yml"

@@ -1,10 +1,11 @@
 ---
-layout: default
+layout: post
 title:  SVG animation on the web
 author: Mitchel van Eijgen
 date:   2015-02-25 16:41:48
 categories: Experiment
 filter: code
+image: svg
 embed: GaIyC
 colour: 037cb9
 ---
