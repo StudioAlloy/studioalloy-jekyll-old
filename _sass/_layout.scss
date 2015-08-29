@@ -50,15 +50,17 @@ section.no-vh {
 .post {
     flex-direction: column;
 }
+.cover {
+	background-size: cover !important;
+	background-position: center center !important;
+	background-repeat: no-repeat;
+}
 .featured-image {
     flex-grow: 1;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat;
 }
-article {
-	display: flex;
+.post {
 	width: 48%;
+	display: flex;
 	margin-top: 1%;
 	margin-bottom: 1%;
 	height: 50vh;

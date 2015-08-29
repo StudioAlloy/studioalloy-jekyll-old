@@ -118,16 +118,19 @@ section.no-vh {
   flex-direction: column;
 }
 
-.featured-image {
-  flex-grow: 1;
+.cover {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat;
 }
 
-article {
-  display: flex;
+.featured-image {
+  flex-grow: 1;
+}
+
+.post {
   width: 48%;
+  display: flex;
   margin-top: 1%;
   margin-bottom: 1%;
   height: 50vh;
@@ -459,7 +462,7 @@ body.home section.contact {
 
 /*END Google maps*/
 /*Product*/
-section.work-page article .meta p {
+section.work-page .meta p {
   color: #aaa;
 }
 
@@ -472,11 +475,11 @@ section.blog-page .meta span {
   color: #E64;
 }
 
-article.experiment .meta span {
+.experiment .meta span {
   color: #8dd;
 }
 
-article.experiment .meta h4 {
+.experiment .meta h4 {
   color: #fff;
 }
 
@@ -484,7 +487,7 @@ section.blog-page .meta h4 {
   font-weight: 400;
 }
 
-article.experiment .meta {
+.experiment .meta {
   background-color: #344;
   color: #fff;
 }
@@ -530,13 +533,13 @@ body.work article .bg-img {
   height: 250px;
 }
 
-.blog-page article:nth-child(12n+12),
-.blog-page article:nth-child(3n+2) {
+.blog-page .post-link:nth-child(12n+12),
+.blog-page .post-link:nth-child(3n+2) {
   width: 28%;
 }
 
-.blog-page article:nth-child(7n+7),
-.blog-page article:nth-child(5n+1) {
+.blog-page .post-link:nth-child(7n+7),
+.blog-page .post-link:nth-child(5n+1) {
   width: 68%;
 }
 
@@ -551,6 +554,10 @@ section.contact-page .content {
 }
 
 /*END Contact*/
+section.case-text {
+  display: none !important;
+}
+
 .footer {
   background: #344;
   width: 100%;

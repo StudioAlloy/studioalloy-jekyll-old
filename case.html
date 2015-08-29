@@ -9,15 +9,13 @@ permalink: case/
 	<div class="content">
 
 		{% for post in site.case date %}
-		<article class="post">
-			<!--<a href="{{post.url}}">-->
-				<div class="featured-image" style="background: url({{ site.baseurl }}/img/case/{{ post.categories }}.jpg)"></div>
+	<a class="post" href="{{post.url}}">
+				<div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ post.categories }}.jpg)"></div>
 				<div class="meta">
 					<h2>{{ post.title }}</h2>
 					<p>{{ post.excerpt }}</p>
 				</div>
-			<!--</a>-->
-		</article>
+</a>
 		{% endfor %}
 
 	</div>

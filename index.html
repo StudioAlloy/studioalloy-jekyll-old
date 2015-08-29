@@ -26,7 +26,7 @@ categories: index
 <section class="cases" data-section-name="cases">
 	{% assign featured_case = (site.case | where:"featured","true") %}
 	{% for case in featured_case limit:4 %}
-	<div class="case" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
+	<div class="case cover" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
 			<div class="hover meta">
 				<h2>{{ case.title }}</h2>
 				<p>{{ case.excerpt }}</p>
