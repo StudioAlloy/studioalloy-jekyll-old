@@ -1,0 +1,27 @@
+<div class="author-side">
+	{% assign author = (site.team|where:"title",{{page.author}}) %}
+	{% for post in author %}
+	<h4>{{ post.title }}</h4>
+	<p>{{ post.excerpt}}</p>
+	<div class="social">
+		<a href="http://linkedin.com/in/{{post.linkedin}}/">
+			<svg viewBox="0 0 100 100" class="linkedin">
+				<use xlink:href="/images/svg-defs.svg#shape-linkedin"></use>
+			</svg>
+		</a>
+		<a href="http://twitter.com/{{post.twitter}}">
+			<svg viewBox="0 0 100 100" class="twitter">
+				<use xlink:href="/images/svg-defs.svg#shape-twitter"></use>
+			</svg>
+		</a>
+		<a href="http://github.com/{{post.github}}">
+			<svg viewBox="0 0 100 100" class="github">
+				<use xlink:href="/images/svg-defs.svg#shape-github"></use>
+			</svg>
+		</a>
+	</div>
+		<img src="{{site.baseurl}}/img/team/{{post.title | slugify }}.jpg">
+		<h4>{{ site.title }}</h4>
+		<p>{{ site.description }}</p>
+	{% endfor %}
+</div>

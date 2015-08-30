@@ -6,7 +6,7 @@ categories: pexion
 excerpt: Interactive presentation for iPad
 color: "#e6e5e3"
 platfrom: "large"
-featured: "true"
+featured: "false"
 url: //fabstagram.nl
 image: "2"
 ---

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* import */
 /*******************************
        Global Resets
@@ -114,28 +115,47 @@ section.no-vh {
   position: relative;
 }
 
+/* Post
+———————————————————————————————————— */
+.post-page .post {
+  width: 48%;
+}
+
 .post {
   flex-direction: column;
+  display: flex;
+  height: 50vh;
+}
+
+.post:hover .hover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover {
+  display: none;
+  position: absolute;
+  background-color: rgba(136, 221, 221, 0.85);
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.featured-image {
+  flex-grow: 1;
+  position: relative;
 }
 
 .cover {
   background-size: cover !important;
   background-position: center center !important;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
 }
 
-.featured-image {
-  flex-grow: 1;
-}
-
-.post {
-  width: 48%;
-  display: flex;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  height: 50vh;
-}
-
+/* END
+———————————————————————————————————— */
 ::selection {
   background-color: #8dd;
   color: #fff;
@@ -210,7 +230,7 @@ section.no-vh {
   clear: both;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .menu {
     display: none;
     opacity: 0;
@@ -252,7 +272,7 @@ section.no-vh {
   z-index: 2;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 500px) {
   .menu, .menu > li, .menu > li > a {
     height: auto;
   }
@@ -367,22 +387,6 @@ body.home section.cases .case {
   position: relative;
 }
 
-.case:hover .hover.meta {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hover.meta {
-  display: none;
-  position: absolute;
-  background-color: rgba(136, 221, 221, 0.7);
-  width: 100%;
-  height: 100%;
-  color: #fff;
-}
-
 .wrapper .case .logo {
   position: absolute;
   left: 0;
@@ -466,11 +470,6 @@ section.work-page .meta p {
   color: #aaa;
 }
 
-section.blog-page .content,
-section.work-page .content {
-  padding: 0 50px 50px 50px;
-}
-
 section.blog-page .meta span {
   color: #E64;
 }
@@ -504,10 +503,6 @@ body.single-project section {
   height: 100vh;
 }
 
-body.single-project .wrapper {
-  background-color: #fff;
-}
-
 body.single-project section {
   background-repeat: no-repeat !important;
   background-size: cover !important;
@@ -533,16 +528,6 @@ body.work article .bg-img {
   height: 250px;
 }
 
-.blog-page .post-link:nth-child(12n+12),
-.blog-page .post-link:nth-child(3n+2) {
-  width: 28%;
-}
-
-.blog-page .post-link:nth-child(7n+7),
-.blog-page .post-link:nth-child(5n+1) {
-  width: 68%;
-}
-
 /*Contact*/
 section.contact-page .content {
   text-align: center;
@@ -554,10 +539,49 @@ section.contact-page .content {
 }
 
 /*END Contact*/
-section.case-text {
-  display: none !important;
+/* Blog page
+———————————————————————————————————— */
+.blog-page .post:nth-child(12n+12),
+.blog-page .post:nth-child(3n+2) {
+  width: 28%;
 }
 
+.blog-page .post:nth-child(7n+7),
+.blog-page .post:nth-child(5n+1) {
+  width: 68%;
+}
+
+/* END Blog page
+———————————————————————————————————— */
+/* Single blog
+———————————————————————————————————— */
+.author-side {
+  background-color: #8dd;
+  z-index: 10;
+  width: 400px;
+}
+
+.blog-header {
+  height: 40vh;
+}
+
+.blog-text {
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.social a {
+  background-color: #fff;
+  width: 10px;
+  display: inline-block;
+}
+
+.author-side img {
+  clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
+}
+
+/* END Single blog
+———————————————————————————————————— */
 .footer {
   background: #344;
   width: 100%;
@@ -616,30 +640,6 @@ section.case-text {
     flex-direction: column;
   }
 
-  body.home section {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    background-color: #eee;
-    height: 100vh;
-  }
-
-  .wrapper .work .logo {
-    position: absolute;
-    top: 45%;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .about .logo p {
-    font-size: 50px;
-  }
-
-  .about .logo img {
-    width: 50%;
-  }
-
   body {
     font-size: 12px;
   }
@@ -649,15 +649,25 @@ section.case-text {
     line-height: 1.4em;
   }
 
-  .footer,
-  section.about article,
-  body.home section.home .title-bg {
-    padding: 20px;
+  .post-page .post {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Styles */
+  .post-page .post {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 800px) {
+  /* Styles */
+  section.blog-page .content, section.work-page .content {
+    padding: 0 50px 50px 50px;
   }
 
-  section.work-page article,
-  body.home section.cases .case {
-    width: 100%;
+  .post-page .post {
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
 }
 

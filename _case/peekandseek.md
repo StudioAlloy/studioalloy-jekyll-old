@@ -6,7 +6,7 @@ categories: peekandseek
 excerpt: HTML 5 cross platfrom game
 color: "#e6e5e3"
 platfrom: "large"
-featured: "true"
+featured: "false"
 url: //fabstagram.nl
 image: "1"
 ---

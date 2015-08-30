@@ -26,14 +26,14 @@ categories: index
 <section class="cases" data-section-name="cases">
 	{% assign featured_case = (site.case | where:"featured","true") %}
 	{% for case in featured_case limit:4 %}
-	<div class="case cover" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
-			<div class="hover meta">
+	<a href="{{ case.url }}" class="case cover post" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
+			<div class="hover">
 				<h2>{{ case.title }}</h2>
 				<p>{{ case.excerpt }}</p>
 			</div>
 			<img class="logo" src="{{ site.baseurl }}/img/case/{{ case.categories }}-logo.png">
 			<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ case.platfrom }}.svg">
-		</div>
+		</a>
 	{% endfor %}
 </section>
 

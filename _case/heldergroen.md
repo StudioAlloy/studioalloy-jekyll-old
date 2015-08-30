@@ -7,6 +7,6 @@ excerpt: Web design & development
 url: //heldergroen.nl
 color: "#e6e5e3"
 platfrom: "large"
-featured: "true"
+featured: "false"
 image: "7"
 ---

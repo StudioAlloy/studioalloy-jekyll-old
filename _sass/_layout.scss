@@ -47,21 +47,38 @@ section.no-vh {
 	background-color: $alt-color;
 	position: relative;
 }
+/* Post
+———————————————————————————————————— */
+.post-page .post {
+  width: 48%;
+}
 .post {
-    flex-direction: column;
+  flex-direction: column;
+	display: flex;
+	height: 50vh;
+}
+.post:hover .hover {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.hover {
+  display: none;
+  position: absolute;
+  background-color: rgba( $sub2-color, .85 );
+  width: 100%;
+  height: 100%;
+  color: $alt-color;
+}
+.featured-image {
+    flex-grow: 1;
+		position: relative;
 }
 .cover {
 	background-size: cover !important;
 	background-position: center center !important;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat !important;
 }
-.featured-image {
-    flex-grow: 1;
-}
-.post {
-	width: 48%;
-	display: flex;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	height: 50vh;
-}
+/* END
+———————————————————————————————————— */

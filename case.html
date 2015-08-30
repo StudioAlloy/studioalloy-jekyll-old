@@ -2,6 +2,7 @@
 layout: default
 title: Case
 description:
+categories: post-page
 permalink: case/
 ---
 
@@ -9,13 +10,17 @@ permalink: case/
 	<div class="content">
 
 		{% for post in site.case date %}
-	<a class="post" href="{{post.url}}">
-				<div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ post.categories }}.jpg)"></div>
-				<div class="meta">
-					<h2>{{ post.title }}</h2>
-					<p>{{ post.excerpt }}</p>
+		<a class="post" href="{{post.url}}">
+			<div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ post.categories }}.jpg)">
+				<div class="hover">
+					<img class="logo" src="{{ site.baseurl }}/img/case/corpus-logo.png">
 				</div>
-</a>
+			</div>
+			<div class="meta">
+				<h2>{{ post.title }}</h2>
+				<p>{{ post.excerpt }}</p>
+			</div>
+		</a>
 		{% endfor %}
 
 	</div>

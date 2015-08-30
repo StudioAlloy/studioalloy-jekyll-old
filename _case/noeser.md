@@ -6,7 +6,7 @@ categories: noeser
 excerpt: Design and development
 color: "#e6e5e3"
 platfrom: "large"
-featured: "true"
+featured: "false"
 url: //fabstagram.nl
 image: "1"
 ---
