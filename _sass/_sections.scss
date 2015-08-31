@@ -1,13 +1,8 @@
-
 /*home*/
 body.home section.home {
   padding: 0;
-  color: $alt-color;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 body.home section.home .svg-animation svg {
   position: absolute;
@@ -16,46 +11,12 @@ body.home section.home .svg-animation svg {
   width: 100%;
   height: 100%;
 }
-body.home section.home .title-bg {
-  max-width: 750px;
-}
 body.home section.home h1 {
   position: relative;
 }
 body.home section.home h1 a {
-  color: $alt-color;
   font-weight: 700;
 }
-/*About*/
-body.home .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about article {
-  max-width: 550px;
-}
-.about article p {
-  margin-bottom: 20px;
-}
-.about .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.about .logo p {
-  font-size: 70px;
-  font-weight: 700;
-  display: inline;
-  margin-right: 14px;
-  margin-top: -46px;
-}
-.about h1 {
-  max-width: 520px;
-  margin-top: 50px;
-  font-size: 15px;
-}
-/*END About*/
 /*cases*/
 body.home section.cases {
   display: flex;
@@ -99,11 +60,6 @@ body.home section.products .product:nth-child(2) {
 section.team {
   background: url("/img/background.jpg");
   background-size: cover;
-}
-.team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .team h1 {
   color: #fff;
@@ -149,8 +105,8 @@ section.blog-page .meta h4 {
   font-weight: 400;
 }
 .experiment .meta {
-    background-color: $sub-color;
-    color: #fff;
+  background-color: $sub-color;
+  color: #fff;
 }
 img.author {
   position: absolute;
@@ -170,9 +126,6 @@ body.single-project section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-body.single-project .text-container {
-  margin-top: -60vh;
 }
 body.single-project h1,
 body.single-project h2 {
@@ -207,24 +160,60 @@ section.contact-page .content {
 /* Single blog
 ———————————————————————————————————— */
 .author-side {
-    background-color: $sub2-color;
-    z-index: 10;
-    width: 400px;
+  background-color: $sub2-color;
+  color: $alt-color;
+}
+.author-side use {
+  fill: $sub2-color;
+}
+.author-side svg {
+  background-color: $alt-color;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
 }
 .blog-header {
-    height: 40vh;
+  height: 40vh;
 }
-.blog-text {
-    padding: 50px 100px;
-    background: $alt-color;
-}
-.social a {
-    background-color: #fff;
-    width: 10px;
-    display: inline-block;
+.author-side {
+  padding: 4% 0;
+  position: relative;
 }
 .author-side img {
-    clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
+  clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
 }
+.author-side h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.author-side img {
+  position: absolute;
+  top: -120px;
+  width: 180px;
+}
+.single-post .inner {
+  display: flex;
+  justify-content: center;
+}
+
 /* END Single blog
+———————————————————————————————————— */
+/*  Team
+———————————————————————————————————— */
+.team-page section {
+  width: 100%;
+  height: 50vh;
+}
+.inner {
+  width: 80%;
+}
+.team-member:nth-child(2n+1) {
+  background-color: $alt-color;
+}
+.team-member:nth-child(2n+1) .image {
+  order: -1;
+}
+
+/* END Team
 ———————————————————————————————————— */

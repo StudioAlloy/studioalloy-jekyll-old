@@ -1,45 +1,46 @@
 /*******************************
-       Global Resets
+Global Resets
 *******************************/
 * {
 	box-sizing: border-box;
 }
 html {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	margin: 0;
 	color: $darkgray;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 h1 {
 	font-weight: 400;
 }
 h2 {
- font-weight: 300;
+	font-weight: 300;
 }
 h3, h4, h5 {
 	font-weight: 700;
 }
 h1 {
-  font-size: 2.5em;
-  line-height: 1.4em;
+	font-size: 2.5em;
+	line-height: 1.2em;
+	margin-bottom: 40px;
 }
 a {
-  color: $darkgray;
-  text-decoration: none;
+	color: $darkgray;
+	text-decoration: none;
 }
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 p {
-  margin: 0;
+	margin: 0;
 }

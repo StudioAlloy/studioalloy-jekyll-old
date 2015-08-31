@@ -17,15 +17,15 @@
   
   
 
-  <title>Contact &middot; Alloy</title>
-  <link rel="canonical" href="/contact.html">
+  <title>About &middot; Alloy</title>
+  <link rel="canonical" href="/about/">
 
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   
 
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="/contact.html">
-  <meta property="og:title" content="Contact">
+  <meta property="og:url" content="/about/">
+  <meta property="og:title" content="About">
   <meta property="og:site_name" content="Alloy">
   <meta property="og:description" content="">
   <meta property="og:image" content="image.jpg">
@@ -49,19 +49,9 @@
   <!-- Common Styles -->
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-  <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.scrollify.min.js"></script>
-
-  <script>
-  $(function() {
-    $.scrollify({
-      section : "section"
-    });
-  });
-  </script> -->
 
 </head>
-<body class="default contact ">
+<body class="default about ">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -73,11 +63,11 @@
 		<div class="mobile-menu">
 			<label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
 			<ul class="menu">
-				<li class="menu-item"><a href="/#about">About</a></li>
+				<li class="menu-item"><a href="/about">About</a></li>
 				<li class="menu-item"><a href="/case">Case</a></li>
-				<li class="menu-item"><a href="/#team">Team</a></li>
+				<li class="menu-item"><a href="/team">Team</a></li>
 				<!--<li class="menu-item"><a href="/blog">Blog</a></li>-->
-				<li class="menu-item"><a href="/#contact">Contact</a></li>
+				<li class="menu-item"><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -86,7 +76,7 @@
           <div class="wrapper">
             <section id="contact-page">
 	<div class="content">
-		<h1>Contact us</h1>
+		<h1>About us</h1>
 		<h2>Let's get in touch</h2>
 
 		<figure class="follow clearfix">
@@ -106,7 +96,8 @@
 	</div>
 </section>
 <section id="contact">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<section class="contact vh" data-section-name="contact">
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script>
 		function initialize() {
 			var mapCanvas = document.getElementById('map_canvas');
@@ -124,7 +115,7 @@
 				navigationControl: false,
 				mapTypeControl: false,
 				scaleControl: false,
-				draggable: true,
+				draggable: false,
 				styles: [
     {
         "featureType": "all",
@@ -285,8 +276,10 @@
 			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
 		<div id="map_canvas"></div>
+</section>
 
 </section>
+
           </div>
         </div>
         <div class="footer">

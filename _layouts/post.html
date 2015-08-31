@@ -1,20 +1,26 @@
 {% include head.html %}
 </head>
-<body class="{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
+<body class="single-{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
   <!--[if lt IE 7]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <div class="main">
     {% include menu.html %}
-    {% include author.html %}
     <div class="wrapper">
-      <section class="blog-header cover" style="background: url({{site.baseurl}}/img/blog/{{ page.image }}.jpg);">
-
+      <section>
+        <article>
+          <section class="blog-header cover" style="background: url({{site.baseurl}}/img/blog/{{ page.image }}.jpg);"></section>
+          <section class="flex">
+            <div class="inner">
+              <div class="text-container">
+                <h1>{{page.title}}</h1>
+                {{ content }}
+              </div>
+            </div>
+          </section>
+          {% include author.html %}
+        </article>
       </section>
-      <div class="blog-text">
-        <h1>{{page.title}}</h1>
-        {{ content }}
-      </div>
     </div>
   </div>
   {% include footer.html %}

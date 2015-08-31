@@ -4,7 +4,7 @@ title: Home
 description:
 categories: index
 ---
-<section class="home" data-section-name="home">
+<section class="home vh flex alt-color" data-section-name="home">
 	<div class="content">
 		<div class="svg-animation">
 			{% include svg-animation-bg.html %}
@@ -15,7 +15,7 @@ categories: index
 	</div>
 </section>
 
-<section class="about" data-section-name="about">
+<section class="about vh flex" data-section-name="about">
 		<div class="text-container">
 			<p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p>
 			<p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.</p>
@@ -23,7 +23,7 @@ categories: index
 		</div>
 </section>
 
-<section class="cases" data-section-name="cases">
+<section class="cases vh flex" data-section-name="cases">
 	{% assign featured_case = (site.case | where:"featured","true") %}
 	{% for case in featured_case limit:4 %}
 	<a href="{{ case.url }}" class="case cover post" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
@@ -37,12 +37,9 @@ categories: index
 	{% endfor %}
 </section>
 
-<section class="team" data-section-name="team">
+<section class="team vh flex alt-color" data-section-name="team">
 	<div class="content">
 		<h1>Meet the team.</h1>
 	</div>
 </section>
-
-<section class="contact" data-section-name="contact">
-	{% include maps.html %}
-</section>
+{% include maps.html %}

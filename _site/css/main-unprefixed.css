@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* import */
 /*******************************
-       Global Resets
+Global Resets
 *******************************/
 * {
   box-sizing: border-box;
@@ -37,7 +37,8 @@ h3, h4, h5 {
 
 h1 {
   font-size: 2.5em;
-  line-height: 1.4em;
+  line-height: 1.2em;
+  margin-bottom: 40px;
 }
 
 a {
@@ -80,11 +81,20 @@ section {
 section {
   display: flex;
   background-color: #eee;
+}
+
+section.vh {
   height: 100vh;
 }
 
-section.no-vh {
-  height: auto;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  width: 48%;
 }
 
 .content {
@@ -113,6 +123,21 @@ section.no-vh {
   padding: 30px;
   background-color: #fff;
   position: relative;
+}
+
+.text-container,
+.title-bg {
+  max-width: 750px;
+}
+
+.alt-color,
+.alt-color a {
+  color: #fff;
+}
+
+body.single-post .text-container,
+body.single-project .text-container {
+  margin-top: -10%;
 }
 
 /* Post
@@ -311,12 +336,8 @@ section.no-vh {
 /*home*/
 body.home section.home {
   padding: 0;
-  color: #fff;
   position: relative;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 body.home section.home .svg-animation svg {
@@ -327,55 +348,14 @@ body.home section.home .svg-animation svg {
   height: 100%;
 }
 
-body.home section.home .title-bg {
-  max-width: 750px;
-}
-
 body.home section.home h1 {
   position: relative;
 }
 
 body.home section.home h1 a {
-  color: #fff;
   font-weight: 700;
 }
 
-/*About*/
-body.home .about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about article {
-  max-width: 550px;
-}
-
-.about article p {
-  margin-bottom: 20px;
-}
-
-.about .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .logo p {
-  font-size: 70px;
-  font-weight: 700;
-  display: inline;
-  margin-right: 14px;
-  margin-top: -46px;
-}
-
-.about h1 {
-  max-width: 520px;
-  margin-top: 50px;
-  font-size: 15px;
-}
-
-/*END About*/
 /*cases*/
 body.home section.cases {
   display: flex;
@@ -426,12 +406,6 @@ body.home section.products .product:nth-child(2) {
 section.team {
   background: url("/img/background.jpg");
   background-size: cover;
-}
-
-.team {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .team h1 {
@@ -513,10 +487,6 @@ body.single-project section {
   flex-direction: column;
 }
 
-body.single-project .text-container {
-  margin-top: -60vh;
-}
-
 body.single-project h1,
 body.single-project h2 {
   color: #fff;
@@ -557,30 +527,72 @@ section.contact-page .content {
 ———————————————————————————————————— */
 .author-side {
   background-color: #8dd;
-  z-index: 10;
-  width: 400px;
+  color: #fff;
+}
+
+.author-side use {
+  fill: #8dd;
+}
+
+.author-side svg {
+  background-color: #fff;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
 }
 
 .blog-header {
   height: 40vh;
 }
 
-.blog-text {
-  padding: 50px 100px;
-  background: #fff;
-}
-
-.social a {
-  background-color: #fff;
-  width: 10px;
-  display: inline-block;
+.author-side {
+  padding: 4% 0;
+  position: relative;
 }
 
 .author-side img {
   clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
 }
 
+.author-side h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.author-side img {
+  position: absolute;
+  top: -120px;
+  width: 180px;
+}
+
+.single-post .inner {
+  display: flex;
+  justify-content: center;
+}
+
 /* END Single blog
+———————————————————————————————————— */
+/*  Team
+———————————————————————————————————— */
+.team-page section {
+  width: 100%;
+  height: 50vh;
+}
+
+.inner {
+  width: 80%;
+}
+
+.team-member:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+.team-member:nth-child(2n+1) .image {
+  order: -1;
+}
+
+/* END Team
 ———————————————————————————————————— */
 .footer {
   background: #344;
@@ -649,8 +661,17 @@ section.contact-page .content {
     line-height: 1.4em;
   }
 
+  .home h1 {
+    font-size: 3em;
+    line-height: 1.4em;
+  }
+
   .post-page .post {
     width: 50%;
+  }
+
+  body.home section.cases .case {
+    width: 100%;
   }
 
   .author-side {

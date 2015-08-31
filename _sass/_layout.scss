@@ -7,45 +7,64 @@ section {
   background: $lightgray;
 }
 .main {
-	display: flex;
+  display: flex;
 }
 .wrapper {
-	z-index: 999;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 100%;
+  z-index: 999;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 section {
-	display: flex;
-	background-color: $lightgray;
-	height: 100vh;
+  display: flex;
+  background-color: $lightgray;
 }
-section.no-vh {
-	height: auto;
+section.vh {
+  height: 100vh;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col {
+  width: 48%;
 }
 .content {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 .content.flex {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .text-container {
-	min-width: 400px;
-	width: 70%;
-	background-color: $alt-color;
-	padding: 4% 10%;
+  min-width: 400px;
+  width: 70%;
+  background-color: $alt-color;
+  padding: 4% 10%;
 }
 .text-container p {
-	margin-bottom: 4%;
+  margin-bottom: 4%;
 }
 .post .meta {
   padding: 30px;
-	background-color: $alt-color;
-	position: relative;
+  background-color: $alt-color;
+  position: relative;
+}
+.text-container,
+.title-bg {
+  max-width: 750px;
+}
+.alt-color,
+.alt-color a {
+  color: $alt-color;
+}
+body.single-post .text-container,
+body.single-project .text-container {
+  margin-top: -10%;
 }
 /* Post
 ———————————————————————————————————— */
@@ -54,8 +73,8 @@ section.no-vh {
 }
 .post {
   flex-direction: column;
-	display: flex;
-	height: 50vh;
+  display: flex;
+  height: 50vh;
 }
 .post:hover .hover {
   display: flex;
@@ -72,13 +91,13 @@ section.no-vh {
   color: $alt-color;
 }
 .featured-image {
-    flex-grow: 1;
-		position: relative;
+  flex-grow: 1;
+  position: relative;
 }
 .cover {
-	background-size: cover !important;
-	background-position: center center !important;
-	background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
 }
 /* END
 ———————————————————————————————————— */
