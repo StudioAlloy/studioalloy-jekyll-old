@@ -24,8 +24,22 @@
     order: 1;
     width: 100%;
   }
+  .author-side .inner.flex {
+    flex-direction: column;
+  }
+  .col {
+    width: 100%
+  }
+  .author-side img {
+    float: right;
+    width: 80px;
+    margin-left: 20px;
+  }
+  .single-post section {
+    background-color: #fff;
+  }
 }
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 750px) {
   /* Styles */
   .post-page .post {
     width: 100% !important;
@@ -39,5 +53,14 @@
   .post-page .post {
     margin-top: 1%;
     margin-bottom: 1%;
+  }
+  .author-side img {
+    position: absolute;
+    top: -120px;
+    width: 180px;
+  }
+  body.single-post .text-container,
+  body.single-project .text-container {
+    margin-top: -10%;
   }
 }

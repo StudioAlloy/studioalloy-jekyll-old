@@ -5,7 +5,8 @@ Global Resets
 	box-sizing: border-box;
 }
 html {
-	font-size: 18px;
+	font-size: 19px;
+	line-height: 30px;
 }
 
 body {
@@ -22,15 +23,15 @@ h1 {
 	font-weight: 400;
 }
 h2 {
-	font-weight: 300;
+	font-weight: 400;
 }
 h3, h4, h5 {
-	font-weight: 700;
+	font-weight: 800;
 }
 h1 {
-	font-size: 2.5em;
-	line-height: 1.2em;
-	margin-bottom: 40px;
+	font-size: 3em;
+	line-height: 1.15em;
+	margin-bottom: 42px;
 }
 a {
 	color: $darkgray;

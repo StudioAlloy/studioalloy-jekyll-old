@@ -6,14 +6,14 @@ $alt-color: #fff;
 $lightgray: #eee;
 $midgray: #ddd;
 $gray: #aaa;
-$darkgray: #666;
+$darkgray: #444;
 /* import */
 @import
-  "resets",
-  "layout",
-  "bits",
-  "header",
-  "menu",
-  "sections",
-  "footer",
-  "queries";
+"resets",
+"layout",
+"bits",
+"header",
+"menu",
+"sections",
+"footer",
+"queries";
