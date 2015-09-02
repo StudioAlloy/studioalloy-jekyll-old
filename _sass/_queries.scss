@@ -10,10 +10,6 @@
     font-size: 1.4em;
     line-height: 1.4em;
   }
-  .home h1 {
-    font-size: 3em;
-    line-height: 1.4em;
-  }
   .post-page .post {
     width: 50%;
   }
@@ -50,9 +46,9 @@
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
   }
-  .post-page .post {
-    margin-top: 1%;
-    margin-bottom: 1%;
+  .post {
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
   .author-side img {
     position: absolute;
@@ -62,5 +58,10 @@
   body.single-post .text-container,
   body.single-project .text-container {
     margin-top: -10%;
+  }
+}
+@media only screen and (min-width : 1600px) {
+  .text-container {
+    padding: 100px 250px;
   }
 }

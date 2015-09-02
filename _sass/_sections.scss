@@ -4,6 +4,10 @@ body.home section.home {
   position: relative;
   overflow: hidden;
 }
+body.home section.home .logo {
+  margin: 10% 0 0 0;
+  text-align: center;
+}
 body.home section.home .svg-animation svg {
   position: absolute;
   top: 0;
@@ -11,39 +15,13 @@ body.home section.home .svg-animation svg {
   width: 100%;
   height: 100%;
 }
-body.home section.home h1 {
-  position: relative;
-  font-size: 2.4em;
-  line-height: 1.2em;
-  margin-bottom: 0;
+body.home section.home .text-container {
+  display: flex;
+  flex-direction: column;
 }
 body.home section.home h1 a {
   font-weight: 800;
 }
-/*cases*/
-body.home section.cases {
-  display: flex;
-  flex-wrap: wrap;
-}
-body.home section.cases .case {
-  width: 50%;
-  position: relative;
-}
-.wrapper .case .logo {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 20px;
-  max-width: 35%;
-}
-.wrapper .case .platfrom-icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 25%;
-  padding: 20px;
-}
-/*END cases*/
 /*product*/
 body.home section.products .product {
   background: $alt-color;
@@ -58,14 +36,6 @@ body.home section.products .product .content{
 }
 body.home section.products .product:nth-child(2) {
   background: darken( $alt-color, 15% );
-}
-/*END product*/
-section.team {
-  background: url("/img/background.jpg");
-  background-size: cover;
-}
-.team h1 {
-  color: #fff;
 }
 /*Google maps*/
 body.home section#contact {
@@ -91,31 +61,9 @@ body.home section.contact {
 
 /*END Google maps*/
 
-/*Product*/
-section.work-page .meta p {
-  color: $gray;
-}
-section.blog-page .meta span {
-  color: $base-color;
-}
-.experiment .meta span {
-  color: $sub2-color;
-}
-.experiment .meta h4 {
-  color: $alt-color;
-}
-section.blog-page .meta h4 {
-  font-weight: 400;
-}
-.experiment .meta {
-  background-color: $sub-color;
-  color: #fff;
-}
-img.author {
-  position: absolute;
-  top: -30px;
-  width: 44px;
-  border: 3px solid #fff;
+.hover img.logo {
+  width: 60%;
+  max-width: 300px;
 }
 /*Single Case*/
 body.single-project section {
@@ -135,10 +83,6 @@ body.single-project h2 {
   color: $alt-color;
 }
 /*END Single Case*/
-/*END Product*/
-body.work article .bg-img {
-  height: 250px;
-}
 /*Contact*/
 section.contact-page .content {
   text-align: center;
@@ -150,6 +94,28 @@ section.contact-page .content {
 /*END Contact*/
 /* Blog page
 ———————————————————————————————————— */
+section.blog-page .meta span {
+  color: $base-color;
+}
+.experiment .meta span {
+  color: $sub2-color;
+}
+.experiment .meta h4 {
+  color: $alt-color;
+}
+.post .meta h4 {
+  font-weight: 400;
+}
+.experiment .meta {
+  background-color: $sub-color;
+  color: #fff;
+}
+img.author {
+  position: absolute;
+  top: -30px;
+  width: 44px;
+  border: 3px solid #fff;
+}
 .blog-page .post:nth-child(12n+12),
 .blog-page .post:nth-child(3n+2) {
   width: 28%;
@@ -182,9 +148,6 @@ section.contact-page .content {
   padding: 10% 0;
   position: relative;
 }
-.author-side img {
-  clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
-}
 .author-side h2 {
   text-transform: uppercase;
   font-weight: 600;
@@ -201,20 +164,51 @@ section.contact-page .content {
 .links.flex {
   justify-content: space-between;
 }
+
 /* END Single blog
+———————————————————————————————————— */
+/* Clients
+———————————————————————————————————— */
+
+/* END Clients
 ———————————————————————————————————— */
 /*  Team
 ———————————————————————————————————— */
+.team-member {
+  width: 33%;
+}
+.team-member img {
+  width: 100%;
+}
+.team-member .meta {
+  padding: 10px;
+  background-color: $sub2-color;
+  position: relative;
+}
+.team-member .meta p {
+  color: $alt-color;
+}
+.team-member {
+    margin-bottom: 8%;
+}
+.team-member:nth-child(3n+1) {
+  padding-right: 4%;
+}
+.team-member:nth-child(3n+3) {
+  padding-left: 4%;
+}
+.team-member:nth-child(3n+2) {
+  padding-right: 2%;
+  padding-left: 2%;
+}
+/*Team page*/
 .team-page section {
   width: 100%;
   height: 50vh;
 }
-.team-member:nth-child(2n+1) {
-  background-color: $alt-color;
-}
 .team-member:nth-child(2n+1) .image {
   order: -1;
 }
-
+/*END Team page*/
 /* END Team
 ———————————————————————————————————— */

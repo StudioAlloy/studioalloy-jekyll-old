@@ -28,7 +28,7 @@ collections:
     output: true
     permalink: /case/:title/
   product:
-    output: false
+    output: true
   team:
     output: true
     permalink: /team/:title/

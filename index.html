@@ -4,42 +4,105 @@ title: Home
 description:
 categories: index
 ---
-<section class="home vh flex alt-color" data-section-name="home">
-	<div class="content">
-		<div class="svg-animation">
-			{% include svg-animation-bg.html %}
-		</div>
-		<div class="title-bg">
-			<h1><a href="#contact">Studio Alloy</a> staat voor het <a href="#team">combineren van talent</a>, om een nog sterker geheel te vormen. We zijn allemaal <a href="#team">jonge ondernemers</a> die graag <a href="/work">hard werken en dingen maken</a>. We werken in elk medium, maar geloven dat we de meeste impact kunnen maken met <a href="/work">pixels</a>. </h1>
-		</div>
-	</div>
-</section>
+<section class="home vh flex end">
+  <div class="svg-animation">
+    {% include svg-animation-bg.html %}
+  </div>
+  <div class="text-container">
+    <h1><a href="/contact">Studio Alloy</a> staat voor het combineren van <a href="/team">talent</a>, om een nog sterker geheel te vormen. We zijn allemaal jonge ondernemers die graag <a href="/work">hard werken en dingen maken</a>. We werken in elk medium,
+      maar geloven dat we de meeste impact kunnen maken met <a href="/work">pixels</a>. </h1>
+      <img class="logo" src="{{ site.baseurl }}/img/{{ site.title | downcase }}-logo.svg">
+    </div>
+  </section>
 
-<section class="about vh flex" data-section-name="about">
-		<div class="text-container">
-			<p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p>
-			<p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.</p>
-			<p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
-		</div>
-</section>
+  <section class="about flex start">
+    <div class="text-container">
+      <p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd.
+        Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p>
+        <p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen
+          excelleren.</p>
+          <p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in
+            te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
+          </div>
+        </section>
 
-<section class="cases vh flex" data-section-name="cases">
-	{% assign featured_case = (site.case | where:"featured","true") %}
-	{% for case in featured_case limit:4 %}
-	<a href="{{ case.url }}" class="case cover post" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg);">
-			<div class="hover">
-				<h2>{{ case.title }}</h2>
-				<p>{{ case.excerpt }}</p>
-			</div>
-			<img class="logo" src="{{ site.baseurl }}/img/case/{{ case.categories }}-logo.png">
-			<img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ case.platfrom }}.svg">
-		</a>
-	{% endfor %}
+        <section class="cases flex">
+          <div class="item-container flex wrap">
+            {% assign featured_case = (site.case | where:"featured","true") %} {% for case in featured_case limit:4 %}
+            <a class="post" href="{{ case.url }}">
+              <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg)">
+                <div class="hover">
+                  <img class="logo" src="{{ site.baseurl }}/img/case/{{ case.categories }}-logo.png">
+                </div>
+              </div>
+              <div class="meta">
+                <h2>{{ case.title }}</h2>
+                <p>{{ case.excerpt }}</p>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </section>
+        <!-- <section class="products">
+        {% for post in site.product %}
+        {% if post.featured == "true" %}
+        <div class="product">
+        <img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
+        <div class="text-container">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </section> -->
+  <section class="clients vh cover flex end min-vh" style="background: url({{ site.baseurl }}/img/clients.jpg);">
+    <div class="text-container">
+      <h2 class="center">Past jouw organisatie hier ook tussen?</h2>
+    </div>
+  </section>
+  <section class="team flex">
+    <div class="text-container">
+      <h2 class="center">Meet the team.</h2>
+      <div class="flex wrap overflow">
+        {% for post in site.team date %}
+        <a class="team-member">
+          <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg">
+          <div class="meta">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.excerpt }}</p>
+          </div>
+        </a>
+        {% endfor %}
+        <a class="team-member">
+          <img src="{{ site.baseurl }}/img/team/you.jpg">
+          <div class="meta">
+            <h4>Ben jij opzoek naar een creatieve werkplek?</h4>
+          </div>
+        </a>
+      </div>
+      <p>Ben jij opzoek naar een creative werkplek in Haarlem, wij zijn altijd opzoek naar niewue collega's <a href="#">Kijk hier om te kijken wat wij voor elkaar kunnen beteken</a> en hopenlijk tot snel.</p>
+    </div>
+  </section>
+  {% include maps.html %}
+<section class="contact-info flex">
+  <div class="text-container min-vh">
+  <h2 class="center">Contact</h2>
+    <div class="inner flex">
+    <div class="col">
+      <address>
+        {{ site.address }}
+      </address>
+      <p>{{ site.email }}</p>
+      <p>{{ site.phone }}</p>
+    </div>
+    <div class="col">
+      <form>
+        <input>
+        <input>
+        <input>
+      </form>
+    </div>
+  </div>
+  </div>
 </section>
-
-<section class="team vh flex alt-color" data-section-name="team">
-	<div class="content">
-		<h1>Meet the team.</h1>
-	</div>
-</section>
-{% include maps.html %}
