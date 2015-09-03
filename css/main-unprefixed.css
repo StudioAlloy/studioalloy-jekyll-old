@@ -598,6 +598,7 @@ img.author {
   padding: 10px;
   background-color: #8dd;
   position: relative;
+  margin-top: -40px;
 }
 
 .team-member .meta p {
@@ -762,6 +763,10 @@ img.author {
 @media only screen and (min-width: 1600px) {
   .text-container {
     padding: 100px 250px;
+  }
+
+  .overflow {
+    margin: 0px -55%;
   }
 }
 
