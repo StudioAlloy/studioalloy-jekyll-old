@@ -176,6 +176,10 @@ section {
   z-index: 9;
 }
 
+.text-container .col:first-child {
+  margin-right: 40px;
+}
+
 .text-container > h2 {
   margin-bottom: 10%;
 }
@@ -206,6 +210,12 @@ section {
 .clip {
   -webkit-clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
           clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
+  transition: 0.1s cubic-bezier(0, 0, 1, 1);
+}
+
+.clip:hover {
+  -webkit-clip-path: polygon(15% 15%, 50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
+          clip-path: polygon(15% 15%, 50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
 }
 
 .overflow {
@@ -226,6 +236,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: 50vh;
+  transition: all 0.5s;
 }
 
 .post:hover .hover {
@@ -241,6 +252,10 @@ section {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.post:hover .featured-image {
+  background-size: 200% !important;
 }
 
 .hover {
@@ -715,6 +730,77 @@ img.author {
 /*END Team page*/
 /* END Team
 ———————————————————————————————————— */
+form {
+  background-color: #8dd;
+  padding: 40px;
+  margin-right: -50%;
+  margin-right: -120%;
+}
+form .form-row {
+  position: relative;
+}
+form .form-row textarea,
+form .form-row input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  margin-bottom: 2em;
+  transition: all 0.5s ease-in-out;
+  outline: 0;
+}
+form .form-row textarea + label[data-placeholder],
+form .form-row input[type="text"] + label[data-placeholder] {
+  pointer-events: none;
+}
+form .form-row textarea + label[data-placeholder]:after,
+form .form-row input[type="text"] + label[data-placeholder]:after {
+  content: attr(data-placeholder);
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0.5rem;
+  -webkit-transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  transition: all 0.1s ease-in-out;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  background-color: #fff;
+  padding: 4px 8px;
+  height: 10px;
+  line-height: 1 !important;
+}
+form .form-row textarea:focus + label[data-placeholder]:after, form .form-row textarea:valid + label[data-placeholder]:after,
+form .form-row input[type="text"]:focus + label[data-placeholder]:after,
+form .form-row input[type="text"]:valid + label[data-placeholder]:after {
+  -webkit-transform: translate(-5%, -140%);
+      -ms-transform: translate(-5%, -140%);
+          transform: translate(-5%, -140%);
+}
+
+form h3 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+input[type="submit"] {
+  border: 0;
+  padding: 15px 30px;
+  float: right;
+  background-color: #E64;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+textarea {
+  height: 100px;
+}
+
+form .form-row textarea + label[data-placeholder]:after {
+  top: 10%;
+}
+
 .footer {
   background: #344;
   width: 100%;

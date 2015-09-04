@@ -70,6 +70,9 @@ section {
   max-width: 1100px;
   z-index: 9;
 }
+.text-container .col:first-child {
+    margin-right: 40px;
+}
 .text-container > h2 {
     margin-bottom: 10%;
 }
@@ -93,6 +96,10 @@ section {
 }
 .clip {
   clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
+  transition: 0.1s cubic-bezier(0, 0, 1, 1);
+}
+.clip:hover {
+  clip-path: polygon(15% 15%, 50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
 }
 .overflow {
     margin: 0 -25%;
@@ -106,12 +113,16 @@ section {
   flex-direction: column;
   display: flex;
   height: 50vh;
+  transition: all 0.5s;
 }
 .post:hover .hover {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+}
+.post:hover .featured-image {
+    background-size: 200% !important;
 }
 .hover {
   display: none;
@@ -125,6 +136,7 @@ section {
   flex-grow: 1;
   position: relative;
 }
+
 .cover {
   background-size: cover !important;
   background-position: center center !important;
