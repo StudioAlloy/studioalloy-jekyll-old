@@ -1,9 +1,16 @@
 ---
-layout: project
+layout: team
 title:  "Ruben Daas"
 date:   2014-06-30 16:22:48
 categories: pexion
-excerpt: Daas Design
+excerpt: Data, data, data, data en data
+description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
+website: mvaneijgen.nl
+phone: 06 38 63 27 35
+email: mvaneijgen@gmail.com
+twitter: mvaneijgen
+github: mvaneijgen
+linkedin: mvaneijgen
 ---
 De ontwerppraktijk van Ruben Daas richt zich voornamelijk op het visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.
 

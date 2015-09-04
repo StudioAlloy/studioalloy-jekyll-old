@@ -1,0 +1,50 @@
+{% include head.html %}
+</head>
+<body class="single-{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
+  <!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div class="main">
+    {% include menu.html %}
+    <div class="wrapper">
+      <section class="flex">
+        <div class="content">
+          <author>
+            <img src="{{ site.baseurl }}/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
+            <h1>{{page.title}}</h1>
+            <h2>{{ page.excerpt }}</h2>
+            <h4>@{{ page.twitter }}</h4>
+          </author>
+          <div class="text-container">
+            {{ content }}
+          </div>
+        </section>
+
+        <section class="">
+          <h2>Lees hier de posts door {{ page.title }}</h2>
+          <div class="item-container flex wrap">
+            {% assign posts = (site.posts | where:"author","Mitchel van Eijgen") %}
+            {% for post in posts %}
+            <a class="post {{post.categories}}" href="{{ post.url }}">
+              <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)">
+                <div class="hover">
+                  <author><span>Door: </span>{{post.author}}</author>
+                </div>
+              </div>
+              <div class="meta">
+                <img class="author" src="{{site.baseurl}}/img/team/{{post.author | slugify }}.jpg">
+                <h4><span>{{post.categories}}: </span>{{ post.title }}</h4>
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include embed-google-analytics.html %}
+</body>
+
+</html>

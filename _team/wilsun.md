@@ -1,9 +1,9 @@
 ---
-layout: project
+layout: team
 title:  "Wilsun Cheung"
 date:   2014-07-30 16:22:48
 categories: yoga
-excerpt: wilsuncheung.nl
+excerpt:
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: mvaneijgen.nl
 phone: 06 38 63 27 35
@@ -12,7 +12,7 @@ twitter: mvaneijgen
 github: mvaneijgen
 linkedin: mvaneijgen
 ---
-Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen. 
+Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.
 
 Na het afronden van zijn opleiding aan de Willem de Kooning Academie te Rotterdam was het zelfstandige ondernemerschap een logische volgende stap. Op de academie leerde hij om snel vanuit ideeën tot sterke (visuele) concepten te komen. Hierin was de combinatie van advertising en design met een minor in brand identity erg sterk.
 

@@ -1,9 +1,9 @@
 ---
-layout: project
+layout: team
 title:  "Mitchel van Eijgen"
 date:   2014-01-30 16:22:48
 categories: peekandseek
-excerpt: mvaneijgen.nl
+excerpt: Grafisch ontwerper met een liefde voor techniek
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: mvaneijgen.nl
 phone: 06 38 63 27 35

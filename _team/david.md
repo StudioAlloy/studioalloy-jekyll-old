@@ -1,9 +1,16 @@
 ---
-layout: project
+layout: team
 title:  "David Hager"
 date:   2013-12-30 16:22:48
 categories: inholland
-excerpt: All Terrain Media
+excerpt: Eigenlijk een alles kunner, maar het best in het samen bregen van mensen en ideeën
+description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
+website: mvaneijgen.nl
+phone: 06 38 63 27 35
+email: mvaneijgen@gmail.com
+twitter: mvaneijgen
+github: mvaneijgen
+linkedin: mvaneijgen
 ---
 All round marketing- en communicatieprofessional David Hager is de stuwende kracht van Alloy. Met zijn hands-on mentaliteit en positieve karakter slaat hij een brug tussen de verschillende talenten om gezamenlijk projecten van de grond te tillen. Zowel in de rol als projectleider voor online projecten als producer voor film- en animatieproducties. Bij voorkeur de combinatie; een cross-over waarbij design, online en video naadloos in elkaar overvloeien en de pixels op het beeldscherm een onvergetelijk verhaal overbrengen. Kortweg, creative storytelling.
 

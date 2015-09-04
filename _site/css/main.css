@@ -696,6 +696,8 @@ img.author {
 
 .team-member .meta p {
   color: #fff;
+  font-size: 0.7em;
+  line-height: 1.2em;
 }
 
 .team-member {
@@ -728,6 +730,17 @@ img.author {
 }
 
 /*END Team page*/
+/*Team single page*/
+.single-team author {
+  text-align: center;
+  margin: 4% 0;
+}
+
+.single-team author img {
+  width: 50%;
+}
+
+/*END Team single page*/
 /* END Team
 ———————————————————————————————————— */
 form {

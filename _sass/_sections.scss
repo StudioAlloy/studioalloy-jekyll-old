@@ -187,7 +187,9 @@ img.author {
     margin-top: -40px;
 }
 .team-member .meta p {
-  color: $alt-color;
+    color: $alt-color;
+    font-size: 0.7em;
+    line-height: 1.2em;
 }
 .team-member {
     margin-bottom: 8%;
@@ -211,5 +213,14 @@ img.author {
   order: -1;
 }
 /*END Team page*/
+/*Team single page*/
+.single-team author {
+  text-align: center;
+  margin: 4% 0;
+}
+.single-team author img {
+    width: 50%;
+}
+/*END Team single page*/
 /* END Team
 ———————————————————————————————————— */
