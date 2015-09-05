@@ -20,10 +20,16 @@
           </div>
         </section>
 
+        <section class="flex">
+          <div class="text-container">
+            <h2>Lees hier de posts door {{ page.title }}</h2>
+          </div>
+        </section>
+
         <section class="">
-          <h2>Lees hier de posts door {{ page.title }}</h2>
+
           <div class="item-container flex wrap">
-            {% assign posts = (site.posts | where:"author","Mitchel van Eijgen") %}
+            {% assign posts = (site.posts | where:"author","{{ page.title }}") %}
             {% for post in posts %}
             <a class="post {{post.categories}}" href="{{ post.url }}">
               <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)">
