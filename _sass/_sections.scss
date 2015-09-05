@@ -132,14 +132,16 @@ img.author {
   background-color: $sub2-color;
   color: $alt-color;
 }
-.author-side use {
-  fill: $sub2-color;
-}
-.author-side svg {
-  background-color: $alt-color;
+.social svg {
+  fill: $alt-color;
+  background-color: $sub2-color;
   width: 44px;
   height: 44px;
   padding: 10px;
+  border: 2px solid $alt-color
+}
+.social svg:hover {
+  background-color: darken($sub2-color, 10%);
 }
 .blog-header {
   height: 40vh;
@@ -147,6 +149,9 @@ img.author {
 .author-side {
   padding: 10% 0;
   position: relative;
+}
+.author-side img {
+  z-index: 9;
 }
 .author-side h2 {
   text-transform: uppercase;
@@ -156,27 +161,23 @@ img.author {
 .author-side h3 {
   margin-bottom: 20px;
 }
-.single-post .inner {
+.single-post .wrapper .inner {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 .links.flex {
-  justify-content: space-between;
+justify-content: flex-start;
 }
+.links.flex .contact-info {
+  margin-right: 10%
+}
+
 
 /* END Single blog
 ———————————————————————————————————— */
-/* Clients
-———————————————————————————————————— */
-
-/* END Clients
-———————————————————————————————————— */
 /*  Team
 ———————————————————————————————————— */
-.team-member {
-  width: 33%;
-}
 .team-member img {
   width: 100%;
 }
@@ -194,25 +195,6 @@ img.author {
 .team-member {
     margin-bottom: 8%;
 }
-.team-member:nth-child(3n+1) {
-  padding-right: 4%;
-}
-.team-member:nth-child(3n+3) {
-  padding-left: 4%;
-}
-.team-member:nth-child(3n+2) {
-  padding-right: 2%;
-  padding-left: 2%;
-}
-/*Team page*/
-.team-page section {
-  width: 100%;
-  height: 50vh;
-}
-.team-member:nth-child(2n+1) .image {
-  order: -1;
-}
-/*END Team page*/
 /*Team single page*/
 .single-team author {
   text-align: center;

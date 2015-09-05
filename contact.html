@@ -4,25 +4,39 @@ title: Contact
 description:
 permalink: contact/
 ---
-<section id="contact-page">
-	<div class="content">
-		<h1>Contact us</h1>
-		<h2>Let's get in touch</h2>
-
-		<figure class="follow clearfix">
-			<ul>
-				<li class="facebook"><a href="http://facebook.com/studioalloy" target="_blank" data-ga="Social: Facebook">Facebook</a></li>
-				<li class="twitter"><a href="http://twitter.com/studioalloy" target="_blank" data-ga="Social: Twitter">Twitter</a></li>
-				<li class="linkedin"><a href="http://linkedin.com/company/studioalloy" target="_blank" data-ga="Social: LinkedIn">LinkedIn</a></li>
-				<li class="dribbble last"><a href="http://dribbble.com/mvaneijgen" target="_blank" data-ga="Social: Dribbble">Dribbble</a></li>
-			</ul>
-		</figure>
-
-		<ul>
-			<li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-			<li><a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
-			<li><address>{{ site.address }}</address></li>
-		</ul>
-	</div>
+<section class="contact-info flex">
+  <div class="text-container">
+    <h2 class="center">Contact</h2>
+    <div class="inner flex">
+      <div class="col">
+        <address>
+          {{ site.address }}
+        </address>
+        <p>{{ site.email }}</p>
+        <p>{{ site.phone }}</p>
+				<div class="social">
+					<a href="http://linkedin.com/in/{{site.linkedin}}/">
+						<svg viewBox="0 0 100 100" class="linkedin">
+							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-linkedin"></use>
+						</svg>
+					</a>
+					<a href="http://twitter.com/{{site.twitter}}">
+						<svg viewBox="0 0 100 100" class="twitter">
+							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-twitter"></use>
+						</svg>
+					</a>
+					<a href="http://github.com/{{site.github}}">
+						<svg viewBox="0 0 100 100" class="github">
+							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-github"></use>
+						</svg>
+					</a>
+				</div>
+      </div>
+      <div class="col">
+        {% include contact-from.html %}
+      </div>
+    </div>
+  </div>
 </section>
+
 {% include maps.html %}

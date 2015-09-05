@@ -5,21 +5,26 @@ description:
 categories: team-page
 permalink: team/
 ---
-<div class="content">
-
-	{% for post in site.team name %}
-	<section class="team-member flex">
-		<div class="inner flex">
-			<div class="info col">
-				<h2>{{ post.title }}</h2>
-				<p>{{ post.excerpt }}</p>
-				<p>{{ post.content }}</p>
-			</div>
-			<div class="image col flex">
-				<img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg">
-			</div>
-		</div>
-	</section>
-	{% endfor %}
-
-</div>
+<section class="team flex">
+  <div class="text-container">
+    <h2 class="center">Meet the team.</h2>
+    <div class="flex wrap overflow">
+      {% for post in site.team date %}
+      <a href="{{ post.url }}" class="team-member">
+        <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
+        <div class="meta">
+          <h4>{{ post.title }}</h4>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </a>
+      {% endfor %}
+      <a class="team-member">
+        <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
+        <div class="meta">
+          <h4>Ben jij opzoek naar een creatieve werkplek?</h4>
+        </div>
+      </a>
+    </div>
+    <p>Ben jij opzoek naar een creative werkplek in Haarlem, wij zijn altijd opzoek naar niewue collega's <a href="#">Kijk hier om te kijken wat wij voor elkaar kunnen beteken</a> en hopenlijk tot snel.</p>
+  </div>
+</section>

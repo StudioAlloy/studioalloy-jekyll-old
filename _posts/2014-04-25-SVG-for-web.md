@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  SVG animation on the web
-author: Ruben Daas
+author: Mitchel van Eijgen
 date:   2015-02-25 16:41:48
 categories: Experiment
 filter: code

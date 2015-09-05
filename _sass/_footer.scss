@@ -4,8 +4,6 @@
 	z-index: 9;
 	font-size: .8em;
 	line-height: 1.6em;
-	display: flex;
-	justify-content: flex-end;
 }
 .footer .col:last-child {
 	flex: 2;
@@ -15,8 +13,8 @@
 	margin-right: 50px;
 	margin-bottom: 40px;
 }
-.footer .col,
-.footer .col a {
+.footer,
+.footer a {
 	color: rgba($alt-color, .6);
 }
 .footer p {
@@ -35,9 +33,7 @@
 		position: fixed;
 		bottom: 0;
 	}
-	.footer .wrapper {
-		display: flex;
-		flex-direction: row;
-		width: 80%;
+	.footer .inner {
+	    margin-left: 140px;
 	}
 }
