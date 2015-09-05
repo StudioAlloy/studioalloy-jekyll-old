@@ -1,7 +1,8 @@
 @media only screen and (max-width : 800px) {
   /* Styles */
-  body {
+  html {
     font-size: 12px;
+    line-height: 20px;
   }
   h1 {
     font-size: 1.4em;
@@ -11,13 +12,15 @@
   .main {
     flex-direction: column;
   }
-
   .post,
   .item-container,
   .text-container,
   .inner,
   .col {
     width: 100%
+  }
+  .text-container {
+    padding: 10%;
   }
   .post-page .post {
     width: 50%;
@@ -28,6 +31,9 @@
   .author-side .inner.flex {
     flex-direction: column;
   }
+  .author-side {
+    padding: 40px;
+  }
   .author-side img {
     float: right;
     width: 80px;
@@ -37,7 +43,14 @@
     background-color: #fff;
   }
   .footer .inner {
-      padding: 40px;
+    padding: 40px;
+  }
+  .links.flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-info{
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width : 750px) {
@@ -68,7 +81,7 @@
     padding-bottom: 10%;
   }
   .text-container .col:first-child {
-      margin-right: 40px;
+    margin-right: 40px;
   }
   form {
     margin-right: -120%;

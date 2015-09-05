@@ -41,6 +41,14 @@ h1 {
   line-height: 1.4em;
 }
 
+h2 {
+  font-size: 1.75em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #174f4f;
+}
+
 a {
   color: #444;
   text-decoration: none;
@@ -149,6 +157,7 @@ section {
   z-index: 9;
 }
 
+.text-container.sub h2,
 .text-container.sub {
   background-color: #8dd;
   color: #fff;
@@ -321,6 +330,7 @@ section {
     width: 100%;
     position: absolute;
     right: 0;
+    pointer-events: none;
   }
 
   .menu > li {
@@ -350,6 +360,7 @@ section {
   #toggle:checked + div .menu {
     display: block;
     opacity: 1;
+    pointer-events: auto;
   }
 }
 .toggle {
@@ -754,8 +765,9 @@ form .form-row textarea + label[data-placeholder]:after {
 }
 @media only screen and (max-width: 800px) {
   /* Styles */
-  body {
+  html {
     font-size: 12px;
+    line-height: 20px;
   }
 
   h1 {
@@ -776,6 +788,10 @@ form .form-row textarea + label[data-placeholder]:after {
     width: 100%;
   }
 
+  .text-container {
+    padding: 10%;
+  }
+
   .post-page .post {
     width: 50%;
   }
@@ -786,6 +802,10 @@ form .form-row textarea + label[data-placeholder]:after {
 
   .author-side .inner.flex {
     flex-direction: column;
+  }
+
+  .author-side {
+    padding: 40px;
   }
 
   .author-side img {
@@ -800,6 +820,15 @@ form .form-row textarea + label[data-placeholder]:after {
 
   .footer .inner {
     padding: 40px;
+  }
+
+  .links.flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 750px) {

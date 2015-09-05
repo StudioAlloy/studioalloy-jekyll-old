@@ -31,6 +31,13 @@ h1 {
 	font-size: 1.8em;
 	line-height: 1.4em;
 }
+h2{
+	font-size:1.75em;
+	line-height:1.3em;
+	text-transform: uppercase;
+	letter-spacing:0.02em;
+	color: darken($sub2-color, 50%);
+}
 a {
 	color: $darkgray;
 	text-decoration: none;
