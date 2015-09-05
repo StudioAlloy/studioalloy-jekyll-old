@@ -29,7 +29,7 @@
         <section class="">
 
           <div class="item-container flex wrap">
-            {% assign posts = (site.posts | where:"author","{{ page.title }}") %}
+            {% assign posts = (site.posts | where:"author",{{ page.title }}) %}
             {% for post in posts %}
             <a class="post {{post.categories}}" href="{{ post.url }}">
               <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)">
