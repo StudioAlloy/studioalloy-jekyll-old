@@ -10,33 +10,25 @@ html {
 }
 body {
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 400;
+	font-weight: $regular;
 	margin: 0;
 	color: $darkgray;
 }
 h1, h2, h3, h4, h5 {
-	font-family: 'Open Sans', sans-serif;
+	font-weight: $bold;
 	margin: 0;
-}
-h1 {
-	font-weight: 400;
-}
-h2 {
-	font-weight: 400;
-}
-h3, h4, h5 {
-	font-weight: 800;
+	color: $sub-color;
 }
 h1 {
 	font-size: 1.8em;
 	line-height: 1.4em;
 }
+
 h2{
 	font-size:1.75em;
 	line-height:1.3em;
-	text-transform: uppercase;
 	letter-spacing:0.02em;
-	color: darken($sub2-color, 50%);
+	color: $sub-color;
 }
 a {
 	color: $darkgray;

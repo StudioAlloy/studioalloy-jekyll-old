@@ -19,8 +19,13 @@ body.home section.home .text-container {
   display: flex;
   flex-direction: column;
 }
+.home h1 {
+	font-weight: $regular;
+  color: $sub-color;
+}
 body.home section.home h1 a {
-  font-weight: 800;
+  font-weight: $bold;
+  color: $sub-color;
 }
 /*product*/
 body.home section.products .product {
@@ -104,7 +109,7 @@ section.blog-page .meta span {
   color: $alt-color;
 }
 .post .meta h4 {
-  font-weight: 400;
+  font-weight: $regular;
 }
 .experiment .meta {
   background-color: $sub-color;
@@ -155,7 +160,7 @@ img.author {
 }
 .author-side h2 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: $regular;
 }
 .author-side h2,
 .author-side h3 {

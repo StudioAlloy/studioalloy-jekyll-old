@@ -20,20 +20,9 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
   margin: 0;
-}
-
-h1 {
-  font-weight: 400;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-h3, h4, h5 {
-  font-weight: 800;
+  color: #344;
 }
 
 h1 {
@@ -44,9 +33,8 @@ h1 {
 h2 {
   font-size: 1.75em;
   line-height: 1.3em;
-  text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: #174f4f;
+  color: #344;
 }
 
 a {
@@ -209,10 +197,6 @@ section {
   padding: 30px;
   background-color: #fff;
   position: relative;
-}
-
-.meta h4 {
-  font-weight: 300;
 }
 
 .alt-color,
@@ -483,8 +467,14 @@ body.home section.home .text-container {
           flex-direction: column;
 }
 
+.home h1 {
+  font-weight: 400;
+  color: #344;
+}
+
 body.home section.home h1 a {
-  font-weight: 800;
+  font-weight: 700;
+  color: #344;
 }
 
 /*product*/
@@ -662,7 +652,7 @@ img.author {
 
 .author-side h2 {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .author-side h2,
