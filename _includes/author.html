@@ -1,5 +1,5 @@
 <div class="author-side flex">
-	{% assign author = (site.team|where:"title",{{page.author}}) %}
+	{% assign author = (site.team|where:"title", page.author) %}
 	{% for post in author %}
 	<div class="inner flex">
 		<div class="info col">

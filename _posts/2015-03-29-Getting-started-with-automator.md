@@ -5,7 +5,7 @@ author: Mitchel van Eijgen
 date:   2015-03-29 16:41:48
 categories: Gerneral
 filter: Image
-image: automator
+image: /img/blog/automator.jpg
 embed:
 colour: ddd
 ---

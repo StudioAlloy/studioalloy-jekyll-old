@@ -5,7 +5,7 @@ author: Mitchel van Eijgen
 date:   2015-03-29 16:41:48
 categories: Product
 filter: Image
-image: pebble
+image: /img/blog/pebble.jpg
 embed:
 colour: 333
 ---

@@ -20,7 +20,7 @@ baseurl: "//studioalloy.nl"
 twitter_username: studioalloy
 github_username:  studioalloy
 
-default_image: image.jpg
+default_image: /image.jpg
 
 # Collections
 collections:

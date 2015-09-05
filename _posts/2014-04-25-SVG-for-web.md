@@ -5,7 +5,7 @@ author: Mitchel van Eijgen
 date:   2015-02-25 16:41:48
 categories: Experiment
 filter: code
-image: svg
+image: /img/blog/svg.jpg
 embed: GaIyC
 colour: 037cb9
 ---
