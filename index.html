@@ -14,13 +14,13 @@ categories: index
       <img class="logo" src="{{ site.baseurl }}/img/{{ site.title | downcase }}-logo.svg">
     </div>
   </section>
-
+  
   <section class="about flex start">
     <div class="text-container">
       {{ site.description }}
     </div>
   </section>
-
+  
   <section class="cases flex">
     <div class="item-container flex wrap">
       {% assign featured_case = (site.case | where:"featured","true") %}
@@ -39,62 +39,55 @@ categories: index
       {% endfor %}
     </div>
   </section>
-  <!-- <section class="products">
-  {% for post in site.product %}
-  {% if post.featured == "true" %}
-  <div class="product">
-  <img class="platfrom-icon" src="{{ site.baseurl }}/img/{{ post.platfrom }}.svg">
-  <div class="text-container">
-  <h2>{{ post.title }}</h2>
-  <p>{{ post.content }}</p>
-</div>
-</div>
-{% endif %}
-{% endfor %}
-</section> -->
-<section class="clients vh cover flex end min-vh" style="background: url({{ site.baseurl }}/img/clients.jpg);">
-  <div class="text-container sub">
-    <h2 class="center no-margin">Past jouw organisatie hier ook tussen?</h2>
-  </div>
-</section>
-<section class="team flex">
-  <div class="text-container">
-    <h2 class="center">Meet the team.</h2>
-    <div class="flex wrap overflow">
-      {% for post in site.team date %}
-      <a href="{{ post.url }}" class="team-member">
-        <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
-        <div class="meta">
-          <h4>{{ post.title }}</h4>
-          <p>{{ post.excerpt }}</p>
-        </div>
-      </a>
-      {% endfor %}
-      <a class="team-member">
-        <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
-        <div class="meta">
-          <h4>Ben jij opzoek naar een creatieve werkplek?</h4>
-        </div>
-      </a>
+  
+  <section class="clients vh cover flex end min-vh" style="background: url({{ site.baseurl }}/img/clients.jpg);">
+    <div class="text-container sub">
+      <h2 class="center no-margin">Past jouw organisatie hier ook tussen?</h2>
     </div>
-    <p>Ben jij opzoek naar een creative werkplek in Haarlem, wij zijn altijd opzoek naar niewue collega's <a href="#">Kijk hier om te kijken wat wij voor elkaar kunnen beteken</a> en hopenlijk tot snel.</p>
-  </div>
-</section>
-{% include maps.html %}
-<section class="contact-info flex">
-  <div class="text-container min-vh">
-    <h2 class="center">Contact</h2>
-    <div class="inner flex">
-      <div class="col">
-        <address>
-          {{ site.address }}
-        </address>
-        <p>{{ site.email }}</p>
-        <p>{{ site.phone }}</p>
+  </section>
+  <section class="team flex">
+    <div class="text-container">
+      <h2 class="center">Meet the team.</h2>
+      <div class="flex wrap overflow">
+        
+        <div id="owl-example" class="owl-carousel">
+          {% for post in site.team date %}
+          <a href="{{ post.url }}" class="team-member">
+            <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
+            <div class="meta">
+              <h4>{{ post.title }}</h4>
+              <!-- <p>{{ post.excerpt }}</p> -->
+            </div>
+          </a>
+          {% endfor %}
+          <a class="team-member">
+            <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
+            <div class="meta">
+              <h4>Ben jij opzoek naar een creatieve werkplek?</h4>
+            </div>
+          </a>
+        </div>
+        
       </div>
-      <div class="col">
-        {% include contact-from.html %}
+      <p>Ben jij opzoek naar een creative werkplek in Haarlem, wij zijn altijd opzoek naar niewue collega's <a href="#">Kijk hier om te kijken wat wij voor elkaar kunnen beteken</a> en hopenlijk tot snel.</p>
+    </div>
+  </section>
+  {% include maps.html %}
+  <section class="contact-info flex">
+    <div class="text-container min-vh">
+      <h2 class="center">Contact</h2>
+      <div class="inner flex">
+        <div class="col">
+          <address>
+            {{ site.address }}
+          </address>
+          <p>{{ site.email }}</p>
+          <p>{{ site.phone }}</p>
+        </div>
+        <div class="col">
+          {% include contact-from.html %}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  

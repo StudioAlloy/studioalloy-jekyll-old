@@ -20,7 +20,7 @@ body.home section.home .text-container {
   flex-direction: column;
 }
 .home h1 {
-	font-weight: $regular;
+  font-weight: $regular;
   color: $sub-color;
 }
 body.home section.home h1 a {
@@ -172,7 +172,7 @@ img.author {
   align-items: flex-end;
 }
 .links.flex {
-justify-content: flex-start;
+  justify-content: flex-start;
 }
 .links.flex .contact-info {
   margin-right: 10%
@@ -190,15 +190,15 @@ justify-content: flex-start;
   padding: 10px;
   background-color: $sub2-color;
   position: relative;
-    margin-top: -40px;
+  margin-top: -40px;
 }
 .team-member .meta p {
-    color: $alt-color;
-    font-size: 0.7em;
-    line-height: 1.2em;
+  color: $alt-color;
+  font-size: 0.7em;
+  line-height: 1.2em;
 }
 .team-member {
-    margin-bottom: 8%;
+  margin-bottom: 8%;
 }
 /*Team single page*/
 .single-team author {
@@ -206,7 +206,7 @@ justify-content: flex-start;
   margin: 4% 0;
 }
 .single-team author img {
-    width: 50%;
+  width: 50%;
 }
 /*END Team single page*/
 /* END Team

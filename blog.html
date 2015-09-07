@@ -8,10 +8,10 @@ permalink: blog/
 
 <section class="blog-page no-vh">
 	<div class="content">
-
+		
 		{% for post in site.posts date %}
 		<a class="post {{post.categories}}" href="{{ post.url }}">
-			<div class="featured-image cover" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)">
+			<div class="featured-image cover" style="background: url({{ site.baseurl }}{{ post.image }}.jpg)">
 				<div class="hover">
 					<author><span>Door: </span>{{post.author}}</author>
 				</div>
@@ -22,6 +22,6 @@ permalink: blog/
 			</div>
 		</a>
 		{% endfor %}
-
+		
 	</div>
 </section>
