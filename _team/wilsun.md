@@ -8,7 +8,7 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.wilsuncheung.nl/
 phone: +31 (0)6 24 62 11 88
 email: cheungw91@gmail.com
-twitter: @_dimsun
+twitter: _dimsun
 github: 
 linkedin: https://www.linkedin.com/in/wilsuncheung
 ---
