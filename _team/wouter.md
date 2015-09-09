@@ -5,13 +5,15 @@ date:   2013-07-30 16:22:48
 categories: streetview
 excerpt: Complexe systemen
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
-website: mvaneijgen.nl
-phone: 06 38 63 27 35
-email: mvaneijgen@gmail.com
-twitter: mvaneijgen
-github: mvaneijgen
-linkedin: mvaneijgen
+website: http://lagua.nl
+phone: +31 (0)6 31 68 38 22
+email: wshager@gmail.com
+twitter: 
+github: https://github.com/wshager
+linkedin: https://www.linkedin.com/pub/wouter-hager/1a/696/223
 ---
-Wouter is een ras-programmeur. Hij snapt computers en kan deze vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bouwen en bedenken van nieuwe systemen. Naast zijn werk bij Alloy, is Wouter actief als hoofd developer bij een wetenschappelijke uitgeverij in Amsterdam.
+Wouter is een artistiek programmeur met passie voor complexe muziek en code. Hij begrijpt computers al van kinds af aan en kan de techniek vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bedenken en ontwikkelen van web-based applicaties en de opbouw qua systeemarchitectuur.
 
-Zijn grootste passie is het verbeteren de werkwijze van developers. Hiervoor is hij onder meer bezig met de schepping van een nieuwe JavaScript library.
+Naast zijn werk bij Alloy, is Wouter actief als hoofd developer bij een uitgeverij voor wetenschappelijke literatuur in Amsterdam.
+
+Zijn grootste passie naast muziek is het verbeteren de werkwijze van developers. Hiervoor is hij ondermeer actief betrokken als gewaardeerde bijdrager met de schepping van een nieuwe JavaScript library in samenwerking met een groep JavaScript programmeurs vanuit de hele wereld.
