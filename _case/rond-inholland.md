@@ -1,0 +1,14 @@
+---
+layout: project
+opdrachtgever: Hogeschool InHolland
+title: Rond InHolland
+date: 2015-05-30 16:22:48
+categories: website, interactief
+excerpt: Online nieuwsbrief publicatieplatform
+featured: false
+url: 
+image: 
+---
+Het door Plein C ontwikkelde lespakket De Grote Volksverhuizing is een manier voor kinderen in Noord-Holland om te leren over De Atlantikwall. Dit enorme bouwwerk wat tijdens de Tweede Wereldoorlog is gebouwd door de Duitse bezetters had grote gevolgen voor de inwoners van de dorpen waarin gebouwd werd. Als je door de Nederlandse kustgebieden loopt is de invloed van deze verdedigingslinie overal terug te zien. Studio Alloy ontwikkelde de web-based drager van dit lespakket, waardoor het voor alle kinderen en scholen met toegang tot internet toegankelijk is.
+
+Bij het ontwikkelen van het lespakket werkten we nauw samen met de lesontwikkelaar. Alloy vertaalde de lessen naar een visuele vorm en werkte het uit tot een interactieve webapplicatie. In het ontwerp van de interactie werd veel gebruik gemaakt van een typische game-stijl, hierdoor kunnen leerlingen spelenderwijs informatie opnemen en zelf tot bepaalde conclusies komen. De docent kan het lespakket gebruiken als tool, om samen met de leerlingen op onderzoek te gaan in het materiaal.
