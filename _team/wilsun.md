@@ -10,7 +10,7 @@ phone: +31 (0)6 24 62 11 88
 email: cheungw91@gmail.com
 twitter: @_dimsun
 github: 
-linkedin: http://www.wilsuncheung.nl/
+linkedin: https://www.linkedin.com/in/wilsuncheung
 ---
 Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.
 
