@@ -3,17 +3,17 @@ layout: team
 title:  "Ruben Daas"
 date:   2014-06-30 16:22:48
 categories: pexion
-excerpt: Data, data, data, data en data
+excerpt: Redactionele digital designer met liefde voor data
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
-website: mvaneijgen.nl
-phone: 06 38 63 27 35
-email: mvaneijgen@gmail.com
-twitter: mvaneijgen
-github: mvaneijgen
-linkedin: mvaneijgen
+website: http://www.daasdesign.nl
+phone: +31 (0)6 28 63 57 85
+email: info@daasdesign.nl
+twitter: @ARTiiii
+github: 
+linkedin: https://nl.linkedin.com/in/rubendaas
 ---
-De ontwerppraktijk van Ruben Daas richt zich voornamelijk op het visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.
+Als ontwerper richt Ruben zich voornamelijk op het communiceren, visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.
 
-Ruben Daas studeerde Grafisch Ontwerpen aan de Willem de Kooning Academie te Rotterdam. Daar merkte hij dat hij zijn ontwerpkeuzes graag onderbouwt met data en dat hij liever voor het functionele kies dan voor het esthetische. Deze werkvorm heeft hij voortgezet in zijn professionele carrière. Sinds oktober 2014 maakt hij onderdeel uit van Alloy.
+Ruben Daas studeerde Grafisch Ontwerpen aan de Willem de Kooning Academie te Rotterdam. Daar merkte hij dat hij zijn ontwerpkeuzes graag onderbouwt met data en dat hij liever voor het functionele kies dan voor het esthetische. Deze werkvorm heeft hij voortgezet in zijn professionele carrière.
 
 De wetenschap en/of de journalistiek zijn de gebieden waar zijn grootste interesse ligt en wil het liefst hier zijn kennis en ervaring voor inzetten.
