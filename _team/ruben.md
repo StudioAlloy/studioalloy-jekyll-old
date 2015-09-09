@@ -7,7 +7,7 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.daasdesign.nl
 phone: +31 (0)6 28 63 57 85
 email: info@daasdesign.nl
-twitter: @ARTiiii
+twitter: ARTiiii
 github: 
 linkedin: https://nl.linkedin.com/in/rubendaas
 ---
