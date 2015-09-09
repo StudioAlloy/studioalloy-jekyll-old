@@ -5,12 +5,12 @@ date:   2014-04-30 16:22:48
 categories: vriend
 excerpt: ADAYS
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
-website: mvaneijgen.nl
-phone: 06 38 63 27 35
-email: mvaneijgen@gmail.com
-twitter: mvaneijgen
-github: mvaneijgen
-linkedin: mvaneijgen
+website: http://www.adays.nl
+phone: +31 (0)6 43 02 97 48
+email: dani@2preform.nl
+twitter: 
+github: 
+linkedin: https://www.linkedin.com/profile/view?id=AAkAAADbqkUBwdSarCOeTv6iGvtk-z6eQgyxgWc
 ---
 Motion designer Daniel Lim is een visueel kunstenaar met grote passie voor sferische beelden die tot stand komen door een mix van grafische en organische vormen. Zijn hybrid design filmstudio ADAYS richt zich op regie, design en productie van visueel aantrekkelijke films en 2D/3D animaties die bijvoorbeeld worden ingezet als commercial, infomercial, explanatory video, preroll, muziekclip, short of corporate film, visual effects of als visual art project.
 
