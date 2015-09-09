@@ -80,7 +80,7 @@
             <img src="/img/team/daniel-lim.jpg" alt="" class="clip" />
             <h1>Daniel Lim</h1>
             <h2>ADAYS</h2>
-            <h4>@mvaneijgen</h4>
+            <h4>@</h4>
           </author>
           <div class="text-container">
             <p>Motion designer Daniel Lim is een visueel kunstenaar met grote passie voor sferische beelden die tot stand komen door een mix van grafische en organische vormen. Zijn hybrid design filmstudio ADAYS richt zich op regie, design en productie van visueel aantrekkelijke films en 2D/3D animaties die bijvoorbeeld worden ingezet als commercial, infomercial, explanatory video, preroll, muziekclip, short of corporate film, visual effects of als visual art project.</p>
@@ -89,21 +89,21 @@
 
           </div>
         </section>
-
+        
         <section class="flex">
           <div class="text-container">
             <h2>Lees hier de posts door Daniel Lim</h2>
           </div>
         </section>
-
-        <section class="">
-
+        
+        <section class="flex">
+          
           <div class="item-container flex wrap">
             
             
           </div>
         </section>
-
+        
       </div>
     </div>
   </div>
@@ -152,25 +152,21 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	var owl = $('.owl-carousel');
-	$('.owl-carousel').owlCarousel({
+	owl.owlCarousel({
 		loop:true,
-		nav:true,
 		margin:60,
+		nav:true,
+		center:true,
+		startPosition: 3,
 		responsive:{
 			0:{
 				items:1
 			},
 			600:{
 				items:3
-			},
-			960:{
-				items:3
-			},
-			1200:{
-				items:3
 			}
 		}
-	})
+	});
 });
 </script>
 

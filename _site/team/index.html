@@ -91,7 +91,7 @@
         <img src="/img/team/david-hager.jpg" class="clip">
         <div class="meta">
           <h4>David Hager</h4>
-          <p>Eigenlijk een alles kunner, maar het best in het samen bregen van mensen en ideeën</p>
+          <p>Een alleskunner gespecialiseerd in het samenbrengen van mensen en ideeën</p>
         </div>
       </a>
       
@@ -115,7 +115,7 @@
         <img src="/img/team/ruben-daas.jpg" class="clip">
         <div class="meta">
           <h4>Ruben Daas</h4>
-          <p>Data, data, data, data en data</p>
+          <p>Redactionele digital designer met liefde voor data</p>
         </div>
       </a>
       
@@ -193,25 +193,21 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	var owl = $('.owl-carousel');
-	$('.owl-carousel').owlCarousel({
+	owl.owlCarousel({
 		loop:true,
-		nav:true,
 		margin:60,
+		nav:true,
+		center:true,
+		startPosition: 3,
 		responsive:{
 			0:{
 				items:1
 			},
 			600:{
 				items:3
-			},
-			960:{
-				items:3
-			},
-			1200:{
-				items:3
 			}
 		}
-	})
+	});
 });
 </script>
 

@@ -80,7 +80,7 @@
             <img src="/img/team/mitchel-van-eijgen.jpg" alt="" class="clip" />
             <h1>Mitchel van Eijgen</h1>
             <h2>Grafisch ontwerper met een liefde voor techniek</h2>
-            <h4>@mvaneijgen</h4>
+            <h4>@https://twitter.com/mvaneijgen</h4>
           </author>
           <div class="text-container">
             <p>Al sinds jonge twintiger is Mitchel van Eijgen actief als ondernemer in de wereld van design, code en technische vernieuwing. Deze gadget freak is non-stop actief als technisch grafisch ontwerper met fascinatie voor innovaties en het automatiseren van zijn werk. En eigenlijk ook dagelijks bezig om de rest van zijn leven geautomatiseerd te maken.</p>
@@ -91,69 +91,73 @@
 
           </div>
         </section>
-
+        
         <section class="flex">
           <div class="text-container">
             <h2>Lees hier de posts door Mitchel van Eijgen</h2>
           </div>
         </section>
-
-        <section class="">
-
+        
+        <section class="flex">
+          
           <div class="item-container flex wrap">
             
             
             <a class="post product" href="/blog/The-Apple-Watch-launched-and-I-bought-a-Pebble/">
-              <div class="featured-image cover" style="background: url(/img/blog//img/blog/pebble.jpg.jpg)">
-                <div class="hover">
-                  <author><span>Door: </span>Mitchel van Eijgen</author>
-                </div>
-              </div>
-              <div class="meta">
-                <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
-                <h4><span>product: </span>The Apple Watch launched and I bought a Pebble</h4>
-              </div>
-            </a>
+  <div class="featured-image cover" style="background: url(/img/blog/pebble.jpg)">
+    <div class="hover">
+      <author><span>Door: </span>Mitchel van Eijgen</author>
+    </div>
+  </div>
+  <div class="meta">
+    <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
+    <h4><span>product: </span>The Apple Watch launched and I bought a Pebble</h4>
+  </div>
+</a>
+
             
             <a class="post product" href="/blog/Local-Airplay/">
-              <div class="featured-image cover" style="background: url(/img/blog//img/blog/airplay.jpg.jpg)">
-                <div class="hover">
-                  <author><span>Door: </span>Mitchel van Eijgen</author>
-                </div>
-              </div>
-              <div class="meta">
-                <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
-                <h4><span>product: </span>Offline airplay</h4>
-              </div>
-            </a>
+  <div class="featured-image cover" style="background: url(/img/blog/airplay.jpg)">
+    <div class="hover">
+      <author><span>Door: </span>Mitchel van Eijgen</author>
+    </div>
+  </div>
+  <div class="meta">
+    <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
+    <h4><span>product: </span>Offline airplay</h4>
+  </div>
+</a>
+
             
             <a class="post gerneral" href="/blog/Getting-started-with-automator/">
-              <div class="featured-image cover" style="background: url(/img/blog//img/blog/automator.jpg.jpg)">
-                <div class="hover">
-                  <author><span>Door: </span>Mitchel van Eijgen</author>
-                </div>
-              </div>
-              <div class="meta">
-                <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
-                <h4><span>gerneral: </span>Getting started with automator</h4>
-              </div>
-            </a>
+  <div class="featured-image cover" style="background: url(/img/blog/automator.jpg)">
+    <div class="hover">
+      <author><span>Door: </span>Mitchel van Eijgen</author>
+    </div>
+  </div>
+  <div class="meta">
+    <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
+    <h4><span>gerneral: </span>Getting started with automator</h4>
+  </div>
+</a>
+
             
             <a class="post experiment" href="/blog/SVG-for-web/">
-              <div class="featured-image cover" style="background: url(/img/blog//img/blog/svg.jpg.jpg)">
-                <div class="hover">
-                  <author><span>Door: </span>Mitchel van Eijgen</author>
-                </div>
-              </div>
-              <div class="meta">
-                <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
-                <h4><span>experiment: </span>SVG animation on the web</h4>
-              </div>
-            </a>
+  <div class="featured-image cover" style="background: url(/img/blog/svg.jpg)">
+    <div class="hover">
+      <author><span>Door: </span>Mitchel van Eijgen</author>
+    </div>
+  </div>
+  <div class="meta">
+    <img class="author" src="/img/team/mitchel-van-eijgen.jpg">
+    <h4><span>experiment: </span>SVG animation on the web</h4>
+  </div>
+</a>
+
             
           </div>
         </section>
-
+        
       </div>
     </div>
   </div>
@@ -202,25 +206,21 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	var owl = $('.owl-carousel');
-	$('.owl-carousel').owlCarousel({
+	owl.owlCarousel({
 		loop:true,
-		nav:true,
 		margin:60,
+		nav:true,
+		center:true,
+		startPosition: 3,
 		responsive:{
 			0:{
 				items:1
 			},
 			600:{
 				items:3
-			},
-			960:{
-				items:3
-			},
-			1200:{
-				items:3
 			}
 		}
-	})
+	});
 });
 </script>
 

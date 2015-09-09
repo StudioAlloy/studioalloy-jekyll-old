@@ -19,33 +19,23 @@
             {{ content }}
           </div>
         </section>
-
+        
         <section class="flex">
           <div class="text-container">
             <h2>Lees hier de posts door {{ page.title }}</h2>
           </div>
         </section>
-
-        <section class="">
-
+        
+        <section class="flex">
+          
           <div class="item-container flex wrap">
             {% assign posts = (site.posts | where:"author", page.title) %}
             {% for post in posts %}
-            <a class="post {{post.categories}}" href="{{ post.url }}">
-              <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/blog/{{ post.image }}.jpg)">
-                <div class="hover">
-                  <author><span>Door: </span>{{post.author}}</author>
-                </div>
-              </div>
-              <div class="meta">
-                <img class="author" src="{{site.baseurl}}/img/team/{{post.author | slugify }}.jpg">
-                <h4><span>{{post.categories}}: </span>{{ post.title }}</h4>
-              </div>
-            </a>
+            {% include post-loop.html %}
             {% endfor %}
           </div>
         </section>
-
+        
       </div>
     </div>
   </div>

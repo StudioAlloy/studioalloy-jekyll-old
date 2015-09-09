@@ -15,21 +15,33 @@ body {
 	color: $darkgray;
 }
 h1, h2, h3, h4, h5 {
-	font-weight: $bold;
 	margin: 0;
 	color: $sub-color;
 }
+h1, h3 {
+	font-weight: $regular;
+}
+h1, h2, h3, h4, h5 {
+	font-weight: $bold;
+}
 h1 {
-	font-size: 1.8em;
-	line-height: 1.4em;
+	font-size: 3.5em;
+	line-height: 4em;
+	text-transform: uppercase;
+	letter-spacing:0.02em;
 }
 
 h2{
-	font-size:1.75em;
-	line-height:1.3em;
-	letter-spacing:0.02em;
-	color: $sub-color;
+	font-size: 2.5em;
+	line-height: 3em;
 }
+h3{
+	font-size: 2.5em;
+	line-height: 3em;
+	font-weight:400;
+	text-transform: uppercase;
+}
+
 a {
 	color: $darkgray;
 	text-decoration: none;

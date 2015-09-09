@@ -20,21 +20,35 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 700;
   margin: 0;
   color: #344;
 }
 
+h1, h3 {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
 h1 {
-  font-size: 1.8em;
-  line-height: 1.4em;
+  font-size: 3.5em;
+  line-height: 4em;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 h2 {
-  font-size: 1.75em;
-  line-height: 1.3em;
-  letter-spacing: 0.02em;
-  color: #344;
+  font-size: 2.5em;
+  line-height: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 3em;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 a {
@@ -475,6 +489,20 @@ section {
   z-index: 1;
 }
 
+/*MVE owl custom*/
+.owl-nav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.owl-nav div {
+  display: inline;
+  margin-right: 50px;
+  background-color: gray;
+  padding: 10px;
+  color: #fff;
+}
+
 /* END owl carousel */
 #header {
   display: block;
@@ -650,12 +678,15 @@ body.home section.home .text-container {
   flex-direction: column;
 }
 
-.home h1 {
+section.home h1 {
   font-weight: 400;
   color: #344;
+  font-size: 1.8em;
+  line-height: 1.4em;
+  text-transform: inherit;
 }
 
-body.home section.home h1 a {
+section.home h1 a {
   font-weight: 700;
   color: #344;
 }

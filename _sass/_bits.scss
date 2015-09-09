@@ -219,5 +219,16 @@
   position: relative;
   z-index: 1;
 }
-
+/*MVE owl custom*/
+.owl-nav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.owl-nav div {
+  display: inline;
+  margin-right: 50px;
+  background-color: gray;
+  padding: 10px;
+  color: #fff;
+}
 /* END owl carousel */

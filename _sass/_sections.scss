@@ -19,11 +19,14 @@ body.home section.home .text-container {
   display: flex;
   flex-direction: column;
 }
-.home h1 {
+section.home h1 {
   font-weight: $regular;
   color: $sub-color;
+  font-size: 1.8em;
+  line-height: 1.4em;
+  text-transform: inherit;
 }
-body.home section.home h1 a {
+section.home h1 a {
   font-weight: $bold;
   color: $sub-color;
 }

@@ -133,25 +133,21 @@
 <script type="text/javascript">
 $(document).ready(function(){
 	var owl = $('.owl-carousel');
-	$('.owl-carousel').owlCarousel({
+	owl.owlCarousel({
 		loop:true,
-		nav:true,
 		margin:60,
+		nav:true,
+		center:true,
+		startPosition: 3,
 		responsive:{
 			0:{
 				items:1
 			},
 			600:{
 				items:3
-			},
-			960:{
-				items:3
-			},
-			1200:{
-				items:3
 			}
 		}
-	})
+	});
 });
 </script>
 
