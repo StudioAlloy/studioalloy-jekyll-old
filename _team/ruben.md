@@ -2,7 +2,6 @@
 layout: team
 title:  "Ruben Daas"
 date:   2014-06-30 16:22:48
-categories: pexion
 excerpt: Redactionele digital designer met liefde voor data
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.daasdesign.nl
