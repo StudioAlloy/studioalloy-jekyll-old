@@ -1,12 +1,11 @@
 ---
 layout: project
-title:  "Noeser webshop"
-date:   2013-01-02 16:22:48
-categories: noeser
-excerpt: Design and development
-color: "#e6e5e3"
-platfrom: "large"
-featured: "false"
-url: //fabstagram.nl
-image: "1"
+opdrachtgever: Noeser
+title: Noeser
+date: 2015-05-30 16:22:48
+categories: huisstijl, website, wordpress, webshop
+excerpt: Design en ontwikkeling verschillende uitingen van Noeser
+featured: false
+url: //noeser.eu
+image: 
 ---
