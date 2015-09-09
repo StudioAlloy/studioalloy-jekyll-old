@@ -1,15 +1,15 @@
 ---
 layout: project
-title: "Corpus touch table"
+klant: Corpus Reis door de Mens
+title: "CORPUS 'De Anatomische Les'"
 date: 2014-06-30 16:22:48
 categories: corpus
-excerpt: Interactive multi-touch table
+excerpt: Interactieve multi-touch tafel
 color: "#000"
 featured: "true"
 platfrom: "large"
 image: "1"
 ---
-####banaan
-Het door Plein C ontwikkelde lespakket De Grote Volksverhuizing is een manier voor kinderen in Noord Holland om te leren over De Atlantikwall. Dit enorme bouwwerk wat tijdens de tweede wereldoorlog is gebouwd door de Duitse bezetters had grote gevolgen voor de inwoners van de dorpen waarin gebouwd werd. Als je door de Nederlandse kustgebieden loopt is de invloed van deze verdedigingslinie overal terug te zien. Alloy ontwikkelde de web-based drager van dit lespakket, waardoor het voor alle kinderen en scholen met toegang tot internet toegankelijk is.
+Voor CORPUS 'Reis door de Mens' hebben wij 'De Anatomische Les' ontwikkeld; een multi-touch experience waarbij je het menselijk lichaam digitaal kan ontleden. Op een liggende multi-touch tafel is een levensgroot menselijk lichaam te zien en met zo’n 8 mensen tegelijkertijd kan je individueel organen uit het lichaam naar je toe slepen en in 3D bekijken en nuttige informatie over lezen. Naast deze interactieve anatomische les is het mogelijk om te switchen naar een game met vragen over het menselijk lichaam.
 
-Bij het ontwikkelen van het lespakket werkte we nauw samen met de les ontwikkelaar. Alloy vertaalde de lessen naar een visuele vorm en werkte het uit tot een interactieve web applicatie. In het ontwerp van de interactie werd veel gebruik gemaakt van een typische game-stijl, hierdoor kunnen leerlingen spelenderwijs informatie opnemen en zelf tot bepaalde conclusies komen. De docent kan het lespakket gebruiken als tool, om samen met de leerlingen op onderzoek te gaan in het materiaal.
+Het concept en alle 3D content is door ons ontwikkeld in game platform Unity en samen met een digitale partner en standbouwer in opdracht van CORPUS gerealiseerd. De aansturende PC start elke dag automatisch op en wordt aan het einde van de dag afgesloten.
