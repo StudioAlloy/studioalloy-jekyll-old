@@ -1,12 +1,11 @@
 ---
 layout: project
-title: "De grote volksverhuizing"
+opdrachtgever: Explanation Design, PleinC
+title: De Grote Volksverhuizing
 date: 2015-05-30 16:22:48
-categories: grote-volksverhuizing
+categories: lespakketten, website, interactief
 excerpt: Interactieve lespakketen basisonderwijs over de Atlantikwall
-color: "#bb7"
-platfrom: "large"
-featured: "true"
+featured: true
 url: //degrotevolksverhuizing.nl
 image: "11"
 ---
