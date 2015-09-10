@@ -1,11 +1,25 @@
-<a class="post" href="{{ case.url }}">
-  <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ case.categories }}.jpg)">
+{% if page.title == "Case" %}
+<a class="post" href="{{ post.url }}">
+  <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ post.title | slugify }}-1.jpg)">
     <div class="hover">
-      <img class="logo" src="{{ site.baseurl }}/img/case/{{ case.categories }}-logo.png">
+      <img class="logo" src="{{ site.baseurl }}/img/case/{{ post.title | slugify }}-logo.png">
     </div>
   </div>
   <div class="meta">
-    <h2>{{ case.title }}</h2>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt }}</p>
+  </div>
+</a>
+{% else %}
+<a class="post" href="{{ case.url }}">
+  <div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ case.title | slugify }}-1.jpg)">
+    <div class="hover">
+      <img class="logo" src="{{ site.baseurl }}/img/case/{{ case.title | slugify }}-logo.png">
+    </div>
+  </div>
+  <div class="meta">
+    <h3>{{ case.title }}</h3>
     <p>{{ case.excerpt }}</p>
   </div>
 </a>
+{% endif %}

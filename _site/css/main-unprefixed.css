@@ -21,33 +21,40 @@ body {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
-  color: #344;
+  color: #8dd;
 }
 
-h1, h3 {
+h1, h2, h3 {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5 {
+h4, h5 {
   font-weight: 700;
 }
 
 h1 {
-  font-size: 3.5em;
-  line-height: 4em;
+  font-size: 3.5rem;
+  line-height: 4rem;
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
 }
 
 h2 {
-  font-size: 2.5em;
-  line-height: 3em;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 2.5em;
-  line-height: 3em;
-  font-weight: 400;
+  font-size: 1.6rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
 
@@ -159,6 +166,14 @@ section {
   z-index: 9;
 }
 
+.title-container {
+  width: 80%;
+  background-color: #fff;
+  padding: 4% 10%;
+  max-width: 1100px;
+  z-index: 9;
+}
+
 .text-container.sub h2,
 .text-container.sub {
   background-color: #8dd;
@@ -178,9 +193,13 @@ section {
 }
 
 .meta {
-  padding: 30px;
-  background-color: #fff;
+  padding: 45px;
+  background-color: #8dd;
   position: relative;
+}
+
+.meta * {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .alt-color,
@@ -195,6 +214,10 @@ section {
 
 .clip:hover {
   clip-path: polygon(15% 15%, 50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
+}
+
+.sub-color {
+  color: #8dd;
 }
 
 /* Post
@@ -239,10 +262,6 @@ section {
   background-size: cover !important;
   background-position: center center !important;
   background-repeat: no-repeat !important;
-}
-
-.meta p {
-  color: #aaa;
 }
 
 /* END
@@ -523,7 +542,7 @@ section {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   /* Styles */
   #header .container {
     display: flex;
@@ -544,7 +563,7 @@ section {
     margin-right: 10px;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   /* Styles */
   #header .container {
     position: fixed;
@@ -681,8 +700,8 @@ body.home section.home .text-container {
 section.home h1 {
   font-weight: 400;
   color: #344;
-  font-size: 1.8em;
-  line-height: 1.4em;
+  font-size: 2rem;
+  line-height: 3rem;
   text-transform: inherit;
 }
 
@@ -889,8 +908,6 @@ img.author {
 
 .team-member .meta p {
   color: #fff;
-  font-size: 0.7em;
-  line-height: 1.2em;
 }
 
 .team-member {
@@ -921,9 +938,9 @@ form .form-row textarea,
 form .form-row input[type="text"] {
   box-sizing: border-box;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border: 0;
-  margin-bottom: 2em;
+  margin-bottom: 30px;
   transition: all 0.5s ease-in-out;
   outline: 0;
 }
@@ -938,10 +955,8 @@ form .form-row input[type="text"] + label[data-placeholder]:after {
   position: absolute;
   top: 30%;
   left: 0.5rem;
-  transform: translate(0%, -50%);
+  transform: translate(0%, -80%);
   transition: all 0.1s ease-in-out;
-  text-transform: uppercase;
-  font-size: 0.5em;
   background-color: #fff;
   padding: 4px 8px;
   height: 10px;
@@ -950,7 +965,7 @@ form .form-row input[type="text"] + label[data-placeholder]:after {
 form .form-row textarea:focus + label[data-placeholder]:after, form .form-row textarea:valid + label[data-placeholder]:after,
 form .form-row input[type="text"]:focus + label[data-placeholder]:after,
 form .form-row input[type="text"]:valid + label[data-placeholder]:after {
-  transform: translate(-5%, -140%);
+  transform: translate(-5%, -220%);
 }
 
 form h3 {
@@ -964,7 +979,7 @@ input[type="submit"] {
   float: right;
   background-color: #E64;
   color: #fff;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 textarea {
@@ -972,7 +987,7 @@ textarea {
 }
 
 form .form-row textarea + label[data-placeholder]:after {
-  top: 10%;
+  top: 17%;
 }
 
 .footer {
@@ -1022,11 +1037,11 @@ form .form-row textarea + label[data-placeholder]:after {
     margin-left: 140px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   /* Styles */
   html {
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
   }
 
   h1 {
@@ -1049,10 +1064,6 @@ form .form-row textarea + label[data-placeholder]:after {
 
   .text-container {
     padding: 10%;
-  }
-
-  .post-page .post {
-    width: 50%;
   }
 
   body.home section.cases .case {
@@ -1096,7 +1107,7 @@ form .form-row textarea + label[data-placeholder]:after {
     width: 100% !important;
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 900px) {
   /* Styles */
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
@@ -1127,7 +1138,7 @@ form .form-row textarea + label[data-placeholder]:after {
   }
 
   form {
-    margin-right: -120%;
+    margin-right: -100%;
   }
 
   .overflow {

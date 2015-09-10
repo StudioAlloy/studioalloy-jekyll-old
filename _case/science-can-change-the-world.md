@@ -7,7 +7,8 @@ categories: website
 excerpt: Website voor campagne Science can change the world van DSM
 featured: false
 url: //sciencecanchangetheworld.can
-image: 
+image:
+status: "published"
 ---
 Wereldwijd zijn veel wetenschappers druk bezig met het ontwikkelen van projecten die het verschil maken. Deze wetenschappers doen dit vanuit een onuitputtelijke drang de wereld te verbeteren. Met de campagne wil DSM deze wetenschappers een podium geven.
 

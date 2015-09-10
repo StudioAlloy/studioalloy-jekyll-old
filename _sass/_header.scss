@@ -15,7 +15,7 @@
 	text-transform: uppercase;
 }
 
-@media only screen and (max-width : 800px) {
+@media only screen and (max-width : 900px) {
 	/* Styles */
 	#header .container {
 		display: flex;
@@ -33,7 +33,7 @@
 		margin-right: 10px;
 	}
 }
-@media only screen and (min-width : 800px) {
+@media only screen and (min-width : 900px) {
 	/* Styles */
 	#header .container {
 		position: fixed;

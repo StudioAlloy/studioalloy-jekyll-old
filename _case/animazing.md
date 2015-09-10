@@ -7,5 +7,6 @@ categories: huisstijl, 2d animatie, website, wordpress
 excerpt: Design en ontwikkeling verschillende middelen voor startup Animazing
 featured: false
 url: //animazing.nl
-image: 
+image:
+status: "published"
 ---

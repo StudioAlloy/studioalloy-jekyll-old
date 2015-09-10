@@ -7,7 +7,8 @@ categories: website, wordpress
 excerpt: Website van een populaire toneelregisseur
 featured: false
 url: //jakopahlbom.nl
-image: 
+image:
+status: "published"
 ---
 De van origine Zweedse Jakop Ahlbom is een prijswinnende toneelregisseur die sinds begin 2000 actief is in Nederland met spraakmakende toneelvoorstellingen Voor zijn afstudeervoorstelling ontving Jakop Ahlbom de Top Naeff prijs voor veelbelovend talent. Daarna volgende nog vele prijzen. Onlangs werd Jakop geselecteerd voor de eervolle Amsterdamprijs voor de Kunst. Zijn laatste voorstelling Horror is geselecteerd voor het Vlaams en Nederlands Theater Festival 2015 en genomineerd voor de VSCD Mimeprijs.
 

@@ -7,5 +7,6 @@ categories: huisstijl, website, wordpress, webshop
 excerpt: Design en ontwikkeling verschillende uitingen van Noeser
 featured: false
 url: //noeser.eu
-image: 
+image:
+status: "published"
 ---

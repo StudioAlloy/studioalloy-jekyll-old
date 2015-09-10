@@ -22,8 +22,8 @@ body.home section.home .text-container {
 section.home h1 {
   font-weight: $regular;
   color: $sub-color;
-  font-size: 1.8em;
-  line-height: 1.4em;
+  font-size: 2rem;
+  line-height: 3rem;
   text-transform: inherit;
 }
 section.home h1 a {
@@ -197,8 +197,6 @@ img.author {
 }
 .team-member .meta p {
   color: $alt-color;
-  font-size: 0.7em;
-  line-height: 1.2em;
 }
 .team-member {
   margin-bottom: 8%;
