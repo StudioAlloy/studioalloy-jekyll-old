@@ -195,7 +195,7 @@ p {
 }
 
 .half-vh {
-  height: 50vh;
+  height: 60vh;
 }
 
 .min-vh {
@@ -220,6 +220,11 @@ p {
 
 .center {
   text-align: center;
+}
+
+.transform {
+  text-transform: inherit;
+  letter-spacing: 0;
 }
 
 .clip {
@@ -259,6 +264,20 @@ section {
   color: #fff;
 }
 
+.text-container.sub * {
+  color: #fff;
+}
+
+.text-container.sub {
+  width: 85%;
+  max-width: 1150px;
+}
+
+.sub-clip {
+  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
+}
+
 /* END Color
 ———————————————————————————————————— */
 /* Post
@@ -274,7 +293,7 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
+  height: 60vh;
   transition: all 0.5s;
 }
 
@@ -386,7 +405,7 @@ section {
 }
 
 .meta {
-  padding: 45px;
+  padding: 30px 45px;
   background-color: #8dd;
   position: relative;
 }
@@ -907,7 +926,7 @@ section.contact-page .content {
 /* Blog page
 ———————————————————————————————————— */
 section.blog-page .meta span {
-  color: #E64;
+  color: #227777;
 }
 
 .experiment .meta span {
@@ -980,6 +999,15 @@ img.author {
 /*END Team single page*/
 /* END Team
 ———————————————————————————————————— */
+div#owl-example:after {
+  content: "";
+  background: linear-gradient(to right, #ededed 0%, #ededed 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, #ededed 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
 form {
   background-color: #8dd;
   padding: 40px;
@@ -1032,11 +1060,13 @@ form h3 {
 
 input[type="submit"] {
   border: 0;
-  padding: 15px 30px;
+  padding: 15px 45px;
   float: right;
   background-color: #E64;
   color: #fff;
   font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 textarea {

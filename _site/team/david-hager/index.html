@@ -75,31 +75,35 @@
 
     <div class="wrapper">
       <section class="flex">
-  <div class="content">
-  <author>
-  <img src="/img/team/david-hager.jpg" alt="" class="clip" />
-  <h1>David Hager</h1>
-  <h2>Een alleskunner gespecialiseerd in het samenbrengen van mensen en ideeën</h2>
-  <h4>@atmedia</h4>
-</author>
-<div class="text-container">
-  <p>All-round marketing- en communicatieprofessional David Hager is de stuwende kracht van Alloy. Met zijn hands-on mentaliteit en positieve karakter slaat hij een brug tussen de verschillende talenten om gezamenlijk projecten van de grond te tillen. Zowel in de rol als projectleider voor online projecten als producer voor film- en animatieproducties. Bij voorkeur de combinatie; een cross-over waarbij design, online en video naadloos in elkaar overvloeien en de pixels op het beeldscherm een onvergetelijk verhaal overbrengen. Kortweg, creative storytelling.</p>
+  <author class="center">
+    <img src="/img/team/david-hager.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="text-container sub center min-vh sub-clip">
+    <h1>David Hager</h1>
+    <h3 class="transform">Een alleskunner gespecialiseerd in het samenbrengen van mensen en ideeën</h3>
+    <h4>@atmedia</h4>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    <p>All-round marketing- en communicatieprofessional David Hager is de stuwende kracht van Alloy. Met zijn hands-on mentaliteit en positieve karakter slaat hij een brug tussen de verschillende talenten om gezamenlijk projecten van de grond te tillen. Zowel in de rol als projectleider voor online projecten als producer voor film- en animatieproducties. Bij voorkeur de combinatie; een cross-over waarbij design, online en video naadloos in elkaar overvloeien en de pixels op het beeldscherm een onvergetelijk verhaal overbrengen. Kortweg, creative storytelling.</p>
 
 <p>Met ruim 10 jaar ervaring als marketing- en communicatieadviseur en sinds 2010 actief als ondernemer adviseert David zijn opdrachtgevers bij het maken keuzes om hun verhaal goed over te brengen. Hij werkt activerend en weet geruisloos projecten en campagnes te coördineren.</p>
 
 <p>Enkele opdrachtgevers waar David voor werkt(e) zijn o.a. Talpa-RTL, Stichting CliniClowns, KWF Kankerbestrijding, DSM, Boehringer Ingelheim en Corpus Reis door de Mens.</p>
 
-</div>
+  </div>
 </section>
 
 <section class="flex">
-  <div class="text-container">
+  <div class="text-container center">
     <h2>Lees hier de posts door David Hager</h2>
   </div>
 </section>
 
 <section class="flex">
-  
   <div class="item-container flex wrap">
     
     
@@ -154,18 +158,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});

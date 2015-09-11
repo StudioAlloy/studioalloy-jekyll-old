@@ -103,7 +103,7 @@
 				</div>
       </div>
       <div class="col">
-        <form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post">
+        <form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post" class="sub-clip">
   <h3>Contact formulier</h3>
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
@@ -118,7 +118,7 @@
   </div>
   <div class="form-row">
     <textarea type="text" name="message" required></textarea>
-    <label alt="Label Text" data-placeholder="bericht"></label>
+    <label alt="Label Text" data-placeholder="Bericht"></label>
   </div>
   <input type='submit' value='Verzend' />
 </form>
@@ -392,18 +392,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});

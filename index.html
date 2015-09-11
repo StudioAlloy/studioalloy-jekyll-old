@@ -48,13 +48,7 @@ categories: index
         
         <div id="owl-example" class="owl-carousel">
           {% for post in site.team date %}
-          <a href="{{ post.url }}" class="team-member center">
-            <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
-            <div class="meta">
-              <h5>{{ post.title }}</h5>
-              <!-- <p>{{ post.excerpt }}</p> -->
-            </div>
-          </a>
+          {% include team-loop.html %}
           {% endfor %}
           <a class="team-member center">
             <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">

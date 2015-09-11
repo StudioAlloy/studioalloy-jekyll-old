@@ -92,7 +92,7 @@
 
       </div>
     </section>
-    <div class="author-side flex">
+    <div class="author-side flex center">
 	
 	
 	<div class="inner flex">
@@ -100,7 +100,7 @@
 			<h2>@mvaneijgen</h2>
 			<p><img src="/img/team/mitchel-van-eijgen.jpg" class="clip"> I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.</p>
 		</div>
-
+		
 		<div class="contact col">
 			<h3>Mitchel van Eijgen</h3>
 			<p>Grafisch ontwerper met een liefde voor techniek</p>
@@ -185,18 +185,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});

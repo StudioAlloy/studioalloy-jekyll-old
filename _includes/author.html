@@ -1,4 +1,4 @@
-<div class="author-side flex">
+<div class="author-side flex center">
 	{% assign author = (site.team|where:"title", page.author) %}
 	{% for post in author %}
 	<div class="inner flex">
@@ -6,7 +6,7 @@
 			<h2>@{{ post.twitter }}</h2>
 			<p><img src="{{site.baseurl}}/img/team/{{post.title | slugify }}.jpg" class="clip"> {{ post.description }}</p>
 		</div>
-
+		
 		<div class="contact col">
 			<h3>{{ post.title }}</h3>
 			<p>{{ post.excerpt }}</p>

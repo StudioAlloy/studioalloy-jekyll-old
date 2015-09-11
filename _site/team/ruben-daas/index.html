@@ -75,31 +75,35 @@
 
     <div class="wrapper">
       <section class="flex">
-  <div class="content">
-  <author>
-  <img src="/img/team/ruben-daas.jpg" alt="" class="clip" />
-  <h1>Ruben Daas</h1>
-  <h2>Redactionele digital designer met liefde voor data</h2>
-  <h4>@ARTiiii</h4>
-</author>
-<div class="text-container">
-  <p>Als ontwerper richt Ruben zich voornamelijk op het communiceren, visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.</p>
+  <author class="center">
+    <img src="/img/team/ruben-daas.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="text-container sub center min-vh sub-clip">
+    <h1>Ruben Daas</h1>
+    <h3 class="transform">Redactionele digital designer met liefde voor data</h3>
+    <h4>@ARTiiii</h4>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    <p>Als ontwerper richt Ruben zich voornamelijk op het communiceren, visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.</p>
 
 <p>Ruben Daas studeerde Grafisch Ontwerpen aan de Willem de Kooning Academie te Rotterdam. Daar merkte hij dat hij zijn ontwerpkeuzes graag onderbouwt met data en dat hij liever voor het functionele kies dan voor het esthetische. Deze werkvorm heeft hij voortgezet in zijn professionele carrière.</p>
 
 <p>De wetenschap en/of de journalistiek zijn de gebieden waar zijn grootste interesse ligt en wil het liefst hier zijn kennis en ervaring voor inzetten.</p>
 
-</div>
+  </div>
 </section>
 
 <section class="flex">
-  <div class="text-container">
+  <div class="text-container center">
     <h2>Lees hier de posts door Ruben Daas</h2>
   </div>
 </section>
 
 <section class="flex">
-  
   <div class="item-container flex wrap">
     
     
@@ -154,18 +158,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});

@@ -46,8 +46,8 @@ body.home section.products .product:nth-child(2) {
   background: darken( $alt-color, 15% );
 }
 .hover img.logo {
-width: 60%;
-max-width: 300px;
+  width: 60%;
+  max-width: 300px;
 }
 /*Single Case*/
 body.single-project section {
@@ -79,7 +79,7 @@ section.contact-page .content {
 /* Blog page
 ———————————————————————————————————— */
 section.blog-page .meta span {
-  color: $base-color;
+  color: darken($sub2-color, 40%);
 }
 .experiment .meta span {
   color: $sub2-color;
@@ -91,8 +91,8 @@ section.blog-page .meta span {
   font-weight: $regular;
 }
 .experiment .meta {
-background-color: $sub-color;
-color: #fff;
+  background-color: $sub-color;
+  color: #fff;
 }
 img.author {
   position: absolute;
@@ -102,7 +102,7 @@ img.author {
 }
 .blog-page .post:nth-child(12n+12),
 .blog-page .post:nth-child(3n+2) {
-width: 28%;
+  width: 28%;
 }
 .blog-page .post:nth-child(7n+7),
 .blog-page .post:nth-child(5n+1) {
@@ -133,8 +133,16 @@ width: 28%;
   margin: 4% 0;
 }
 .single-team author img {
-width: 50%;
+  width: 50%;
 }
 /*END Team single page*/
 /* END Team
 ———————————————————————————————————— */
+div#owl-example:after {
+  content: "";
+  background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(237,237,237,1) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}

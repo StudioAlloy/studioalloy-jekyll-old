@@ -2,26 +2,30 @@
 layout: default
 ---
 <section class="flex">
-  <div class="content">
-  <author>
-  <img src="{{ site.baseurl }}/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
-  <h1>{{page.title}}</h1>
-  <h2>{{ page.excerpt }}</h2>
-  <h4>@{{ page.twitter }}</h4>
-</author>
-<div class="text-container">
-  {{ content }}
-</div>
+  <author class="center">
+    <img src="{{ site.baseurl }}/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="text-container sub center min-vh sub-clip">
+    <h1>{{page.title}}</h1>
+    <h3 class="transform">{{ page.excerpt }}</h3>
+    <h4>@{{ page.twitter }}</h4>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    {{ content }}
+  </div>
 </section>
 
 <section class="flex">
-  <div class="text-container">
+  <div class="text-container center">
     <h2>Lees hier de posts door {{ page.title }}</h2>
   </div>
 </section>
 
 <section class="flex">
-  
   <div class="item-container flex wrap">
     {% assign posts = (site.posts | where:"author", page.title) %}
     {% for post in posts %}

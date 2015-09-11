@@ -75,31 +75,35 @@
 
     <div class="wrapper">
       <section class="flex">
-  <div class="content">
-  <author>
-  <img src="/img/team/wouter-hager.jpg" alt="" class="clip" />
-  <h1>Wouter Hager</h1>
-  <h2>Complexe systemen</h2>
-  <h4>@</h4>
-</author>
-<div class="text-container">
-  <p>Wouter is een artistiek programmeur met passie voor complexe muziek en code. Hij begrijpt computers al van kinds af aan en kan de techniek vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bedenken en ontwikkelen van web-based applicaties en de opbouw qua systeemarchitectuur.</p>
+  <author class="center">
+    <img src="/img/team/wouter-hager.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="text-container sub center min-vh sub-clip">
+    <h1>Wouter Hager</h1>
+    <h3 class="transform">Complexe systemen</h3>
+    <h4>@</h4>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    <p>Wouter is een artistiek programmeur met passie voor complexe muziek en code. Hij begrijpt computers al van kinds af aan en kan de techniek vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bedenken en ontwikkelen van web-based applicaties en de opbouw qua systeemarchitectuur.</p>
 
 <p>Naast zijn werk bij Alloy, is Wouter actief als hoofd developer bij een uitgeverij voor wetenschappelijke literatuur in Amsterdam.</p>
 
 <p>Zijn grootste passie naast muziek is het verbeteren de werkwijze van developers. Hiervoor is hij ondermeer actief betrokken als gewaardeerde bijdrager met de schepping van een nieuwe JavaScript library in samenwerking met een groep JavaScript programmeurs vanuit de hele wereld.</p>
 
-</div>
+  </div>
 </section>
 
 <section class="flex">
-  <div class="text-container">
+  <div class="text-container center">
     <h2>Lees hier de posts door Wouter Hager</h2>
   </div>
 </section>
 
 <section class="flex">
-  
   <div class="item-container flex wrap">
     
     
@@ -154,18 +158,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});

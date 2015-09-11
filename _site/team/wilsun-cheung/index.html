@@ -75,31 +75,35 @@
 
     <div class="wrapper">
       <section class="flex">
-  <div class="content">
-  <author>
-  <img src="/img/team/wilsun-cheung.jpg" alt="" class="clip" />
-  <h1>Wilsun Cheung</h1>
-  <h2></h2>
-  <h4>@_dimsun</h4>
-</author>
-<div class="text-container">
-  <p>Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.</p>
+  <author class="center">
+    <img src="/img/team/wilsun-cheung.jpg" alt="" class="clip" />
+  </author>
+</section>
+<section class="flex">
+  <div class="text-container sub center min-vh sub-clip">
+    <h1>Wilsun Cheung</h1>
+    <h3 class="transform"></h3>
+    <h4>@_dimsun</h4>
+  </div>
+</section>
+<section class="flex">
+  <div class="text-container">
+    <p>Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.</p>
 
 <p>Na het afronden van zijn opleiding aan de Willem de Kooning Academie te Rotterdam was het zelfstandige ondernemerschap een logische volgende stap. Op de academie leerde hij om snel vanuit ideeën tot sterke (visuele) concepten te komen. Hierin was de combinatie van advertising en design met een minor in brand identity erg sterk.</p>
 
 <p>Zijn inspiratie haalt Wilsun uit alles om hem heen; van zijn passie voor eten tot wereldculturen.</p>
 
-</div>
+  </div>
 </section>
 
 <section class="flex">
-  <div class="text-container">
+  <div class="text-container center">
     <h2>Lees hier de posts door Wilsun Cheung</h2>
   </div>
 </section>
 
 <section class="flex">
-  
   <div class="item-container flex wrap">
     
     
@@ -154,18 +158,15 @@ $(document).ready(function(){
 	owl.owlCarousel({
 		loop:true,
 		margin:60,
-		nav:true,
+		nav:false,
 		center:true,
 		startPosition: 3,
 		responsive:{
 			0:{
-				items:1
+				items:2
 			},
 			600:{
-				items:2
-			},
-			1100: {
-				items:2
+				items:4
 			}
 		}
 	});
