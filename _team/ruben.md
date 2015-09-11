@@ -8,8 +8,8 @@ website: http://www.daasdesign.nl
 phone: +31 (0)6 28 63 57 85
 email: info@daasdesign.nl
 twitter: ARTiiii
-github: 
-linkedin: https://nl.linkedin.com/in/rubendaas
+github:
+linkedin: rubendaas
 ---
 Als ontwerper richt Ruben zich voornamelijk op het communiceren, visualiseren en ontwerpen van het liefst zo complex mogelijke verhalen door middel van goede websites of infographics. Ruben Daas maakt zich graag druk om inspirerende concepten of onderzoeken die in zijn ogen onjuist gepresenteerd worden en weet vervolgens een betere oplossing.
 

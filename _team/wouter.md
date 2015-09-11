@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://lagua.nl
 phone: +31 (0)6 31 68 38 22
 email: wshager@gmail.com
-twitter: 
-github: https://github.com/wshager
-linkedin: https://www.linkedin.com/pub/wouter-hager/1a/696/223
+twitter:
+github: wshager
+linkedin: wouter-hager
 ---
 Wouter is een artistiek programmeur met passie voor complexe muziek en code. Hij begrijpt computers al van kinds af aan en kan de techniek vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bedenken en ontwikkelen van web-based applicaties en de opbouw qua systeemarchitectuur.
 

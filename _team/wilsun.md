@@ -2,15 +2,15 @@
 layout: team
 title:  "Wilsun Cheung"
 date:   2014-07-30 16:22:48
-categories: 
+categories:
 excerpt:
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.wilsuncheung.nl/
 phone: +31 (0)6 24 62 11 88
 email: cheungw91@gmail.com
 twitter: _dimsun
-github: 
-linkedin: https://www.linkedin.com/in/wilsuncheung
+github:
+linkedin: wilsuncheung
 ---
 Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.
 

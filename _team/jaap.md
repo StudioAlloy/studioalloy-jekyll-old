@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.atticweb.nl
 phone: +31 (0)6 10 26 58 76
 email: jaap@atticweb.nl
-twitter: https://twitter.com/jaapredeker
-github: https://github.com/Atticweb
-linkedin: https://www.linkedin.com/in/jaapredeker
+twitter: jaapredeker
+github: Atticweb
+linkedin: jaapredeker
 ---
 Als echte systeemdenker werkt Jaap als all-round developer. Hij heeft groot respect voor goede code en is soms terughoudend in situaties waarin hij niet de ruimte heeft om tot de beste oplossing door te gaan. Hierdoor zijn de producten die Jaap aflevert solide en structureel van hoge kwaliteit.
 

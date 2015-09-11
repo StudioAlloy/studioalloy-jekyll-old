@@ -46,23 +46,23 @@ categories: index
       <h2 class="center">Het team</h2>
       <div class="flex wrap overflow">
         
-        <!-- <div id="owl-example" class="owl-carousel"> -->
-        {% for post in site.team date %}
-        <a href="{{ post.url }}" class="team-member center">
-          <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
-          <div class="meta">
-            <h5>{{ post.title }}</h5>
-            <!-- <p>{{ post.excerpt }}</p> -->
-          </div>
-        </a>
-        {% endfor %}
-        <a class="team-member center">
-          <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
-          <div class="meta">
-            <h5>Ben jij op zoek naar een creatieve werkplek?</h5>
-          </div>
-        </a>
-        <!-- </div> -->
+        <div id="owl-example" class="owl-carousel">
+          {% for post in site.team date %}
+          <a href="{{ post.url }}" class="team-member center">
+            <img src="{{ site.baseurl }}/img/team/{{ post.title | slugify }}.jpg" class="clip">
+            <div class="meta">
+              <h5>{{ post.title }}</h5>
+              <!-- <p>{{ post.excerpt }}</p> -->
+            </div>
+          </a>
+          {% endfor %}
+          <a class="team-member center">
+            <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
+            <div class="meta">
+              <h5>Ben jij op zoek naar een creatieve werkplek?</h5>
+            </div>
+          </a>
+        </div>
         
       </div>
       <p>Ben jij op zoek naar een creative werkplek in Haarlem? Wij zijn altijd op zoek naar nieuwe collega's <a href="#">Kijk hier om te kijken wat wij voor elkaar kunnen beteken</a> en hopenlijk tot snel.</p>

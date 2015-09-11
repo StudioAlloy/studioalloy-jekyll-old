@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.atmedia.nl
 phone: +31 (0) 6 10 11 41 79
 email: davidhager@gmail.com
-twitter: https://twitter.com/atmedia
-github: 
-linkedin: https://www.linkedin.com/pub/david-hager/4/941/907
+twitter: atmedia
+github:
+linkedin: david-hager
 ---
 All-round marketing- en communicatieprofessional David Hager is de stuwende kracht van Alloy. Met zijn hands-on mentaliteit en positieve karakter slaat hij een brug tussen de verschillende talenten om gezamenlijk projecten van de grond te tillen. Zowel in de rol als projectleider voor online projecten als producer voor film- en animatieproducties. Bij voorkeur de combinatie; een cross-over waarbij design, online en video naadloos in elkaar overvloeien en de pixels op het beeldscherm een onvergetelijk verhaal overbrengen. Kortweg, creative storytelling.
 

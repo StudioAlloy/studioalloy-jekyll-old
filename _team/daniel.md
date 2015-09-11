@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.adays.nl
 phone: +31 (0)6 43 02 97 48
 email: dani@2preform.nl
-twitter: 
-github: 
-linkedin: https://www.linkedin.com/profile/view?id=AAkAAADbqkUBwdSarCOeTv6iGvtk-z6eQgyxgWc
+twitter:
+github:
+linkedin: view?id=AAkAAADbqkUBwdSarCOeTv6iGvtk-z6eQgyxgWc
 ---
 Motion designer Daniel Lim is een visueel kunstenaar met grote passie voor sferische beelden die tot stand komen door een mix van grafische en organische vormen. Zijn hybrid design filmstudio ADAYS richt zich op regie, design en productie van visueel aantrekkelijke films en 2D/3D animaties die bijvoorbeeld worden ingezet als commercial, infomercial, explanatory video, preroll, muziekclip, short of corporate film, visual effects of als visual art project.
 

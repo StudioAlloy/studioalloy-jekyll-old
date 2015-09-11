@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: mvaneijgen.nl
 phone: +31 (0)6 38 63 27 35
 email: mvaneijgen@gmail.com
-twitter: https://twitter.com/mvaneijgen
-github: https://github.com/mvaneijgen
-linkedin: https://www.linkedin.com/in/mvaneijgen/
+twitter: mvaneijgen
+github:  mvaneijgen
+linkedin:  mvaneijgen
 ---
 Al sinds jonge twintiger is Mitchel van Eijgen actief als ondernemer in de wereld van design, code en technische vernieuwing. Deze gadget freak is non-stop actief als technisch grafisch ontwerper met fascinatie voor innovaties en het automatiseren van zijn werk. En eigenlijk ook dagelijks bezig om de rest van zijn leven geautomatiseerd te maken.
 
