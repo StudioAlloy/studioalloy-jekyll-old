@@ -1,4 +1,4 @@
-<div class="author-side flex center">
+<div class="author-side flex">
 	{% assign author = (site.team|where:"title", page.author) %}
 	{% for post in author %}
 	<div class="inner flex">
@@ -17,21 +17,7 @@
 					<p>{{ post.email }}</p>
 				</div>
 				<div class="social">
-					<a href="http://linkedin.com/in/{{post.linkedin}}/">
-						<svg viewBox="0 0 100 100" class="linkedin">
-							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-linkedin"></use>
-						</svg>
-					</a>
-					<a href="http://twitter.com/{{post.twitter}}">
-						<svg viewBox="0 0 100 100" class="twitter">
-							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-twitter"></use>
-						</svg>
-					</a>
-					<a href="http://github.com/{{post.github}}">
-						<svg viewBox="0 0 100 100" class="github">
-							<use xlink:href="{{site.baseurl}}/img/svg-defs.svg#shape-github"></use>
-						</svg>
-					</a>
+					{% include loop-social.html %}
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@ permalink: case/
 	<div class="content">
 		{% assign published = (site.case | where:"status","published") %}
 		{% for post in published %}
-		{% include case-loop.html %}
+		{% include loop-case.html %}
 		{% endfor %}
 		
 	</div>

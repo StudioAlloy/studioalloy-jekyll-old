@@ -8,9 +8,9 @@ description: I am a graphic desigher from The Netherlands, working for my self s
 website: http://www.wilsuncheung.nl/
 phone: +31 (0)6 24 62 11 88
 email: cheungw91@gmail.com
-twitter: _dimsun
-github:
-linkedin: wilsuncheung
+twitter_username: _dimsun
+github_username:
+linkedin_username: wilsuncheung
 ---
 Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.
 

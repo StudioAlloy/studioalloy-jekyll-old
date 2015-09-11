@@ -25,7 +25,7 @@ categories: index
     <div class="item-container flex wrap">
       {% assign featured_case = (site.case | where:"featured","true") %}
       {% for case in featured_case limit:4 %}
-      {% include case-loop.html %}
+      {% include loop-case.html %}
       {% endfor %}
     </div>
   </section>
@@ -52,7 +52,7 @@ categories: index
         
         <div id="owl-example" class="owl-carousel">
           {% for post in site.team date %}
-          {% include team-loop.html %}
+          {% include loop-team.html %}
           {% endfor %}
           <a class="team-member center">
             <img src="{{ site.baseurl }}/img/team/you.jpg" class="clip">
