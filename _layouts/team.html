@@ -19,6 +19,8 @@ layout: default
   </div>
 </section>
 
+{% assign posts = (site.posts | where:"author", page.title) %}
+{% if posts.size > 0 %}
 <section class="flex">
   <div class="text-container center">
     <h2>Lees hier de posts door {{ page.title }}</h2>
@@ -27,9 +29,16 @@ layout: default
 
 <section class="flex">
   <div class="item-container flex wrap">
-    {% assign posts = (site.posts | where:"author", page.title) %}
     {% for post in posts %}
     {% include post-loop.html %}
     {% endfor %}
   </div>
 </section>
+{% else %}
+<section class="flex custom-padding">
+  <div class="center">
+    <h2>{{ page.title }} heeft nog geen berichten</h2>
+    <img src="{{ site.baseurl }}/img/no-messages.png" class="custom-padding">
+  </div>
+</section>
+{% endif %}

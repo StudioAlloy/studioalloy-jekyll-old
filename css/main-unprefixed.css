@@ -122,6 +122,10 @@ p {
   margin-bottom: 20px;
 }
 
+.custom-padding {
+  padding-top: 60px;
+}
+
 /* END Layout
 ———————————————————————————————————— */
 /* Flex
@@ -202,6 +206,10 @@ p {
   transition: 0.1s cubic-bezier(0, 0, 1, 1);
 }
 
+.clip:hover {
+  clip-path: polygon(15% 15%, 50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%);
+}
+
 /* END Bits
 ———————————————————————————————————— */
 /* Color
@@ -227,17 +235,17 @@ section {
   color: #8dd;
 }
 
-.text-container.sub h2,
-.text-container.sub {
+.sub h2,
+.sub {
   background-color: #8dd;
   color: #fff;
 }
 
-.text-container.sub * {
+.sub * {
   color: #fff;
 }
 
-.text-container.sub {
+.sub {
   width: 85%;
   max-width: 1150px;
 }
@@ -949,6 +957,7 @@ div#owl-example:after {
   height: 100%;
   position: absolute;
   top: 0;
+  pointer-events: none;
 }
 
 form {
