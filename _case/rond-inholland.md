@@ -8,6 +8,6 @@ excerpt: Online nieuwsbrief publicatieplatform
 featured: false
 url:
 image:
-status: "published"
+status: "concept"
 ---
 Online nieuwsbrief publicatieplatform

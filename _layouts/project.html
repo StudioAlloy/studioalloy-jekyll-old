@@ -1,15 +1,25 @@
 ---
 layout: default
 ---
-<section class="case-header" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}.jpg);">
-  <h1>{{page.title}}</h1>
-  <h2>{{page.excerpt}}</h2>
+<section>
+  <article>
+    <section class="case-header half-vh cover" style="background: url({{site.baseurl}}/img/case/{{ page.title | slugify }}-1.jpg);"></section>
+    <section class="flex case-text">
+      <div class="text-container  min-vh">
+        <div class="intro center">
+          <h1>{{page.title}}</h1>
+          <h5>{{page.excerpt}}</h5>
+        </div>
+        {{ content }}
+        <img src="{{site.baseurl}}/img/case/{{ page.title | slugify }}-2.jpg">
+      </div>
+    </section>
+    <section class="flex">
+      <div class="image-container">
+        {% for i in (1..page.image) offset: 2 %}
+        <img src="{{site.baseurl}}/img/case/{{ page.title | slugify }}-{{ i }}.jpg">
+        {% endfor %}
+      </div>
+    </section>
+  </article>
 </section>
-<section class="case-text">
-  <div class="text-container">
-    {{ content }}
-  </div>
-</section>
-{% for i in (1..{{page.image}}) %}
-<section class="case-image" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}-{{ i }}.jpg);"></section>
-{% endfor %}

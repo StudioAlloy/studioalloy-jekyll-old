@@ -30,6 +30,10 @@
   width: 95%;
   max-width: 1500px;
 }
+.image-container {
+  width: 95%;
+  max-width: 1150px;
+}
 .title-container {
   width: 80%;
   background-color: $alt-color;
@@ -93,6 +97,12 @@
 ———————————————————————————————————— */
 /* Bits
 ———————————————————————————————————— */
+body.project img {
+  width: 100%;
+}
+body.project section:last-of-type {
+  margin-bottom: 0 !important;
+}
 .text-container > h2 {
   margin-bottom: 10%;
 }
@@ -240,6 +250,9 @@ section {
   padding: 30px 45px;
   background-color: $sub2-color;
   position: relative;
+}
+.intro {
+  margin-bottom: 60px;
 }
 /* END
 ———————————————————————————————————— */
