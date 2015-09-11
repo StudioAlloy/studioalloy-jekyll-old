@@ -1,29 +1,15 @@
-{% include head.html %}
-</head>
-<body class="single-{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="main">
-    {% include menu.html %}
-    <div class="wrapper">
-      <section class="case-header" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}.jpg);">
-        <h1>{{page.title}}</h1>
-        <h2>{{page.excerpt}}</h2>
-      </section>
-      <section class="case-text">
-        <div class="text-container">
-          {{ content }}
-        </div>
-      </section>
-      {% for i in (1..{{page.image}}) %}
-        <section class="case-image" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}-{{ i }}.jpg);"></section>
-      {% endfor %}
-
-    </div>
+---
+layout: default
+---
+<section class="case-header" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}.jpg);">
+  <h1>{{page.title}}</h1>
+  <h2>{{page.excerpt}}</h2>
+</section>
+<section class="case-text">
+  <div class="text-container">
+    {{ content }}
   </div>
-  {% include footer.html %}
-  {% include embed-google-analytics.html %}
-</body>
-
-</html>
+</section>
+{% for i in (1..{{page.image}}) %}
+<section class="case-image" style="background: url({{site.baseurl}}/img/case/{{ page.categories }}-{{ i }}.jpg);"></section>
+{% endfor %}

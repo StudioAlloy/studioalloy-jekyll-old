@@ -1,0 +1,11 @@
+<a class="post" href="{{ item.url }}">
+<div class="featured-image cover" style="background: url({{ site.baseurl }}/img/case/{{ item.title | slugify }}-1.jpg)">
+<div class="hover">
+<img class="logo" src="{{ site.baseurl }}/img/case/{{ item.title | slugify }}-logo.png">
+</div>
+</div>
+<div class="meta">
+<h3>{{ item.title }}</h3>
+<p>{{ item.excerpt }}</p>
+</div>
+</a>

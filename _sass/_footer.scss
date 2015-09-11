@@ -1,7 +1,7 @@
 .footer {
 	background: $sub-color;
 	width: 100%;
-	z-index: 9;
+	z-index: -9;
 	font-size: .8em;
 	line-height: 1.6em;
 }
@@ -25,15 +25,12 @@
 }
 @media only screen and (min-width : 800px) {
 	/* Styles */
-	section:last-child {
+	section:last-of-type {
 		margin-bottom: 300px;
 	}
 	.footer {
 		min-height: 300px;
 		position: fixed;
 		bottom: 0;
-	}
-	.footer .inner {
-	    margin-left: 140px;
 	}
 }

@@ -1,46 +1,31 @@
-{% include head.html %}
-</head>
-<body class="single-{{ page.layout }} {{ page.title | downcase }} {{ page.categories }}">
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-  <div class="main">
-    {% include menu.html %}
-    <div class="wrapper">
-      <section class="flex">
-        <div class="content">
-          <author>
-            <img src="{{ site.baseurl }}/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
-            <h1>{{page.title}}</h1>
-            <h2>{{ page.excerpt }}</h2>
-            <h4>@{{ page.twitter }}</h4>
-          </author>
-          <div class="text-container">
-            {{ content }}
-          </div>
-        </section>
-        
-        <section class="flex">
-          <div class="text-container">
-            <h2>Lees hier de posts door {{ page.title }}</h2>
-          </div>
-        </section>
-        
-        <section class="flex">
-          
-          <div class="item-container flex wrap">
-            {% assign posts = (site.posts | where:"author", page.title) %}
-            {% for post in posts %}
-            {% include post-loop.html %}
-            {% endfor %}
-          </div>
-        </section>
-        
-      </div>
-    </div>
-  </div>
-  {% include footer.html %}
-  {% include embed-google-analytics.html %}
-</body>
+---
+layout: default
+---
+<section class="flex">
+  <div class="content">
+  <author>
+  <img src="{{ site.baseurl }}/img/team/{{ page.title | slugify }}.jpg" alt="" class="clip" />
+  <h1>{{page.title}}</h1>
+  <h2>{{ page.excerpt }}</h2>
+  <h4>@{{ page.twitter }}</h4>
+</author>
+<div class="text-container">
+  {{ content }}
+</div>
+</section>
 
-</html>
+<section class="flex">
+  <div class="text-container">
+    <h2>Lees hier de posts door {{ page.title }}</h2>
+  </div>
+</section>
+
+<section class="flex">
+  
+  <div class="item-container flex wrap">
+    {% assign posts = (site.posts | where:"author", page.title) %}
+    {% for post in posts %}
+    {% include post-loop.html %}
+    {% endfor %}
+  </div>
+</section>
