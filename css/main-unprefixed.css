@@ -127,6 +127,10 @@ p {
   margin-bottom: 20px;
 }
 
+.service .col img {
+  width: 100%;
+}
+
 .custom-padding {
   padding-top: 60px;
 }
