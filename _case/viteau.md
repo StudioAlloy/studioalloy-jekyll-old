@@ -4,7 +4,7 @@ opdrachtgever: Heldergroen, Viteau
 title: Viteau
 date: 2015-05-30 16:22:48
 categories: website, wordpress
-excerpt: Website voor Viteau waterkoelers
+excerpt: Website en content management systeem (CMS) voor Viteau waterkoelers
 featured: false
 url: //viteau.nl
 image:
