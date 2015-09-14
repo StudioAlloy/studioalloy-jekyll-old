@@ -4,7 +4,7 @@ opdrachtgever: Explanation Design, PleinC
 title: Mediaspoor
 date: 2015-05-30 16:22:48
 categories: lespakketten, website, interactief
-excerpt: Interactieve lespakketen basisonderwijs over mediawijsheid
+excerpt: Interactieve lespakketen voor het basisonderwijs over oude en nieuwe media
 featured: false
 url: //mediaspoor.nl
 image:
