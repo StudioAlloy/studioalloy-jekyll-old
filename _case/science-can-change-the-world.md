@@ -4,7 +4,7 @@ opdrachtgever: Heldergroen, DSM
 title: Science can change the world
 date: 2015-05-30 16:22:48
 categories: website
-excerpt: Website voor campagne Science can change the world van DSM
+excerpt: Campagne website ‘Science can change the world’
 featured: false
 url: //sciencecanchangetheworld.can
 image:
