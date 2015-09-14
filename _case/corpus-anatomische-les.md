@@ -4,7 +4,7 @@ klant: Corpus Reis door de Mens
 title: CORPUS 'De Anatomische Les'
 date: 2014-06-30 16:22:48
 categories: corpus
-excerpt: Interactieve multi-touch tafel
+excerpt: Game & touch table CORPUS 'De Anatomische Les'
 color: "#000"
 featured: "true"
 platfrom: "large"
