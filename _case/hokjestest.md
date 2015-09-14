@@ -4,7 +4,7 @@ opdrachtgever: Critical Mass, Gemeente Amsterdam
 title: Hokjestest
 date: 2015-05-30 16:22:48
 categories: lespakketten, website, interactief
-excerpt: Online game over vooroordelen
+excerpt: Online interactief spel over vooroordelen op basis van een selfie
 featured: true
 url: //hokjestest.nl
 image:
