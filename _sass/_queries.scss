@@ -1,8 +1,8 @@
 @media only screen and (max-width : 900px) {
   /* Styles */
   html {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
   }
   h1 {
     font-size: 1.4em;
@@ -50,6 +50,12 @@
   .contact-info{
     margin-bottom: 20px;
   }
+  .mobile-first {
+    order: -1;
+  }
+  .services {
+    padding: 30px
+  }
 }
 @media only screen and (max-width : 750px) {
   /* Styles */
@@ -82,20 +88,13 @@
 }
 @media only screen and (min-width : 900px) {
   /* Styles */
-  img.overflow-left {
-    width: 150%;
-    margin-left: -50%;
-  }
-  img.overflow-right {
-    width: 150%;
-    margin-right: -50%;
-  }
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
   }
   .post {
     margin-top: 2%;
     margin-bottom: 2%;
+    height: 50vh;
   }
   .author-side img {
     position: absolute;
@@ -144,7 +143,18 @@
     pointer-events: none;
   }
 }
-@media only screen and (min-width : 1600px) {
+@media only screen and (min-width : 1650px) {
+  
+}
+@media only screen and (min-width : 1620px) {
+  img.overflow-left {
+    width: 150%;
+    margin-left: -50%;
+  }
+  img.overflow-right {
+    width: 150%;
+    margin-right: -50%;
+  }
   .text-container {
     padding: 100px 250px;
   }

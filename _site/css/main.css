@@ -56,6 +56,7 @@ h4 {
   font-size: 1.2rem;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 
 a {
@@ -1108,6 +1109,7 @@ footer {
   font-size: .8em;
   line-height: 1.6em;
   width: 100%;
+  padding: 30px;
 }
 
 footer .col {
@@ -1126,7 +1128,7 @@ footer p {
 @media only screen and (min-width: 800px) {
   /* Styles */
   section:last-of-type {
-    margin-bottom: 300px;
+    margin-bottom: 355px;
   }
 
   footer {
@@ -1138,8 +1140,8 @@ footer p {
 @media only screen and (max-width: 900px) {
   /* Styles */
   html {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   h1 {
@@ -1207,6 +1209,16 @@ footer p {
   .contact-info {
     margin-bottom: 20px;
   }
+
+  .mobile-first {
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  .services {
+    padding: 30px;
+  }
 }
 @media only screen and (max-width: 750px) {
   /* Styles */
@@ -1245,16 +1257,6 @@ footer p {
 }
 @media only screen and (min-width: 900px) {
   /* Styles */
-  img.overflow-left {
-    width: 150%;
-    margin-left: -50%;
-  }
-
-  img.overflow-right {
-    width: 150%;
-    margin-right: -50%;
-  }
-
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
   }
@@ -1262,6 +1264,7 @@ footer p {
   .post {
     margin-top: 2%;
     margin-bottom: 2%;
+    height: 50vh;
   }
 
   .author-side img {
@@ -1322,7 +1325,17 @@ footer p {
     pointer-events: none;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1620px) {
+  img.overflow-left {
+    width: 150%;
+    margin-left: -50%;
+  }
+
+  img.overflow-right {
+    width: 150%;
+    margin-right: -50%;
+  }
+
   .text-container {
     padding: 100px 250px;
   }
