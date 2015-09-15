@@ -49,8 +49,13 @@
   <meta name="description" content="{% if page.layout != 'post' %}{{ site.description | strip_html }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
   <meta name="keywords" content="{% if page.layout != 'post' %}{{ site.keywords }}{% else %}{{ page.tags | join: ', ' }}, {{ page.categories | join: ', ' }}{% endif %}">
   
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png" type="image/x-icon">
-  <link rel="icon" href="{{ site.baseurl }}/favicon.png" type="image/x-icon">
+  <!-- Fav icons -->
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon/alloy-16.ico" type="image/x-icon" sizes="16x16">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon/alloy-16.png" type="image/x-icon" sizes="16x16">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon/alloy-32.ico" type="image/x-icon" sizes="32x32">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon/alloy-32.png" type="image/x-icon" sizes="32x32">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/img/favicon/alloy-152.png">
+  <link rel="icon" sizes="152x152" href="{{ site.baseurl }}/img/favicon/alloy-152-android.png">
   
   <!-- Common Styles -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/main.css">
