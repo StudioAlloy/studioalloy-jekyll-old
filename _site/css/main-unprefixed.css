@@ -1175,6 +1175,16 @@ footer p {
 }
 @media only screen and (min-width: 900px) {
   /* Styles */
+  img.overflow-left {
+    width: 150%;
+    margin-left: -50%;
+  }
+
+  img.overflow-right {
+    width: 150%;
+    margin-right: -50%;
+  }
+
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
   }
