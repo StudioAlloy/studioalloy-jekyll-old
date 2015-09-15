@@ -37,6 +37,7 @@ h1 {
   line-height: 4rem;
   text-transform: uppercase;
   letter-spacing: 0.02rem;
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -76,6 +77,14 @@ ul {
 
 p {
   margin: 0;
+}
+
+button {
+  border: 0;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 1em;
+  background-color: #E64;
 }
 
 /* Layout
@@ -1055,7 +1064,7 @@ footer {
   font-size: .8em;
   line-height: 1.6em;
   width: 100%;
-  padding: 30px;
+  flex-direction: column;
 }
 
 footer .col {
@@ -1071,10 +1080,26 @@ footer p {
   margin: 0;
 }
 
+.copy-bar {
+  background-color: #1d2727;
+  width: 100%;
+  padding: 6px;
+  text-align: right;
+}
+
+.copy-bar .inner {
+  width: 55%;
+}
+
+.copy-bar li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
 @media only screen and (min-width: 800px) {
   /* Styles */
   section:last-of-type {
-    margin-bottom: 355px;
+    margin-bottom: 330px;
   }
 
   footer {
