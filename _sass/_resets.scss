@@ -30,7 +30,6 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing:0.02rem;
 }
-
 h2{
 	font-size: 2.5rem;
 	line-height: 3rem;
@@ -47,6 +46,9 @@ h4 {
 	letter-spacing: 0.15rem;
 	text-transform: uppercase;
 	margin-bottom: 30px;
+}
+.text-container h4 {
+	margin-bottom: 0;
 }
 a {
 	color: $darkgray;

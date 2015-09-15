@@ -59,6 +59,10 @@ h4 {
   margin-bottom: 30px;
 }
 
+.text-container h4 {
+  margin-bottom: 0;
+}
+
 a {
   color: #444;
   text-decoration: none;
@@ -811,7 +815,7 @@ body.home section.home {
 }
 
 body.home section.home .logo {
-  margin: 10% 0 0 0;
+  margin: 12% 0 0 0;
   text-align: center;
 }
 
@@ -831,7 +835,7 @@ body.home section.home .text-container {
 section.home h1 {
   font-weight: 400;
   color: #344;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.4rem;
   text-transform: inherit;
 }
@@ -974,6 +978,10 @@ img.author {
 ———————————————————————————————————— */
 .services img {
   width: 100%;
+}
+
+.services {
+  padding: 30px 0;
 }
 
 form {
