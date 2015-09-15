@@ -971,6 +971,10 @@ img.author {
 /*END Team single page*/
 /* END Team
 ———————————————————————————————————— */
+.services img {
+  width: 100%;
+}
+
 form {
   background-color: #8dd;
   padding: 40px;
