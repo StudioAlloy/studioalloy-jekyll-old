@@ -5,7 +5,7 @@ title: Fabstagram
 date: 2015-05-30 16:22:48
 categories: website, interactief, webshop
 excerpt: Web applicatie voor het maken je eigen smartphone hoesje met je mooiste Instragram foto’s
-featured: false
+featured: "true"
 url: //fabstagram.nl
 image:
 status: "published"

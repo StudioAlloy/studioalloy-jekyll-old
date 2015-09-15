@@ -1040,36 +1040,25 @@ form .form-row textarea + label[data-placeholder]:after {
   top: 17%;
 }
 
-.footer {
+footer {
   background: #344;
-  width: 100%;
   z-index: -9;
   font-size: .8em;
   line-height: 1.6em;
-  overflow: hidden;
+  width: 100%;
 }
 
-.footer .col:last-child {
-  flex: 2;
-}
-
-.footer .col {
-  flex: 1;
-  margin-right: 50px;
+footer .col {
   margin-bottom: 40px;
 }
 
-.footer,
-.footer a {
+footer,
+footer a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer p {
+footer p {
   margin: 0;
-}
-
-.footer .col img {
-  float: right;
 }
 
 @media only screen and (min-width: 800px) {
@@ -1078,7 +1067,7 @@ form .form-row textarea + label[data-placeholder]:after {
     margin-bottom: 300px;
   }
 
-  .footer {
+  footer {
     min-height: 300px;
     position: fixed;
     bottom: 0;
