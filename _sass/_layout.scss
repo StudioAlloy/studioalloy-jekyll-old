@@ -177,14 +177,12 @@ section {
 ———————————————————————————————————— */
 /* Post
 ———————————————————————————————————— */
+.grid,
 .post {
   width: 46%;
-}
-.post {
   flex-direction: column;
   display: flex;
   height: 60vh;
-  transition: all 0.5s;
 }
 .post:hover .hover {
   display: flex;
@@ -193,7 +191,7 @@ section {
   justify-content: center;
 }
 .post:hover .featured-image {
-  background-size: 200% !important;
+  background-size: 150% !important;
 }
 .hover {
   display: none;
@@ -206,8 +204,6 @@ section {
 .featured-image {
   flex-grow: 1;
   position: relative;
-  background-size: 100%;
-  transition: all 1s ease;
 }
 .cover {
   background-size: cover !important;

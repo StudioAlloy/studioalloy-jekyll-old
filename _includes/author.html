@@ -3,7 +3,7 @@
 	{% for post in author %}
 	<div class="inner flex">
 		<div class="info col">
-			<h2>@{{ post.twitter }}</h2>
+			<h2>@{{ post.twitter_username }}</h2>
 			<p><img src="{{site.baseurl}}/img/team/{{post.title | slugify }}.jpg" class="clip"> {{ post.description }}</p>
 		</div>
 		

@@ -332,11 +332,9 @@ section {
 ———————————————————————————————————— */
 /* Post
 ———————————————————————————————————— */
+.grid,
 .post {
   width: 46%;
-}
-
-.post {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -344,7 +342,6 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: 60vh;
-  transition: all 0.5s;
 }
 
 .post:hover .hover {
@@ -363,7 +360,7 @@ section {
 }
 
 .post:hover .featured-image {
-  background-size: 200% !important;
+  background-size: 150% !important;
 }
 
 .hover {
@@ -380,8 +377,6 @@ section {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
-  background-size: 100%;
-  transition: all 1s ease;
 }
 
 .cover {
@@ -1204,6 +1199,7 @@ footer p {
   }
 
   .sub,
+  .grid,
   .post,
   .item-container,
   .text-container,
@@ -1308,6 +1304,7 @@ footer p {
     padding: 0 50px 50px 50px;
   }
 
+  .grid,
   .post {
     margin-top: 2%;
     margin-bottom: 2%;

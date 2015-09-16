@@ -13,6 +13,7 @@
     flex-direction: column;
   }
   .sub,
+  .grid,
   .post,
   .item-container,
   .text-container,
@@ -91,6 +92,7 @@
   section.blog-page .content, section.work-page .content {
     padding: 0 50px 50px 50px;
   }
+  .grid,
   .post {
     margin-top: 2%;
     margin-bottom: 2%;
