@@ -1198,6 +1198,7 @@ footer p {
     line-height: 1.4em;
   }
 
+  .col-container,
   .inner,
   .main {
     -webkit-flex-direction: column;
@@ -1210,12 +1211,19 @@ footer p {
   .post,
   .item-container,
   .text-container,
+  .col-container,
+  .copy-bar .inner,
   .inner,
   .col {
     width: 100%;
   }
 
+  .col-container,
   .text-container {
+    padding: 5% 10%;
+  }
+
+  .title-container {
     padding: 10%;
   }
 
@@ -1243,7 +1251,7 @@ footer p {
     background-color: #fff;
   }
 
-  .footer .inner {
+  footer .inner {
     padding: 40px;
   }
 
@@ -1268,6 +1276,10 @@ footer p {
 
   .services {
     padding: 30px;
+  }
+
+  .grid {
+    height: 50vh;
   }
 }
 @media only screen and (max-width: 750px) {
