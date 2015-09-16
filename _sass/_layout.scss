@@ -206,6 +206,8 @@ section {
 .featured-image {
   flex-grow: 1;
   position: relative;
+  background-size: 100%;
+  transition: all 1s ease;
 }
 .cover {
   background-size: cover !important;

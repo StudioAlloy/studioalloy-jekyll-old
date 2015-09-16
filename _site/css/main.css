@@ -380,6 +380,8 @@ section {
       -ms-flex-positive: 1;
           flex-grow: 1;
   position: relative;
+  background-size: 100%;
+  transition: all 1s ease;
 }
 
 .cover {
