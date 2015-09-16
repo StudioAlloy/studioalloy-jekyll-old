@@ -332,6 +332,14 @@ section {
 ———————————————————————————————————— */
 /* Post
 ———————————————————————————————————— */
+.grid {
+  height: 33vh;
+}
+
+.post {
+  height: 60vh;
+}
+
 .grid,
 .post {
   width: 46%;
@@ -341,7 +349,6 @@ section {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 60vh;
 }
 
 .post:hover .hover {

@@ -177,12 +177,17 @@ section {
 ———————————————————————————————————— */
 /* Post
 ———————————————————————————————————— */
+.grid {
+  height: 33vh;
+}
+.post {
+  height: 60vh;
+}
 .grid,
 .post {
   width: 46%;
   flex-direction: column;
   display: flex;
-  height: 60vh;
 }
 .post:hover .hover {
   display: flex;
