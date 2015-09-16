@@ -23,6 +23,13 @@
   max-width: 1100px;
   z-index: 9;
 }
+.col-container {
+  width: 80%;
+  background-color: $alt-color;
+  max-width: 1100px;
+  padding: 0 3%;
+  z-index: 9;
+}
 .text-container .no-margin {
   margin: 0;
 }
@@ -100,9 +107,11 @@
 ———————————————————————————————————— */
 /* Bits
 ———————————————————————————————————— */
-body.project img {
+body.custom-case article img,
+body.project article img {
   width: 100%;
 }
+article section:last-of-type,
 body.project section:last-of-type {
   margin-bottom: 0 !important;
 }

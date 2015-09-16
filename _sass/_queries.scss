@@ -148,11 +148,11 @@
 }
 @media only screen and (min-width : 1620px) {
   img.overflow-left {
-    width: 150%;
+    width: 150% !important;
     margin-left: -50%;
   }
   img.overflow-right {
-    width: 150%;
+    width: 150% !important;
     margin-right: -50%;
   }
   .text-container {
