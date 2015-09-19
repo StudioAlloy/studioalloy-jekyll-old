@@ -26,10 +26,6 @@ prose:
         field:
           element: "text"
           value: "2015-00-00 00:00:00"
-      - name: "date"
-        field:
-          element: "text"
-          value: "2015-00-00 00:00:00"
       - name: "categories"
         field:
           element: "text"
