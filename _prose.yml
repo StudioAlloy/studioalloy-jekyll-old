@@ -1,0 +1,40 @@
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://studioalloy.nl/'
+  relativeLinks: 'http://studioalloy.nl/'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          value: ""
+      - name: "date"
+        field:
+          element: "text"
+          value: "2015-00-00 00:00:00"
+      - name: "date"
+        field:
+          element: "text"
+          value: "2015-00-00 00:00:00"
+      - name: "categories"
+        field:
+          element: "text"
+          value: ""
+      - name: "image"
+        field:
+          element: "text"
+          value: "/img/blog/file-name.jpg"
