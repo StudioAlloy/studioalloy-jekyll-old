@@ -2,7 +2,7 @@ prose:
   rooturl: '_posts'
   siteurl: 'http://studioalloy.nl/'
   relativeLinks: 'http://studioalloy.nl/'
-  media: 'media'
+  media: 'img/blog'
   ignore:
     - index.md
     - _config.yml
