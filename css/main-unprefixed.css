@@ -346,6 +346,11 @@ section {
   background-repeat: no-repeat !important;
 }
 
+.fixed {
+  background-attachment: fixed !important;
+  background-size: 110% !important;
+}
+
 .author-side {
   background-color: #8dd;
 }
