@@ -1,0 +1,81 @@
+---
+layout: landing
+title: Digitale lespakketten
+description:
+categories: page
+permalink: digitale-lespakketten/
+---
+<style media="screen">
+.main {
+  padding-left: 0 !important;
+}
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+.parallax {
+  position: relative;
+}
+.parallax:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+.bunker {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.250px) scale(.35) translateX(-180%) translateY(-190%);
+}
+.tank {
+  transform: translateZ(0.45px) scale(.6) translateX(700%) translateY(-40%);
+}
+</style>
+
+<section>
+  <article>
+    
+    <section class="case-header half-vh fixed" style="background: url({{ site.baseurl }}/img/case/de-grote-volksverhuizing-1.jpg);"></section>
+    
+    <section class="flex">
+      <div class="text-container min-vh">
+        <h1>{{page.title}}</h1>
+        De jeugd inspireren met uw erfgoed, gebied, verhaal of geschiedenis is een mooi streven. Uit onze ervaring werkt het erg goed om kinderen eerst een verhaal te vertellen, voordat ze daadwerkelijk op excursie gaan. Door onze modulaire toolkit kunnen wij uw materiaal eenvoudig en snel omzetten naar een geavanceerd lespakket. Door de modulaire opbouw kunnen wij tevens eenvoudig custom elementen inbouwen, om precies aan uw wensen te voldoen!
+      </div>
+    </section>
+    
+    <section class="case-header half-vh fixed" style="background: url(/img/clients.jpg);"></section>
+    
+    <section class="">
+      <h2>Drag and drop is amazing</h2>
+    </section>
+    
+    <section class="vh parallax flex cover" style="background: url({{ site.baseurl }}/img/ondergrond.svg);">
+      <img src="{{ site.baseurl }}/img/bunker.svg" class="bunker">
+      <img src="{{ site.baseurl }}/img/tank.svg" class="tank">
+      <img src="{{ site.baseurl }}/img/overlay-ondergrond.svg">
+    </section>
+    
+    <section class="vh">
+    </section>
+    
+    <section class="vh">
+    </section>
+    
+  </article>
+</section>
