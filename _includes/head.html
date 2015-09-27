@@ -28,7 +28,7 @@
   {% endif %} -->
   
   <meta property="og:locale" content="nl_NL">
-  <meta property="og:url" content="http://{{ page.url | prepend: site.url }}">
+  <meta property="og:url" content="http:{{ page.url | prepend: site.url }}">
   <meta property="og:title" content="{{ page.title }} | {{ site.title }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:description" content="{% if page.layout != 'post' %}{{ site.description | strip_html }}{% else %}{{ page.excerpt | strip_html | strip_newlines }}{% endif %}">
