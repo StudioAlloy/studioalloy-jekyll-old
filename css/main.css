@@ -29,7 +29,7 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
-h4, h5 {
+h4 {
   font-weight: 700;
 }
 
@@ -61,6 +61,13 @@ h4 {
   margin-bottom: 30px;
 }
 
+h5 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  line-height: 1.9rem;
+}
+
 .text-container h4 {
   margin-bottom: 0;
 }
@@ -68,6 +75,10 @@ h4 {
 a {
   color: #444;
   text-decoration: none;
+}
+
+.meta h3 {
+  margin-bottom: 20px;
 }
 
 ul {
@@ -82,9 +93,11 @@ p {
 
 button {
   border: 0;
-  padding: 15px 30px;
+  padding: 30px 60px;
   color: #fff;
-  font-size: 1em;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
   background-color: #E64;
 }
 
@@ -111,7 +124,7 @@ button {
 .text-container {
   width: 80%;
   background-color: #fff;
-  padding: 4% 10%;
+  padding: 10% 10%;
   max-width: 1100px;
   z-index: 9;
 }
@@ -122,6 +135,10 @@ button {
   max-width: 1100px;
   padding: 0 3%;
   z-index: 9;
+}
+
+.contact-info div.social {
+  margin-top: 30px;
 }
 
 .text-container .no-margin {
@@ -297,7 +314,7 @@ section {
 }
 
 .meta * {
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
 }
 
 .alt-color,
@@ -1167,8 +1184,8 @@ footer p {
 .copy-bar {
   background-color: #1d2727;
   width: 100%;
-  padding: 6px;
-  text-align: right;
+  padding: 10px;
+  text-align: center;
 }
 
 .copy-bar .inner {
@@ -1192,7 +1209,7 @@ footer p {
     bottom: 0;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 750px) {
   /* Styles */
   html {
     font-size: 16px;
@@ -1281,11 +1298,19 @@ footer p {
   }
 
   .services {
-    padding: 30px;
+    padding: 10%;
   }
 
   .grid {
     height: 50vh;
+  }
+
+  .text-container img.logo {
+    display: none;
+  }
+
+  section.cases a.post {
+    margin-bottom: 30px;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -1411,5 +1436,9 @@ footer p {
 
   .overflow {
     margin: 0px -55%;
+  }
+
+  .form {
+    margin-right: -170%;
   }
 }
