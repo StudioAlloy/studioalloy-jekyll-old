@@ -42,6 +42,7 @@
   
   <meta name="description" content="Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Wij doen ons werk met veel enthousiasme en toewijding. Dat straalt af op onze opdrachtgevers.">
   <meta name="keywords" content="">
+  <meta name="google-site-verification" content="AeGqRUbqomU-hrRXchj3lk_yfBvQonAyf7CzUrOn5NU" />
   
   <!-- Fav icons -->
   <link rel="shortcut icon" href="/img/favicon/alloy-16.ico" type="image/x-icon" sizes="16x16">
@@ -122,11 +123,14 @@
 	<div class="inner">
 		<ul>
 			<li>
+				<p>&copy; 2015 Alloy</p>
+			</li>
+			<li>
+				<a href="/copyright">Design & development Alloy</a>
+			</li>
+			<li>
 				<a class="btn btn-download" href="download/acme-doc-2.0.1.txt">
 					<a href="/assets/legal/alloy-algemene-voorwaarden.pdf" download="Alloy Algemene voorwaarden" target="_blank">Algemene voorwaarden</a>
-				</li>
-				<li>
-					<a href="/copyright">Design & development Alloy</a>
 				</li>
 			</ul>
 		</div>
@@ -148,11 +152,36 @@ $(document).ready(function(){
 				items:1
 			},
 			600:{
+				items:2
+			},
+			1024:{
 				items:4
-			}
+			},
 		}
 	});
 });
+</script>
+<script>
+var touch = window.ontouchstart
+            || navigator.MaxTouchPoints > 0
+            || navigator.msMaxTouchPoints > 0;
+
+if (touch) { // remove all :hover stylesheets
+    try { // prevent crash on browsers not supporting DOM styleSheets properly
+        for (var si in document.styleSheets) {
+            var styleSheet = document.styleSheets[si];
+            if (!styleSheet.rules) continue;
+
+            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                if (!styleSheet.rules[ri].selectorText) continue;
+
+                if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                    stylesheet.deleteRule(ri);
+                }
+            }
+        }
+    } catch (ex) {}
+}
 </script>
 
     </div>
