@@ -11,6 +11,7 @@ email: jaap@atticweb.nl
 twitter_username: jaapredeker
 github_username: Atticweb
 linkedin_username: jaapredeker
+order: 4
 ---
 Als echte systeemdenker werkt Jaap als all-round developer. Hij heeft groot respect voor goede code en is soms terughoudend in situaties waarin hij niet de ruimte heeft om tot de beste oplossing door te gaan. Hierdoor zijn de producten die Jaap aflevert solide en structureel van hoge kwaliteit.
 

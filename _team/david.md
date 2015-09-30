@@ -11,6 +11,7 @@ email: davidhager@gmail.com
 twitter_username: atmedia
 github_username:
 linkedin_username: david-hager
+order: 2
 ---
 All-round marketing- en communicatieprofessional David Hager is de stuwende kracht van Alloy. Met zijn hands-on mentaliteit en positieve karakter slaat hij een brug tussen de verschillende talenten om gezamenlijk projecten van de grond te tillen. Zowel in de rol als projectleider voor online projecten als producer voor film- en animatieproducties. Bij voorkeur de combinatie; een cross-over waarbij design, online en video naadloos in elkaar overvloeien en de pixels op het beeldscherm een onvergetelijk verhaal overbrengen. Kortweg, creative storytelling.
 

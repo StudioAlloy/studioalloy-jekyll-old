@@ -2,7 +2,10 @@
   background-color: $sub2-color;
   color: $alt-color;
 }
-
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 /*
 *  Owl Carousel - Animate Plugin
 */

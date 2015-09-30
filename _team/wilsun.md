@@ -11,6 +11,7 @@ email: cheungw91@gmail.com
 twitter_username: _dimsun
 github_username:
 linkedin_username: wilsuncheung
+order: 6
 ---
 Wilsun is een echte designer met grote drang om dingen te maken. Naast het ontwikkelen van visuele identiteiten en animaties, is Wilsun ook graag aan het fotograferen of filmen met zijn camera en steeds grotere collectie lenzen.
 

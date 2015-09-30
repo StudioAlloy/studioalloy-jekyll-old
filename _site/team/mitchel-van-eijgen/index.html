@@ -102,16 +102,9 @@
 
 <p>Sinds de start van zijn ondernemende leven had Mitchel altijd al de droom om een collectief te vormen met creatieve ondernemers op een gedeelde werkplek. Met het vormen van Studio Alloy is deze droom werkelijkheid geworden.</p>
 
-  </div>
-</section>
-
-<section class="flex">
-  <div class="text-container sub flex">
-    <div class="col">
+    <div class="info-container">
       <p>mvaneijgen@gmail.com</p>
       <p>+31 (0)6 38 63 27 35</p>
-    </div>
-    <div class="col">
       
 
 <div class="social">
@@ -143,6 +136,9 @@
     </div>
   </div>
 </section>
+
+
+
 
 <!-- 
 
@@ -221,15 +217,16 @@
 		<h4>Het team</h4>
 		<ul>
 			
-			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
-			
-			<li><a href="/team/david-hager/">David Hager</a></li>
-			
-			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
 			
 			<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
 			
+			<li><a href="/team/david-hager/">David Hager</a></li>
+			
 			<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
+			
+			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
+			
+			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
 			
 			<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
 			
@@ -276,7 +273,7 @@ $(document).ready(function(){
 		margin:60,
 		nav:false,
 		center:true,
-		startPosition: 3,
+		startPosition: 1,
 		responsive:{
 			0:{
 				items:1
@@ -293,24 +290,24 @@ $(document).ready(function(){
 </script>
 <script>
 var touch = window.ontouchstart
-            || navigator.MaxTouchPoints > 0
-            || navigator.msMaxTouchPoints > 0;
+|| navigator.MaxTouchPoints > 0
+|| navigator.msMaxTouchPoints > 0;
 
 if (touch) { // remove all :hover stylesheets
-    try { // prevent crash on browsers not supporting DOM styleSheets properly
-        for (var si in document.styleSheets) {
-            var styleSheet = document.styleSheets[si];
-            if (!styleSheet.rules) continue;
-
-            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                if (!styleSheet.rules[ri].selectorText) continue;
-
-                if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                    stylesheet.deleteRule(ri);
-                }
-            }
-        }
-    } catch (ex) {}
+	try { // prevent crash on browsers not supporting DOM styleSheets properly
+		for (var si in document.styleSheets) {
+			var styleSheet = document.styleSheets[si];
+			if (!styleSheet.rules) continue;
+			
+			for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+				if (!styleSheet.rules[ri].selectorText) continue;
+				
+				if (styleSheet.rules[ri].selectorText.match(':hover')) {
+					stylesheet.deleteRule(ri);
+				}
+			}
+		}
+	} catch (ex) {}
 }
 </script>
 

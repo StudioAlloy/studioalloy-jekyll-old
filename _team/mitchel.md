@@ -11,6 +11,7 @@ email: mvaneijgen@gmail.com
 twitter_username: mvaneijgen
 github_username:  mvaneijgen
 linkedin_username:  mvaneijgen
+order: 1
 ---
 Al sinds jonge twintiger is Mitchel van Eijgen actief als ondernemer in de wereld van design, code en technische vernieuwing. Deze gadget freak is non-stop actief als technisch grafisch ontwerper met fascinatie voor innovaties en het automatiseren van zijn werk. En eigenlijk ook dagelijks bezig om de rest van zijn leven geautomatiseerd te maken.
 

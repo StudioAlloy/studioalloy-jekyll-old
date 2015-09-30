@@ -121,6 +121,7 @@ button {
   padding: 10% 10%;
   max-width: 1100px;
   z-index: 9;
+  position: relative;
 }
 
 .col-container {
@@ -155,6 +156,14 @@ button {
   padding: 4% 10%;
   max-width: 1100px;
   z-index: 9;
+}
+
+.info-container {
+  background-color: #8dd;
+  padding: 40px 80px;
+  color: #fff;
+  position: absolute;
+  right: -30px;
 }
 
 .inner {
@@ -365,7 +374,9 @@ section {
 
 .fixed {
   background-attachment: fixed !important;
-  background-size: 110% !important;
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 
 .author-side {
@@ -441,6 +452,11 @@ section {
 ::selection {
   background-color: #8dd;
   color: #fff;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
 }
 
 /*
@@ -861,7 +877,6 @@ body.home section.home {
 }
 
 body.home section.home .logo {
-  margin: 12% 0 0 0;
   text-align: center;
 }
 
@@ -884,6 +899,7 @@ section.home h1 {
   font-size: 1.6rem;
   line-height: 2.4rem;
   text-transform: inherit;
+  margin-bottom: 4em;
 }
 
 section.home h1 a {
@@ -1136,13 +1152,25 @@ footer p {
 @media only screen and (min-width: 800px) {
   /* Styles */
   section:last-of-type {
-    margin-bottom: 330px;
+    margin-bottom: 350px;
   }
 
   footer {
     min-height: 300px;
     position: fixed;
     bottom: 0;
+    padding-top: 20px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 769px) {
+  /* Styles */
+  a.team-member {
+    width: 50%;
+    padding: 10px;
+  }
+
+  footer .inner {
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -1344,6 +1372,10 @@ footer p {
     top: 0;
     pointer-events: none;
   }
+
+  .team .text-container {
+    margin-bottom: 130px;
+  }
 }
 @media only screen and (min-width: 1620px) {
   img.overflow-left {
@@ -1366,6 +1398,10 @@ footer p {
 
   .form {
     margin-right: -170%;
+  }
+
+  form {
+    margin-right: -150%;
   }
 }
 

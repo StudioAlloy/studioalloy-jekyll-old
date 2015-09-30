@@ -402,7 +402,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 </section>
 
 <section class="clients half-vh fixed flex end" style="background: url(/img/clients.jpg);">
-
+  
   <div class="title-container">
     <h4 class="center no-margin sub-color">Past jouw organisatie hier ook tussen?</h4>
   </div>
@@ -415,14 +415,15 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 <section class="team flex">
   <div class="text-container">
     <div class="flex wrap overflow">
-
+      
       <div id="owl-example" class="owl-carousel">
         
-        <a href="/team/daniel-lim/" class="team-member center">
-  <img src="/img/team/daniel-lim.jpg" class="clip">
+        
+        <a href="/team/mitchel-van-eijgen/" class="team-member center">
+  <img src="/img/team/mitchel-van-eijgen.jpg" class="clip">
   <div class="meta">
-    <h4>Daniel Lim</h4>
-    <!-- <p>ADAYS</p> -->
+    <h4>Mitchel van Eijgen</h4>
+    <!-- <p>Grafisch ontwerper met een liefde voor techniek</p> -->
   </div>
 </a>
 
@@ -436,6 +437,15 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 </a>
 
         
+        <a href="/team/ruben-daas/" class="team-member center">
+  <img src="/img/team/ruben-daas.jpg" class="clip">
+  <div class="meta">
+    <h4>Ruben Daas</h4>
+    <!-- <p>Redactionele digital designer met liefde voor data</p> -->
+  </div>
+</a>
+
+        
         <a href="/team/jaap-redeker/" class="team-member center">
   <img src="/img/team/jaap-redeker.jpg" class="clip">
   <div class="meta">
@@ -445,20 +455,11 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 </a>
 
         
-        <a href="/team/mitchel-van-eijgen/" class="team-member center">
-  <img src="/img/team/mitchel-van-eijgen.jpg" class="clip">
+        <a href="/team/daniel-lim/" class="team-member center">
+  <img src="/img/team/daniel-lim.jpg" class="clip">
   <div class="meta">
-    <h4>Mitchel van Eijgen</h4>
-    <!-- <p>Grafisch ontwerper met een liefde voor techniek</p> -->
-  </div>
-</a>
-
-        
-        <a href="/team/ruben-daas/" class="team-member center">
-  <img src="/img/team/ruben-daas.jpg" class="clip">
-  <div class="meta">
-    <h4>Ruben Daas</h4>
-    <!-- <p>Redactionele digital designer met liefde voor data</p> -->
+    <h4>Daniel Lim</h4>
+    <!-- <p>ADAYS</p> -->
   </div>
 </a>
 
@@ -488,7 +489,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
           </div>
         </a>
       </div>
-
+      
     </div>
     <p>Ben jij een creatieve ondernemer en op zoek naar een mooie werkruimte in Haarlem? Wij ontmoeten je graag en misschien pas je perfect bij het team!</p>
   </div>
@@ -767,15 +768,16 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 		<h4>Het team</h4>
 		<ul>
 			
-			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
-			
-			<li><a href="/team/david-hager/">David Hager</a></li>
-			
-			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
 			
 			<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
 			
+			<li><a href="/team/david-hager/">David Hager</a></li>
+			
 			<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
+			
+			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
+			
+			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
 			
 			<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
 			
@@ -822,7 +824,7 @@ $(document).ready(function(){
 		margin:60,
 		nav:false,
 		center:true,
-		startPosition: 3,
+		startPosition: 1,
 		responsive:{
 			0:{
 				items:1
@@ -839,24 +841,24 @@ $(document).ready(function(){
 </script>
 <script>
 var touch = window.ontouchstart
-            || navigator.MaxTouchPoints > 0
-            || navigator.msMaxTouchPoints > 0;
+|| navigator.MaxTouchPoints > 0
+|| navigator.msMaxTouchPoints > 0;
 
 if (touch) { // remove all :hover stylesheets
-    try { // prevent crash on browsers not supporting DOM styleSheets properly
-        for (var si in document.styleSheets) {
-            var styleSheet = document.styleSheets[si];
-            if (!styleSheet.rules) continue;
-
-            for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-                if (!styleSheet.rules[ri].selectorText) continue;
-
-                if (styleSheet.rules[ri].selectorText.match(':hover')) {
-                    stylesheet.deleteRule(ri);
-                }
-            }
-        }
-    } catch (ex) {}
+	try { // prevent crash on browsers not supporting DOM styleSheets properly
+		for (var si in document.styleSheets) {
+			var styleSheet = document.styleSheets[si];
+			if (!styleSheet.rules) continue;
+			
+			for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+				if (!styleSheet.rules[ri].selectorText) continue;
+				
+				if (styleSheet.rules[ri].selectorText.match(':hover')) {
+					stylesheet.deleteRule(ri);
+				}
+			}
+		}
+	} catch (ex) {}
 }
 </script>
 

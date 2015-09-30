@@ -32,11 +32,12 @@ footer p {
 @media only screen and (min-width : 800px) {
 	/* Styles */
 	section:last-of-type {
-		margin-bottom: 330px;
+		margin-bottom: 350px;
 	}
 	footer {
 		min-height: 300px;
 		position: fixed;
 		bottom: 0;
+		padding-top: 20px;
 	}
 }

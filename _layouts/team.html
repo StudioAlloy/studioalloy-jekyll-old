@@ -18,20 +18,16 @@ layout: default
 <section class="flex">
   <div class="text-container">
     {{ content }}
-  </div>
-</section>
-
-<section class="flex">
-  <div class="text-container sub flex">
-    <div class="col">
+    <div class="info-container">
       <p>{{ page.email }}</p>
       <p>{{ page.phone }}</p>
-    </div>
-    <div class="col">
       {% include loop-social.html %}
     </div>
   </div>
 </section>
+
+
+
 
 <!-- {% assign posts = (site.posts | where:"author", page.title) %}
 {% if posts.size > 0 %}
