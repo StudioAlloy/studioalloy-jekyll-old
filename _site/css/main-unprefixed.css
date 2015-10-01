@@ -697,6 +697,10 @@ form .form-row textarea + label[data-placeholder]:after {
   justify-content: space-around;
 }
 
+.flex.space-between {
+  justify-content: space-between;
+}
+
 .wrap {
   flex-flow: row wrap;
   justify-content: space-around;

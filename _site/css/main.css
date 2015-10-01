@@ -703,6 +703,12 @@ form .form-row textarea + label[data-placeholder]:after {
           justify-content: space-around;
 }
 
+.flex.space-between {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .wrap {
   -webkit-flex-flow: row wrap;
       -ms-flex-flow: row wrap;

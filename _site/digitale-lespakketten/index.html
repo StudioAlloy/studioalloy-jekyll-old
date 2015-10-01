@@ -104,6 +104,8 @@ section .parallax-item:nth-of-type(1) {
   -webkit-transform: translateZ(.2px) scale(1) translateX(0%) translateY(0%);
   transform: translateZ(.2px) scale(1) translateX(0%) translateY(0%);
   -webkit-filter: blur(4px);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+  -webkit-filter: blur(4px);
   filter: blur(4px);
 }
 section .parallax-item:nth-of-type(2) {
@@ -139,13 +141,18 @@ section .parallax-item:nth-of-type(4) {
   max-width: 730px;
 }
 h2 {
+  font-size: 24px;
   font-size: 1.5rem;
+  line-height: 32px;
   line-height: 2rem;
   text-transform: inherit;
   color: #000;
   font-weight: 700;
-  padding: 90px 20%;
   text-align: center;
+  padding-bottom: 30px;
+}
+.text h2 {
+  padding: 0 20% 100px;
 }
 /* END Type
 ———————————————————————————————————— */
@@ -158,21 +165,46 @@ section {
   background-color: #fff;
 }
 .min-vh {
-  margin-top: -20vh;
+  margin-top: -40vh;
 }
 /* END Main overwrites
 ———————————————————————————————————— */
+nav {
+  padding: 20px;
+}
+nav img {
+  width: 60px
+}
 .text {
   padding: 200px;
 }
 .landing-img img {
   width: 50vw;
 }
+.icons {
+  align-items: flex-start;
+}
+.icon-box {
+  width: 30%;
+  margin: 60px 0;
+  height: 35vh;
+}
+.icon-box img {
+  padding-bottom: 30px;
+  width: 100%;
+}
+.icon-box.alt {
+  background: #e64;
+  padding: 20px;
+  color: #fff;
+}
 </style>
-
 <section>
+  <nav class="flex space-between">
+    <a href=""><img src="/img/alloy-logo.svg"></a>
+    <a href="/case">Bekijk al ons werk</a>
+  </nav>
   <article>
-    
     <section class=" flex landing-header vh" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
       <h1 class="center">Digitale lespakketten</h1>
     </section>
@@ -205,11 +237,70 @@ section {
       <img src="/img/bunker.svg" class="parallax-item">
       <img src="/img/tank.svg" class="parallax-item">
     </section>
-    <section class="vh">
+    
+    <section class="flex">
+      <div class="inner flex wrap icons">
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-digibord.svg" alt="" />
+          <h2>Digibord</h2>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-ipad.svg" alt="" />
+          <h2>iPad</h2>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-desktop.svg" alt="" />
+          <h2>Desktop</h2>
+        </div>
+        
+      </div>
     </section>
     
-    <section class="vh">
+    <section class="vh"></section>
+    
+    <section class="flex">
+      <div class="inner flex wrap icons">
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-click.svg" alt="" />
+          <h2>Een Klik</h2>
+          <p>Interactie kan worden ingezet voor gelaagdheid, met inzicht achter iedere klik. Docenten kunnen samen met hun leerlingen speuren door de wondere wereld van uw materiaal.</p>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-zoom.svg" alt="" />
+          <h2>Zoom op afbeelding</h2>
+          <p>Mooie platen met veel detail komen op een digitaal scherm al snel slecht over. Door rond te kunnen speuren, worden zelfs de kleinste schatten uitgelicht.</p>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-drag.svg" alt="" />
+          <h2>Drag & Drop</h2>
+          <p>Deze methode zorgt ervoor dat leerlingen feeling krijgen met het materiaal. De interactie geeft direct feedback of de opdracht juist is uitgevoerd.</p>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-animation.svg" alt="" />
+          <h2>Animatie</h2>
+          <p>Door het materiaal op een duidelijke wijze te laten bewegen, kunnen nieuwe inzichten ontstaan.</p>
+        </div>
+        
+        <div class="icon-box">
+          <img src="/img/landing/digitale-lespakketten-icon-slideshow.svg" alt="" />
+          <h2>Slideshow</h2>
+          <p>Een onmisbare functie in het digitale tijdperk. Vrijwel oneindig inzichten mogelijk in een reeks afbeeldingen.</p>
+        </div>
+        
+        <div class="icon-box alt flex">
+          <p>Door ons modulaire systeem kunnen we vrijwel ieder denkbare functionaliteit bouwen. Meestal zal dat lukken met de tools die we klaar hebben liggen. Mochten uw specifieke wensen toch niet aansluiten, zijn wij zeer flexibel om een custom oplossing te ontwikkelen. Speciaal voor u.</p>
+        </div>
+        
+      </div>
     </section>
+    
     <section class="parallax flex half-vh" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
       <div class="inner flex space-around">
         <img src="/img/landing/digitale-lespakketten-rode-kruis.svg" alt="" />
