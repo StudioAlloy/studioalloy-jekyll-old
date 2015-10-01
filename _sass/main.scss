@@ -170,6 +170,9 @@ $bold: 700;
 .flex.start {
   align-items: flex-start;
 }
+.flex.space-around {
+  justify-content: space-around;
+}
 .wrap {
   flex-flow: row wrap;
   justify-content: space-around;
