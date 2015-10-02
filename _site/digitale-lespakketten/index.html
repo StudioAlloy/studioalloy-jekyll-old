@@ -19,7 +19,7 @@
   
   <title>Digitale lespakketten &middot; Alloy</title>
   <link rel="canonical" href="/digitale-lespakketten/">
-  
+  <base href="/digitale-lespakketten/">
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   <!--  -->
   
@@ -94,8 +94,18 @@
       <img src="/img/landing/digitale-lespakketten-tank.svg" class="parallax-item">
     </section>
     
-    <section class="flex half-vh" style="background-color:#eee;">
-      <h1>GAME</h1>
+    <section class="flex" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
+      <div id="dd_game">
+        <div class="dragboard" style="background: url('/img/landing/digitale-lespakketten-ondergrond.svg') no-repeat center center;">
+          <div class="dropper ui-droppable" data-id="drop_1" data-top="0" data-left="0" data-width="1024" data-height="600" data-keep-moving="false" data-snap-offset="0,250" data-drop-image-size="310,430"></div>
+          
+          <div class="dropper ui-droppable" data-id="drop_1" data-top="600" data-left="0" data-width="750" data-height="160" data-keep-moving="false" data-snap-offset="0,250" data-drop-image-size="310,430"></div>
+          
+          <img src="/img/landing/digitale-lespakketten-tank.svg" data-drop-image="/img/landing/digitale-lespakketten-tank_drop.svg" class="dragger" data-id="drag_1" data-top="615" data-left="790" data-width="200" data-height="140">
+          
+          <div class="dd_overlay" style="background: url('/img/landing/digitale-lespakketten-popup.svg') no-repeat center center;"></div>
+        </div>
+      </div>
     </section>
     
     <section class="flex">
@@ -187,6 +197,10 @@
   </article>
 </section>
 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>>
+<script type="text/javascript" src="/js/script.js"></script>
+
       <footer class="flex">
 	<div class="inner flex start">
 		<!-- <div class="col">
@@ -243,53 +257,7 @@
 		</div>
 	</div>
 </footer>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	var owl = $('.owl-carousel');
-	owl.owlCarousel({
-		loop:true,
-		margin:60,
-		nav:false,
-		center:true,
-		startPosition: 1,
-		responsive:{
-			0:{
-				items:1
-			},
-			600:{
-				items:2
-			},
-			1024:{
-				items:4
-			},
-		}
-	});
-});
-</script>
-<script>
-var touch = window.ontouchstart
-|| navigator.MaxTouchPoints > 0
-|| navigator.msMaxTouchPoints > 0;
 
-if (touch) { // remove all :hover stylesheets
-	try { // prevent crash on browsers not supporting DOM styleSheets properly
-		for (var si in document.styleSheets) {
-			var styleSheet = document.styleSheets[si];
-			if (!styleSheet.rules) continue;
-			
-			for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-				if (!styleSheet.rules[ri].selectorText) continue;
-				
-				if (styleSheet.rules[ri].selectorText.match(':hover')) {
-					stylesheet.deleteRule(ri);
-				}
-			}
-		}
-	} catch (ex) {}
-}
-</script>
 
     </div>
   </div>

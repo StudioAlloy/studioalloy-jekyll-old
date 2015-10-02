@@ -21,7 +21,7 @@
   
   <title>{{ page.title }} &middot; {{ site.title }}</title>
   <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-  
+  <base href="{{ site.baseurl}}/{% if page.permalink %}{{ page.permalink }}{% endif %}">
   <!-- Open Graph. Refer https://developers.facebook.com/docs/web/tutorials/scrumptious/open-graph-object -->
   <!-- {% if site.facebook %}
   <meta property="fb:app_id" content="{{ site.facebook_app }}">

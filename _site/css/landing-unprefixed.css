@@ -256,5 +256,139 @@ nav img {
     width: 100%;
   }
 }
+/* dragndrop */
+.dragboard {
+  position: relative;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  width: 1024px;
+  height: 768px;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  overflow: hidden;
+}
+
+.dragboard .dragger {
+  z-index: 100;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.dragboard .dragger, .dragboard .dropper {
+  position: absolute;
+}
+
+/*
+testing mode
+*/
+.ui-draggable-dragging {
+  z-index: 1000 !important;
+}
+
+.dragboard.testing .dragger {
+  outline: 2px dotted #f8f;
+}
+
+.dragboard.testing .dragger::before {
+  content: 'dragger';
+}
+
+.dragboard.testing {
+  outline: 1px dotted #f00;
+}
+
+.dragboard.testing .dropper {
+  outline: 2px dotted #333;
+}
+
+.dragboard.testing .dropper::before {
+  content: 'dropper';
+}
+
+/*overlay*/
+.dd_overlay {
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-transition: top .3s ease-in-out;
+  -moz-transition: top .3s ease-in-out;
+  -o-transition: top .3s ease-in-out;
+  transition: top .3s ease-in-out;
+}
+
+.dd_overlay.show {
+  top: 10px;
+}
+
+.dragboard {
+  position: relative;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.dragboard .dragger {
+  z-index: 100;
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+}
+
+.dragboard .dragger, .dragboard .dropper {
+  position: absolute;
+}
+
+/*
+testing mode
+*/
+.ui-draggable-dragging {
+  z-index: 1000 !important;
+}
+
+.dragboard.testing .dragger {
+  outline: 2px dotted #f8f;
+}
+
+.dragboard.testing .dragger::before {
+  content: 'dragger';
+}
+
+.dragboard.testing {
+  outline: 1px dotted #f00;
+}
+
+.dragboard.testing .dropper {
+  outline: 2px dotted #333;
+}
+
+.dragboard.testing .dropper::before {
+  content: 'dropper';
+}
 
 /*# sourceMappingURL=landing-unprefixed.css.map */

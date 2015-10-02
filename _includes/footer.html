@@ -42,6 +42,7 @@
 		</div>
 	</div>
 </footer>
+{% if page.title == "Home" %}
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
 <script type="text/javascript">
@@ -89,3 +90,4 @@ if (touch) { // remove all :hover stylesheets
 	} catch (ex) {}
 }
 </script>
+{% endif %}
