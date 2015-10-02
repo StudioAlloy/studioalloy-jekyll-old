@@ -755,6 +755,10 @@ form .form-row textarea + label[data-placeholder]:after {
   margin-top: -10vh;
 }
 
+.end-min-vh {
+  margin-bottom: -5vh;
+}
+
 /* END View height
 ———————————————————————————————————— */
 /* Bits

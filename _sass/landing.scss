@@ -71,9 +71,13 @@ section {
 ———————————————————————————————————— */
 nav {
   padding: 20px;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  background-color: #fff;
 }
 nav img {
-  width: 60px
+  width: 55px
 }
 .landing-header {
   overflow: hidden;
