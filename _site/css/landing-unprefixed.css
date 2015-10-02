@@ -17,6 +17,23 @@ body {
   font-family: sans-serif;
 }
 
+.parallax {
+  position: relative;
+}
+
+.parallax:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.parallax-item {
+  position: absolute;
+}
+
 /* END parallax
 ———————————————————————————————————— */
 /* Type
@@ -70,8 +87,13 @@ nav img {
   width: 60px;
 }
 
+.landing-header {
+  overflow: hidden;
+}
+
 .landing-img img {
   width: 50vw;
+  z-index: 9;
 }
 
 .icons {
@@ -81,7 +103,6 @@ nav img {
 .icon-box {
   width: 30%;
   margin: 70px 0;
-  height: 410px;
 }
 
 .icon-box img {
@@ -102,58 +123,137 @@ nav img {
   }
 
   /* parallax */
-  .parallax {
-    position: relative;
-  }
-
-  .parallax:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .parallax-item {
-    position: absolute;
+  section .parallax-item {
+    height: auto;
+    width: 320px;
   }
 
   section .parallax-item:nth-of-type(1) {
     top: 50%;
-    left: 0;
-    width: 320px;
-    height: auto;
-    transform: translateZ(0.2px) scale(1) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(2) {
     top: 50%;
-    right: 20%;
-    width: 320px;
-    height: auto;
     transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(3) {
     top: 65%;
-    left: 25%;
-    width: 320px;
-    height: auto;
-    transform: translateZ(0.7px) scale(0.3) translateX(100%) translateY(0%) scaleX(-1);
+    transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
   }
 
   section .parallax-item:nth-of-type(4) {
     top: 75%;
-    right: 60px;
-    width: 320px;
-    height: auto;
-    transform: translateZ(0.2px) scale(1) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(5) {
+    top: 20%;
+    transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(6) {
+    top: 25%;
+    transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1721px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 5%;
+  }
+
+  section .parallax-item:nth-of-type(2) {
+    right: 30%;
+  }
+
+  section .parallax-item:nth-of-type(3) {
+    left: 30%;
+  }
+
+  section .parallax-item:nth-of-type(4) {
+    right: 5%;
+  }
+
+  section .parallax-item:nth-of-type(5) {
+    right: 25%;
+  }
+
+  section .parallax-item:nth-of-type(6) {
+    left: 30%;
+  }
+}
+@media only screen and (max-width: 1720px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 0%;
+  }
+
+  section .parallax-item:nth-of-type(2) {
+    right: 20%;
+  }
+
+  section .parallax-item:nth-of-type(3) {
+    left: 25%;
+  }
+
+  section .parallax-item:nth-of-type(4) {
+    right: 3%;
+  }
+
+  section .parallax-item:nth-of-type(5) {
+    right: 15%;
+  }
+
+  section .parallax-item:nth-of-type(6) {
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* Styles */
+  section .parallax-item:nth-of-type(1) {
+    left: 0%;
+    transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(2) {
+    right: 20%;
+    transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(3) {
+    left: 22%;
+    transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
+  }
+
+  section .parallax-item:nth-of-type(4) {
+    right: 3%;
+    transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(5) {
+    right: 15%;
+    transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
+  }
+
+  section .parallax-item:nth-of-type(6) {
+    left: 25%;
+    transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
+  }
+}
+@media only screen and (max-width: 1000px) {
   .parallax-item {
     display: none;
+  }
+
+  .icon-box {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .icon-box {
+    width: 100%;
   }
 }
 
