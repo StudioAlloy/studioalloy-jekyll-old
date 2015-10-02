@@ -1338,12 +1338,18 @@ footer p {
     height: 50vh;
   }
 
-  .text-container img.logo {
-    display: none;
-  }
-
   section.cases a.post {
     margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* Styles */
+  section.home h1 {
+    margin-bottom: 0;
+  }
+
+  .text-container img.logo {
+    display: none;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -1404,6 +1410,13 @@ footer p {
 
   author img {
     width: 80%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* Styles */
+  section.home h1 {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -1493,7 +1506,7 @@ footer p {
   }
 
   .text-container {
-    padding: 100px 250px;
+    padding: 150px 250px;
   }
 
   .overflow {
