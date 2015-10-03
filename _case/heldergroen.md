@@ -4,7 +4,7 @@ opdrachtgever: Heldergroen
 title: Website Heldergroen
 date: 2015-05-30 16:22:48
 categories: website
-excerpt: Dynamische portfolio website voor een groen Haarlems reclamebureau
+excerpt: Dynamische portfoliowebsite voor een Haarlems communicatiebureau
 featured: false
 url: //heldergroen.nl
 image:
