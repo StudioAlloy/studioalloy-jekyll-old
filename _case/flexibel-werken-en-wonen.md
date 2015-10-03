@@ -4,7 +4,7 @@ opdrachtgever: Heldergroen, Nederlandse Vereniging van Banken
 title: Flexibel werken en wonen
 date: 2015-05-30 16:22:48
 categories: website, wordpress
-excerpt: Campagne website ‘Flexibel werken en wonen’ voor ZZP’ers en flexwerkers
+excerpt: Campagnewebsite over hypotheken voor ZZP’ers en flexwerkers
 featured: true
 url: //flexibelwerkenenwonen.nl
 image:
