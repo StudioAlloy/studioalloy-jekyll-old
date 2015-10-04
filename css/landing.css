@@ -81,6 +81,11 @@ section {
   margin-top: -40vh;
 }
 
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+}
+
 /* END Main overwrites
 ———————————————————————————————————— */
 nav {

@@ -871,7 +871,7 @@ section {
 
 .cover {
   background-size: cover !important;
-  background-position: center center !important;
+  background-position: top center !important;
   background-repeat: no-repeat !important;
 }
 
@@ -1208,6 +1208,12 @@ footer p {
   }
 
   .col-container,
+  .inner,
+  .main {
+    flex-direction: column;
+  }
+
+  .col-container,
   .text-container {
     padding: 5% 10%;
   }
@@ -1279,12 +1285,6 @@ footer p {
 }
 @media only screen and (max-width: 750px) {
   /* Styles */
-  .col-container,
-  .inner,
-  .main {
-    flex-direction: column;
-  }
-
   .sub,
   .grid,
   .post,
@@ -1342,17 +1342,19 @@ footer p {
     line-height: 2.2rem;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 1281px) {
   /* Styles */
-  section.blog-page .content, section.work-page .content {
-    padding: 0 50px 50px 50px;
-  }
-
   .grid,
   .post {
     margin-top: 2%;
     margin-bottom: 2%;
     height: 50vh;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /* Styles */
+  section.blog-page .content, section.work-page .content {
+    padding: 0 50px 50px 50px;
   }
 
   .author-side img {

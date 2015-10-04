@@ -280,7 +280,24 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post" href="/case/diabetestrefpunt/">
+<a class="post no-touch" href="/case/de-grote-volksverhuizing/">
+  <div class="featured-image cover" style="background: url(/img/case/de-grote-volksverhuizing-thumb.jpg)">
+    <div class="hover">
+      <img class="logo" src="/img/case/de-grote-volksverhuizing-logo.png">
+    </div>
+  </div>
+  <div class="meta">
+    <h3>De Grote Volksverhuizing</h3>
+    <p>Interactieve lespakketen basisonderwijs over de Atlantikwall</p>
+  </div>
+</a>
+
+
+
+    
+    
+
+<a class="post no-touch" href="/case/diabetestrefpunt/">
   <div class="featured-image cover" style="background: url(/img/case/diabetestrefpunt-thumb.jpg)">
     <div class="hover">
       <img class="logo" src="/img/case/diabetestrefpunt-logo.png">
@@ -297,7 +314,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post" href="/case/fabstagram/">
+<a class="post no-touch" href="/case/fabstagram/">
   <div class="featured-image cover" style="background: url(/img/case/fabstagram-thumb.jpg)">
     <div class="hover">
       <img class="logo" src="/img/case/fabstagram-logo.png">
@@ -314,7 +331,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post" href="/case/ipad-detailer-animal-health/">
+<a class="post no-touch" href="/case/ipad-detailer-animal-health/">
   <div class="featured-image cover" style="background: url(/img/case/ipad-detailer-animal-health-thumb.jpg)">
     <div class="hover">
       <img class="logo" src="/img/case/ipad-detailer-animal-health-logo.png">
@@ -819,25 +836,8 @@ $(document).ready(function(){
 });
 </script>
 <script>
-var touch = window.ontouchstart
-|| navigator.MaxTouchPoints > 0
-|| navigator.msMaxTouchPoints > 0;
-
-if (touch) { // remove all :hover stylesheets
-	try { // prevent crash on browsers not supporting DOM styleSheets properly
-		for (var si in document.styleSheets) {
-			var styleSheet = document.styleSheets[si];
-			if (!styleSheet.rules) continue;
-			
-			for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-				if (!styleSheet.rules[ri].selectorText) continue;
-				
-				if (styleSheet.rules[ri].selectorText.match(':hover')) {
-					stylesheet.deleteRule(ri);
-				}
-			}
-		}
-	} catch (ex) {}
+if (!("ontouchstart" in document.documentElement)) {
+	document.documentElement.className += " no-touch";
 }
 </script>
 
