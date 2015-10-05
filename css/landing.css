@@ -87,6 +87,14 @@ button {
   font-size: 1em;
 }
 
+section:last-of-type {
+  margin-bottom: 0 !important;
+}
+
+footer {
+  position: inherit !important;
+}
+
 /* END Main overwrites
 ———————————————————————————————————— */
 nav {
@@ -298,13 +306,33 @@ nav img {
   .icon-box {
     width: 50%;
   }
+
+  #dd_game {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* Styles */
+  #dd_game {
+    width: 700px;
+    height: 525px;
+  }
+
+  nav {
+    position: relative;
+  }
 }
 @media only screen and (max-width: 480px) {
   .icon-box {
     width: 100%;
   }
+
+  .mve-hide {
+    display: none;
+  }
 }
-/* dragndrop */
+/*Drag game*/
 .dragboard {
   position: relative;
   -ms-transform: translate3d(0, 0, 0);
@@ -316,6 +344,7 @@ nav img {
           perspective: 1000;
   width: 1024px;
   height: 768px;
+  background: url("../img/landing/digitale-lespakketten-ondergrond.svg") no-repeat center center;
   background-size: 100%;
   overflow: hidden;
 }
@@ -369,63 +398,11 @@ testing mode
   top: 100%;
   width: 100%;
   height: 100%;
+  background: url("../img/landing/digitale-lespakketten-popup.svg") no-repeat center center;
   background-size: 100%;
   transition: top .3s ease-in-out;
 }
 
 .dd_overlay.show {
   top: 10px;
-}
-
-.dragboard {
-  position: relative;
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-}
-
-.dragboard .dragger {
-  z-index: 100;
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-perspective: 1000;
-          perspective: 1000;
-}
-
-.dragboard .dragger, .dragboard .dropper {
-  position: absolute;
-}
-
-/*
-testing mode
-*/
-.ui-draggable-dragging {
-  z-index: 1000 !important;
-}
-
-.dragboard.testing .dragger {
-  outline: 2px dotted #f8f;
-}
-
-.dragboard.testing .dragger::before {
-  content: 'dragger';
-}
-
-.dragboard.testing {
-  outline: 1px dotted #f00;
-}
-
-.dragboard.testing .dropper {
-  outline: 2px dotted #333;
-}
-
-.dragboard.testing .dropper::before {
-  content: 'dropper';
 }

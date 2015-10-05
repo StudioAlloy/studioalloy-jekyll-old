@@ -1342,10 +1342,6 @@ footer p {
   section.home.vh {
     height: auto;
   }
-
-  div#dd_game {
-    display: none;
-  }
 }
 @media only screen and (max-width: 1024px) {
   /* Styles */
