@@ -4,7 +4,7 @@ opdrachtgever: Animazing
 title: Animazing
 date: 2015-05-30 16:22:48
 categories: huisstijl, 2d animatie, website, wordpress
-excerpt: Een door Studio Alloy ontwikkeld label voor productie van 2D animaties
+excerpt: Een door Alloy ontwikkeld label voor productie van 2D animaties
 featured: false
 url: //animazing.nl
 image:
