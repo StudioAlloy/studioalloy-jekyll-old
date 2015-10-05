@@ -1330,7 +1330,7 @@ footer p {
     font-size: 1rem;
   }
 
-  form {
+  .contact-info form {
     margin-left: -20px;
     margin-right: -20px;
   }
@@ -1384,7 +1384,7 @@ footer p {
     margin-right: 40px;
   }
 
-  form {
+  .contact-info form {
     margin-right: -100%;
   }
 
@@ -1446,11 +1446,11 @@ footer p {
     margin: 0px -55%;
   }
 
-  .form {
+  .contact-info .form {
     margin-right: -170%;
   }
 
-  form {
+  .contact-info form {
     margin-right: -150%;
   }
 }

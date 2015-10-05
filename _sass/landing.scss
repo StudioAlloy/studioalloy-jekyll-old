@@ -128,7 +128,14 @@ nav img {
 .qoute img {
   max-width: 250px;
 }
-
+/* Footer
+———————————————————————————————————— */
+footer form {
+  background-color: transparent;
+  padding: 0;
+}
+/* END Footer
+———————————————————————————————————— */
 /* Media qeuries */
 @media only screen and (min-width : 769px) {
   .text {
@@ -160,7 +167,7 @@ nav img {
     transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
   }
   section .parallax-item:nth-of-type(6){
-    top: 25%;
+    top: 30%;
     transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%);
   }
 }
@@ -183,12 +190,6 @@ nav img {
   }
   section .parallax-item:nth-of-type(6){
     left: 30%;
-  }
-  .game {
-    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0);
-  }
-  .decoration {
-    display: none;
   }
 }
 @media only screen and (max-width : 1720px) {
