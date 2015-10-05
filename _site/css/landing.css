@@ -149,15 +149,24 @@ nav img {
   color: #fff;
 }
 
-.game,
-.decoration {
-  background: #8a6;
+.decoration img {
+  width: 100%;
 }
 
-.decoration {
-  -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
-          clip-path: polygon(100% 0, 50% 100%, 0 0);
-  height: 10vh;
+.qoute-box {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.qoute:nth-last-child(2) img {
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.qoute img {
+  max-width: 250px;
 }
 
 /* Media qeuries */
@@ -232,6 +241,15 @@ nav img {
 
   section .parallax-item:nth-of-type(6) {
     left: 30%;
+  }
+
+  .game {
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0);
+            clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0);
+  }
+
+  .decoration {
+    display: none;
   }
 }
 @media only screen and (max-width: 1720px) {

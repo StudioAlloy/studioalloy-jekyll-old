@@ -116,13 +116,17 @@ nav img {
   padding: 20px;
   color: #fff;
 }
-.game,
-.decoration {
-  background: #8a6;
+.decoration img {
+  width: 100%;
 }
-.decoration {
-  clip-path: polygon(100% 0, 50% 100%, 0 0);
-  height: 10vh;
+.qoute-box {
+  flex-direction: column;
+}
+.qoute:nth-last-child(2) img {
+  order: 2;
+}
+.qoute img {
+  max-width: 250px;
 }
 
 /* Media qeuries */
@@ -179,6 +183,12 @@ nav img {
   }
   section .parallax-item:nth-of-type(6){
     left: 30%;
+  }
+  .game {
+    clip-path: polygon(100% 0, 100% 50%, 50% 100%, 0% 50%, 0 0);
+  }
+  .decoration {
+    display: none;
   }
 }
 @media only screen and (max-width : 1720px) {
