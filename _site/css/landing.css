@@ -42,6 +42,7 @@
 ———————————————————————————————————— */
 /* Type
 ———————————————————————————————————— */
+.landing-header h3,
 .landing-header h1 {
   color: #fff !important;
   max-width: 730px;
@@ -118,17 +119,37 @@ nav img {
 .icon-box {
   width: 30%;
   margin: 70px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .icon-box img {
   padding-bottom: 30px;
-  width: 100%;
+  width: 75%;
 }
 
 .icon-box.alt {
   background: #e64;
   padding: 20px;
   color: #fff;
+}
+
+.game,
+.decoration {
+  background: #8a6;
+}
+
+.decoration {
+  -webkit-clip-path: polygon(100% 0, 50% 100%, 0 0);
+          clip-path: polygon(100% 0, 50% 100%, 0 0);
+  height: 10vh;
 }
 
 /* Media qeuries */

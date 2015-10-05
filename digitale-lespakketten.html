@@ -13,7 +13,10 @@ permalink: digitale-lespakketten/
   </nav>
   <article>
     <section class="parallax flex landing-header vh" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
-      <h1 class="center min-vh">{{page.title}}</h1>
+      <div class="center min-vh">
+        <h1>{{page.title}}</h1>
+        <h3 class="transform">Verhalen vertellen met pixels</h3>
+      </div>
       <img src="/img/landing/{{ page.title | slugify }}-huis.svg" class="parallax-item">
       <img src="/img/landing/{{ page.title | slugify }}-kerk.svg" class="parallax-item">
       <img src="/img/landing/{{ page.title | slugify }}-winkel.svg" class="parallax-item">
@@ -36,7 +39,7 @@ permalink: digitale-lespakketten/
       <img src="/img/landing/{{ page.title | slugify }}-tank.svg" class="parallax-item">
     </section>
     
-    <section class="flex" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
+    <section class="game flex" style="background: linear-gradient(180deg, #BB7 30%, #BB7 40%, #8A6 100%);">
       <div id="dd_game">
         <div class="dragboard" style="background: url('/img/landing/{{ page.title | slugify }}-ondergrond.svg') no-repeat center center;">
           <div class="dropper ui-droppable" data-id="drop_1" data-top="0" data-left="0" data-width="1024" data-height="600" data-keep-moving="false" data-snap-offset="0,250" data-drop-image-size="310,430"></div>
@@ -49,6 +52,7 @@ permalink: digitale-lespakketten/
         </div>
       </div>
     </section>
+    <section class="decoration half-vh"></section>
     
     <section class="flex">
       <div class="inner text">

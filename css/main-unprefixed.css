@@ -834,7 +834,7 @@ section {
 }
 
 .post {
-  height: 60vh;
+  height: 70vh;
 }
 
 .grid,
@@ -1302,6 +1302,10 @@ footer p {
     line-height: 26px;
   }
 
+  .post {
+    margin-bottom: 15px;
+  }
+
   .post-page .post {
     width: 100% !important;
   }
@@ -1334,6 +1338,14 @@ footer p {
   author img {
     width: 80%;
   }
+
+  section.home.vh {
+    height: auto;
+  }
+
+  div#dd_game {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1024px) {
   /* Styles */
@@ -1342,7 +1354,7 @@ footer p {
     line-height: 2.2rem;
   }
 }
-@media only screen and (max-width: 1281px) {
+@media only screen and (min-width: 1281px) {
   /* Styles */
   .grid,
   .post {
