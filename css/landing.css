@@ -176,6 +176,10 @@ footer form {
   padding: 0;
 }
 
+form h3 {
+  display: none;
+}
+
 /* END Footer
 ———————————————————————————————————— */
 /* Media qeuries */
