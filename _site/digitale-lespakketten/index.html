@@ -56,7 +56,6 @@
   <link rel="stylesheet" type="text/css" href="/css/main.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
-  
 <link rel="stylesheet" type="text/css" href="/css/landing.css">
 </head>
 <body class="landing digitale lespakketten page">
@@ -68,7 +67,7 @@
       <section>
   <nav class="flex space-between">
     <a href=""><img src="/img/alloy-logo.svg"></a>
-    <a class="mve-hide" href="/case"><button>Bekijk hier alle cases.</button></a>
+    <a class="mve-hide" href="/case"><button>Bekijk hier alle cases</button></a>
   </nav>
   <article>
     <section class="parallax flex landing-header vh" style="background: linear-gradient(150deg, #BB7 30%, #BB7 40%, #8A6 100%);">
@@ -85,7 +84,16 @@
     </section>
     
     <section class="flex landing-img">
-      <img class="min-vh" src="/img/landing/digitale-lespakketten-header.png">
+      
+      <div class="slider min-vh">
+        <img class="device" src="/img/landing/digitale-lespakketten-device.png">
+        <div id="owl-example" class="owl-carousel">
+          <img src="/img/landing/digitale-lespakketten-header.jpg" alt="" />
+          <img src="/img/landing/digitale-lespakketten-header.jpg" alt="" />
+          <img src="/img/landing/digitale-lespakketten-header.jpg" alt="" />
+        </div>
+      </div>
+      
     </section>
     <section class="parallax flex">
       <div class="inner text">
@@ -207,45 +215,24 @@
         <img src="/img/landing/digitale-lespakketten-critical-mass.svg" alt="" />
       </div>
     </section>
-    <section>
-      <footer class="flex">
-	<div class="inner flex start">
-		<!-- <div class="col">
-		<h4>Werk ruimte</h4>
-		<p>Ben jij een creatieve ondernemer en op zoek naar een mooie werkruimte in Haarlem? Wij ontmoeten je graag en misschien pas je perfect bij het team!</p>
-	</div> -->
-	<div class="col">
-		<h4>Het team</h4>
-		<ul>
-			
-			
-			<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
-			
-			<li><a href="/team/david-hager/">David Hager</a></li>
-			
-			<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
-			
-			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
-			
-			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
-			
-			<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
-			
-			<li><a href="/team/wouter-hager/">Wouter Hager</a></li>
-			
-		</ul>
-	</div>
-	<div class="col">
-		<h4>Contact</h4>
-		<ul>
-			<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
-			<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
-			<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
-		</ul>
-	</div>
-	<div class="col">
-		<h4>Laat ons jou bellen</h4>
-		<form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post">
+    <section class="vh flex">
+      <div class="checklist">
+        <ul>
+          <li class="wow slideInLeft" data-wow-duration="5s" data-wow-delay="1s">pro’s voor aanbieders</li>
+          <li>jouw materiaal bereikt een breder publiek</li>
+          <li>kinderen komen langs</li>
+          <li>leerlingen kennen de basis al voor bezoek</li>
+          <li>voor ieder budget iets te maken</li>
+        </ul>
+        <ul>
+          <li>pro’s voor scholen</li>
+          <li>het is goed voor het onderwijs</li>
+          <li>eenvoudig voor docenten</li>
+          <li>geen ingewikkelde ICT</li>
+          <li>het materiaal past binnen het curriculum</li>
+        </ul>
+      </div>
+      <form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post">
   <h3>Contact formulier</h3>
   <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
   <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
@@ -265,9 +252,9 @@
   <input type='submit' value='Verzend' />
 </form>
 
-	</div>
-</div>
-<div class="copy-bar flex">
+    </section>
+    <section>
+      <div class="copy-bar flex">
 	<div class="inner">
 		<ul>
 			<li>
@@ -289,9 +276,27 @@
   </article>
 </section>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/js/script.js"></script>
+
+<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    center:true,
+    responsive:{
+      0:{
+        items:1
+      },
+    }
+  });
+});
+</script>
 
     </div>
   </div>
