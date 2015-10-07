@@ -159,6 +159,10 @@ nav img {
           flex-direction: column;
 }
 
+.qoute-text {
+  max-width: 500px;
+}
+
 .qoute:nth-last-child(2) img {
   -webkit-order: 2;
       -ms-flex-order: 2;

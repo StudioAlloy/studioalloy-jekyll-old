@@ -122,6 +122,9 @@ nav img {
 .qoute-box {
   flex-direction: column;
 }
+.qoute-text {
+  max-width: 500px;
+}
 .qoute:nth-last-child(2) img {
   order: 2;
 }
