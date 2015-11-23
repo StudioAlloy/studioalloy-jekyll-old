@@ -544,6 +544,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
         <form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post">
   <h3>Contact formulier</h3>
   <div class="form-row">
+    <input type='hidden' name='redirect_to' value='/#bedankt' />
     <input type="text" name="email" required>
     <label alt="Label Text" data-placeholder="Email"></label>
   </div>
@@ -557,6 +558,9 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
   </div>
   <input type='submit' value='Verzend' />
 </form>
+<div id="bedankt" class="hide">
+  Bedankt voor uw bericht, en we komen snel bij uw terug
+</div>
 
       </div>
     </div>
@@ -640,6 +644,9 @@ $(document).ready(function(){
 		}
 	});
 });
+</script>
+<script>
+ var touch=window.ontouchstart||navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0;if(touch)try{for(var si in document.styleSheets){var styleSheet=document.styleSheets[si];if(styleSheet.rules)for(var ri=styleSheet.rules.length-1;ri>=0;ri--)styleSheet.rules[ri].selectorText&&styleSheet.rules[ri].selectorText.match(":hover")&&stylesheet.deleteRule(ri)}}catch(ex){}
 </script>
 
 

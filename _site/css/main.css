@@ -504,6 +504,14 @@ form .form-row textarea + label[data-placeholder]:after {
   top: 17%;
 }
 
+#bedankt.hide {
+  opacity: 0;
+}
+
+#bedankt {
+  transition: opacity .3s ease;
+}
+
 /* Header
 ———————————————————————————————————— */
 #header {

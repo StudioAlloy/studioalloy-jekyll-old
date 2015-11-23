@@ -1,6 +1,7 @@
 <form action="https://getsimpleform.com/messages?form_api_token=17785a99c890b5ed234623b44589c226" method="post">
   <h3>Contact formulier</h3>
   <div class="form-row">
+    <input type='hidden' name='redirect_to' value='{{site.baseurl}}/#bedankt' />
     <input type="text" name="email" required>
     <label alt="Label Text" data-placeholder="Email"></label>
   </div>
@@ -14,3 +15,6 @@
   </div>
   <input type='submit' value='Verzend' />
 </form>
+<div id="bedankt" class="hide">
+  Bedankt voor uw bericht, en we komen snel bij uw terug
+</div>
