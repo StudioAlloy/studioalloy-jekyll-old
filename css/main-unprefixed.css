@@ -530,6 +530,11 @@ form .form-row textarea + label[data-placeholder]:after {
   transition: opacity .3s ease;
 }
 
+a, img {
+  border: none;
+  outline: none;
+}
+
 /* Header
 ———————————————————————————————————— */
 #header {
@@ -549,6 +554,10 @@ form .form-row textarea + label[data-placeholder]:after {
 
 #header ul.menu li {
   text-transform: uppercase;
+}
+
+#header .container {
+  z-index: 99999;
 }
 
 @media only screen and (max-width: 900px) {
@@ -605,11 +614,18 @@ form .form-row textarea + label[data-placeholder]:after {
   width: 100%;
 }
 
+.inner,
+.title-container,
+.text-container,
+.col-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
 .text-container {
   width: 80%;
   background-color: #fff;
   padding: 10% 10%;
-  max-width: 1100px;
   z-index: 9;
   position: relative;
 }
@@ -617,7 +633,6 @@ form .form-row textarea + label[data-placeholder]:after {
 .col-container {
   width: 80%;
   background-color: #fff;
-  max-width: 1100px;
   padding: 0 3%;
   z-index: 9;
 }
@@ -664,7 +679,6 @@ address {
   width: 80%;
   background-color: #fff;
   padding: 4% 10%;
-  max-width: 1100px;
   z-index: 9;
 }
 
@@ -678,7 +692,6 @@ address {
 
 .inner {
   width: 90%;
-  max-width: 1100px;
 }
 
 .col {
@@ -976,6 +989,9 @@ body.home section.home {
 
 body.home section.home .logo {
   text-align: center;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
 }
 
 body.home section.home .svg-animation svg {

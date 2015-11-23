@@ -17,7 +17,10 @@ $bold: 700;
 "bits",
 "menu",
 "form";
-
+a, img {
+    border:none;
+    outline:none;
+}
 /* Header
 ———————————————————————————————————— */
 #header {
@@ -36,6 +39,7 @@ $bold: 700;
 #header ul.menu li {
   text-transform: uppercase;
 }
+#header .container{ z-index: 99999; }
 
 @media only screen and (max-width : 900px) {
   /* Styles */
@@ -91,18 +95,23 @@ position: fixed;
   flex-direction: column;
   width: 100%;
 }
+.inner,
+.title-container,
+.text-container,
+.col-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 .text-container {
   width: 80%;
   background-color: $alt-color;
   padding: 10% 10%;
-  max-width: 1100px;
   z-index: 9;
   position: relative;
 }
 .col-container {
   width: 80%;
   background-color: $alt-color;
-  max-width: 1100px;
   padding: 0 3%;
   z-index: 9;
 }
@@ -141,7 +150,6 @@ address {
   width: 80%;
   background-color: $alt-color;
   padding: 4% 10%;
-  max-width: 1100px;
   z-index: 9;
 }
 .info-container {
@@ -153,7 +161,6 @@ address {
 }
 .inner {
   width: 90%;
-  max-width: 1100px;
 }
 .col {
   width: 50%;
@@ -394,7 +401,10 @@ body.home section.home {
   overflow: hidden;
 }
 body.home section.home .logo {
-  text-align: center;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
 }
 body.home section.home .svg-animation svg {
   position: absolute;
