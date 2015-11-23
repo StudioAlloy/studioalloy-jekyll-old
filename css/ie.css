@@ -14,7 +14,9 @@
   display: inline !important;
   margin-right: 40px !important;
 }
-footer .col {
+.col {
     float: left;
+}
+footer .col {
     width: 33%;
 }
