@@ -1,12 +1,12 @@
 /* globals module, require */
 
 module.exports = function(grunt) {
-  
+
   "use strict";
-  
+
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
-    
+
     sass: {
       global: {
         options: {
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     autoprefixer: {
       global: {
         src: "css/main-unprefixed.css",
@@ -29,16 +29,16 @@ module.exports = function(grunt) {
         dest: "css/landing.css"
       }
     },
-    
+
     shell: {
       jekyllServe: {
-        command: "jekyll serve --config _config-dev.yml"
+        command: "jekyll serve --config _config.yml,_config-dev.yml"
       },
       jekyllBuild: {
-        command: "jekyll build --config _config-dev.yml"
+        command: "jekyll build --config _config.yml,_config-dev.yml"
       }
     },
-    
+
     watch: {
       options: {
         livereload: true
@@ -55,14 +55,14 @@ module.exports = function(grunt) {
         files: ["_sass/*.scss"],
         tasks: ["sass", "autoprefixer", "shell:jekyllBuild"]
       }
-      
+
     }
-    
+
   });
-  
+
   require("load-grunt-tasks")(grunt);
-  
+
   grunt.registerTask("serve", ["shell:jekyllServe"]);
   grunt.registerTask("default", ["sass", "autoprefixer", "shell:jekyllBuild", "watch"]);
-  
+
 };
