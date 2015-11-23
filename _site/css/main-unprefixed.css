@@ -550,6 +550,7 @@ a, img {
 
 #header .logo {
   max-width: 50px;
+  max-height: 50px;
 }
 
 #header ul.menu li {
