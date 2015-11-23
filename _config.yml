@@ -71,7 +71,7 @@ google_map_height: 450            # Default map height. Width adjusts to contain
 # API Keys. PLEASE DO NOT USE THESE KEYS. Get your own at links in comments.
 
 google_api_key: "" # https://code.google.com/apis/console/
-google_analytics_ua: "" # Google Analytics site specific id
+google_analytics_ua: "UA-70503218-1" # Google Analytics site specific id
 google_cse_id: "" # Google Custom Search Engine unique id
 
 mapbox: ""

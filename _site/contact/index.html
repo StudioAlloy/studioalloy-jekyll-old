@@ -9,7 +9,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name=viewport content="width=device-width, initial-scale=1">
   <title>Contact &middot; Alloy</title>
-  <link rel="canonical" href="/contact/">
   <base href="/contact/">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:url" content="http:/contact/">
@@ -30,8 +29,6 @@
   
 
   <meta name="description" content="Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Wij doen ons werk met veel enthousiasme en toewijding. Dat straalt af op onze opdrachtgevers.">
-  <meta name="keywords" content="">
-  <meta name="google-site-verification" content="AeGqRUbqomU-hrRXchj3lk_yfBvQonAyf7CzUrOn5NU" />
 
   <link rel="shortcut icon" href="/img/favicon/alloy-16.ico" type="image/x-icon" sizes="16x16">
   <link rel="shortcut icon" href="/img/favicon/alloy-16.png" type="image/x-icon" sizes="16x16">
@@ -130,252 +127,53 @@
     </div>
   </div>
 </section>
-
-<section class="contact half-vh min-vh flex end" data-section-name="contact">
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
-	function initialize() {
-		var mapCanvas = document.getElementById('map_canvas');
-		var head = document.getElementsByTagName('head')[0];
-
-		// Save the original method
-		var insertBefore = head.insertBefore;
-
-		var mapOptions = {
-			center: new google.maps.LatLng(52.376277,4.634333),
-			zoom: 14,
-			mapTypeId: google.maps.MapTypeId.ROADMAP,
-			panControl: false,
-			zoomControl: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			streetViewControl: false,
-			overviewMapControl: false,
-			scrollwheel: false,
-			navigationControl: false,
-			mapTypeControl: false,
-			scaleControl: false,
-			draggable: false,
-			styles: [
-				{
-					"featureType": "all",
-					"elementType": "geometry",
-					"stylers": [
-						{
-							"color": "#ee6644"
-						}
-					]
-				},
-				{
-					"featureType": "all",
-					"elementType": "labels.text.fill",
-					"stylers": [
-						{
-							"saturation": "0"
-						}
-					]
-				},
-				{
-					"featureType": "administrative",
-					"elementType": "labels.text.fill",
-					"stylers": [
-						{
-							"color": "#444444"
-						}
-					]
-				},
-				{
-					"featureType": "landscape",
-					"elementType": "all",
-					"stylers": [
-						{
-							"color": "#f2f2f2"
-						}
-					]
-				},
-				{
-					"featureType": "poi",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "off"
-						},
-						{
-							"saturation": "0"
-						}
-					]
-				},
-				{
-					"featureType": "road",
-					"elementType": "all",
-					"stylers": [
-						{
-							"saturation": -100
-						},
-						{
-							"lightness": 45
-						}
-					]
-				},
-				{
-					"featureType": "road",
-					"elementType": "geometry.fill",
-					"stylers": [
-						{
-							"color": "#ffffff"
-						},
-						{
-							"saturation": "0"
-						}
-					]
-				},
-				{
-					"featureType": "road.highway",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "simplified"
-						}
-					]
-				},
-				{
-					"featureType": "road.highway",
-					"elementType": "labels",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "road.arterial",
-					"elementType": "labels.icon",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "transit",
-					"elementType": "all",
-					"stylers": [
-						{
-							"visibility": "off"
-						}
-					]
-				},
-				{
-					"featureType": "water",
-					"elementType": "all",
-					"stylers": [
-						{
-							"color": "#92bbbb"
-						},
-						{
-							"visibility": "on"
-						},
-						{
-							"saturation": "0"
-						}
-					]
-				}
-			]
-		}
-
-		var map = new google.maps.Map(mapCanvas, mapOptions)
-
-		var myLatlng = new google.maps.LatLng(52.376277,4.634333);
-		var goldStar = {
-			path: 'M0,47.955 L14.04564,14.04564 L47.955,0 L81.86436,14.04564 L95.91,47.955 L47.9550018,161.262207 L0,47.955 Z',
-			fillColor: '#E64',
-			fillOpacity: 1,
-			strokeColor: '#E64',
-			scale: 0.3,
-			anchor: new google.maps.Point(50, 155),
-		};
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			icon: goldStar,
-			title: 'Contact'
-		});
-
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-	<style>
-	/*Google maps*/
-	body.home section.contact {
-		padding: 0;
-		background-color: $alt-color;
-	}
-	.maps {
-		background: #344;
-		color: #344;
-		height: 100%;
-	}
-	.maps a {
-		text-decoration: none;
-		color: #344;
-	}
-	#map_canvas {
-		width: 100%;
-		height: 100%;
-	}
-
-	/*END Google maps*/
-	</style>
-	<div id="map_canvas"></div>
-</section>
-
+<section class="pletterij half-vh min-vh" style="background: url(/img/pletterij.jpg) no-repeat center bottom;"></section>
 
       <footer class="flex">
 	<div class="inner flex start">
-	<div class="col">
-		<h4>Het team</h4>
-		<ul>
-			
-			
-			<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
-			
-			<li><a href="/team/david-hager/">David Hager</a></li>
-			
-			<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
-			
-			<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
-			
-			<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
-			
-			<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
-			
-			<li><a href="/team/wouter-hager/">Wouter Hager</a></li>
-			
-		</ul>
+		<div class="col">
+			<h4>Het team</h4>
+			<ul>
+				
+				
+				<li><a href="/team/mitchel-van-eijgen/">Mitchel van Eijgen</a></li>
+				
+				<li><a href="/team/david-hager/">David Hager</a></li>
+				
+				<li><a href="/team/ruben-daas/">Ruben Daas</a></li>
+				
+				<li><a href="/team/jaap-redeker/">Jaap Redeker</a></li>
+				
+				<li><a href="/team/daniel-lim/">Daniel Lim</a></li>
+				
+				<li><a href="/team/wilsun-cheung/">Wilsun Cheung</a></li>
+				
+				<li><a href="/team/wouter-hager/">Wouter Hager</a></li>
+				
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
+				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
+				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
+			</ul>
+		</div>
+		<div class="col">
+			<img src="/img/alloy-logo-bw.svg">
+		</div>
 	</div>
-	<div class="col">
-		<h4>Contact</h4>
-		<ul>
-			<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
-			<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
-			<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
-		</ul>
-	</div>
-	<div class="col">
-		<img src="/img/alloy-logo-bw.svg">
-	</div>
-</div>
-<div class="copy-bar flex">
-	<div class="inner">
-		<ul>
-			<li>
-				<p>&copy; 2015 Alloy</p>
-			</li>
-			<li>
-				<a href="/copyright">Design & development Alloy</a>
-			</li>
-			<li>
-				<a class="btn btn-download" href="download/acme-doc-2.0.1.txt">
+	<div class="copy-bar flex">
+		<div class="inner">
+			<ul>
+				<li>
+					<p>&copy; 2015 Alloy</p>
+				</li>
+				<li>
+					<a href="/copyright">Design & development Alloy</a>
+				</li>
+				<li>
 					<a href="/assets/legal/alloy-algemene-voorwaarden.pdf" download="Alloy Algemene voorwaarden" target="_blank">Algemene voorwaarden</a>
 				</li>
 			</ul>

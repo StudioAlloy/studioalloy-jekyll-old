@@ -742,10 +742,12 @@ address {
 ———————————————————————————————————— */
 .vh {
   height: 100vh;
+  min-height: 500px;
 }
 
 .half-vh {
   height: 60vh;
+  min-height: 350px;
 }
 
 .min-vh {
