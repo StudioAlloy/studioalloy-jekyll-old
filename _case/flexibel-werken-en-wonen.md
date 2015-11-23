@@ -5,7 +5,7 @@ title: Flexibel werken en wonen
 date: 2015-05-30 16:22:48
 categories: website, wordpress
 excerpt: Campagnewebsite over hypotheken voor ZZP’ers en flexwerkers
-featured: true
+featured: false
 url: //flexibelwerkenenwonen.nl
 image:
 status: "published"
