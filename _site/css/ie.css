@@ -20,3 +20,11 @@
 footer .col {
     width: 33%;
 }
+.col:before,
+.col:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.col:after {
+    clear: both;
+}
