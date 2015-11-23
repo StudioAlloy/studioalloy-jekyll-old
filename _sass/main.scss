@@ -30,6 +30,9 @@ $bold: 700;
   padding: 10px;
   text-align: center;
 }
+#header .container {
+    position: fixed;
+}
 #header .logo {
   max-width: 50px;
 }
@@ -57,12 +60,8 @@ $bold: 700;
 }
 @media only screen and (min-width : 900px) {
   /* Styles */
-  #header {
-    position: fixed;
-    height: 100%;
-    left: 0;
-  }
   #header .container {
+position: fixed;
     padding: 20px;
   }
   #header ul.menu li {
@@ -70,9 +69,6 @@ $bold: 700;
   }
   #header .logo {
     margin-bottom: 20px;
-  }
-  .main {
-    padding-left: 150px;
   }
 }
 
@@ -204,7 +200,7 @@ $bold: 700;
 }
 .end-min-vh {
   margin-bottom: -5vh;
-  
+
 }
 /* END View height
 ———————————————————————————————————— */
@@ -399,6 +395,7 @@ body.home section.home .svg-animation svg {
 body.home section.home .text-container {
   display: flex;
   flex-direction: column;
+  margin-top: 125px;
 }
 section.home h1 {
   font-weight: $regular;
@@ -776,17 +773,17 @@ footer p {
   }
 }
 @media only screen and (min-width : 1650px) {
-  
+
 }
 @media only screen and (min-width : 1620px) {
-  img.overflow-left {
-    width: 150% !important;
-    margin-left: -50%;
-  }
-  img.overflow-right {
-    width: 150% !important;
-    margin-right: -50%;
-  }
+  // img.overflow-left {
+  //   width: 10% !important;
+  //   margin-left: -50%;
+  // }
+  // img.overflow-right {
+  //   width: 150% !important;
+  //   margin-right: -50%;
+  // }
   .text-container {
     padding: 150px 250px;
   }

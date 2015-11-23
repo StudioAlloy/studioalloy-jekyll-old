@@ -517,6 +517,10 @@ form .form-row textarea + label[data-placeholder]:after {
   text-align: center;
 }
 
+#header .container {
+  position: fixed;
+}
+
 #header .logo {
   max-width: 50px;
 }
@@ -554,13 +558,8 @@ form .form-row textarea + label[data-placeholder]:after {
 }
 @media only screen and (min-width: 900px) {
   /* Styles */
-  #header {
-    position: fixed;
-    height: 100%;
-    left: 0;
-  }
-
   #header .container {
+    position: fixed;
     padding: 20px;
   }
 
@@ -570,10 +569,6 @@ form .form-row textarea + label[data-placeholder]:after {
 
   #header .logo {
     margin-bottom: 20px;
-  }
-
-  .main {
-    padding-left: 150px;
   }
 }
 /* END Header
@@ -1025,6 +1020,7 @@ body.home section.home .text-container {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 125px;
 }
 
 section.home h1 {
@@ -1509,16 +1505,6 @@ footer p {
   }
 }
 @media only screen and (min-width: 1620px) {
-  img.overflow-left {
-    width: 150% !important;
-    margin-left: -50%;
-  }
-
-  img.overflow-right {
-    width: 150% !important;
-    margin-right: -50%;
-  }
-
   .text-container {
     padding: 150px 250px;
   }
