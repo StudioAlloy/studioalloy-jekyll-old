@@ -65,6 +65,9 @@ $(document).ready(function(){
 });
 </script>
 <script>
+//Disable hover on mobile
  var touch=window.ontouchstart||navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0;if(touch)try{for(var si in document.styleSheets){var styleSheet=document.styleSheets[si];if(styleSheet.rules)for(var ri=styleSheet.rules.length-1;ri>=0;ri--)styleSheet.rules[ri].selectorText&&styleSheet.rules[ri].selectorText.match(":hover")&&stylesheet.deleteRule(ri)}}catch(ex){}
+//Contact form
+jQuery(function(){"#bedankt"==window.location.hash&&jQuery("#bedankt").removeClass("hide")});
 </script>
 {% endif %}
