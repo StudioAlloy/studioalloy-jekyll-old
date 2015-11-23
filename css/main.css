@@ -517,10 +517,6 @@ form .form-row textarea + label[data-placeholder]:after {
   text-align: center;
 }
 
-#header .container {
-  position: fixed;
-}
-
 #header .logo {
   max-width: 50px;
 }
@@ -855,6 +851,7 @@ section {
 
 .post {
   height: 70vh;
+  min-height: 340px;
 }
 
 .grid,
