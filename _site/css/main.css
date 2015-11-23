@@ -613,7 +613,6 @@ a, img {
 .text-container,
 .col-container {
   max-width: 1100px;
-  margin: 0 auto;
 }
 
 .text-container {

@@ -1,0 +1,16 @@
+.inner,
+.title-container,
+.text-container,
+.col-container {
+  margin: 0 auto;
+}
+#header {
+    width: 100% !important;
+}
+#header .container {
+  position: inherit !important;
+}
+#header ul.menu li {
+  display: inline !important;
+  margin-right: 40px !important;
+}
