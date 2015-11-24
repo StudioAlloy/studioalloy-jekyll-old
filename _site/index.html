@@ -41,6 +41,7 @@
   <!--[if lte IE 9]>
   <link rel="stylesheet" type="text/css" href="/css/ie.css">
   <![endif]-->
+  <link rel="stylesheet" href="/css/outdatedbrowser.min.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 </head>
@@ -115,7 +116,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 
 <section class="about flex start">
   <div class="text-container">
-    <p></p>
+    <p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p><p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.</p><p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
   </div>
 </section>
 
@@ -342,7 +343,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
         <address>
           Gasthuistvest 47 <br /> 2011EV Haarlem
         </address>
-        <p>contact@studioalloy.com</p>
+        <p>contact@studioalloy.nl</p>
         <p>+31 6 10 11 41 79</p>
       </div>
       <div class="col">
@@ -398,7 +399,7 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 		<div class="col">
 			<h4>Contact</h4>
 			<ul>
-				<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
+				<li><a href="mailto:contact@studioalloy.nl">contact@studioalloy.nl</a></li>
 				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
 				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
 			</ul>
@@ -423,6 +424,33 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 		</div>
 	</div>
 </footer>
+<div id="outdated"></div>
+<script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
+<script type="text/javascript">
+//event listener: DOM ready
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+			window.onload = func;
+	} else {
+			window.onload = function() {
+					if (oldonload) {
+							oldonload();
+					}
+					func();
+			}
+	}
+}
+//call plugin function after DOM ready
+addLoadEvent(function(){
+	outdatedBrowser({
+			bgColor: '#e64',
+			color: '#ffffff',
+			lowerThan: 'borderImage',
+			languagePath: '/assets/nl.html'
+	})
+});
+</script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="/js/owl.carousel.min.js"></script>

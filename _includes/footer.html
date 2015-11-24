@@ -37,6 +37,33 @@
 		</div>
 	</div>
 </footer>
+<div id="outdated"></div>
+<script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
+<script type="text/javascript">
+//event listener: DOM ready
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+			window.onload = func;
+	} else {
+			window.onload = function() {
+					if (oldonload) {
+							oldonload();
+					}
+					func();
+			}
+	}
+}
+//call plugin function after DOM ready
+addLoadEvent(function(){
+	outdatedBrowser({
+			bgColor: '#e64',
+			color: '#ffffff',
+			lowerThan: 'borderImage',
+			languagePath: '/assets/nl.html'
+	})
+});
+</script>
 {% if page.title == "Home" %}
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="/js/owl.carousel.min.js"></script>

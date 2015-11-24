@@ -707,6 +707,10 @@ address {
   padding-top: 60px;
 }
 
+.wrapper img {
+  display: block;
+}
+
 /* END Layout
 ———————————————————————————————————— */
 /* Flex
@@ -1387,8 +1391,8 @@ footer p {
   /* Styles */
   .grid,
   .post {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 15px;
+    margin-bottom: 15px;
     height: 50vh;
   }
 }
@@ -1468,12 +1472,12 @@ footer p {
   }
 }
 @media only screen and (min-width: 1620px) {
-  img.overflow-left {
+  .overflow-left {
     width: 140% !important;
     margin-left: -40%;
   }
 
-  img.overflow-right {
+  .overflow-right {
     width: 140% !important;
     margin-right: -40%;
   }

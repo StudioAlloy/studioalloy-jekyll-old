@@ -41,6 +41,7 @@
   <!--[if lte IE 9]>
   <link rel="stylesheet" type="text/css" href="/css/ie.css">
   <![endif]-->
+  <link rel="stylesheet" href="/css/outdatedbrowser.min.css">
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
 </head>
@@ -92,7 +93,7 @@
       Het concept en alle 3D content is door ons ontwikkeld in game platform Unity en samen met een digitale partner en standbouwer in opdracht van CORPUS gerealiseerd. De aansturende PC start elke dag automatisch op en wordt aan het einde van de dag afgesloten.
     </div>
     <div class="col mobile-first">
-      <img src="/img/case/corpus-de-anatomische-les-w.jpg" class="overflow-right">
+      <img src="/img/case/corpus-de-anatomische-les-4.jpg" class="overflow-right">
       <div class="meta">
         <p>Conceptschets over de simulatie van de traditionele anotomische les</p>
       </div>
@@ -140,7 +141,7 @@
 		<div class="col">
 			<h4>Contact</h4>
 			<ul>
-				<li><a href="mailto:contact@studioalloy.com">contact@studioalloy.com</a></li>
+				<li><a href="mailto:contact@studioalloy.nl">contact@studioalloy.nl</a></li>
 				<li><a href="tel:+31 6 10 11 41 79">+31 6 10 11 41 79</a></li>
 				<li><address>Gasthuistvest 47 <br /> 2011EV Haarlem</address></li>
 			</ul>
@@ -165,6 +166,33 @@
 		</div>
 	</div>
 </footer>
+<div id="outdated"></div>
+<script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
+<script type="text/javascript">
+//event listener: DOM ready
+function addLoadEvent(func) {
+	var oldonload = window.onload;
+	if (typeof window.onload != 'function') {
+			window.onload = func;
+	} else {
+			window.onload = function() {
+					if (oldonload) {
+							oldonload();
+					}
+					func();
+			}
+	}
+}
+//call plugin function after DOM ready
+addLoadEvent(function(){
+	outdatedBrowser({
+			bgColor: '#e64',
+			color: '#ffffff',
+			lowerThan: 'borderImage',
+			languagePath: '/assets/nl.html'
+	})
+});
+</script>
 
 
     </div>
