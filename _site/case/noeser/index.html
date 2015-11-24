@@ -136,7 +136,7 @@
 					<p>&copy; 2015 Alloy</p>
 				</li>
 				<li>
-					<a href="/copyright">Design & development Alloy</a>
+					<a href="/about">Design & development Alloy</a>
 				</li>
 				<li>
 					<a href="/assets/legal/alloy-algemene-voorwaarden.pdf" download="Alloy Algemene voorwaarden" target="_blank">Algemene voorwaarden</a>
@@ -145,37 +145,25 @@
 		</div>
 	</div>
 </footer>
-<div id="outdated"></div>
-<script src="your_path/outdatedbrowser/outdatedbrowser.min.js"></script>
-<script type="text/javascript">
-//event listener: DOM ready
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-			window.onload = func;
-	} else {
-			window.onload = function() {
-					if (oldonload) {
-							oldonload();
-					}
-					func();
-			}
-	}
-}
-//call plugin function after DOM ready
-addLoadEvent(function(){
-	outdatedBrowser({
-			bgColor: '#e64',
-			color: '#ffffff',
-			lowerThan: 'borderImage',
-			languagePath: '/assets/nl.html'
-	})
-});
-</script>
-
 
     </div>
   </div>
+
+  <div id="outdated"></div>
+  <script src="/js/outdatedbrowser.min.js"></script>
+  <script type="text/javascript">
+  //call plugin function after DOM ready
+  $( document ).ready(function() {
+      outdatedBrowser({
+  			bgColor: '#e64',
+  			color: '#ffffff',
+  			lowerThan: 'borderImage',
+  			languagePath: '/assets/nl.html'
+      })
+  })
+  </script>
+  
+
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
