@@ -870,6 +870,7 @@ section {
 .post {
   height: 70vh;
   min-height: 340px;
+  margin-top: 30px;
 }
 
 .grid,
@@ -1137,13 +1138,13 @@ img.author {
 }
 
 .team-member {
-  margin-bottom: 8%;
+  margin-bottom: 30px;
 }
 
 /*Team single page*/
 .single-team author {
   text-align: center;
-  margin: 4% 0;
+  margin: 20px 0;
 }
 
 .single-team author img {

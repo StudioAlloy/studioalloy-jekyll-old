@@ -5,7 +5,7 @@
   margin: 0 auto;
 }
 #header {
-    width: 100% !important;
+  width: 100% !important;
 }
 #header .container {
   position: inherit !important;
@@ -14,9 +14,10 @@
   display: inline !important;
   margin-right: 40px !important;
 }
-.col {
+.col, .grid, .post {
+    width: 46%;
     display: inline-block;
 }
 footer .col {
-    width: 33%;
+  width: 33%;
 }

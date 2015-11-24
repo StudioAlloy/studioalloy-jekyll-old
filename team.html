@@ -5,9 +5,13 @@ description:
 categories: team-page
 permalink: team/
 ---
+<section class="contact-info flex">
+  <div class="title-container sub">
+    <h2 class="center">Meet the team.</h2>
+  </div>
+</section>
 <section class="team flex">
   <div class="text-container">
-    <h2 class="center">Meet the team.</h2>
     <div class="flex wrap overflow">
       {% assign team_order = (site.team | sort: 'order') %}
       {% for post in team_order %}
