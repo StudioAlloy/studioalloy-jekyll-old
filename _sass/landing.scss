@@ -155,11 +155,10 @@ nav img {
 .checklist-box {
     background: #fff;
     box-shadow: 0 0 60px rgba(0,0,0,.3);
-    margin-bottom: 60px;
     text-align: center;
 }
 .checklist {
-    padding: 15px;
+    padding: 15px 15px 30px;
 }
 .checklist ul li {
   padding: 30px;
@@ -207,8 +206,9 @@ footer form {
   background-color: transparent;
   padding: 0;
 }
-form h3 {
-  display: none;
+form {
+  width: 600px;
+  margin-bottom: 60px;
 }
 
 /* END Footer
