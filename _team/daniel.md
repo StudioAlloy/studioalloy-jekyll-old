@@ -3,7 +3,7 @@ layout: team
 title:  "Daniel Lim"
 date:   2014-04-30 16:22:48
 categories: vriend
-excerpt: ADAYS
+excerpt: Autonoom kunstenaar en motion-graphics designer 
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.adays.nl
 phone: +31 (0)6 43 02 97 48

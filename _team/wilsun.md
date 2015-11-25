@@ -3,7 +3,7 @@ layout: team
 title:  "Wilsun Cheung"
 date:   2014-07-30 16:22:48
 categories:
-excerpt:
+excerpt: Gepassioneerde ontwerper van branding en bewegend beeld
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.wilsuncheung.nl/
 phone: +31 (0)6 24 62 11 88

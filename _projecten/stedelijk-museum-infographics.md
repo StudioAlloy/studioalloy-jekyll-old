@@ -7,8 +7,8 @@ categories: infographic
 excerpt: Vormgeving en ontwikkeling van zes duidelijke infographics voor het jaarverslag van 2014
 featured: false
 url: //stedelijk.nl
-image:
-published: false
+image: 2
+published: "published"
 ---
 Het Stedelijk Museum Amsterdam is een museum voor moderne en hedendaagse kunst en vormgeving. Hoe leuk is het en wat een grote eer vindt Alloy het om dan te worden gevraagd een opdracht te doen voor het Stedelijk Museum.
 

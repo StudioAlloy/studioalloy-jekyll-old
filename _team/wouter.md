@@ -3,7 +3,7 @@ layout: team
 title:  "Wouter Hager"
 date:   2013-07-30 16:22:48
 categories: streetview
-excerpt: Complexe systemen
+excerpt: Expert op het gebied van software development
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://lagua.nl
 phone: +31 (0)6 31 68 38 22

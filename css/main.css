@@ -101,6 +101,11 @@ button {
   background-color: #E64;
 }
 
+.button-klein {
+  padding: 15px 30px;
+  font-size: 1.2em;
+}
+
 #outdated {
   z-index: 99999;
 }
@@ -1578,7 +1583,7 @@ footer p {
   }
 
   .text-container {
-    padding: 150px 250px;
+    padding: 100px 250px;
   }
 
   .overflow {

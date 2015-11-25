@@ -3,12 +3,12 @@ layout: team
 title:  "Jaap Redeker"
 date:   2014-01-02 16:22:48
 categories: noeser
-excerpt: Atticweb
+excerpt: All-round webdeveloper en hardware knutselaar
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.atticweb.nl
 phone: +31 (0)6 10 26 58 76
 email: jaap@atticweb.nl
-twitter_username: jaapredeker
+twitter_username:
 github_username: Atticweb
 linkedin_username: jaapredeker
 order: 4

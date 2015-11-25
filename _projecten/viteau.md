@@ -7,7 +7,7 @@ categories: website, wordpress
 excerpt: Bedrijfswebsite met CMS voor Viteau waterkoelers
 featured: false
 url: //viteau.nl
-image:
+image: 4
 status: "published"
 ---
 Viteau is een organisatie de is ontsprongen vanuit een waterbron in het Drentse Hunzedal en waterkoelers levert aan werkend Nederland. In opdracht van Viteau heeft Heldergroen een gehele nieuwe huisstijl en positionering ontwikkeld. Hierbij hoorde ook een nieuwe website.

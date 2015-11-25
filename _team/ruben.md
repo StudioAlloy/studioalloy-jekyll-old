@@ -2,12 +2,12 @@
 layout: team
 title:  "Ruben Daas"
 date:   2014-06-30 16:22:48
-excerpt: Redactionele digital designer met liefde voor data
+excerpt: Redactioneel ontwerper met een liefde voor data
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: http://www.daasdesign.nl
 phone: +31 (0)6 28 63 57 85
 email: info@daasdesign.nl
-twitter_username: ARTiiii
+twitter_username: rubendaas
 github_username:
 linkedin_username: rubendaas
 order: 3

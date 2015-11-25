@@ -91,10 +91,12 @@ position: fixed;
 .inner,
 .title-container,
 .text-container,
+.img-container,
 .col-container {
   max-width: 1100px;
 }
-.text-container {
+.text-container,
+.img-container {
   width: 80%;
   background-color: $alt-color;
   padding: 10% 10%;
@@ -628,7 +630,8 @@ footer p {
     flex-direction: column;
   }
   .col-container,
-  .text-container {
+  .text-container,
+  .img-container {
     padding: 5% 10%;
   }
   .title-container {
@@ -821,6 +824,9 @@ footer p {
   .overflow-right {
     width: 140% !important;
     margin-right: -40%;
+  }
+  .img-container{
+    padding: 100px;
   }
   .text-container {
     padding: 150px 250px;
