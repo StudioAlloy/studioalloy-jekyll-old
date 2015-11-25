@@ -101,11 +101,6 @@ button {
   background-color: #E64;
 }
 
-.button-klein {
-  padding: 15px 30px;
-  font-size: 1.2em;
-}
-
 #outdated {
   z-index: 99999;
 }
@@ -619,11 +614,13 @@ a, img {
 .inner,
 .title-container,
 .text-container,
+.img-container,
 .col-container {
   max-width: 1100px;
 }
 
-.text-container {
+.text-container,
+.img-container {
   width: 80%;
   background-color: #fff;
   padding: 10% 10%;
@@ -1047,6 +1044,17 @@ section {
   margin: 30px 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+.button-klein {
+  background: #8dd;
+  font-size: 1rem;
+  padding: 15px 30px;
+  margin-top: 30px;
+}
+
 /* END Layout
 ———————————————————————————————————— */
 /*home*/
@@ -1343,7 +1351,8 @@ footer p {
   }
 
   .col-container,
-  .text-container {
+  .text-container,
+  .img-container {
     padding: 5% 10%;
   }
 
@@ -1582,8 +1591,12 @@ footer p {
     margin-right: -40%;
   }
 
+  .img-container {
+    padding: 100px;
+  }
+
   .text-container {
-    padding: 100px 250px;
+    padding: 150px 250px;
   }
 
   .overflow {
