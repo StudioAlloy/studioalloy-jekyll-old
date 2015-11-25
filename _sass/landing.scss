@@ -97,7 +97,6 @@ nav img {
   overflow: hidden;
 }
 .landing-img img {
-  width: 50vw;
   z-index: 9;
 }
 .icons {
@@ -125,7 +124,6 @@ nav img {
 .qoute-box {
   flex-direction: column;
 }
-
 .qoute-text {
   max-width: 500px;
 }
@@ -136,7 +134,13 @@ nav img {
   max-width: 250px;
   margin: 30px;
 }
-
+.icons,
+.qoute-box {
+  padding: 80px 0;
+}
+.logos img {
+    margin: 40px 0;
+}
 .checklist-box {
     background: #fff;
     box-shadow: 0 0 60px rgba(0,0,0,.3);
@@ -171,10 +175,10 @@ nav img {
 }
 .slider,
 .device {
-  max-width: 590px;
+  max-width: 1000px;
 }
 #owl-example{
-  padding: 26px 58px;
+  padding: 0 58px;
 }
 div#owl-example:after {
   content: "";
@@ -429,11 +433,19 @@ testing mode
   form {
       width: 100%;
   }
+  .min-min-vh {
+    margin-top: 0;
+  }
+  .half-vh,
   .vh {
       height: auto !important;
   }
+  .device {
+      display: none !important;
+  }
   .mobile-only {
-    display: block;
+    display: block !important;
+    width: 100%;
   }
   .device.mobile-only {
       position: inherit;
