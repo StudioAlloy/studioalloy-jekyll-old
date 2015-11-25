@@ -12,9 +12,9 @@
     margin: 0;
     padding: 0;
     -webkit-perspective: 1px;
-            perspective: 1px;
+    perspective: 1px;
     -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
+    transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -79,7 +79,7 @@ section {
 }
 
 .min-vh {
-  margin-top: -40vh;
+  margin-top: -20vh;
 }
 
 button {
@@ -120,8 +120,8 @@ nav img {
 
 .icons {
   -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .icon-box {
@@ -131,11 +131,11 @@ nav img {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .icon-box img {
@@ -155,8 +155,8 @@ nav img {
 
 .qoute-box {
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .qoute-text {
@@ -165,8 +165,8 @@ nav img {
 
 .qoute:nth-last-child(2) img {
   -webkit-order: 2;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
 .qoute img {
@@ -247,37 +247,37 @@ form h3 {
   section .parallax-item:nth-of-type(1) {
     top: 50%;
     -webkit-transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
-            transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(2) {
     top: 50%;
     -webkit-transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
-            transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
+    transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(3) {
     top: 65%;
     -webkit-transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
-            transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
+    transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
   }
 
   section .parallax-item:nth-of-type(4) {
     top: 75%;
     -webkit-transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
-            transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(5) {
     top: 20%;
     -webkit-transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
-            transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
+    transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(6) {
     top: 30%;
     -webkit-transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
-            transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
+    transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
   }
 }
 @media only screen and (min-width: 1721px) {
@@ -337,37 +337,37 @@ form h3 {
   section .parallax-item:nth-of-type(1) {
     left: 0%;
     -webkit-transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
-            transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(2) {
     right: 20%;
     -webkit-transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
-            transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
+    transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(3) {
     left: 22%;
     -webkit-transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
-            transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
+    transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
   }
 
   section .parallax-item:nth-of-type(4) {
     right: 3%;
     -webkit-transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
-            transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
+    transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(5) {
     right: 15%;
     -webkit-transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
-            transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
+    transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(6) {
     left: 25%;
     -webkit-transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
-            transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
+    transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -411,9 +411,9 @@ form h3 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-perspective: 1000;
-          perspective: 1000;
+  perspective: 1000;
   width: 1024px;
   height: 768px;
   background: url("../img/landing/digitale-lespakketten-ondergrond.svg") no-repeat center center;
@@ -427,9 +427,9 @@ form h3 {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-perspective: 1000;
-          perspective: 1000;
+  perspective: 1000;
 }
 
 .dragboard .dragger, .dragboard .dropper {
@@ -477,4 +477,24 @@ testing mode
 
 .dd_overlay.show {
   top: 10px;
+}
+@media only screen and (max-width : 767px) {
+  /* Styles */
+  .parallax-item,
+  #owl-example,
+  .game {
+    display: none !important;
+  }
+  .flex {
+      flex-direction: column;
+  }
+  .inner {
+      padding: 20px;
+  }
+  form {
+      width: 100%;
+  }
+  .vh {
+      height: auto !important;
+  }
 }

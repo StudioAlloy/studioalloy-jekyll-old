@@ -575,10 +575,6 @@ footer p {
 .copy-bar .inner {
   width: 55%;
 }
-.copy-bar li {
-  display: inline-block;
-  margin-left: 30px;
-}
 @media only screen and (min-width : 800px) {
   /* Styles */
   section:last-of-type {
@@ -601,6 +597,10 @@ footer p {
   }
   footer .inner {
     flex-direction: row;
+  }
+  .copy-bar li {
+    display: inline-block;
+    margin-left: 30px;
   }
 }
 @media only screen and (max-width : 900px) {
@@ -653,7 +653,7 @@ footer p {
     margin-bottom: 20px;
   }
   .mobile-first {
-    order: -1;
+    order: -1 !important;
   }
   .services {
     padding: 10%;
