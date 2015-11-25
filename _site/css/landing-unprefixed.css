@@ -40,6 +40,10 @@
 ———————————————————————————————————— */
 /* Type
 ———————————————————————————————————— */
+.landing-header {
+  height: 800px;
+}
+
 .landing-header h3,
 .landing-header h1 {
   color: #fff !important;
@@ -152,6 +156,16 @@ nav img {
 
 .qoute-text {
   max-width: 500px;
+  background: #fff;
+  padding: 30px;
+}
+
+.qoute-text p {
+  font-weight: 600;
+}
+
+.qoute-text span {
+  font-weight: 400;
 }
 
 .qoute:nth-last-child(2) img {
