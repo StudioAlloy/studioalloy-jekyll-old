@@ -78,14 +78,6 @@ position: fixed;
 ———————————————————————————————————— */
 /* Layout
 ———————————————————————————————————— */
-// body{
-//   scroll-snap-type: mandatory;
-//   scroll-snap-points-y:repeat(100vh);
-//   scroll-behavior:smooth;
-// }
-
-/* Layout
-———————————————————————————————————— */
 .main {
   display: flex;
 }
@@ -395,6 +387,9 @@ section {
 }
 .intro {
   margin-bottom: 60px;
+}
+button {
+    margin: 30px 0;
 }
 /* END Layout
 ———————————————————————————————————— */

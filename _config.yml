@@ -25,9 +25,9 @@ default_image: /image.jpg
 
 # Collections
 collections:
-  case:
+  projecten:
     output: true
-    permalink: /case/:title/
+    permalink: /project/:title/
   product:
     output: true
   team:

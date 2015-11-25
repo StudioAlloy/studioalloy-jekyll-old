@@ -101,6 +101,10 @@ button {
   background-color: #E64;
 }
 
+#outdated {
+  z-index: 99999;
+}
+
 ::-moz-selection {
   background-color: #8dd;
   color: #fff;
@@ -589,8 +593,6 @@ a, img {
 ———————————————————————————————————— */
 /* Layout
 ———————————————————————————————————— */
-/* Layout
-———————————————————————————————————— */
 .main {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1028,6 +1030,10 @@ section {
 
 .intro {
   margin-bottom: 60px;
+}
+
+button {
+  margin: 30px 0;
 }
 
 /* END Layout

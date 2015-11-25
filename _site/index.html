@@ -46,9 +46,6 @@
 
 </head>
 <body class="default home index">
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
   <div class="main">
     <div id="header">
 	<div class="container">
@@ -57,10 +54,10 @@
 		<div class="mobile-menu">
 			<label for="toggle" class="toggle" data-open="Menu" data-close="Close" onclick></label>
 			<ul class="menu">
-				<li class="menu-item"><a href="/case">Case</a></li>
+				<li class="menu-item"><a href="/projecten">Projecten</a></li>
 				<li class="menu-item"><a href="/team">Team</a></li>
 				<!--<li class="menu-item"><a href="/blog">Blog</a></li>-->
-				<li class="menu-item"><a href="/about">About</a></li>
+				<li class="menu-item"><a href="/over">Over ons</a></li>
 				<li class="menu-item"><a href="/contact">Contact</a></li>
 			</ul>
 		</div>
@@ -70,7 +67,147 @@
     <div class="wrapper">
       <section class="home flex end">
   <div class="svg-animation">
-    
+    <style>
+@media only screen and (min-width : 1440px) {
+  /* Styles */
+  body {
+    margin: 0;
+  }
+  .animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  @-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, -3000px, 0);
+      transform: translate3d(3000px, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-15px, 15px, 0);
+      transform: translate3d(-15px, 15px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(8px, -8px, 0);
+      transform: translate3d(8px, -8px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(-2px, 2px, 0);
+      transform: translate3d(-2px, 2px, 0);
+    }
+
+    100% {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  @keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.100);
+    }
+
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, -3000px, 0);
+      transform: translate3d(3000px, -3000px, 0);
+    }
+
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-15px, 15px, 0);
+      transform: translate3d(-15px, 15px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(8px, -8px, 0);
+      transform: translate3d(8px, -8px, 0);
+    }
+
+    90% {
+      -webkit-transform: translate3d(-2px, 2px, 0);
+      transform: translate3d(-2px, 2px, 0);
+    }
+
+    100% {
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+
+  .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+  }
+  svg .animated:nth-child(1) {
+    -webkit-animation-delay:0.3s;
+    animation-delay:0.3s;
+  }
+  svg .animated:nth-child(2) {
+    -webkit-animation-delay:0.9s;
+    animation-delay:0.9s;
+  }
+  svg .animated:nth-child(3) {
+    -webkit-animation-delay:1.4s;
+    animation-delay:1.4s;
+  }
+  svg .animated:nth-child(4) {
+    -webkit-animation-delay:2s;
+    animation-delay:2s;
+  }
+  svg .animated:nth-child(5) {
+    -webkit-animation-delay:2.6s;
+    animation-delay:2.6s;
+  }
+  svg .animated:nth-child(6) {
+    -webkit-animation-delay:3.2s;
+    animation-delay:3.2s;
+  }
+  svg .animated:nth-child(7) {
+    animation-delay:3.6s;
+    -webkit-animation-delay:3.6s;
+  }
+}
+</style>
 <?xml version="1.0" encoding="utf-8"?>
 <svg version="1.1" class="alloy-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 viewBox="710 0 1280 800" preserveAspectRatio="none">
@@ -116,7 +253,10 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 
 <section class="about flex start">
   <div class="text-container">
-    <p>Studio Alloy wordt gevormd door een groep creatieve ondernemers dat zich dagelijks bezighoudt met het maken van verhalen voor op het beeldscherm. Wij vullen pixels. Of het een website, game, mobiele app, video of animiatie is, of dit alles gecombineerd. Onze kracht is het realiseren van digitale producties van concept tot en met uitvoering.</p><p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren.</p><p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
+    <h2>WIJ MAKEN IMPACT MET PIXELS</h2>
+    <p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren. </p>
+    <p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
+    <p>Maak kennis met Studio Alloy en laat u inspireren hoe u uw verhaal kan overbrengen door goed gevulde pixels. </p>
   </div>
 </section>
 
@@ -126,10 +266,10 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post no-touch" href="/case/corpus-de-anatomische-les/">
-  <div class="featured-image cover" style="background: url(/img/case/corpus-de-anatomische-les-thumb.jpg)">
+<a class="post no-touch" href="/project/corpus-de-anatomische-les/">
+  <div class="featured-image cover" style="background: url(/img/projecten/corpus-de-anatomische-les-thumb.jpg)">
     <div class="hover">
-      <img class="logo" src="/img/case/corpus-de-anatomische-les-logo.png" alt="klant logo">
+      <img class="logo" src="/img/projecten/corpus-de-anatomische-les-logo.png" alt="klant logo">
     </div>
   </div>
   <div class="meta">
@@ -143,10 +283,10 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post no-touch" href="/case/de-grote-volksverhuizing/">
-  <div class="featured-image cover" style="background: url(/img/case/de-grote-volksverhuizing-thumb.jpg)">
+<a class="post no-touch" href="/project/de-grote-volksverhuizing/">
+  <div class="featured-image cover" style="background: url(/img/projecten/de-grote-volksverhuizing-thumb.jpg)">
     <div class="hover">
-      <img class="logo" src="/img/case/de-grote-volksverhuizing-logo.png" alt="klant logo">
+      <img class="logo" src="/img/projecten/de-grote-volksverhuizing-logo.png" alt="klant logo">
     </div>
   </div>
   <div class="meta">
@@ -160,10 +300,10 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post no-touch" href="/case/diabetestrefpunt/">
-  <div class="featured-image cover" style="background: url(/img/case/diabetestrefpunt-thumb.jpg)">
+<a class="post no-touch" href="/project/diabetestrefpunt/">
+  <div class="featured-image cover" style="background: url(/img/projecten/diabetestrefpunt-thumb.jpg)">
     <div class="hover">
-      <img class="logo" src="/img/case/diabetestrefpunt-logo.png" alt="klant logo">
+      <img class="logo" src="/img/projecten/diabetestrefpunt-logo.png" alt="klant logo">
     </div>
   </div>
   <div class="meta">
@@ -177,10 +317,10 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
     
     
 
-<a class="post no-touch" href="/case/hero-of-humanity/">
-  <div class="featured-image cover" style="background: url(/img/case/hero-of-humanity-thumb.jpg)">
+<a class="post no-touch" href="/project/hero-of-humanity/">
+  <div class="featured-image cover" style="background: url(/img/projecten/hero-of-humanity-thumb.jpg)">
     <div class="hover">
-      <img class="logo" src="/img/case/hero-of-humanity-logo.png" alt="klant logo">
+      <img class="logo" src="/img/projecten/hero-of-humanity-logo.png" alt="klant logo">
     </div>
   </div>
   <div class="meta">
@@ -196,8 +336,8 @@ viewBox="710 0 1280 800" preserveAspectRatio="none">
 </section>
 
 <section class="flex">
-  <div class="center" style="padding: 5% 10% 10%;">
-    <a href="/case"><button>Bekijk hier alle cases.</button></a>
+  <div class="center">
+    <a href="/projecten"><button>Bekijk hier alle cases.</button></a>
   </div>
 </section>
 

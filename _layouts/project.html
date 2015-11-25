@@ -3,7 +3,7 @@ layout: default
 ---
 <section>
   <article>
-    <section class="case-header half-vh fixed" style="background: url({{site.baseurl}}/img/case/{{ page.title | slugify }}-header.jpg);"></section>
+    <section class="case-header half-vh fixed" style="background: url({{site.baseurl}}/img/projecten/{{ page.title | slugify }}-header.jpg);"></section>
     <section class="flex case-text">
       <div class="title-container sub min-vh">
         <div class="intro center">
@@ -16,14 +16,14 @@ layout: default
       <div class="text-container">
         {{ content }}
         {% if page.image > 1 %}
-        <img src="{{site.baseurl}}/img/case/{{ page.title | slugify }}-2.jpg">
+        <img src="{{site.baseurl}}/img/projecten/{{ page.title | slugify }}-2.jpg">
         {% endif %}
       </div>
     </section>
     <section class="flex">
       <div class="image-container">
         {% for i in (1..page.image) offset: 2 %}
-        <img src="{{site.baseurl}}/img/case/{{ page.title | slugify }}-{{ i }}.jpg">
+        <img src="{{site.baseurl}}/img/projecten/{{ page.title | slugify }}-{{ i }}.jpg">
         {% endfor %}
       </div>
     </section>

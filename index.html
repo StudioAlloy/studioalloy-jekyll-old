@@ -16,22 +16,25 @@ categories: index
 
 <section class="about flex start">
   <div class="text-container">
-    <p>{{ site.description_long }}</p>
+    <h2>WIJ MAKEN IMPACT MET PIXELS</h2>
+    <p>Alloy staat bij ons voor het samensmelten van verschillende talenten om een sterker geheel te vormen. Wij zijn een nieuwe generatie ondernemers die geloven in de slagkracht van het individu en binnen ons collectief hebben we elkaar nodig om te kunnen excelleren. </p>
+    <p>Of het nu voor een startende ondernemer is of voor gevestigde multinationals, wij richten ons niet op een specifieke sector of type onderneming. Wij zijn opzoek naar mensen die hun verhaal willen overbrengen. Wij verstaan ons vak en proberen ons in te leven in de doelgroep om zodoende het verhaal op de juiste manier over te brengen. Dat doen wij dagelijks en omdat wij bewust die keuze hebben gemaakt doen ons werk goed, met veel enthousiasme en toewijding.</p>
+    <p>Maak kennis met Studio Alloy en laat u inspireren hoe u uw verhaal kan overbrengen door goed gevulde pixels. </p>
   </div>
 </section>
 
 <section class="cases flex">
   <div class="item-container flex wrap">
-    {% assign featured_case = (site.case | where:"featured","true") %}
-    {% for case in featured_case limit:4 %}
+    {% assign featured_case = (site.projecten | where:"featured","true") %}
+    {% for projecten in featured_case limit:4 %}
     {% include loop-case.html %}
     {% endfor %}
   </div>
 </section>
 
 <section class="flex">
-  <div class="center" style="padding: 5% 10% 10%;">
-    <a href="/case"><button>Bekijk hier alle cases.</button></a>
+  <div class="center">
+    <a href="/projecten"><button>Bekijk hier alle cases.</button></a>
   </div>
 </section>
 
