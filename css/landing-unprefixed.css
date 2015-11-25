@@ -77,7 +77,7 @@ section {
 }
 
 .min-vh {
-  margin-top: -40vh;
+  margin-top: -20vh;
 }
 
 button {
@@ -157,6 +157,7 @@ nav img {
 
 .qoute img {
   max-width: 250px;
+  margin: 30px;
 }
 
 /* Checklist */
@@ -201,6 +202,10 @@ div#owl-example:after {
   content: "";
   background: 0;
   pointer-events: none;
+}
+
+.mobile-only {
+  display: none !important;
 }
 
 /* END Slider
@@ -460,6 +465,39 @@ testing mode
 
 .dd_overlay.show {
   top: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles */
+  .parallax-item,
+  #owl-example,
+  .game {
+    display: none !important;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .inner {
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .vh {
+    height: auto !important;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .device.mobile-only {
+    position: inherit;
+  }
 }
 
 /*# sourceMappingURL=landing-unprefixed.css.map */

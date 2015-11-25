@@ -66,7 +66,7 @@ section {
   background-color: #fff;
 }
 .min-vh {
-  margin-top: -40vh;
+  margin-top: -20vh;
 }
 button {
   padding: 15px 30px;
@@ -122,6 +122,7 @@ nav img {
 .qoute-box {
   flex-direction: column;
 }
+
 .qoute-text {
   max-width: 500px;
 }
@@ -130,6 +131,7 @@ nav img {
 }
 .qoute img {
   max-width: 250px;
+  margin: 30px;
 }
 /* Checklist */
 .checklist ul {
@@ -166,6 +168,9 @@ div#owl-example:after {
   content: "";
   background: 0;
   pointer-events: none;
+}
+.mobile-only {
+  display: none !important;
 }
 /* END Slider
 ———————————————————————————————————— */
@@ -328,13 +333,13 @@ form h3 {
   perspective: 1000;
   width: 1024px;
   height: 768px;
-  
+
   background: url('../img/landing/digitale-lespakketten-ondergrond.svg') no-repeat center center;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  
+
   overflow: hidden;
 }
 
@@ -395,4 +400,30 @@ testing mode
 
 .dd_overlay.show{
   top: 10px;
+}
+@media only screen and (max-width : 767px) {
+  /* Styles */
+  .parallax-item,
+  #owl-example,
+  .game {
+    display: none !important;
+  }
+  .flex {
+      flex-direction: column;
+  }
+  .inner {
+      padding: 20px;
+  }
+  form {
+      width: 100%;
+  }
+  .vh {
+      height: auto !important;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .device.mobile-only {
+      position: inherit;
+  }
 }
