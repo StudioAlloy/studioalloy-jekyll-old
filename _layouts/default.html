@@ -23,6 +23,14 @@
       })
   })
   </script>
+  <script>
+  //Disable hover on mobile
+  var touch=window.ontouchstart||navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0;if(touch)try{for(var si in document.styleSheets){var styleSheet=document.styleSheets[si];if(styleSheet.rules)for(var ri=styleSheet.rules.length-1;ri>=0;ri--)styleSheet.rules[ri].selectorText&&styleSheet.rules[ri].selectorText.match(":hover")&&stylesheet.deleteRule(ri)}}catch(ex){}
+  //Contact form
+  jQuery(function(){"#bedankt"==window.location.hash&&jQuery("#bedankt").removeClass("hide")});
+  //vid-scale
+  jQuery(document).ready(function(h){h(".vid-scale").each(function(){var i=h(this).width();h(this).css("width","100%"),h(this).css("height",h(this).height()*(h(this).width()/i)+"px"),h(".vid-scale").show()})});
+  </script>
   {% if page.title == "Home" %}
   <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
   <script type="text/javascript">
@@ -47,14 +55,6 @@
   		}
   	});
   });
-  </script>
-  <script>
-  //Disable hover on mobile
-  var touch=window.ontouchstart||navigator.MaxTouchPoints>0||navigator.msMaxTouchPoints>0;if(touch)try{for(var si in document.styleSheets){var styleSheet=document.styleSheets[si];if(styleSheet.rules)for(var ri=styleSheet.rules.length-1;ri>=0;ri--)styleSheet.rules[ri].selectorText&&styleSheet.rules[ri].selectorText.match(":hover")&&stylesheet.deleteRule(ri)}}catch(ex){}
-  //Contact form
-  jQuery(function(){"#bedankt"==window.location.hash&&jQuery("#bedankt").removeClass("hide")});
-  //vid-scale
-  jQuery(document).ready(function(h){h(".vid-scale").each(function(){var i=h(this).width();h(this).css("width","100%"),h(this).css("height",h(this).height()*(h(this).width()/i)+"px"),h(".vid-scale").show()})});
   </script>
   {% endif %}
 
