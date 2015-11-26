@@ -83,7 +83,7 @@ section {
 }
 
 .min-vh {
-  margin-top: -20vh;
+  margin-top: -200px;
 }
 
 .min-min-vh {
@@ -280,8 +280,9 @@ form {
   clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
 }
 
-.wordpress-websites .min-vh {
-  margin-top: -300px;
+.header-img {
+  position: relative;
+  max-width: 800px;
 }
 
 .wordpress-websites #owl-example {
