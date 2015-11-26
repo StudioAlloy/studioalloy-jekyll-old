@@ -213,6 +213,17 @@ form {
 
 /* END Footer
 ———————————————————————————————————— */
+/* Worpdpress
+———————————————————————————————————— */
+.wordpress-websites .landing-header {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
+}
+.wordpress-websites .min-vh {
+    margin-top: -300px;
+}
+/* END Worpdpress
+———————————————————————————————————— */
 /* Media qeuries */
 @media only screen and (min-width : 769px) {
   .text {
