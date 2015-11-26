@@ -17,7 +17,7 @@ permalink: wordpress/
 
     <section class="wordpress flex">
       <div class="min-vh">
-        <img class="slider" src="/img/landing/{{ page.title | slugify}}-device.png">
+        <img class="slider" src="/img/landing/{{ page.title | slugify}}-header.png">
       </div>
     </section>
 
@@ -28,27 +28,31 @@ permalink: wordpress/
       </div>
     </section>
 
-    <section class="game flex" style="background: linear-gradient(150deg, #39B 30%, #39B 40%, #279 100%);">
-      <div id="dd_game">
-        <div class="dragboard">
-          <div class="dropper ui-droppable" data-id="drop_1" data-top="0" data-left="0" data-width="1024" data-height="600" data-keep-moving="false" data-snap-offset="0,300" data-drop-image-size="310,430"></div>
-
-          <div class="dropper ui-droppable" data-id="drop_1" data-top="600" data-left="0" data-width="750" data-height="160" data-keep-moving="false" data-snap-offset="0,300" data-drop-image-size="310,430"></div>
-
-          <img src="/img/landing/{{ page.title | slugify }}-tank.svg" data-drop-image="/img/landing/{{ page.title | slugify }}-tank_drop.svg" class="dragger" data-id="drag_1" data-top="615" data-left="790" data-width="200" data-height="140">
-
-          <div class="dd_overlay"></div>
+    <section class="flex column" style="background: linear-gradient(150deg, #39B 30%, #39B 40%, #279 100%); height: 800px;">
+      <div class="slider min-vh">
+        <img class="device" src="/img/landing/{{ page.title | slugify}}-device.png">
+        <div id="owl-example" class="owl-carousel">
+          <img src="/img/landing/{{ page.title | slugify}}-slide1.jpg" alt="" />
+          <img src="/img/landing/{{ page.title | slugify}}-slide2.jpg" alt="" />
+          <img src="/img/landing/{{ page.title | slugify}}-slide3.jpg" alt="" />
+          <img src="/img/landing/{{ page.title | slugify}}-slide4.jpg" alt="" />
+          <img src="/img/landing/{{ page.title | slugify}}-slide5.jpg" alt="" />
         </div>
       </div>
-    </section>
-    <!-- <section class="decoration"><img src="/img/landing/{{ page.title | slugify }}-decoration.svg" alt="" /></section> -->
 
+    </section>
+    <section class="flex">
+      <div class="min-vh">
+          {% include project-button.html %}
+        </div>
+
+    </section>
     <section class="flex">
       <div class="inner text">
-          <h2 class="center">Toegevoegde waarde van interactie?</h2>
-          <p>Wordpress wordt vaak gezien als een slechte basis voor een website. Het is gemaakt voor blogs en dat is het enige waar het gebruikt voor kan worden. Wij van Alloy zijn het hier niet mee eens, de active community en de en het feit dat alles open source is maakt het een perfect startpunt voor elke website. </p>
-          <p>Front-end weet iedere developer al dat alles custom gemaakt kan worden, ook zijn er genoeg plugins om de website er precies zo uit te laten zien als gewenst is, maar wat er vaak vergeten word is dat de back-end te customzizen is. Wordpress is een content management systeem (CMS) met veel functies en door het gebruik van plugins nog meer functies, misschien wel te veel. En al deze functies staan allemaal in de interface en dit kan heel intimiderend zijn voor nieuwe users, daarbij is het ook heel onoverzichtelijk.</p>
-          <p>Standaard heeft Wordpress al tien menu items in het sidebar menu staan en met het installeren van wat plugins ziet je al snel op het dubbelen van dat. Als voorbeeld nemen wij de ‘Instellingen’ menu item, na het de website geïnstalleerd is en wij alle instellingen correct voor uw site hebben ingesteld kom je hier praktisch nooit meer, maar waarom blijft dit dan wel altijd in het side menu staan. Het zelfde geld voor Comments, Weergave, Menu, Users en Tools. Wanneer wij een website opleveren denken wij niet alleen na over de user experiance van de front-end van uw bezoekers, maar ook van UX van die van uw met het beheren van de content van uw website.</p>
+        <h2 class="center">Toegevoegde waarde van interactie?</h2>
+        <p>Wordpress wordt vaak gezien als een slechte basis voor een website. Het is gemaakt voor blogs en dat is het enige waar het gebruikt voor kan worden. Wij van Alloy zijn het hier niet mee eens, de active community en de en het feit dat alles open source is maakt het een perfect startpunt voor elke website. </p>
+        <p>Front-end weet iedere developer al dat alles custom gemaakt kan worden, ook zijn er genoeg plugins om de website er precies zo uit te laten zien als gewenst is, maar wat er vaak vergeten word is dat de back-end te customzizen is. Wordpress is een content management systeem (CMS) met veel functies en door het gebruik van plugins nog meer functies, misschien wel te veel. En al deze functies staan allemaal in de interface en dit kan heel intimiderend zijn voor nieuwe users, daarbij is het ook heel onoverzichtelijk.</p>
+        <p>Standaard heeft Wordpress al tien menu items in het sidebar menu staan en met het installeren van wat plugins ziet je al snel op het dubbelen van dat. Als voorbeeld nemen wij de ‘Instellingen’ menu item, na het de website geïnstalleerd is en wij alle instellingen correct voor uw site hebben ingesteld kom je hier praktisch nooit meer, maar waarom blijft dit dan wel altijd in het side menu staan. Het zelfde geld voor Comments, Weergave, Menu, Users en Tools. Wanneer wij een website opleveren denken wij niet alleen na over de user experiance van de front-end van uw bezoekers, maar ook van UX van die van uw met het beheren van de content van uw website.</p>
       </div>
     </section>
 
@@ -165,13 +169,13 @@ permalink: wordpress/
         </div>
       </div>
     </section>
-<section class="flex">
-  <div class="inner flex">
-  {% include contact-from.html %}
-</div>
-</section>
+    <section class="flex">
+      <div class="inner flex">
+        {% include contact-from.html %}
+      </div>
+    </section>
     <section>
-        {% include footer-alt.html %}
+      {% include footer-alt.html %}
     </section>
   </article>
 </section>

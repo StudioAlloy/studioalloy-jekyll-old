@@ -284,6 +284,16 @@ form {
   margin-top: -300px;
 }
 
+.wordpress-websites #owl-example {
+  padding: 30px 30px;
+}
+
+.flex.column {
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* END Worpdpress
 ———————————————————————————————————— */
 /* Media qeuries */
