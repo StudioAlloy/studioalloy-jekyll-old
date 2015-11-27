@@ -103,7 +103,7 @@ categories: index
   <div class="text-container">
     <div class="flex wrap overflow">
 
-      <div id="owl-example" class="owl-carousel">
+      <div id="owl-carousel">
         {% assign team_order = (site.team | sort: 'order') %}
         {% for post in team_order %}
         {% include loop-team.html %}
