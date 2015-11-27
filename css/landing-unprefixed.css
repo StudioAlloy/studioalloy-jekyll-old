@@ -215,9 +215,23 @@ nav img {
 
 /* Slider
 ———————————————————————————————————— */
+.slider {
+  position: relative;
+}
+
 .device {
   position: absolute;
   pointer-events: none;
+  z-index: 9;
+}
+
+.slider,
+.device {
+  width: 600px;
+}
+
+.lespakketten #owl-carousel {
+  padding: 0 30px;
 }
 
 .mobile-only {
@@ -252,8 +266,8 @@ form {
   max-width: 800px;
 }
 
-.wordpress-websites #owl-example {
-  padding: 30px 30px;
+.wordpress #owl-carousel {
+  padding: 27px 30px;
 }
 
 .flex.column {
