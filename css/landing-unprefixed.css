@@ -522,8 +522,9 @@ testing mode
 
 @media only screen and (max-width: 767px) {
   /* Styles */
+  .header-img,
   .parallax-item,
-  #owl-example,
+  #owl-carousel,
   .game {
     display: none !important;
   }
