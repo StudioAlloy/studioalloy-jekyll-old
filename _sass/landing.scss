@@ -9,8 +9,10 @@
   body {
     margin:0;
     padding:0;
-    perspective: 1px;
-    transform-style: preserve-3d;
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -103,14 +105,27 @@ nav img {
   z-index: 9;
 }
 .icons {
-  align-items: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .icon-box {
   width: 30%;
   margin: 70px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .icon-box img {
   padding-bottom: 30px;
@@ -125,7 +140,11 @@ nav img {
   width: 100%;
 }
 .qoute-box {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .qoute-text {
   max-width: 500px;
@@ -139,7 +158,10 @@ nav img {
     font-weight: 400;
 }
 .qoute:nth-last-child(2) img {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
 }
 .qoute img {
   max-width: 250px;
@@ -223,7 +245,11 @@ form {
   padding: 27px 30px;
 }
 .flex.column {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 /* END Worpdpress
 ———————————————————————————————————— */
@@ -239,27 +265,33 @@ form {
   }
   section .parallax-item:nth-of-type(1) {
     top: 50%;
-    transform: translateZ(.2px) scale(.8) translateX(0%) translateY(0%);
+    -webkit-transform: translateZ(.2px) scale(.8) translateX(0%) translateY(0%);
+            transform: translateZ(.2px) scale(.8) translateX(0%) translateY(0%);
   }
   section .parallax-item:nth-of-type(2) {
     top: 50%;
-    transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+    -webkit-transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+            transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
   }
   section .parallax-item:nth-of-type(3){
     top: 65%;
-    transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%) scaleX(-1);
+    -webkit-transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%) scaleX(-1);
+            transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%) scaleX(-1);
   }
   section .parallax-item:nth-of-type(4) {
     top: 75%;
-    transform: translateZ(.2px) scale(.7) translateX(0%) translateY(0%);
+    -webkit-transform: translateZ(.2px) scale(.7) translateX(0%) translateY(0%);
+            transform: translateZ(.2px) scale(.7) translateX(0%) translateY(0%);
   }
   section .parallax-item:nth-of-type(5) {
     top: 20%;
-    transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+    -webkit-transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
+            transform: translateZ(.5px) scale(.3) translateX(0) translateY(0%);
   }
   section .parallax-item:nth-of-type(6){
     top: 30%;
-    transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%);
+    -webkit-transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%);
+            transform: translateZ(.7px) scale(.2) translateX(100%) translateY(0%);
   }
 }
 @media only screen and (min-width : 1721px) {
@@ -308,27 +340,33 @@ form {
   /* Styles */
   section .parallax-item:nth-of-type(1) {
     left: 0%;
-    transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+    -webkit-transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+            transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
   }
   section .parallax-item:nth-of-type(2) {
     right: 20%;
-    transform: translateZ(.5px) scale(.2) translateX(0) translateY(0%);
+    -webkit-transform: translateZ(.5px) scale(.2) translateX(0) translateY(0%);
+            transform: translateZ(.5px) scale(.2) translateX(0) translateY(0%);
   }
   section .parallax-item:nth-of-type(3){
     left: 22%;
-    transform: translateZ(.7px) scale(.12) translateX(100%) translateY(0%) scaleX(-1);
+    -webkit-transform: translateZ(.7px) scale(.12) translateX(100%) translateY(0%) scaleX(-1);
+            transform: translateZ(.7px) scale(.12) translateX(100%) translateY(0%) scaleX(-1);
   }
   section .parallax-item:nth-of-type(4) {
     right: 3%;
-    transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+    -webkit-transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
+            transform: translateZ(.2px) scale(.6) translateX(0%) translateY(0%);
   }
   section .parallax-item:nth-of-type(5) {
     right: 15%;
-    transform: translateZ(.5px) scale(.16) translateX(0) translateY(0%);
+    -webkit-transform: translateZ(.5px) scale(.16) translateX(0) translateY(0%);
+            transform: translateZ(.5px) scale(.16) translateX(0) translateY(0%);
   }
   section .parallax-item:nth-of-type(6){
     left: 25%;
-    transform: translateZ(.7px) scale(.13) translateX(100%) translateY(0%);
+    -webkit-transform: translateZ(.7px) scale(.13) translateX(100%) translateY(0%);
+            transform: translateZ(.7px) scale(.13) translateX(100%) translateY(0%);
   }
 }
 @media only screen and (max-width : 1000px) {
@@ -362,20 +400,17 @@ form {
 /*Drag game*/
 .dragboard{
   position: relative;
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
   width: 1024px;
   height: 768px;
 
   background: url('../img/landing/digitale-lespakketten-ondergrond.svg') no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
 
   overflow: hidden;
@@ -383,13 +418,13 @@ form {
 
 .dragboard .dragger{
   z-index: 100;
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
 }
 
 .dragboard .dragger, .dragboard .dropper{
@@ -426,13 +461,8 @@ testing mode
   width: 100%;
   height: 100%;
   background: url('../img/landing/digitale-lespakketten-popup.svg') no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
   -webkit-transition: top .3s ease-in-out;
-  -moz-transition: top .3s ease-in-out;
-  -o-transition: top .3s ease-in-out;
   transition: top .3s ease-in-out;
 }
 
@@ -442,7 +472,10 @@ testing mode
 @media only screen and (max-width : 900px) {
 	/* Styles */
   .icons {
-      align-items: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
   }
   .inner.text {
       margin: 60px 0;
@@ -457,7 +490,11 @@ testing mode
     display: none !important;
   }
   .flex {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
   }
   .inner {
       padding: 20px;

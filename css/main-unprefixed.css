@@ -569,8 +569,17 @@ a, img {
 @media only screen and (max-width: 900px) {
   /* Styles */
   #header .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -607,13 +616,23 @@ a, img {
 /* Layout
 ———————————————————————————————————— */
 .main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .wrapper {
   z-index: 999;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 100%;
 }
@@ -729,40 +748,78 @@ address {
 /* Flex
 ———————————————————————————————————— */
 .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .flex.end {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .flex.start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
 .flex.space-around {
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .flex.space-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .wrap {
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .content.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -824,7 +881,9 @@ body.project section:last-of-type {
 }
 
 .clip {
+  -webkit-clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
   clip-path: polygon(50% 0, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0 50%, 15% 15%);
+  -webkit-transition: 0.1s cubic-bezier(0, 0, 1, 1);
   transition: 0.1s cubic-bezier(0, 0, 1, 1);
 }
 
@@ -876,6 +935,7 @@ section {
 }
 
 .sub-clip {
+  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
 }
 
@@ -896,14 +956,34 @@ section {
 .grid,
 .post {
   width: 46%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .post:hover .hover {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -921,6 +1001,9 @@ section {
 }
 
 .featured-image {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   position: relative;
 }
@@ -976,12 +1059,24 @@ section {
 }
 
 .single-post .wrapper .inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 
 .links.flex {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
 }
 
@@ -1040,7 +1135,14 @@ body.home section.home .svg-animation svg {
 }
 
 body.home section.home .text-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin-top: 125px;
 }
@@ -1062,10 +1164,22 @@ section.home h1 a {
 /*product*/
 body.home section.products .product {
   background: #fff;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -1091,9 +1205,22 @@ body.single-project section {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center center !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1206,6 +1333,10 @@ footer {
   font-size: .8em;
   line-height: 1.6em;
   width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -1263,6 +1394,10 @@ footer p {
   }
 
   footer .inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }
@@ -1281,6 +1416,10 @@ footer p {
   .col-container,
   .inner,
   .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1299,6 +1438,10 @@ footer p {
   }
 
   .author-side .inner.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -1321,7 +1464,14 @@ footer p {
   }
 
   .links.flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -1330,6 +1480,9 @@ footer p {
   }
 
   .mobile-first {
+    -webkit-box-ordinal-group: 0 !important;
+    -webkit-order: -1 !important;
+    -ms-flex-order: -1 !important;
     order: -1 !important;
   }
 
@@ -1498,6 +1651,7 @@ footer p {
 
   .mve-carousel:after {
     content: "";
+    background: -webkit-linear-gradient(left, #ededed 0%, #ededed 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, #ededed 100%);
     background: linear-gradient(to right, #ededed 0%, #ededed 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, #ededed 100%);
     width: 100%;
     height: 100%;

@@ -11,7 +11,9 @@
   body {
     margin: 0;
     padding: 0;
+    -webkit-perspective: 1px;
     perspective: 1px;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
@@ -124,14 +126,27 @@ nav img {
 }
 
 .icons {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
   align-items: flex-start;
 }
 
 .icon-box {
   width: 30%;
   margin: 70px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -151,6 +166,10 @@ nav img {
 }
 
 .qoute-box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -169,6 +188,9 @@ nav img {
 }
 
 .qoute:nth-last-child(2) img {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
   order: 2;
 }
 
@@ -271,6 +293,10 @@ form {
 }
 
 .flex.column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -290,31 +316,37 @@ form {
 
   section .parallax-item:nth-of-type(1) {
     top: 50%;
+    -webkit-transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
     transform: translateZ(0.2px) scale(0.8) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(2) {
     top: 50%;
+    -webkit-transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
     transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(3) {
     top: 65%;
+    -webkit-transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
     transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%) scaleX(-1);
   }
 
   section .parallax-item:nth-of-type(4) {
     top: 75%;
+    -webkit-transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
     transform: translateZ(0.2px) scale(0.7) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(5) {
     top: 20%;
+    -webkit-transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
     transform: translateZ(0.5px) scale(0.3) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(6) {
     top: 30%;
+    -webkit-transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
     transform: translateZ(0.7px) scale(0.2) translateX(100%) translateY(0%);
   }
 }
@@ -374,31 +406,37 @@ form {
   /* Styles */
   section .parallax-item:nth-of-type(1) {
     left: 0%;
+    -webkit-transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
     transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(2) {
     right: 20%;
+    -webkit-transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
     transform: translateZ(0.5px) scale(0.2) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(3) {
     left: 22%;
+    -webkit-transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
     transform: translateZ(0.7px) scale(0.12) translateX(100%) translateY(0%) scaleX(-1);
   }
 
   section .parallax-item:nth-of-type(4) {
     right: 3%;
+    -webkit-transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
     transform: translateZ(0.2px) scale(0.6) translateX(0%) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(5) {
     right: 15%;
+    -webkit-transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
     transform: translateZ(0.5px) scale(0.16) translateX(0) translateY(0%);
   }
 
   section .parallax-item:nth-of-type(6) {
     left: 25%;
+    -webkit-transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
     transform: translateZ(0.7px) scale(0.13) translateX(100%) translateY(0%);
   }
 }
@@ -435,31 +473,28 @@ form {
 /*Drag game*/
 .dragboard {
   position: relative;
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-perspective: 1000;
   perspective: 1000;
   width: 1024px;
   height: 768px;
   background: url("../img/landing/digitale-lespakketten-ondergrond.svg") no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
   overflow: hidden;
 }
 
 .dragboard .dragger {
   z-index: 100;
-  -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-perspective: 1000;
   perspective: 1000;
 }
 
@@ -502,13 +537,8 @@ testing mode
   width: 100%;
   height: 100%;
   background: url("../img/landing/digitale-lespakketten-popup.svg") no-repeat center center;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
   background-size: 100%;
   -webkit-transition: top .3s ease-in-out;
-  -moz-transition: top .3s ease-in-out;
-  -o-transition: top .3s ease-in-out;
   transition: top .3s ease-in-out;
 }
 
@@ -519,6 +549,9 @@ testing mode
 @media only screen and (max-width: 900px) {
   /* Styles */
   .icons {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -536,6 +569,10 @@ testing mode
   }
 
   .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
