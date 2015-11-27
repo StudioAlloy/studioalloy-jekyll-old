@@ -636,8 +636,12 @@ a, img {
   z-index: 9;
 }
 
-.contact-info div.social {
+.social {
   margin-top: 30px;
+}
+
+.social a {
+  display: inline-block;
 }
 
 form {
@@ -973,7 +977,7 @@ section {
   color: #fff;
 }
 
-.social svg {
+.social img {
   fill: #fff;
   background-color: #8dd;
   width: 44px;
@@ -982,7 +986,7 @@ section {
   border: 2px solid #fff;
 }
 
-.social svg:hover {
+.social img:hover {
   background-color: #60d2d2;
 }
 
@@ -1568,7 +1572,7 @@ footer p {
     padding: 20px;
   }
 
-  div#owl-example:after {
+  .mve-carousel:after {
     content: "";
     background: linear-gradient(to right, #ededed 0%, #ededed 0%, rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, #ededed 100%);
     width: 100%;

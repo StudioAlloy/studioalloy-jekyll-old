@@ -1,7 +1,7 @@
-{% if page.title == "Contact" %}
-{% assign item = site %}
+{% if page.layout == "team" %}
+{% assign item = page %}
 {% include structure-social.html %}
 {% else %}
-{% assign item = page %}
+{% assign item = site %}
 {% include structure-social.html %}
 {% endif %}

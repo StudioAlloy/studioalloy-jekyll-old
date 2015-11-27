@@ -109,8 +109,11 @@ position: fixed;
   padding: 0 3%;
   z-index: 9;
 }
-.contact-info div.social{
+.social{
   margin-top: 30px;
+}
+.social a {
+    display: inline-block;
 }
 form {
     position: relative;
@@ -351,7 +354,7 @@ section {
 .author-side * {
   color: $alt-color;
 }
-.social svg {
+.social img {
   fill: $alt-color;
   background-color: $sub2-color;
   width: 44px;
@@ -359,7 +362,7 @@ section {
   padding: 10px;
   border: 2px solid $alt-color
 }
-.social svg:hover {
+.social img:hover {
   background-color: darken($sub2-color, 10%);
 }
 .blog-header {
@@ -810,7 +813,7 @@ footer p {
   .col {
     padding: 20px;
   }
-  div#owl-example:after {
+  .mve-carousel:after {
     content: "";
     background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 0%, rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(237,237,237,1) 100%);
     width: 100%;
