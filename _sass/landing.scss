@@ -439,10 +439,13 @@ testing mode
 .dd_overlay.show{
   top: 10px;
 }
-@media only screen and (max-width : 900px) {	
+@media only screen and (max-width : 900px) {
 	/* Styles */
   .icons {
       align-items: center;
+  }
+  .inner.text {
+      margin: 60px 0;
   }
 }
 @media only screen and (max-width : 767px) {
