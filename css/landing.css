@@ -450,10 +450,6 @@ form {
     width: 700px;
     height: 525px;
   }
-
-  nav {
-    position: relative;
-  }
 }
 @media only screen and (max-width: 480px) {
   .icon-box {
