@@ -1,8 +1,9 @@
 ---
-layout: landing
+layout: default
+page-type: landing
 title: Wordpress Websites
 description: Wordpress is het grootste content managment stysteem of wel een CMS wat gebruikt vandaag de dag. Dat het in basis open-source is en een actieve communite zijn voor ons belangerijke punten. Ook is er al veel ontwikkeld in de vorm van plugins voor dit platfrom en dit betekend dat het wiel niet steeds opnieuw uitgevodnen hoeft te worden. En zoals al erder genoemt de actieve developers communite zorgt er voor dat u niet vast zit aan één developer en kan er op uw website altijd door gebouwd worden.
-categories: page
+categorie: landing
 permalink: wordpress/
 ---
 <section>
@@ -29,9 +30,9 @@ permalink: wordpress/
     </section>
 
     <section class="flex column" style="background: linear-gradient(150deg, #39B 30%, #39B 40%, #279 100%); height: 800px;">
-      <div class="slider min-vh">
+      <div class="slider">
         <img class="device" src="/img/landing/{{ page.title | slugify}}-device.png">
-        <div id="owl-example" class="owl-carousel">
+        <div id="owl-carousel">
           <img src="/img/landing/{{ page.title | slugify}}-slide1.jpg" alt="" />
           <img src="/img/landing/{{ page.title | slugify}}-slide2.jpg" alt="" />
           <img src="/img/landing/{{ page.title | slugify}}-slide3.jpg" alt="" />
@@ -174,31 +175,5 @@ permalink: wordpress/
         {% include contact-from.html %}
       </div>
     </section>
-    <section>
-      {% include footer-alt.html %}
-    </section>
   </article>
 </section>
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/script.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    autoplay:true,
-    autoplayTimeout:7500,
-    loop:true,
-    margin:0,
-    nav:false,
-    center:true,
-    responsive:{
-      0:{
-        items:1
-      },
-    }
-  });
-});
-</script>

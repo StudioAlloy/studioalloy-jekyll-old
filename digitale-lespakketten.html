@@ -1,9 +1,11 @@
 ---
-layout: landing
+layout: default
+page-type: landing
 title: Digitale lespakketten
 description: Leerlingen onthouden hun excursie veel beter dan dezelfde les uit een boek. Onze ervaring is dat het geven van een les, waarbij leerlingen zelf aan de slag gaan door na te denken en actief iets te doen, veel meer impact maakt. Wij ontwikkelen digitale lespakketten met interactieve games en verhalen, voor zowel individueel als klassikaal gebruik om leerlingen actief te betrekken bij de les. Wij hebben een toolkit ontwikkeld met diverse spellen en opdrachten die eenvoudig zijn in te vullen voor specifieke lessen. Door deze modulaire toolkit kunnen wij uw materiaal snel omzetten naar een modern lespakket. Door de modulaire opbouw kunnen wij bovendien redelijk eenvoudig, en dus betaalbaar, nieuwe elementen inbouwen zodat elke les herkenbaar blijft en toch uniek is.
 categories: page
 permalink: digitale-lespakketten/
+custom-script: dragboard
 ---
 <section>
   {% include landing-nav.html %}
@@ -25,7 +27,7 @@ permalink: digitale-lespakketten/
       <div class="slider min-vh">
         <img class="device" src="/img/landing/{{ page.title | slugify}}-device.png">
         <img class="mobile-only" src="/img/landing/{{ page.title | slugify}}-device-mobile.png">
-        <div id="owl-example" class="owl-carousel">
+        <div id="owl-carousel">
           <img src="/img/landing/{{ page.title | slugify}}-ipad-slide1.jpg" alt="" />
           <img src="/img/landing/{{ page.title | slugify}}-ipad-slide2.jpg" alt="" />
           <img src="/img/landing/{{ page.title | slugify}}-ipad-slide3.jpg" alt="" />
@@ -188,31 +190,5 @@ permalink: digitale-lespakketten/
   {% include contact-from.html %}
 </div>
 </section>
-    <section>
-        {% include footer-alt.html %}
-    </section>
   </article>
 </section>
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/js/script.js"></script>
-<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    autoplay:true,
-    autoplayTimeout:7500,
-    loop:true,
-    margin:0,
-    nav:false,
-    center:true,
-    responsive:{
-      0:{
-        items:1
-      },
-    }
-  });
-});
-</script>
