@@ -15,8 +15,12 @@ layout: default
     <section class="flex case-text">
       <div class="text-container">
         {{ content }}
-        {% if page.image > 1 %}
-        <img src="{{site.baseurl}}/img/projecten/{{ page.title | slugify }}-2.jpg">
+        {% if page.vimeo %}
+        <iframe class="vid-scale" src="https://player.vimeo.com/video/{{ page.vimeo }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        {% else %}
+          {% if page.image > 1 %}
+          <img src="{{site.baseurl}}/img/projecten/{{ page.title | slugify }}-2.jpg">
+          {% endif %}
         {% endif %}
       </div>
     </section>
