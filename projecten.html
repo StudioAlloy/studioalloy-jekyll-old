@@ -14,8 +14,8 @@ permalink: projecten/
 
 <section class="work-page no-vh">
 	<div class="content">
-		{% assign published = (site.projecten | where:"status","published") %}
-		{% for post in published %}
+		{% assign published = (site.projecten | where:"status","published" | sort: "date" reversed) %}
+		{% for post in published reversed %}
 		{% include loop-case.html %}
 		{% endfor %}
 
