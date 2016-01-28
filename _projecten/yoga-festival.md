@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Yogafestival Haarlem
 title: Yogafestival Haarlem
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:02
 categories: website, wordpress, webshop
 excerpt: Ontwikkeling website met online kaartverkoop
 featured: false

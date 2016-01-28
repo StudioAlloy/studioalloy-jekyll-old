@@ -7,7 +7,7 @@ categories: website, interactief, infographic
 excerpt: Mobiele app over energieproductie in Nederland
 featured: false
 url: //vanzwartnaargroen.nl
-image: 3
+image: 4
 status: "published"
 vimeo:
 ---

@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Explanation Design
 title: Verkenningen II
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:01
 categories: website, interactief, infographic
 excerpt: Online storytelling met interactieve routes
 featured: false

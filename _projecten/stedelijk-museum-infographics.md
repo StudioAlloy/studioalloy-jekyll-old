@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Stedelijk Museum Amsterdam
 title: Infographics jaarverslag 2014
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:16
 categories: infographic
 excerpt: Vormgeving en ontwikkeling van zes duidelijke infographics voor het jaarverslag van 2014
 featured: false

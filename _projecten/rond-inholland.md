@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Hogeschool InHolland
 title: Rond InHolland
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:03
 categories: website, interactief
 excerpt: Online nieuwsbrief publicatieplatform voor Hogeschool InHolland
 featured: false

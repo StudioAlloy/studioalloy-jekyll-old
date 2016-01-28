@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Heldergroen, Viteau
 title: Viteau
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:18
 categories: website, wordpress
 excerpt: Bedrijfswebsite met CMS voor Viteau waterkoelers
 featured: false

@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Heldergroen, Critical Mass
 title: Expeditie Vriend en Vijand
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:06
 categories: website, wordpress
 excerpt: Campagne website over de confrontatiecontainers van Critical Mass
 featured: false

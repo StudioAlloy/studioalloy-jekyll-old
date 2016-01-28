@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Heldergroen
 title: Website Heldergroen
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:11
 categories: website
 excerpt: Dynamische website voor een Haarlems communicatiebureau
 featured: false

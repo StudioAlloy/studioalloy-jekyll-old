@@ -2,7 +2,7 @@
 layout: project
 opdrachtgever: Heldergroen, DSM
 title: Science can change the world
-date: 2015-05-30 16:22:48
+date: 2015-05-30 16:22:14
 categories: website
 excerpt: Campagne website ‘Science can change the world’
 featured: false
