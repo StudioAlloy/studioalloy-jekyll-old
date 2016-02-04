@@ -6,7 +6,7 @@ date: 2015-05-30 16:22:13
 categories: website, wordpress
 excerpt: Portfolio website van de populaire toneelregisseur Jakop Ahlbom
 featured: false
-url: //jakopahlbom.nl
+link: //jakopahlbom.nl
 image: 3
 status: "published"
 vimeo: 147103084

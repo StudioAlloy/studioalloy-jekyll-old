@@ -6,7 +6,7 @@ date: 2015-05-30 16:22:14
 categories: website
 excerpt: Campagne website ‘Science can change the world’
 featured: false
-url: //sciencecanchangetheworld.com
+link: //sciencecanchangetheworld.com
 image: 3
 status: "published"
 vimeo: 147093536

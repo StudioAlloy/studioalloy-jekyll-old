@@ -6,7 +6,7 @@ date: 2015-05-30 16:22:06
 categories: website, wordpress
 excerpt: Campagne website over de confrontatiecontainers van Critical Mass
 featured: false
-url: //vriendenvijand.nl
+link: //vriendenvijand.nl
 image: 3
 status: "published"
 ---

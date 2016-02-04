@@ -6,7 +6,7 @@ date: 2015-05-30 16:22:15
 categories: huisstijl, website, wordpress, webshop
 excerpt: Design en ontwikkeling verschillende uitingen van Noeser
 featured: false
-url: //noeser.eu
+link: //noeser.eu
 image:
 status: "concept"
 ---

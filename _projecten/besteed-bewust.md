@@ -6,7 +6,7 @@ date: 2015-05-30 16:22:07
 categories: website, wordpress
 excerpt: Campagne website Besteed Bewust
 featured: false
-url: //besteedbewust.nl
+link: //besteedbewust.nl
 image:
 published: false
 ---
