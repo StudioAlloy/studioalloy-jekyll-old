@@ -37,7 +37,7 @@ collections:
 # Pre-processing
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 safe: true
 permalink: /blog/:title/ # YYYY/MM/DD/page-title/index.html
 lsi: true # Lexical analysis (true) takes longer for higher quality
