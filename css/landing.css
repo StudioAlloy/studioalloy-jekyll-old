@@ -270,6 +270,7 @@ form {
 ———————————————————————————————————— */
 /* Worpdpress
 ———————————————————————————————————— */
+.werkruimte .landing-header,
 .wordpress .landing-header {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
   clip-path: polygon(100% 0, 100% 100%, 50% 90%, 0 100%, 0 0);
@@ -592,3 +593,70 @@ testing mode
     position: inherit;
   }
 }
+
+/* werkruimte
+------------------------------------------- */
+.max-width {
+  max-width: 100%;
+}
+.werkruimte p {
+  margin-bottom: 20px;
+}
+.werkruimte .col {
+  width: 100%;
+}
+@media only screen and (min-width : 1024px) {
+	/* Styles */
+  .werkruimte .col {
+    display: inline-block;
+    width: 49%;
+    vertical-align: middle;
+  }
+}
+
+.werkruimte .col h4 {
+  margin-bottom: 0;
+}
+.werkruimte .bg * {
+  color: #fff !important;
+}
+.werkruimte .col {
+  border: 1px solid;
+  min-height: 180px;
+  text-align: center;
+  padding: 40px;
+}
+.werkruimte .col > a {
+  text-align: center;
+}
+.werkruimte .col img {
+  text-align: center;
+  margin: 0 auto;
+}
+.werkruimte .col {
+  background: rgba(255, 255, 255, .2);
+}
+.werkruimte .col:hover {
+  background: rgba(255, 255, 255, 0);
+}
+.werkruimte .share-buttons li {
+  display: inline-block;
+}
+.werkruimte .share-buttons svg {
+  fill: #fff;
+}
+.share-buttons a {
+  padding: 30px;
+}
+.share-buttons svg {
+  width: 30px;
+  height: 30px;
+}
+.werkruimte .min-height {
+  min-height: 500px !important;
+}
+.werkruimte h1 {
+  color: #279;
+}
+/* werkruimte
++++++++++++++++++++++++++++++++++++++++++++ */
