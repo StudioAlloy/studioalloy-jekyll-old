@@ -11,7 +11,7 @@ email: wshager@gmail.com
 twitter_username:
 github_username: wshager
 linkedin_username: wouter-hager
-order: 7
+order: 8
 ---
 Wouter is een artistiek programmeur met passie voor complexe muziek en code. Hij begrijpt computers al van kinds af aan en kan de techniek vanuit bijna wetenschappelijke wijze inzichtelijk maken. Hierdoor kan Wouter op vrijwel elk niveau helpen bij het bedenken en ontwikkelen van web-based applicaties en de opbouw qua systeemarchitectuur.
 
