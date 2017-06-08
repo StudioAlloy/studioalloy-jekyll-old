@@ -7,7 +7,7 @@ excerpt: Grafisch ontwerper met een liefde voor techniek
 description: I am a graphic desigher from The Netherlands, working for my self since 2009 and recently under the name Studio 210 as a collective of creative designer and developers.
 website: mvaneijgen.nl
 phone: +31 (0)6 38 63 27 35
-email: mvaneijgen@gmail.com
+email: mitchel@studioalloy.nl
 twitter_username: mvaneijgen
 github_username:  mvaneijgen
 linkedin_username:  mvaneijgen
