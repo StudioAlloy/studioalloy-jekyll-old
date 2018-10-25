@@ -1,4 +1,0 @@
-# Base files
-
-* Grunt
-* Jekyll
