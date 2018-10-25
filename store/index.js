@@ -5,9 +5,9 @@ const createStore = () => {
     state: {
       items: [],
       errors: [],
-      title: "studio-alloy",
+      title: "Studio Alloy",
       author: "Mitchel van Eijgen <mvaneijgen@gmail.com>",
-      description: "Nuxt.js project",
+      description: "Wij maken impact met pixels.",
     },
     mutations: {
       add(state, payload) {

@@ -1,9 +1,9 @@
 <template>
   <div class="component-RenameMe">
-    <h1>studio-alloy</h1>
+    <h1>{{this.$store.state.title}}</h1>
 
     <div>
-      <p>Nuxt.js project</p>
+      <p>{{this.$store.state.description}}</p>
     </div>
   </div>
 </template>
@@ -39,5 +39,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import '~/assets/css/common/_variables.scss';
+@import "~/assets/css/common/_variables.scss";
+.component-RenameMe {
+  background-color: $brand-two;
+  text-align: center;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 </style>
